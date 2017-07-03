@@ -1,0 +1,109 @@
+
+
+html {
+  -ms-overflow-style: scrollbar; // 5
+  -webkit-text-size-adjust: 100%; // 4
+  -ms-text-size-adjust: 100%; // 4
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // 6
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; // 1
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+// Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0; 
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+}
+
+//不能通过键盘获取的元素，消除其focus时的outline样式
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+//对于布局，采用bottom来控制间距
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem; 
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  background-color: transparent; // Remove the gray background on active links in IE 10.
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
+}
+
+table {
+  border-collapse: collapse; // Prevent double borders
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+//解决ie/firefox下，背景是透明的button，focus状态下，没有相应的默认样式
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
