@@ -1,0 +1,1 @@
+shark.baseconfig = require('./shark-automation-config.js');

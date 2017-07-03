@@ -1,0 +1,29 @@
+{
+  "name": "shark-pure-css",
+  "version": "1.0.0",
+  "description": "基于视觉规范，开发的一套基础css样式库",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-lint": "sass-lint -v -q",
+    "server": "shark server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntesmail/shark-pure-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntesmail/shark-pure-css/issues"
+  },
+  "homepage": "https://github.com/ntesmail/shark-pure-css#readme",
+  "dependencies": {
+    "shark-automation": "^2.1.4"
+  }
+}
