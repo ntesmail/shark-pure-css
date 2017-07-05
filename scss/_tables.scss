@@ -1,24 +1,24 @@
 .table {
-    width: 100%;
-    margin-bottom: 10px; //根据规范，整理间距
-    background-color: $table-bg;
+  width: 100%;
+  margin-bottom: 10px; //根据规范，整理间距
+  background-color: $table-bg;
 
-    //th,设置了nowrap的td 默认不能换行
-    th,
-    td.nowrap {
-      white-space: nowrap;
-    }
+  //th,设置了nowrap的td 默认不能换行
+  th,
+  td.nowrap {
+    white-space: nowrap;
+  }
 
-    th,
-    td {
-      padding: $table-cell-padding;
-      vertical-align: middle;
-      border-top: $table-border-width solid $table-border-color;
-    }
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: middle;
+    border-top: $table-border-width solid $table-border-color;
+  }
 
-    .table {
-      background-color: $body-bg;
-    }
+  .table {
+    background-color: $body-bg;
+  }
 }
 
 .table-bordered {
