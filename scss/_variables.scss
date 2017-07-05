@@ -123,3 +123,8 @@ $input-height-inner-lg:         ($font-size-lg * $input-btn-line-height-lg) + ($
 $input-height-lg:               calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
 $input-transition:               border-color ease-in-out .15s, box-shadow ease-in-out .15s !default;
+
+
+// Grid clumns
+
+$grid-columns:               24 !default;

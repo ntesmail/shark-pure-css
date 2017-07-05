@@ -1,7 +1,3 @@
-// 为了消除inline-block之间的间距
-form {
-  font-size: 0;
-}
 //表单空间类
 .form-control {
   display: block;
@@ -89,6 +85,8 @@ select.form-control {
 
 .form-inline .form-group {
   display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 
 //文本,checkbox,radiobox
@@ -96,6 +94,13 @@ select.form-control {
 .form-checkbox,
 .form-radiobox {
   display: block;
+}
+
+//inline模式下，去除inline-block之间的间隙
+.form-inline {
+  font-size: 0;
+  letter-spacing: -2px;
+  word-spacing: -2px;
 }
 
 .form-inline, 
