@@ -47,7 +47,7 @@ rules:
   extends-before-declarations: 0
   extends-before-mixins: 0
   final-newline:
-    - 1
+    - 0
     - include: true
   force-attribute-nesting: 0
   force-element-nesting: 0
