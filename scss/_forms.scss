@@ -1,0 +1,115 @@
+// 为了消除inline-block之间的间距
+form {
+  font-size: 0;
+}
+//表单空间类
+.form-control {
+  display: block;
+  width: 100%;
+  padding: $input-btn-padding-y $input-btn-padding-x;
+  font-size: $font-size-base;
+  line-height: $input-btn-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  box-shadow: $input-box-shadow;
+  transition: $input-transition;
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  @include form-control-focus();
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &:disabled,
+  &[readonly] {
+    background-color: $input-disabled-bg;
+    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    opacity: 1;
+  }
+}
+
+select.form-control {
+  &:not([size]):not([multiple]) {
+    height: $input-height;
+  }
+
+  &:focus::-ms-value {
+    // Suppress the nested default white text on blue background highlight given to
+    // the selected option text when the (still closed) <select> receives focus
+    // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
+    // match the appearance of the native widget.
+    // See https://github.com/twbs/bootstrap/issues/19398.
+    color: $input-color;
+    background-color: $input-bg;
+  }
+}
+
+.form-inline .form-control,
+.form-horizontal .form-control {
+  display: inline-block
+}
+
+//Labels
+
+//普通表单的标签
+.control-label {
+  margin-bottom: 5px;
+}
+
+//inline-form  horizontal-form中，去除margin 
+.form-inline label,
+.form-horizontal label {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+
+//Groups
+.form-group {
+  margin-bottom: 15px;
+  font-size: $font-size-base;
+}
+
+.form-inline .form-group {
+  display: inline-block;
+}
+
+//文本,checkbox,radiobox
+.form-text,
+.form-checkbox,
+.form-radiobox {
+  display: block;
+}
+
+.form-inline, 
+.form-horizontal {
+  .form-text, 
+  .form-checkbox, 
+  .form-radiobox{
+    display: inline-block;
+  }
+  .form-text {
+    vertical-align: middle;
+  }
+  .form-checkbox,
+  .form-radiobox {
+    vertical-align: baseline;
+  }
+}

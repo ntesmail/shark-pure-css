@@ -166,12 +166,6 @@ label {
   display: inline-block;
 }
 
-//解决ie/firefox下，背景是透明的button，focus状态下，没有相应的默认样式
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 input,
 button,
 select,
