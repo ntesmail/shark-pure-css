@@ -1,0 +1,50 @@
+.table {
+    width: 100%;
+    margin-bottom: 10px; //根据规范，整理间距
+    background-color: $table-bg;
+
+    //th,设置了nowrap的td 默认不能换行
+    th,
+    td.nowrap {
+      white-space: nowrap;
+    }
+
+    th,
+    td {
+      padding: $table-cell-padding;
+      vertical-align: middle;
+      border-top: $table-border-width solid $table-border-color;
+    }
+
+    .table {
+      background-color: $body-bg;
+    }
+}
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+}
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: $table-accent-bg;
+  }
+}
+
+.table-hover {
+  tbody tr {
+    &:hover {
+      background-color: $table-hover-bg;
+    }
+  }
+}
+
+@include table-row-variant(active, $table-active-bg);
+@include table-row-variant(success, $state-success-bg);
+@include table-row-variant(info, $state-info-bg);
+@include table-row-variant(warning, $state-warning-bg);
+@include table-row-variant(danger, $state-danger-bg);
