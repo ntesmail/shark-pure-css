@@ -63,7 +63,7 @@ select.form-control {
 
 .form-inline .form-control,
 .form-horizontal .form-control {
-  display: inline-block
+  display: inline-block;
 }
 
 //Labels
@@ -102,7 +102,7 @@ select.form-control {
 .form-horizontal {
   .form-text, 
   .form-checkbox, 
-  .form-radiobox{
+  .form-radiobox {
     display: inline-block;
   }
   .form-text {
