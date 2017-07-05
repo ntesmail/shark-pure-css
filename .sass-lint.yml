@@ -102,9 +102,7 @@ rules:
   no-transition-all: 0
   no-url-protocols: 1
   no-vendor-prefixes:
-    - 1
-    - additional-identifiers: []
-      excluded-identifiers: []
+    - 0
   placeholder-in-extend: 0
   placeholder-name-format:
     - 0
