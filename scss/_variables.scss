@@ -15,15 +15,14 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:  #000 !default;
-
-$red:    #d9534f !default;
-$orange: #f0ad4e !default;
-$yellow: #ffd500 !default;
-$green:  #5cb85c !default;
-$blue:   #0275d8 !default;
-$teal:   #5bc0de !default;
-$pink:   #ff5b77 !default;
-$purple: #613d7c !default;
+$red:    #DC7671 !default;
+$orange: #F5AB6B !default;
+$yellow: #F5DC6B !default;
+$green:  #BEED8A !default;
+$blue:   #7EBBE6 !default;
+$teal:   #5093C4 !default;
+$pink:   #D67CE9 !default;
+$purple: #AD6DE5 !default;
 
 
 // Create grayscale
@@ -32,6 +31,14 @@ $gray:                      #464a4c !default;
 $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  warning: $yellow,
+  danger: $red
+) !default;
 
 // Reassign color vars to semantic color scheme
 $brand-primary:             $blue !default;
@@ -56,20 +63,23 @@ $caret-border-width-y:   5px;
 $caret-border-width-x:   6px;
 
 //Font
-$font-family-base:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
 
-$font-size-base:    1rem !default;
-$font-size-lg:      1.25rem !default;
-$font-size-sm:      .875rem !default;
-$font-size-xs:      .75rem !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
 
-$font-weight-base:  normal !default;
-$font-weight-bold:  bold !default;
-$dt-font-weight:    $font-weight-bold !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
 
-$line-height-base:  1.5 !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
 
 $text-muted: $gray-light !default;
+
+$dt-font-weight: $font-weight-bold !default;
 
 // body
 $body-bg:      #fff !default;
@@ -99,24 +109,34 @@ $table-head-bg:                 $gray-lighter !default;
 $table-head-color:              $gray !default;
 
 
-//Buttons
-$input-btn-padding-y:           .5rem !default;
-$input-btn-padding-x:           .75rem !default;
-$input-btn-line-height:         1.25 !default;
+// Buttons
+$input-btn-padding-y:       .5rem !default;
+$input-btn-padding-x:       .75rem !default;
+$input-btn-line-height:     1.25 !default;
 
-$input-btn-padding-y-sm:        .25rem !default;
-$input-btn-padding-x-sm:        .5rem !default;
-$input-btn-line-height-sm:      1.5 !default;
+$input-btn-padding-y-sm:    .25rem !default;
+$input-btn-padding-x-sm:    .5rem !default;
+$input-btn-line-height-sm:  1.5 !default;
 
-$input-btn-padding-y-lg:        .5rem !default;
-$input-btn-padding-x-lg:        1rem !default;
-$input-btn-line-height-lg:      1.5 !default;
+$input-btn-padding-y-lg:    .5rem !default;
+$input-btn-padding-x-lg:    1rem !default;
+$input-btn-line-height-lg:  1.5 !default;
 
-$btn-font-weight:                $font-weight-base !default;
+$btn-font-weight:                $font-weight-normal !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
-$btn-focus-box-shadow:           0 0 0 3px rgba($brand-primary, .25) !default;
+$btn-focus-box-shadow:           0 0 0 3px rgba(theme-color("primary"), .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
+$btn-link-disabled-color:        $gray-600 !default;
+
+$btn-block-spacing-y:            .5rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:              $border-radius !default;
+$btn-border-radius-lg:           $border-radius-lg !default;
+$btn-border-radius-sm:           $border-radius-sm !default;
+
+$btn-transition:                 all .15s ease-in-out !default;
 
 
 // Forms
