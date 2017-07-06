@@ -146,7 +146,6 @@ $grid-columns:               24 !default;
 
 
 // Form states and alerts
-
 $state-success-text:             #3c763d !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border-color:     darken($state-success-bg, 5%) !default;
@@ -163,3 +162,19 @@ $state-warning-border-color:     darken($state-warning-bg, 5%) !default;
 $state-danger-text:              #a94442 !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border-color:      darken($state-danger-bg, 5%) !default;
+
+
+//List Groups
+$list-min-width:                 160px;
+$list-bg:                        #fff;
+
+$list-border:                    1px solid #979797;
+$list-border-radius:             0;
+$list-box-shadow:                none;
+
+$list-single-li-padding-y:       7px;
+$list-single-li-padding-x:       18px;
+$list-multiple-li-padding-y:     $list-single-li-padding-y;
+$list-multiple-li-padding-x:     9px;
+
+$list-li-hover-bg:               #e7e7e7;
