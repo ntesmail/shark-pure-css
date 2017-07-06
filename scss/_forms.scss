@@ -1,3 +1,8 @@
+//inline模式下，去除inline-block之间的间隙，保证不被外部修改，设置important
+.form-inline {
+  font-size: 0 !important;  
+}
+
 //表单空间类
 .form-control {
   display: block;
@@ -76,31 +81,11 @@ select.form-control {
   vertical-align: middle;
 }
 
-
-//Groups
-.form-group {
-  margin-bottom: 15px;
-  font-size: $font-size-base;
-}
-
-.form-inline .form-group {
-  display: inline-block;
-  letter-spacing: normal;
-  word-spacing: normal;
-}
-
 //文本,checkbox,radiobox
 .form-text,
 .form-checkbox,
 .form-radiobox {
   display: block;
-}
-
-//inline模式下，去除inline-block之间的间隙
-.form-inline {
-  font-size: 0;
-  letter-spacing: -2px;
-  word-spacing: -2px;
 }
 
 .form-inline, 
@@ -118,3 +103,14 @@ select.form-control {
     vertical-align: baseline;
   }
 }
+
+//Groups
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-inline .form-group {
+  display: inline-block;
+  font-size: $font-size-base; //form-inline 下，为了清除inline-block的间隙，将form-inline的字体设置了0，这里需要重置字体
+}
+
