@@ -30,7 +30,7 @@
     display: inline-block;
     width: $list-single-li-padding-x;
     text-align: center;
-    content: "1";
+    content: "";
   }
   &.multiple {
     padding: $list-multiple-li-padding-y $list-multiple-li-padding-x;
