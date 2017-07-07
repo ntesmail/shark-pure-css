@@ -199,19 +199,19 @@ $state-danger-border-color:      darken($state-danger-bg, 5%) !default;
 
 
 //List Groups
-$list-min-width:                 160px;
-$list-bg:                        #fff;
+$list-min-width:                 160px !default;
+$list-bg:                        #fff !default;
 
-$list-border:                    1px solid #979797;
-$list-border-radius:             0;
-$list-box-shadow:                none;
+$list-border:                    1px solid #979797 !default;
+$list-border-radius:             0 !default;
+$list-box-shadow:                none !default;
 
-$list-single-li-padding-y:       7px;
-$list-single-li-padding-x:       18px;
-$list-multiple-li-padding-y:     $list-single-li-padding-y;
-$list-multiple-li-padding-x:     9px;
+$list-single-li-padding-y:       7px !default;
+$list-single-li-padding-x:       18px !default;
+$list-multiple-li-padding-y:     $list-single-li-padding-y !default;
+$list-multiple-li-padding-x:     9px !default;
 
-$list-li-hover-bg:               #e7e7e7;
+$list-li-hover-bg:               #e7e7e7 !default;
 
 
 //Drop Down
@@ -225,3 +225,18 @@ $thumbnail-border-color:      #ddd !default;
 $thumbnail-border-radius:     $border-radius !default;
 $thumbnail-box-shadow:        0 1px 2px rgba($black,.075) !default;
 $thumbnail-transition:        all .2s ease-in-out !default;
+
+
+//pagination
+$pagination-item-padding-y:   6px !default;
+$pagination-item-padding-x:   12px !default; 
+
+$pagination-font-size:        $font-size-base !default;
+
+$pagination-color:            #9b9b9b !default;
+$pagination-active-color:     #fff !default; 
+$pagination-disable-color:    #e7e7e7 !default;
+
+$pagination-bg:               transparent !default;
+$pagination-active-bg:        #9b9b9b !default;
+$pagination-hover-bg:         #e7e7e7 !default;
