@@ -28,7 +28,7 @@
 
 //TODO 调整
 @each $color, $value in $btn-theme-colors {
-  @include text-emphasis-variant('.text-#{$color}', $value);
+  @include text-emphasis-variant(".text-#{$color}", $value);
 }
 
 

@@ -1,6 +1,6 @@
 //TODO  主题色根据视觉规范制定
 @each $color, $value in $btn-theme-colors {
-  @include bg-variant('.bg-#{$color}', $value);
+  @include bg-variant(".bg-#{$color}", $value);
 }
 
 .bg-transparent { background-color: transparent !important; }
