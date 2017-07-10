@@ -1,0 +1,80 @@
+//tree   ul.shark-tree
+.shark-tree {
+
+  font-size: 0;
+
+  &,
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  li {
+    padding: 2px 0px;
+    label {
+      display: block;
+    }
+    ul {
+      display: none;
+      &.tree-open {
+        display: block;
+      }
+    }
+  }
+
+  .tree-icon,
+  .tree-node-name {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .tree-icon {
+    float: left;
+    width: $tree-icon-size;
+    height: $tree-icon-size;
+    font-size: $tree-font-size;
+    vertical-align: top;
+    background-size: 100% 100%;
+    
+  }
+
+  .tree-node-name {
+    display: block;
+    overflow: hidden;
+    font-size: $tree-font-size;
+    line-height: $tree-icon-size;
+  }
+
+  &.disabled {
+    .tree-icon,
+    .tree-node-name {
+      color: $tree-disable-color;
+      cursor: default;
+    }
+  }
+
+  .tree-icon-check {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEUAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhjDG72AAAAD3RSTlMA5jtT4A+fSklAG/FeMSxlVxwlAAAASUlEQVQI12PAAhr/A8HHBgYGIRCPSYCB4QNY/AOEwbwAylAMgDBYncFSTBPYEsAMXmGTAIjiJzuhurgOwLWDSITJhWC7CuB2AwDh2iJE/F97swAAAABJRU5ErkJggg==);
+  }
+
+  .tree-icon-check-empty {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAACIiIiIiIiIiIiIiIhTGFtKAAAABHRSTlMAS+fkeQRH8QAAACdJREFUCNdjwAKEXIDASYCBQRHEY1RgYHAAiztQiwE3GWqXswDcbgATkwfuFORrngAAAABJRU5ErkJggg==);
+  }
+
+  .tree-icon-check-minus {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAACIiIiIiIiIiIiIiIhTGFtKAAAABHRSTlMA5UxJT3aN7AAAACxJREFUCNdjwAIMXYDA0YCBQQjEYxJgYHAAizvgZ4gAdQk4EKMYbjLCLhgAAGMgCR1GQI2wAAAAAElFTkSuQmCC);
+  }
+
+  .tree-icon-right {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgnTYS+AAAAC3RSTlMABrWdsJmqkwh6eVcUOkAAAAAxSURBVAjXY0ACXA1QBrsiTChIAMpghQuZwISYHWFCZnAGQgqhGKEdYSDCCs4GBmQAABs+A/AaJMGkAAAAAElFTkSuQmCC);
+  }
+
+  .tree-icon-down {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAACIiIiIiIiIiIiIiIiIiIiIiIgPEjmxAAAAB3RSTlMAOzXjztlpaXfY9gAAACtJREFUCNdjIAmwCIBIFQYGJkMGKKEsAMJgHkQAxAUJgITMDKEaVQWItAEApMYCb1YUXYwAAAAASUVORK5CYII=);
+  }
+
+  .tree-node-selected {
+    color: $tree-selected-color;
+    background-color: $tree-selected-bg;
+  }
+}

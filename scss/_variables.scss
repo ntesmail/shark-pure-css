@@ -375,6 +375,14 @@ $modal-sm:                    300px !default;
 $modal-transition:            transform .3s ease-out !default;
 
 
+// tree
+$tree-font-size:              16px !default; //字体大小
+$tree-icon-size:              16px !default; //图标宽度
+$tree-selected-color:       #fff; //选中节点后的背景色
+$tree-selected-bg:            lighten(#000, 13.5%) !default;; //选中节点后的背景色
+$tree-disable-color:          lighten(#000, 46.7%) !default; //禁用后的颜色
+
+
 // Close
 $close-font-size:             $font-size-base * 1.5 !default;
 $close-font-weight:           $font-weight-bold !default;
