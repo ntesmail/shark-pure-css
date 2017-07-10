@@ -248,33 +248,53 @@ $pagination-hover-bg:         #e7e7e7 !default;
 
 
 //input group
-$input-group-addon-bg:        #eee;    
+$input-group-addon-bg:        #eee !default;    
 
 
 //nav
-$nav-font-size:                16px;
-$nav-border-bottom:            1px solid #44a8e8;    
-$nav-color:                    #000;
-$nav-active-color:             #fff;
+$nav-font-size:                16px !default;
+$nav-border-bottom:            1px solid #44a8e8 !default;    
+$nav-color:                    #000 !default;
+$nav-active-color:             #fff !default;
 
-$nav-bg:                       #cacaca;
-$nav-active-bg:                #348dfe;
+$nav-bg:                       #cacaca !default;
+$nav-active-bg:                #348dfe !default;
 
-$nav-item-padding-y:           10px;
-$nav-item-padding-x:           50px;
+$nav-item-padding-y:           10px !default;
+$nav-item-padding-x:           50px !default;
 
 
 //track
-$track-font-size:              16px;
+$track-font-size:              16px !default;
 
-$track-current-color:        #000;
-$track-pre-color:              $track-current-color;
+$track-current-color:        #000 !default;
+$track-pre-color:              $track-current-color !default;
 
-$track-path-space:             5px;
+$track-path-space:             5px !default;
 
-$track-split-content:          ">";
+$track-split-content:          ">" !default;
 
-$track-padding-y:              10px;
-$track-padding-x:              20px;
+$track-padding-y:              10px !default;
+$track-padding-x:              20px !default;
 
-$track-bg:                     #dceaf4;
+$track-bg:                     #dceaf4 !default;
+
+
+//progress
+$progress-height:              20px !default;
+$progress-bg:                  #f5f5f5 !default;
+
+$progress-font-size:           12px !default;
+$progress-color:               #fff !default;
+
+$progress-border-radius:       4px !default;
+$progress-box-shadow:          inset 0 1px 2px rgba(0,0,0,.1) !default;
+
+$progress-bra-bg:              #337ab7 !default;   
+
+$progress-bar-transition:       width .6s ease !default;
+
+$progress-striped-color:       rgba(255,255,255,.15);
+$progress-striped-deg:          45deg;
+
+$progress-bar-animation-timing: 1s linear infinite !default;
