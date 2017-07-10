@@ -341,3 +341,42 @@ $popover-arrow-color:                 $popover-bg !default;
 
 $popover-arrow-outer-width:           ($popover-arrow-width + 1px) !default;
 $popover-arrow-outer-color:           fade-in($popover-border-color, .05) !default; 
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+$modal-dialog-margin-y:         30px !default;
+
+$modal-title-line-height:     1.5 !default;
+
+$modal-content-bg:               #fff !default;
+$modal-content-border-color:     rgba(0,0,0,.2) !default;
+$modal-content-border-width:     1px !default;
+$modal-content-border-radius:    6px;
+$modal-content-box-shadow:       0 5px 15px rgba(0,0,0,.5) !default;
+
+$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-bg:             #dceaf4;
+$modal-footer-bg:             #fff;
+$modal-header-border-color:   $gray-200 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+$modal-header-border-width:   $modal-content-border-width !default;
+$modal-footer-border-width:   $modal-header-border-width !default;
+$modal-header-padding:        15px !default;
+
+$modal-lg:                    800px !default;
+$modal-md:                    500px !default;
+$modal-sm:                    300px !default;
+
+$modal-transition:            transform .3s ease-out !default;
+
+
+// Close
+$close-font-size:             $font-size-base * 1.5 !default;
+$close-font-weight:           $font-weight-bold !default;
+$close-color:                 #000 !default;
+$close-text-shadow:           0 1px 0 $white !default;
