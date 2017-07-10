@@ -21,6 +21,8 @@
 files:
   include:
     - scss/**/*.scss
+  ignore:
+    - scss/_date.scss
 options:
   formatter: stylish
   merge-default-rules: false
