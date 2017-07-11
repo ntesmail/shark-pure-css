@@ -1,0 +1,9 @@
+.shark-tooltip {
+  border: #000;
+  box-shadow: none;
+  .popover-content {
+    background: rgba(64, 64, 64, 0.85);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 6px;
+  }
+}

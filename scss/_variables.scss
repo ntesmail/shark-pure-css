@@ -100,9 +100,9 @@ $toastr-info-bg-color:#ECF6FD !default;
 $toastr-font-size-base:12px !default;
 $toastr-font-size-lg:14px !default;
 $toastr-icon-font-size-lg:24px !default;
-$toastr-desc-font-color:rgb(0, 0, 0, 0.75) !default;
-$toastr-font-color:rgb(0, 0, 0, 0.65) !default;
-$toastr-close-font-color:rgb(0, 0, 0, 0.43) !default;
+$toastr-desc-font-color:rgba(0, 0, 0, 0.75) !default;
+$toastr-font-color:rgba(0, 0, 0, 0.65) !default;
+$toastr-close-font-color:rgba(0, 0, 0, 0.43) !default;
 //Links
 $link-color: $brand-primary !default;
 $link-decoration: none !default;
