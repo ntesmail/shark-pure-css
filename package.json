@@ -13,7 +13,6 @@
     "server": "node server",
     "dll": "webpack --config webpack.dll.config.js"
   },
-  "pre-commit": ["sass-lint"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ntesmail/shark-pure-css.git"
@@ -70,7 +69,6 @@
     "ip": "^1.1.5",
     "node-sass": "^4.5.0",
     "openurl": "^1.1.1",
-    "pre-commit": "^1.2.2",
     "progress-bar-webpack-plugin": "^1.9.3",
     "sass-loader": "^6.0.2",
     "shark-deploy-git": "^0.1.6",
