@@ -150,35 +150,26 @@ $btn-disabled-background-color: #e7e7e7 !default;
 $btn-disabled-border-color: #e7e7e7 !default;
 $btn-link-disabled-color: #e7e7e7 !default;
 $btn-block-spacing-y: .5rem !default;
-
 $btn-color: rgba(0, 0, 0, 0.65);
 $btn-background-color: #fff;
 $btn-border-color: #d9d9d9;
-
 $btn-color-hover: #108ee9;
 $btn-background-color-hover: #fff;
 $btn-border-color-hover: #108ee9;
-
 $btn-color-active: #0e77ca;
 $btn-background-color-active: #fff;
 $btn-border-color-active: #0e77ca;
-
-$btn-color-disabled: rgba(0,0,0,.25);
+$btn-color-disabled: rgba(0, 0, 0, .25);
 $btn-background-color-disabled: #fff;
 $btn-border-color-disabled: #d9d9d9;
-
 $btn-primary-color: #fff;
 $btn-primary-background-color: #1b9afe;
-
 $btn-primary-background-color-hover: #4dadf9;
-
 $btn-primary-background-color-active: #1076C7;
-
 $btn-primary-background-color-disabled: $disable;
-
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: $border-radius !default;
-$btn-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$btn-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
 // Forms
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: .75rem !default;
@@ -416,7 +407,8 @@ $check-inner-checked-some-bg: $check-inner-checked-bg !default;
 $check-after-border-color: #fff !default;
 $check-after-disabled-border-color: #ccc !default;
 //switch
+$switch-font-size-base: 12px;
 $switch-duration: .3s !default;
 $switch-disabled-color: rgba(0, 0, 0, .25) !default;
-$switch-background: transparent !default;
+$switch-background: #fff !default;
 $switch-primary-color: #108EE9 !default;
