@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 //Examples
 import { CssButtonModule } from './button/button.module';
-import { CssRadioModule } from './radio/radio.module';
+import { CssSelectModule } from './select/select.module';
 
 @NgModule({
     imports: [
         CssButtonModule,
-        CssRadioModule
+        CssSelectModule
     ]
 })
 export class ComponentModule { }
