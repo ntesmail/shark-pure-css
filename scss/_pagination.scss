@@ -180,26 +180,22 @@
       color: $pagination-disabled-color;
     }
   }
-  .pagination-slash {
-    margin: 0 10px 0 5px;
-  }
-  .pagination-options {
+  .pagination-size-changer,
+  .pagination-quick-jumper {
     display: inline-block;
     vertical-align: middle;
     margin-left: 16px;
-    .pagination-size-changer {
-      display: inline-block;
-      margin-right: 8px;
-    }
-    .pagination-quick-jumper {
-      display: inline-block;
+  }
+  .pagination-size-changer {
+    margin-right: 8px;
+  }
+  .pagination-quick-jumper {
+    height: $pagination-input-height;
+    line-height: $pagination-input-height;
+    .input {
+      margin: 0 8px;
+      width: 50px;
       height: $pagination-input-height;
-      line-height: $pagination-input-height;
-      input {
-        // .input;
-        margin: 0 8px;
-        width: 50px;
-      }
     }
   }
   .pagination-simple .pagination-prev,
