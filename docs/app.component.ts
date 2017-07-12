@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
         <a routerLink="/cssmodal">modal</a>
         <a routerLink="/csstip">tip</a>
         <a routerLink="/cssswitch">switch</a>
+        <a routerLink="/csssteps">steps</a>
 
         <div style="width:900px;margin:auto;padding-top:100px;">
             <router-outlet></router-outlet>
