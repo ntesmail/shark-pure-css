@@ -92,7 +92,7 @@
 
 // Title text within header
 .modal-title {
-  font-size: 14px;
+  font-size: $modal-font-size-base;
   margin-bottom: 0;
   line-height: $modal-title-line-height;
 }
@@ -100,7 +100,7 @@
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {
-  font-size: 14px;
+  font-size: $modal-font-size-base;
   position: relative;
   padding: $modal-inner-padding;
 }
@@ -126,29 +126,30 @@
     display: none;
   }
   .modal-body {
-    padding: 50px 40px 40px 80px;
+    padding: $modal-confirm-body-padding;
   }
   .modal-confirm-body {
-    margin-bottom: 17px;
+    margin-bottom: $modal-confirm-body-margin-bottom;
   }
   .modal-confirm-btns {
     text-align: right;
   }
-  .tip-icon {
+  .modal-tip-icon {
     position: absolute;
-    top: 49px;
-    left: 40px;
+    top: $modal-tip-icon-top;
+    left: $modal-tip-icon-left;
+    color: $modal-tip-icon-color;
   }
   .tip-message {
     display: block;
-    font-size: 14px;
+    font-size: $modal-font-size-base;
     font-weight: bold;
-    line-height: 21px;
+    line-height: $modal-tip-message-line-height;
   }
   .tip-desc {
     display: block;
-    font-size: 12px;
-    line-height: 21px;
+    font-size: $modal-font-size-sm;
+    line-height: $modal-tip-message-line-height;
   }
 }
 
@@ -160,7 +161,7 @@
     }
   }
   .modal-body {
-    padding: 0px 20px 7px 20px;
+    padding: $modal-detail-body-padding;
   }
   .modal-footer {
     border-top-width: 0;
@@ -168,8 +169,9 @@
       float: left;
     }
     .secondary-desc {
-      font-size: 12px;
-      color: #999;
+      font-size: $modal-font-size-sm;
+      color: $modal-detail-footer-secondary-desc-color;
+      ;
     }
   }
 }
