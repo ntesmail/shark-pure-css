@@ -41,9 +41,6 @@ app.use(SharkConfig.contextPath + '/xhr', function (req, res) {
 //font
 app.use(SharkConfig.contextPath + '/font', express.static(path.join(__dirname, 'docs/asset/font')));
 
-//test html
-app.use(SharkConfig.contextPath, express.static(path.join(__dirname, 'tests')));
-
 //start server & listen 
 devMiddleware.waitUntilValid(() => {
     // when env is testing, don't need open it
