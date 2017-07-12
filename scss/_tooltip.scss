@@ -1,32 +1,30 @@
 .shark-tooltip {
   border: 0px;
-  background: rgba(64, 64, 64, 1);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.20);
-  border-radius: 6px;
+  background: $tooltip-bg-color;
+  @include border-radius($tooltip-border-radius);
+  @include box-shadow($tooltip-box-shadow);
   .popover-content {
-    // background: rgba(64, 64, 64, 0.85);
-    // box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.20);
-    // border-radius: 6px;
-    color: #fff;
+    color: $tooltip-color;
+    padding: $tooltip-padding;
   }
   &.top {
     .arrow::after {
-      border-top-color: rgba(64, 64, 64, 1);
+      border-top-color: $tooltip-bg-color;
     }
   }
   &.bottom {
     .arrow::after {
-      border-bottom-color: rgba(64, 64, 64, 1);
+      border-bottom-color: $tooltip-bg-color;
     }
   }
   &.left {
     .arrow::after {
-      border-left-color: rgba(64, 64, 64, 1);
+      border-left-color: $tooltip-bg-color;
     }
   }
   &.right {
     .arrow::after {
-      border-right-color: rgba(64, 64, 64, 1);
+      border-right-color: $tooltip-bg-color;
     }
   }
 }

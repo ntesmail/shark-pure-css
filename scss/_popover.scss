@@ -142,26 +142,27 @@
   }
 
   .popover-content {
-    padding: $popover-content-padding-y $popover-content-padding-x;
+    padding: $popover-content-padding;
     color: $popover-content-color;
     p {
       margin: 0px;
     }
     a {
-      color: rgba(0, 0, 0, 0.65);
+      color: $popover-content-link-color;
       text-decoration: underline;
     }
     .popover-content-message {
-      padding-left: 20px;
+      padding-left: $popover-content-message-padding-left;
       position: relative;
-      .tip-icon {
+      .popover-icon {
         position: absolute;
         top: 0;
         left: 0;
+        color: $popover-icon-color;
       }
     }
     .popover-content-btns {
       text-align: right;
-      margin-top: 16px;
+      margin-top: $popover-content-btns-margin-top;
     }
   }
