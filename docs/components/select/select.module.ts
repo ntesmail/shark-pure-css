@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
-import { CssRadioComponent } from "./radio.component"
+import { CssSelectComponent } from "./select.component"
 
 // 定义常量 路由
 const routes: any = [
     {
         path: 'cssradio',
-        component: CssRadioComponent
+        component: CssSelectComponent
     }
 ];
 
@@ -14,6 +14,6 @@ const routes: any = [
     imports: [
         RouterModule.forChild(routes)
     ],
-    declarations: [CssRadioComponent]
+    declarations: [CssSelectComponent]
 })
-export class CssRadioModule { }
+export class CssSelectModule { }

@@ -16,3 +16,10 @@
   // Keep them at most 100% wide
   @include img-fluid;
 }
+
+
+// Image circle
+.img-circle {
+  @include img-fluid;
+  border-radius: 50%; 
+}
