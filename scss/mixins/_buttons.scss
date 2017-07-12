@@ -1,69 +1,41 @@
 // Button variants
 
-@mixin button-variant($background, $border, $active-background: darken($background, 12.5%), $active-border: darken($border, 15%)) {
-  &,
-  &:hover{
-    @include color-yiq($background);
-    background-color: $background;
-    @include color-yiq-border($border);
-    @include box-shadow($btn-box-shadow);
+@mixin button-variant($color, $background-color, $border-color) {
+  & {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
   }
-
-  // Disabled comes first so active can properly restyle
+}
+@mixin button-variant-hover($color, $background-color, $border-color) {
+  &:hover {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
+  }
+}
+@mixin button-variant-active($color, $background-color, $border-color) {
+  &.active,
+  &:active {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
+  }
+}
+@mixin button-variant-disabled($color, $background-color, $border-color) {
   &.disabled,
   &:disabled {
-    @include btn-disabled($background, $border);
-  }
-
-  &:active,
-  &.active,
-  .show > &.dropdown-toggle {
-    @include btn-active($active-background, $active-border);
-    background-image: none; // Remove the gradient for the pressed/active state
-    @include box-shadow($btn-active-box-shadow);
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
   }
 }
 
 // Button sizes
-@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+@mixin button-size($btn-height, $padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  height: $btn-height;
   padding: $padding-y $padding-x;
   font-size: $font-size;
   line-height: $line-height;
   @include border-radius($border-radius);
-}
-
-@mixin color-yiq($color) {
-  @if (is-secondary($color)) {
-    color: #808080;
-  } @else {
-    color: #fff;
-  }
-}
-
-@mixin color-yiq-border($color) {
-  @if (is-secondary($color)) {
-    border-color: #808080;
-  } @else {
-    border-color: $color;
-  }
-}
-
-@mixin btn-disabled($background, $border) {
-  @if (is-secondary($background)) {
-    background-color: #fff;
-    border-color: $btn-disabled-border-color;
-  } @else {
-    background-color: $btn-disabled-background-color;
-    border-color: $btn-disabled-border-color;
-  }
-}
-
-@mixin btn-active($active-background, $active-border) {
-  @if (is-secondary($active-background)) {
-    background-color: #cacaca;
-    border-color: #808080;
-  } @else {
-    background-color: $active-background;
-    border-color: $active-border;
-  }
 }

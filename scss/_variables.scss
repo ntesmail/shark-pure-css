@@ -13,21 +13,22 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
-$red: #DC7671 !default;
-$orange: #F5AB6B !default;
-$yellow: #F5DC6B !default;
-$green: #BEED8A !default;
-$blue: #7EBBE6 !default;
-$teal: #5093C4 !default;
-$pink: #D67CE9 !default;
-$purple: #AD6DE5 !default;
+$red: #db7671 !default;
+$orange: #f4aa6b !default;
+$yellow: #f4db6b !default;
+$green: #beed8a !default;
+$blue: #7ebbe6 !default;
+$teal: #5093c3 !default;
+$pink: #d67ce9 !default;
+$purple: #ad6de5 !default;
+$disable: #e6e6e6 !default;
 // Create grayscale
 $gray-dark: #292b2c !default;
 $gray: #464a4c !default;
 $gray-light: #636c72 !default;
 $gray-lighter: #eceeef !default;
 $gray-lightest: #f7f7f9 !default;
-$btn-theme-colors: ( primary: #4CA6E6, secondary: #FFFFFF, success: #5EA512, warning: #BD1911, danger: #EF760E) !default;
+$theme-colors: ( primary: #4CA6E6, secondary: #FFFFFF, success: #5EA512, warning: #BD1911, danger: #EF760E) !default;
 // Reassign color vars to semantic color scheme
 $brand-primary: $blue !default;
 $brand-success: $green !default;
@@ -137,9 +138,10 @@ $table-head-color: $gray !default;
 // Buttons
 $btn-padding-y: 5px !default;
 $btn-padding-x: 20px !default;
-$btn-font-size: 14px !default;
-$btn-line-height: 20px !default;
-$btn-font-weight: $font-weight-normal !default;
+$btn-font-size: 12px !default;
+$btn-line-height: 1.5 !default;
+$btn-height: 30px !default;
+$btn-font-weight: 500 !default;
 $btn-box-shadow: inset 0 1px 0 rgba($white, .15),
 0 1px 1px rgba($black, .075) !default;
 $btn-focus-box-shadow: 0 0 0 3px rgba(theme-color("primary"), .25) !default;
@@ -148,9 +150,35 @@ $btn-disabled-background-color: #e7e7e7 !default;
 $btn-disabled-border-color: #e7e7e7 !default;
 $btn-link-disabled-color: #e7e7e7 !default;
 $btn-block-spacing-y: .5rem !default;
+
+$btn-color: rgba(0, 0, 0, 0.65);
+$btn-background-color: #fff;
+$btn-border-color: #d9d9d9;
+
+$btn-color-hover: #108ee9;
+$btn-background-color-hover: #fff;
+$btn-border-color-hover: #108ee9;
+
+$btn-color-active: #0e77ca;
+$btn-background-color-active: #fff;
+$btn-border-color-active: #0e77ca;
+
+$btn-color-disabled: rgba(0,0,0,.25);
+$btn-background-color-disabled: #fff;
+$btn-border-color-disabled: #d9d9d9;
+
+$btn-primary-color: #fff;
+$btn-primary-background-color: #1b9afe;
+
+$btn-primary-background-color-hover: #4dadf9;
+
+$btn-primary-background-color-active: #1076C7;
+
+$btn-primary-background-color-disabled: $disable;
+
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: 3px !default;
-$btn-transition: all .15s ease-in-out !default;
+$btn-border-radius: $border-radius !default;
+$btn-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
 // Forms
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: .75rem !default;
