@@ -207,15 +207,20 @@ $thumbnail-border-radius: $border-radius !default;
 $thumbnail-box-shadow: 0 1px 2px rgba($black, .075) !default;
 $thumbnail-transition: all .2s ease-in-out !default;
 //pagination
-$pagination-item-padding-y: 6px !default;
-$pagination-item-padding-x: 12px !default;
+$pagination-item-margin-right: 8px !default;
+$pagination-prev-margin-right: 8px !default;
 $pagination-font-size: $font-size-base !default;
-$pagination-color: #9b9b9b !default;
-$pagination-active-color: #fff !default;
-$pagination-disable-color: #e7e7e7 !default;
+$pagination-color: rgba(0, 0, 0, 0.65) !default;
+$pagination-disabled-color: rgba(0, 0, 0, .25) !default;
 $pagination-bg: transparent !default;
-$pagination-active-bg: #9b9b9b !default;
-$pagination-hover-bg: #e7e7e7 !default;
+$pagination-active-bg: transparent !default;
+$pagination-primary-color: #108EE9 !default;
+$pagination-primary-color-5: #49a9ee !default;
+$pagination-border-width: 1px !default;
+$pagination-border-style: solid !default;
+$pagination-border-radius: 4px !default;
+$pagination-border-color: #d9d9d9 !default;
+$pagination-input-height: 28px !default;
 //input group
 $input-group-addon-bg: #eee !default;
 //nav
@@ -318,33 +323,15 @@ $close-font-weight: $font-weight-bold !default;
 $close-color: #000 !default;
 $close-text-shadow: 0 1px 0 $white !default;
 //utilities
-$emsizes : 15 !default;
-//select
-$select-color : rgba(0, 0, 0, .65) !default;
-$select-disabled-color : rgba(0, 0, 0, .25) !default;
-$select-inner-border-color : #d9d9d9 !default;
-$select-inner-hover-border-color : #108ee9 !default;
-$select-inner-bg : #fff !default;
-$select-inner-disabled-bg : #f7f7f7 !default;
+$emsizes: 15 !default;
 //radio
-$radio-color : $select-color !default;
-$radio-disabled-color : $select-disabled-color !default;
-$radio-inner-border-color : $select-inner-border-color !default;
-$radio-inner-hover-border-color : $select-inner-hover-border-color !default;
-$radio-inner-checked-border-color : $radio-inner-hover-border-color !default;
-$radio-inner-bg : $select-inner-bg !default;
-$radio-inner-disabled-bg : $select-inner-disabled-bg !default;
-$radio-after-bg : $radio-inner-hover-border-color !default;
-$radio-disabled-bg : #ccc !default;
-//check
-$check-color : $select-color !default;
-$check-disabled-color : $select-disabled-color !default;
-$check-inner-border-color : $select-inner-border-color !default;
-$check-inner-hover-border-color : $select-inner-hover-border-color !default;
-$check-inner-checked-border-color : $check-inner-hover-border-color !default;
-$check-inner-bg : $select-inner-bg !default;
-$check-inner-disabled-bg : $select-inner-disabled-bg !default;
-$check-inner-checked-bg : $check-inner-hover-border-color !default;
-$check-inner-checked-some-bg : $check-inner-checked-bg !default;
-$check-after-border-color : #fff !default;
-$check-after-disabled-border-color : #ccc !default;
+$radio-font-size: 12px !default;
+$radio-color: rgba(0, 0, 0, .65);
+$radio-disabled-color: rgba(0, 0, 0, .25);
+$radio-inner-border-color: #d9d9d9;
+$radio-inner-hover-border-color: #108ee9;
+$radio-inner-checked-border-color: $radio-inner-hover-border-color;
+$radio-inner-bg: #fff;
+$radio-inner-disabled-bg: #f7f7f7;
+$radio-after-bg: $radio-inner-hover-border-color;
+$radio-disabled-bg: #ccc;
