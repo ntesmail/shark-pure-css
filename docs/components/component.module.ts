@@ -8,6 +8,7 @@ import { CssSelectModule } from './select/select.module';
 import { CssImagesModule } from './images/images.module';
 import { CssToastrModule } from './toastr/toastr.module';
 import { CssModalModule } from './modal/modal.module';
+import { CssInputModule } from './input/input.module';
 
 @NgModule({
     imports: [
@@ -16,7 +17,8 @@ import { CssModalModule } from './modal/modal.module';
         CssSelectModule,
         CssImagesModule,
         CssToastrModule,
-        CssModalModule
+        CssModalModule,
+        CssInputModule
     ]
 })
 export class ComponentModule { }

@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `
         <a routerLink="/cssbutton">cssbutton</a>
-        <a routerLink="/cssradio">radio</a>
         <a routerLink="/csspagination">pagination</a>
+        <a routerLink="/cssradio">select</a>
         <a routerLink="/cssimages">images</a>
         <a routerLink="/csstoastr">toastr</a>
-         <a routerLink="/cssmodal">modal</a>
+        <a routerLink="/cssmodal">modal</a>
+        <a routerLink="/cssinput">input</a>
         <div style="width:900px;margin:auto;padding-top:100px;">
             <router-outlet></router-outlet>
         </div>
