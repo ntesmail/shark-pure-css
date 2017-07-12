@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
     template: `
         <a routerLink="/cssbutton">cssbutton</a>
         <a routerLink="/cssradio">radio</a>
+        <a routerLink="/cssimages">images</a>
         <div style="width:900px;margin:auto;padding-top:100px;">
             <router-outlet></router-outlet>
         </div>

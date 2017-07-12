@@ -9,6 +9,7 @@ about Installation
 Clone this repository and run this command in a console:
 
     $ npm install
+    $ npm run dll
 
 now you can start the project by
 
