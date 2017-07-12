@@ -2,8 +2,6 @@
 // .modal           - container to scroll within
 // .modal-dialog    - positioning shell for the actual modal
 // .modal-content   - actual modal w/ bg and corners and stuff
-
-
 // Kill the scroll on the body
 .modal-open {
   overflow: hidden;
@@ -18,21 +16,21 @@
   left: 0;
   z-index: $zindex-modal;
   display: none;
-  overflow: hidden;
-  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  overflow: hidden; // Prevent Chrome on Windows from adding a focus outline. For details, see
   // https://github.com/twbs/bootstrap/pull/10951.
-  outline: 0;
-  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  outline: 0; // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
   // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
   // See also https://github.com/twbs/bootstrap/issues/17695
-
   // When fading in the modal, animate it to slide down
   &.fade .modal-dialog {
     @include transition($modal-transition);
     transform: translate(0, -25%);
   }
-  &.show .modal-dialog { transform: translate(0, 0); }
+  &.in .modal-dialog {
+    transform: translate(0, 0);
+  }
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -60,11 +58,9 @@
 .modal-content {
   position: relative;
   background-color: $modal-content-bg;
-  background-clip: padding-box;
-  border: $modal-content-border-width solid $modal-content-border-color;
+  background-clip: padding-box; // border: $modal-content-border-width solid $modal-content-border-color;
   @include border-radius($modal-content-border-radius);
-  @include box-shadow($modal-content-box-shadow);
-  // Remove focus outline from opened modal
+  @include box-shadow($modal-content-box-shadow); // Remove focus outline from opened modal
   outline: 0;
 }
 
@@ -76,24 +72,27 @@
   bottom: 0;
   left: 0;
   z-index: $zindex-modal-backdrop;
-  background-color: $modal-backdrop-bg;
-
-  // Fade for backdrop
-  &.fade { opacity: 0; }
-  &.show { opacity: $modal-backdrop-opacity; }
+  background-color: $modal-backdrop-bg; // Fade for backdrop
+  &.fade {
+    opacity: 0;
+  }
+  &.in {
+    opacity: $modal-backdrop-opacity;
+  }
 }
 
 // Modal header
 // Top section of the modal w/ title and dismiss
 .modal-header {
-  padding: $modal-header-padding;
-  background-color: $modal-header-bg;
+  height: 50px;
+  padding: $modal-header-padding; // background-color: $modal-header-bg;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
   @include border-top-radius($modal-content-border-radius);
 }
 
 // Title text within header
 .modal-title {
+  font-size: 14px;
   margin-bottom: 0;
   line-height: $modal-title-line-height;
 }
@@ -101,19 +100,76 @@
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {
+  font-size: 14px;
   position: relative;
   padding: $modal-inner-padding;
 }
 
 // Footer (for actions)
 .modal-footer {
-  padding: $modal-inner-padding;
+  padding: $modal-footer-padding;
   text-align: right;
   background-color: $modal-footer-bg;
   border-top: $modal-footer-border-width solid $modal-footer-border-color;
-  @include border-bottom-radius($modal-content-border-radius);
+  @include border-bottom-radius($modal-content-border-radius); // Easily place margin between footer elements
+  > :not(:first-child) {
+    margin-left: .25rem;
+  }
+  > :not(:last-child) {
+    margin-right: .25rem;
+  }
+}
 
-  // Easily place margin between footer elements
-  > :not(:first-child) { margin-left: .25rem; }
-  > :not(:last-child) { margin-right: .25rem; }
+.modal-confirm {
+  .modal-header,
+  .modal-footer {
+    display: none;
+  }
+  .modal-body {
+    padding: 50px 40px 40px 80px;
+  }
+  .modal-confirm-body {
+    margin-bottom: 17px;
+  }
+  .modal-confirm-btns {
+    text-align: right;
+  }
+  .tip-icon {
+    position: absolute;
+    top: 49px;
+    left: 40px;
+  }
+  .tip-message {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+  .tip-desc {
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+  }
+}
+
+.modal-datail {
+  .modal-header {
+    border-bottom-width: 0;
+    .close {
+      display: none;
+    }
+  }
+  .modal-body {
+    padding: 0px 20px 7px 20px;
+  }
+  .modal-footer {
+    border-top-width: 0;
+    .secondary {
+      float: left;
+    }
+    .secondary-desc {
+      font-size: 12px;
+      color: #999;
+    }
+  }
 }
