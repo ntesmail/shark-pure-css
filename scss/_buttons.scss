@@ -24,6 +24,7 @@
   }
 }
 
+// Primary
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-background-color, $btn-primary-background-color);
   &:hover {
@@ -41,6 +42,7 @@
   }
 }
 
+// secondary
 .btn-secondary {
   @include button-variant($btn-color, $btn-background-color, $btn-border-color);
   &:hover {
@@ -59,9 +61,26 @@
   }
 }
 
+// border style is dashed
 .btn-dashed {
   @extend .btn-secondary;
   border-style: dashed;
+}
+
+// Button with icon
+.btn-icon {
+  padding: $btn-padding-y $btn-icon-padding-x;
+  .btn-icon-left,
+  .btn-icon-right {
+    position: relative;
+    top: 1px;
+  }
+  .btn-icon-left {
+    margin-right: 8px;
+  }
+  .btn-icon-right {
+    margin-left: 8px;
+  }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
