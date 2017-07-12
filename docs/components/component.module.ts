@@ -11,6 +11,7 @@ import { CssAlertModule } from './alert/alert.module';
 import { CssModalModule } from './modal/modal.module';
 import { CssInputModule } from './input/input.module';
 import { CssTipModule } from './tip/tip.module';
+import { CssSwitchModule } from './switch/switch.module';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import { CssTipModule } from './tip/tip.module';
         CssAlertModule,
         CssModalModule,
         CssInputModule,
-        CssTipModule
+        CssTipModule,
+        CssSwitchModule
     ]
 })
 export class ComponentModule { }
