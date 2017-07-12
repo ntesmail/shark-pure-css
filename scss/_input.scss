@@ -1,6 +1,13 @@
-//input
+//input TODO 占位符的整理
+%input-affix {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  color: rgba(0,0,0,.65);
+  transform: translateY(-50%);
+} 
 
-.input {
+%input {
   position: relative;
   display: inline-block;
   padding: 4px 7px;
@@ -26,6 +33,10 @@
   }
 }
 
+.input {
+  @extend %input;
+}
+
 .input-lg {
   height: 32px;
   padding: 6px 7px;
@@ -36,15 +47,36 @@
   padding: 1px 7px;
 }
 
-//带有搜索标签的input框
 .input-affix-wrapper {
   position: relative;
-  display: inline-block;
-  width: 100%;
-
   .input:not(:last-child) {
+    padding-left: 24px;
+  }
+
+  .input:not(:first-child) {
     padding-right: 24px;
   }
 
+  .input-suffix {
+    @extend %input-affix;
+    right: 7px;
+  }
 
+  .input-prefix {
+    @extend %input-affix;
+    left: 7px;
+  }
+
+  .input-suffix-focus {
+    display: none;
+    cursor: pointer;
+  }
+
+  .input:focus ~ .input-suffix-focus {
+    display: block;
+  }
+
+  .input.input-radius {
+    @include border-radius(30px);
+  }
 }
