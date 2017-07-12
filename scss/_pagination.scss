@@ -4,10 +4,9 @@
   display: inline-block;
   padding-left: 0; //修改浏览器的默认行为
   font-size: 0; //消除inline-block之间的间隙
-}
-
-.pagination {
-  font-size: $pagination-font-size;
+  * {
+    font-size: $pagination-font-size;
+  }
   &:after {
     content: " ";
     display: block;
