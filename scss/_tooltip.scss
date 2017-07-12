@@ -1,9 +1,32 @@
 .shark-tooltip {
-  border: #000;
-  box-shadow: none;
+  border: 0px;
+  background: rgba(64, 64, 64, 1);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.20);
+  border-radius: 6px;
   .popover-content {
-    background: rgba(64, 64, 64, 0.85);
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.20);
-    border-radius: 6px;
+    // background: rgba(64, 64, 64, 0.85);
+    // box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.20);
+    // border-radius: 6px;
+    color: #fff;
+  }
+  &.top {
+    .arrow::after {
+      border-top-color: rgba(64, 64, 64, 1);
+    }
+  }
+  &.bottom {
+    .arrow::after {
+      border-bottom-color: rgba(64, 64, 64, 1);
+    }
+  }
+  &.left {
+    .arrow::after {
+      border-left-color: rgba(64, 64, 64, 1);
+    }
+  }
+  &.right {
+    .arrow::after {
+      border-right-color: rgba(64, 64, 64, 1);
+    }
   }
 }

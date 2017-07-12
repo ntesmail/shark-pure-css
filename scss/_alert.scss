@@ -1,0 +1,85 @@
+.alert-sm,
+.alert-lg {
+  position: relative;
+  width: $alert-width;
+  padding: $alert-padding;
+  border-radius: $border-radius;
+  font-size: $alert-font-size-base;
+  color: $alert-font-color;
+  line-height: $line-height-base;
+  a {
+    color: $alert-font-color;
+    text-decoration: underline;
+  }
+  .alert-icon {
+    position: absolute;
+    top: $alert-icon-top;
+    left: $alert-icon-left;
+    font-size: $alert-font-size-base;
+  }
+  .alert-close {
+    position: absolute;
+    cursor: pointer;
+    top: $alert-close-top;
+    right: $alert-close-right;
+    color: $alert-close-font-color;
+  }
+}
+
+.alert-lg {
+  padding: $alert-with-desc-padding;
+  .alert-icon {
+    position: absolute;
+    top: $alert-with-desc-icon-top;
+    left: $alert-with-desc-icon-left;
+    font-size: $alert-icon-font-size-lg;
+  }
+  .alert-message {
+    display: block;
+    font-size: $alert-font-size-lg;
+    color: $alert-desc-font-color;
+    line-height: $line-height-base;
+    margin-bottom: $alert-desc-margin-bottom;
+  }
+  .alert-desc {
+    display: block;
+  }
+  .alert-close {
+    position: absolute;
+    cursor: pointer;
+    top: $alert-with-desc-close-top;
+    right: $alert-with-desc-close-right;
+  }
+}
+
+.alert-success {
+  background: $alert-success-bg-color;
+  border: 1px solid $alert-success-border-color;
+  .alert-icon {
+    color: $alert-success-color;
+  }
+}
+
+.alert-error {
+  background: $alert-error-bg-color;
+  border: 1px solid $alert-error-border-color;
+  .alert-icon {
+    color: $alert-error-color;
+  }
+}
+
+.alert-warning {
+  background: $alert-warning-bg-color;
+  border: 1px solid $alert-warning-border-color;
+  .alert-icon {
+    color: $alert-warning-color;
+  }
+}
+
+.alert-info {
+  background: $alert-info-bg-color;
+  border: 1px solid $alert-info-border-color;
+  .alert-icon {
+    color: $alert-info-color;
+  }
+}

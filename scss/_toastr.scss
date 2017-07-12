@@ -1,84 +1,40 @@
 .toastr {
   position: relative;
-  width: $toastr-width;
+  display: inline-block;
+  max-width: $toastr-max-width;
   padding: $toastr-padding;
   border-radius: $border-radius;
-  font-size: $toastr-font-size-base;
+  background: $toastr-bg-color;
+  font-size: $toastr-font-size;
   color: $toastr-font-color;
   line-height: $line-height-base;
-  a {
-    color: $toastr-font-color;
-    text-decoration: underline;
+  @include border-radius($toastr-border-radius);
+  @include box-shadow($toastr-box-shadow);
+  p {
+    margin: 0;
   }
   .toastr-icon {
     position: absolute;
     top: $toastr-icon-top;
     left: $toastr-icon-left;
-    font-size: $toastr-font-size-base;
-  }
-  .toastr-close {
-    position: absolute;
-    cursor: pointer;
-    top: $toastr-close-top;
-    right: $toastr-close-right;
-    color: $toastr-close-font-color;
-  }
-}
-
-.toastr-with-desc {
-  padding: $toastr-with-desc-padding;
-  .toastr-icon {
-    position: absolute;
-    top: $toastr-with-desc-icon-top;
-    left: $toastr-with-desc-icon-left;
-    font-size: $toastr-icon-font-size-lg;
-  }
-  .toastr-message {
-    display: block;
-    font-size: $toastr-font-size-lg;
-    color: $toastr-desc-font-color;
-    line-height: $line-height-base;
-    margin-bottom: $toastr-desc-margin-bottom;
-  }
-  .toastr-desc {
-    display: block;
-  }
-  .toastr-close {
-    position: absolute;
-    cursor: pointer;
-    top: $toastr-with-desc-close-top;
-    right: $toastr-with-desc-close-right;
+    font-size: $toastr-icon-font-size;
   }
 }
 
 .toastr-success {
-  background: $toastr-success-bg-color;
-  border: 1px solid $toastr-success-border-color;
   .toastr-icon {
     color: $toastr-success-color;
   }
 }
 
 .toastr-error {
-  background: $toastr-error-bg-color;
-  border: 1px solid $toastr-error-border-color;
   .toastr-icon {
     color: $toastr-error-color;
   }
 }
 
 .toastr-warning {
-  background: $toastr-warning-bg-color;
-  border: 1px solid $toastr-warning-border-color;
   .toastr-icon {
     color: $toastr-warning-color;
-  }
-}
-
-.toastr-info {
-  background: $toastr-info-bg-color;
-  border: 1px solid $toastr-info-border-color;
-  .toastr-icon {
-    color: $toastr-info-color;
   }
 }
