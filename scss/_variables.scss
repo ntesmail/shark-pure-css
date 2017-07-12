@@ -404,3 +404,8 @@ $check-inner-checked-bg: $check-inner-hover-border-color !default;
 $check-inner-checked-some-bg: $check-inner-checked-bg !default;
 $check-after-border-color: #fff !default;
 $check-after-disabled-border-color: #ccc !default;
+//switch
+$switch-duration: .3s !default;
+$switch-disabled-color: rgba(0, 0, 0, .25) !default;
+$switch-background: transparent !default;
+$switch-primary-color: #108EE9 !default;

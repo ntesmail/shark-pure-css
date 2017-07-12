@@ -5,7 +5,7 @@ import { CssSwitchComponent } from "./switch.component"
 // 定义常量 路由
 const routes: any = [
     {
-        path: 'cssradio',
+        path: 'cssswitch',
         component: CssSwitchComponent
     }
 ];
