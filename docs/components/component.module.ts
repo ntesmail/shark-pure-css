@@ -15,6 +15,8 @@ import { CssSwitchModule } from './switch/switch.module';
 import { CssStepsModule } from './steps/steps.module';
 import { CssTabsModule } from './tabs/tabs.module';
 import { CssSelecterModule } from './selecter/selecter.module';
+import { CssTableModule } from './table/table.module';
+import { CssFormModule } from './form/form.module';
 
 @NgModule({
     imports: [
@@ -30,7 +32,9 @@ import { CssSelecterModule } from './selecter/selecter.module';
         CssSwitchModule,
         CssStepsModule,
         CssTabsModule,
-        CssSelecterModule
+        CssSelecterModule,
+        CssTableModule,
+        CssFormModule
     ]
 })
 export class ComponentModule { }
