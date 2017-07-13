@@ -445,8 +445,14 @@ $seleter-item-padding: 0 5px !default;
 $seleter-background-color-disabled: #f3efef !default;
 $selecter-input-line-height: 20px !default;
 $seleter-selected-color: #979797 !default;
-$selecter-transition: all .3s cubic-bezier(.645,.045,.355,1);
+$selecter-transition: all .3s cubic-bezier(.645, .045, .355, 1);
 //progress
 $progress-font-size-base: 12px;
 $progress-line-bg: #f7f7f7;
 $progess-primary-color: #108EE9;
+//breadcrumb
+$breadcrumb-color:#999 !default;
+$breadcrumb-font-size:12px !default;
+$breadcrumb-link-color:$breadcrumb-color;
+$breadcrumb-tag-last-color:#666 !default;
+$breadcrumb-separator-padding:0 5px !default;
