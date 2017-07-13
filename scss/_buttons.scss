@@ -22,6 +22,11 @@
   &.focus {
     outline: 0;
   }
+  
+  &.disabled,
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 // Primary

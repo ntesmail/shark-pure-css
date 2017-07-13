@@ -366,12 +366,12 @@ $modal-md: 500px !default;
 $modal-sm: 300px !default;
 $modal-transition: transform .3s ease-out !default;
 // tree
-$tree-font-size: 16px !default; //字体大小
-$tree-icon-size: 16px !default; //图标宽度
-$tree-selected-color: #fff !default; //选中节点后的背景色
-$tree-selected-bg: lighten(#000, 13.5%) !default;
-; //选中节点后的背景色
-$tree-disable-color: lighten(#000, 46.7%) !default; //禁用后的颜色
+$tree-font-size: 12px !default; //字体大小
+$tree-icon-size: 14px !default; //图标宽度
+$tree-color: rgba(0,0,0,.65) !default;
+$tree-background-color-hover: #ecf6fd !default;
+$tree-selected-bg: #d2eafb !default; //选中节点后的背景色
+$tree-disable-color: rgba(0,0,0,.25) !default; //禁用后的颜色
 // Close
 $close-font-size: $font-size-base * 1.5 !default;
 $close-font-weight: $font-weight-bold !default;

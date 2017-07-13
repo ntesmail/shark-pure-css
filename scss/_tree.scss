@@ -1,18 +1,22 @@
 //tree   ul.shark-tree
 .shark-tree {
-
+  margin: 0;
+  padding: 8px;
   font-size: 0;
 
-  &,
   * {
     padding: 0;
     margin: 0;
   }
 
   li {
-    padding: 2px 0;
+    margin: 8px 0;
+    outline: 0;
     label {
       display: block;
+      height: 24px;
+      line-height: 24px;
+      vertical-align: middle;
     }
     ul {
       display: none;
@@ -35,21 +39,37 @@
     font-size: $tree-font-size;
     vertical-align: top;
     background-size: 100% 100%;
-    
+    position: relative;
+    top: 5px;
   }
 
   .tree-node-name {
-    display: block;
+    // display: block;
+    color: $tree-color;
     overflow: hidden;
     font-size: $tree-font-size;
     line-height: $tree-icon-size;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all .3s;
+    &:hover {
+      background-color: $tree-background-color-hover;
+    }
+  }
+  .tree-icon-check,
+  .tree-icon-check-empty,
+  .tree-icon-check-minus {
+    margin: 0 5px;
   }
 
   &.disabled {
     .tree-icon,
     .tree-node-name {
       color: $tree-disable-color;
-      cursor: default;
+      cursor: not-allowed;
+      &:hover {
+        background-color: #fff;
+      }
     }
   }
 
@@ -74,7 +94,7 @@
   }
 
   .tree-node-selected {
-    color: $tree-selected-color;
+    // color: $tree-selected-color;
     background-color: $tree-selected-bg;
   }
 }
