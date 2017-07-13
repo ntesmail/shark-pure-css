@@ -26,7 +26,7 @@
 
 .form-item-label {
   display: inline-block;
-  text-align: center;
+  text-align: right;
   line-height: 32px;  //input-lg height
   white-space: nowrap;
   vertical-align: top; //和form-item-control保持一致，且无论form-item-control高度如何变化，始终保持一样的对齐风格，
