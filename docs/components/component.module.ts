@@ -13,6 +13,7 @@ import { CssInputModule } from './input/input.module';
 import { CssTipModule } from './tip/tip.module';
 import { CssSwitchModule } from './switch/switch.module';
 import { CssStepsModule } from './steps/steps.module';
+import { CssTabsModule } from './tabs/tabs.module';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { CssStepsModule } from './steps/steps.module';
         CssInputModule,
         CssTipModule,
         CssSwitchModule,
-        CssStepsModule
+        CssStepsModule,
+        CssTabsModule
     ]
 })
 export class ComponentModule { }

@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
         <a routerLink="/csstip">tip</a>
         <a routerLink="/cssswitch">switch</a>
         <a routerLink="/csssteps">steps</a>
+        <a routerLink="/csstabs">tabs</a>
 
         <div style="width:900px;margin:auto;padding-top:100px;">
             <router-outlet></router-outlet>
