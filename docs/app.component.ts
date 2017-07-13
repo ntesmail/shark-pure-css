@@ -15,6 +15,7 @@ import { Component } from '@angular/core';
         <a routerLink="/cssswitch">switch</a>
         <a routerLink="/csssteps">steps</a>
         <a routerLink="/csstabs">tabs</a>
+        <a routerLink="/cssselecter">selecter</a>
 
         <div style="width:900px;margin:auto;padding-top:100px;">
             <router-outlet></router-outlet>

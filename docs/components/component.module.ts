@@ -14,6 +14,7 @@ import { CssTipModule } from './tip/tip.module';
 import { CssSwitchModule } from './switch/switch.module';
 import { CssStepsModule } from './steps/steps.module';
 import { CssTabsModule } from './tabs/tabs.module';
+import { CssSelecterModule } from './selecter/selecter.module';
 
 @NgModule({
     imports: [
@@ -28,7 +29,8 @@ import { CssTabsModule } from './tabs/tabs.module';
         CssTipModule,
         CssSwitchModule,
         CssStepsModule,
-        CssTabsModule
+        CssTabsModule,
+        CssSelecterModule
     ]
 })
 export class ComponentModule { }
