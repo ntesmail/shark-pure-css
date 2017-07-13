@@ -18,6 +18,7 @@ import { CssSelecterModule } from './selecter/selecter.module';
 import { CssTableModule } from './table/table.module';
 import { CssFormModule } from './form/form.module';
 import { CssTreeModule } from './tree/tree.module';
+import { CssProgressModule } from './progress/progress.module';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { CssTreeModule } from './tree/tree.module';
         CssSelecterModule,
         CssTableModule,
         CssFormModule,
-        CssTreeModule
+        CssTreeModule,
+        CssProgressModule
     ]
 })
 export class ComponentModule { }
