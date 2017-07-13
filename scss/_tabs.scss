@@ -16,6 +16,7 @@
       position: relative;
       z-index: 1;
       margin-bottom: -$tabs-tab-border-width;
+      cursor: pointer;
       .tabs-tab-notify {
         background-color: $tabs-tab-notify-color;
         color: $tabs-tab-color;
@@ -40,6 +41,15 @@
     }
     .tabs-tabpane-active {
       opacity: 1;
+      display: block;
+    }
+  }
+}
+
+.tabs.tabs-horizontal {
+  .tabs-nav {
+    .tabs-tab {
+      text-align: right;
       display: block;
     }
   }
