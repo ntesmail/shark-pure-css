@@ -6,6 +6,7 @@
 @mixin make-grid-columns($columns: $grid-columns) {
   @for $i from 1 through $columns {
     .col-#{$i} {
+      float: left;
       width: percentage($i / $columns);
     }
     .col-offset-#{$i} {
