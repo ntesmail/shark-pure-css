@@ -1,7 +1,10 @@
 .progress {
   display: inline-block;
-  width: 100%;
   font-size: $progress-font-size-base;
+}
+
+.progress-line {
+  width: 100%;
   .progress-outter {
     display: inline-block;
     width: 100%;
@@ -32,4 +35,25 @@
 .progress-show-info .progress-outter {
   margin-right: -3.5em;
   padding-right: 2.75em;
+}
+
+.progress-circle {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  text-align: center;
+  .progress-circle-svg {
+    width: 100%;
+    height: 100%;
+  }
+  .progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin: 0;
+  }
 }
