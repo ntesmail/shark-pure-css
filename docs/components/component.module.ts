@@ -17,6 +17,7 @@ import { CssTabsModule } from './tabs/tabs.module';
 import { CssSelecterModule } from './selecter/selecter.module';
 import { CssTableModule } from './table/table.module';
 import { CssFormModule } from './form/form.module';
+import { CssTreeModule } from './tree/tree.module';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { CssFormModule } from './form/form.module';
         CssTabsModule,
         CssSelecterModule,
         CssTableModule,
-        CssFormModule
+        CssFormModule,
+        CssTreeModule
     ]
 })
 export class ComponentModule { }

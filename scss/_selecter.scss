@@ -69,14 +69,6 @@
     border-top-color: $seleter-color;
     content: " ";
   }
-
-  &.selecter-search {
-    .search-wrap {
-      .selecter-input {
-        
-      }
-    }
-  }
 }
 
 // 多选下拉
@@ -107,9 +99,6 @@
   &.selecter-search {
     .search-wrap {
       display: inline-block;
-      .selecter-input {
-        
-      }
     }
   }
 }
