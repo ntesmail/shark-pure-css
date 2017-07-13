@@ -1,38 +1,50 @@
-.alert-sm,
-.alert-lg {
+.alert {
   position: relative;
   width: $alert-width;
-  padding: $alert-padding;
   border-radius: $border-radius;
   font-size: $alert-font-size-base;
   color: $alert-font-color;
   line-height: $line-height-base;
+  .alert-icon {
+    position: absolute;
+  }
+  .alert-close {
+    position: absolute;
+    cursor: pointer;
+    color: $alert-close-font-color;
+  }
+  .alert-close-icon {
+    color: $alert-close-font-color;
+  }
+}
+
+.alert-sm {
+  padding: $alert-sm-padding;
   a {
     color: $alert-font-color;
     text-decoration: underline;
   }
   .alert-icon {
-    position: absolute;
-    top: $alert-icon-top;
-    left: $alert-icon-left;
-    font-size: $alert-font-size-base;
+    top: $alert-sm-icon-top;
+    left: $alert-sm-icon-left;
+    font-size: $alert-icon-font-size-sm;
   }
   .alert-close {
-    position: absolute;
-    cursor: pointer;
-    top: $alert-close-top;
-    right: $alert-close-right;
-    color: $alert-close-font-color;
+    top: $alert-sm-close-top;
+    right: $alert-sm-close-right;
   }
 }
 
 .alert-lg {
-  padding: $alert-with-desc-padding;
+  padding: $alert-lg-padding;
   .alert-icon {
-    position: absolute;
-    top: $alert-with-desc-icon-top;
-    left: $alert-with-desc-icon-left;
+    top: $alert-lg-icon-top;
+    left: $alert-lg-icon-left;
     font-size: $alert-icon-font-size-lg;
+  }
+  .alert-close {
+    top: $alert-lg-close-top;
+    right: $alert-lg-close-right;
   }
   .alert-message {
     display: block;
@@ -43,12 +55,6 @@
   }
   .alert-desc {
     display: block;
-  }
-  .alert-close {
-    position: absolute;
-    cursor: pointer;
-    top: $alert-with-desc-close-top;
-    right: $alert-with-desc-close-right;
   }
 }
 

@@ -7,6 +7,14 @@
   overflow: hidden;
 }
 
+.fade {
+  opacity: 0;
+  @include transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
+
 // Container that the modal scrolls within
 .modal {
   position: fixed;
@@ -22,11 +30,15 @@
   // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
   // See also https://github.com/twbs/bootstrap/issues/17695
   // When fading in the modal, animate it to slide down
-  &.fade .modal-dialog {
+  &.fade .modal-dialog,
+  &.fade .modal-confirm,
+  &.fade .modal-detail {
     @include transition($modal-transition);
     transform: translate(0, -25%);
   }
-  &.in .modal-dialog {
+  &.in .modal-dialog,
+  &.in .modal-confirm,
+  &.in .modal-detail {
     transform: translate(0, 0);
   }
 }
@@ -37,23 +49,6 @@
 }
 
 // Shell div to position the modal with bottom padding
-.modal-dialog {
-  position: relative;
-  margin: $modal-dialog-margin-y auto;
-}
-
-.modal-lg .modal-dialog {
-  width: $modal-lg;
-}
-
-.modal-md .modal-dialog {
-  width: $modal-md;
-}
-
-.modal-sm .modal-dialog {
-  width: $modal-sm;
-}
-
 // Actual modal
 .modal-content {
   position: relative;
@@ -120,6 +115,32 @@
   }
 }
 
+.modal-lg .modal-dialog,
+.modal-lg .modal-confirm,
+.modal-lg .modal-detail {
+  width: $modal-lg;
+}
+
+.modal-md .modal-dialog,
+.modal-md .modal-confirm,
+.modal-md .modal-detail {
+  width: $modal-md;
+}
+
+.modal-sm .modal-dialog,
+.modal-sm .modal-confirm,
+.modal-sm .modal-detail {
+  width: $modal-sm;
+}
+
+.modal-dialog,
+.modal-confirm,
+.modal-detail {
+  position: relative;
+  margin: $modal-dialog-margin-y auto; // top: 50% !important;
+  // transform: translateY(-60%) !important;
+}
+
 .modal-confirm {
   .modal-header,
   .modal-footer {
@@ -153,7 +174,7 @@
   }
 }
 
-.modal-datail {
+.modal-detail {
   .modal-header {
     border-bottom-width: 0;
     .close {
