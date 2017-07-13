@@ -29,8 +29,7 @@
 
 %select-inner {
   position: relative;
-  display: inline-block;
-  //display: block;  --解决line-height大于1时，导致的此inner与文案对不齐的问题
+  display: block;  //解决line-height大于1时，且为inline-block时，其实际高度大于100%，导致布局错误
   width: 100%;
   height: 100%;
   border: 1px solid $select-inner-border-color;

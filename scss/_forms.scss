@@ -21,3 +21,10 @@
   line-height: 32px;  //input-lg height
   vertical-align: middle;  //same width form-item-control
 }
+
+.form-inline {
+  .form-item {
+    display: inline-block;
+    padding: 0 20px; //间距
+  }
+}
