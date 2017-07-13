@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
   zoom: 1;
-  color: rgba(0, 0, 0, .65);
+  color: $tabs-tab-color;
   .tabs-nav {
     padding: 0;
     border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
@@ -16,6 +16,15 @@
       position: relative;
       z-index: 1;
       margin-bottom: -$tabs-tab-border-width;
+      .tabs-tab-notify {
+        background-color: $tabs-tab-notify-color;
+        color: $tabs-tab-color;
+        padding-left: 9px;
+        padding-right: 9px;
+        margin-left: 6px;
+        border-radius: 15px;
+        border: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
+      }
     }
     .tabs-tab-active {
       background-color: $tabs-tab-active-bg-color;
