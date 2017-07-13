@@ -408,8 +408,16 @@ $check-inner-checked-some-bg: $check-inner-checked-bg !default;
 $check-after-border-color: #fff !default;
 $check-after-disabled-border-color: #ccc !default;
 //switch
-$switch-font-size-base: 12px;
+$switch-font-size-base: 12px !default;
 $switch-duration: .3s !default;
 $switch-disabled-color: rgba(0, 0, 0, .25) !default;
 $switch-background: #fff !default;
 $switch-primary-color: #108EE9 !default;
+//tabs
+$tabs-tab-border-width:1px !default;
+$tabs-tab-border-style: solid !default;
+$tabs-tab-border-color: #d9d9d9 !default;
+$tabs-tab-border-radius: 4px 4px 0 0 !default;
+$tabs-tab-background: #f9f9f9;
+$tabs-tab-active-bg-color: #fff;
+$tabs-primary-color: #108EE9;
