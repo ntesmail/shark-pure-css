@@ -1,5 +1,115 @@
 .selecter {
   display: inline-block;
   position: relative;
-  // color: $seleter-color;
+  width: $selecter-width;
+  height: $selecter-height;
+  color: $seleter-color;
+  background-color: $seleter-background-color;
+  border: 1px solid $seleter-border-color;
+  border-radius: $seleter-border-radius;
+  font-size: $select-font-size;
+  vertical-align: middle;
+  cursor: pointer;
+  &:hover {
+    border-color: $seleter-border-color-hover;
+  }
+
+  .value {
+    display: inline-block;
+  }
+
+  &.disabled {
+    background-color: $seleter-background-color-disabled;
+    cursor: not-allowed;
+    &:hover {
+      border-color: $seleter-border-color;
+    }
+  }
+
+  // 带搜索下拉
+  &.selecter-search {
+    .search-wrap {
+      .selecter-input {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        line-height: $selecter-input-line-height;
+        color: $seleter-selected-color;
+        // Placeholder
+        &::placeholder {
+          color: $seleter-color;
+          // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  .selected {
+    color: $seleter-selected-color;
+  }
+
+}
+
+// 单选下拉
+.selecter-single {
+  padding: $selecter-padding;
+
+  &:after {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -2px;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border: $seleter-caret-border-width solid transparent;
+    border-top-color: $seleter-color;
+    content: " ";
+  }
+
+  &.selecter-search {
+    .search-wrap {
+      .selecter-input {
+        
+      }
+    }
+  }
+}
+
+// 多选下拉
+.selecter-multiple {
+  display: block;
+  padding: $selecter-multiple-padding;
+  width: $selecter-multiple-width;
+  min-height: $selecter-multiple-min-height;
+  height: auto;
+  max-height: $selecter-multiple-max-height;
+  overflow-y: auto;
+
+  .selecter-items {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    .selecter-item {
+      display: inline-block;
+      height: $selecter-item-height;
+      line-height: $selecter-item-height;
+      padding: $seleter-item-padding;
+      color: $selecter-item-color;
+      background-color: $selecter-item-background-color;
+      border-radius: $seleter-item-border-radius;
+    }
+  }
+  
+  &.selecter-search {
+    .search-wrap {
+      display: inline-block;
+      .selecter-input {
+        
+      }
+    }
+  }
 }
