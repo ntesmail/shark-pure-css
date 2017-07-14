@@ -1,0 +1,100 @@
+.layout {
+  width: 100%;
+  min-width: 1280px;
+}
+.layout-header {
+  @extend .text-lg;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  color: #fff;
+  background: #2F3542;
+
+  .logo {
+    display: inline-block;
+    width: 107px;
+    height: 35px;
+    margin: 0 27px 0 20px;
+  }
+
+  .product-name,
+  .user-name {
+    display: inline-block;
+  }
+
+  .user-info {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    padding: 0 20px;
+    height: 100%;
+    background: #202634;
+  }
+
+  .arrow-btn {
+    @include arrow-bottom(7px, 8px, #999);
+  }
+
+}
+
+.layout-body {
+  @extend .clearfix;
+  padding-top: 64px;
+  .layout-aside {
+    float: left;
+    position: relative;
+    width: 260px;
+    overflow: visible;
+    background: #2F3542;
+    transition: width .5s;
+    //多包一层，overflow的控制
+    .layout-aside-content {
+      overflow: auto;
+    }
+
+    .layout-aside-trigger {
+      position: absolute;
+      top: 400px;
+      right: -15px;
+      width: 15px;
+      height: 57px;
+      background-color: #2F3542
+    }
+  }
+
+  .layout-main {
+    margin-left: 260px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .layout-aside-hide {
+    width: 0;
+
+    .menu {
+      overflow: hidden;
+    }
+  }
+}
+
+.layout.layout-fold {
+  .layout-body {
+    .layout-aside {
+      > * {
+        overflow: hidden;
+      }
+      width: 0;
+    }
+    .layout-main {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+

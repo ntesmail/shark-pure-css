@@ -1,0 +1,50 @@
+//menu ul.menu
+
+.menu {
+  position: relative;
+}
+
+.menu-title {
+  @extend .text-lg;
+  color: $white;
+  line-height: 40px;
+  background-color: #232839;
+  text-align: center;
+}
+
+.menu-content {
+  padding: 14px 40px;
+  font-size: 0;
+
+  .menu-nav {
+    @extend .text-md;
+    display: inline-block;
+    color: $gray-500;
+    width: 50%;
+    margin-bottom: 15px;
+
+    .btn {
+      color: inherit;
+      line-height: inherit;
+      padding: 0;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        color: #1b9afe;
+      }
+    }
+
+    &.active {
+      .btn {
+        color: #1b9afe;
+        border-bottom: 1px solid #1b9afe;
+      }
+    }
+  }
+}
+
+.menu-content.menu-content-vertical {
+  .menu-nav {
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,47 @@
+@mixin arrow-bottom($border-x: 5px, $border-y: 5px, $color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: {
+    top: $border-y solid $color;
+    right: $border-x solid transparent;
+    left: $border-x solid transparent;
+    bottom: 0;
+  }
+}
+
+@mixin arrow-right($border-x: 5px, $border-y: 5px, $color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: {
+    top: $border-y solid transparent;
+    right: 0;
+    left: $border-x solid $color;
+    bottom: $border-y solid transparent;
+  }
+}
+
+@mixin arrow-top($border-x: 5px, $border-y: 5px, $color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: {
+    top: 0;
+    right: $border-x solid transparent;
+    left: $border-x solid transparent;
+    bottom: $border-y solid $color;
+  }
+}
+
+@mixin arrow-left($border-x: 5px, $border-y: 5px, $color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: {
+    top: $border-y solid transparent;
+    right: $border-x solid $color;
+    left: 0;
+    bottom: $border-y solid transparent;
+  }
+}

@@ -22,6 +22,7 @@ import { Component } from '@angular/core';
         <a routerLink="/cssprogress">progress</a>
         <a routerLink="/cssbreadcrumb">breadcrumb</a>
         <a routerLink="/csscalendar">calendar</a>
+        <a routerLink="/csslayout">layout</a>
         <div style="width:900px;margin:auto;padding-top:100px;">
             <router-outlet></router-outlet>
         </div>
