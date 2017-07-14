@@ -9,22 +9,51 @@
 }
 
 .toastr {
+  pointer-events: auto;
   position: relative;
   display: block;
   margin: 8px auto;
   overflow: hidden;
   animation-duration: .3s;
   animation-play-state: running;
-  text-align: center;
-  max-width: $toastr-max-width;
-  padding: $toastr-padding;
   border-radius: $border-radius;
-  background: $toastr-bg-color;
+  line-height: $toastr-line-height-base;
+  text-align: center;
+  padding: $toastr-padding;
+  max-width: $toastr-max-width;
   font-size: $toastr-font-size;
   color: $toastr-font-color;
-  line-height: $line-height-base;
-  @include border-radius($toastr-border-radius);
-  @include box-shadow($toastr-box-shadow);
+}
+
+.toastr {
+  a {
+    color: $toastr-font-color;
+    text-decoration: underline;
+  }
+  .toastr-close {
+    position: absolute;
+    cursor: pointer;
+    color: $toastr-close-font-color;
+    font-size: $toastr-close-font-size;
+    line-height: $toastr-line-height-base;
+    color: $toastr-close-font-color;
+    top: $toastr-close-top;
+    right: $toastr-close-right;
+    text-decoration: none;
+  }
+  .toastr-message {
+    line-height: 16px;
+    text-decoration: none;
+    &:before {
+      line-height: 1;
+      top: $toastr-icon-top;
+      margin-left: -20px;
+      font-size: $toastr-icon-font-size;
+    }
+  }
+  .toastr-message-link {
+    text-decoration: underline;
+  }
 }
 
 .toastr-message {
@@ -33,8 +62,9 @@
   &:before {
     position: absolute;
     line-height: 1;
+    top: $toastr-icon-top;
     margin-left: -20px;
-    font-size: $alert-icon-font-size-sm;
+    font-size: $toastr-icon-font-size;
   }
 }
 
@@ -81,6 +111,50 @@
     &:before {
       content: "●";
       color: $toastr-warning-color;
+    }
+  }
+}
+
+.toastr-success {
+  background: $toastr-success-bg-color;
+  border: 1px solid $toastr-success-border-color;
+  .toastr-message {
+    &:before {
+      content: "●";
+      color: $toastr-success-color;
+    }
+  }
+}
+
+.toastr-error {
+  background: $toastr-error-bg-color;
+  border: 1px solid $toastr-error-border-color;
+  .toastr-message {
+    &:before {
+      content: "●";
+      color: $toastr-error-color;
+    }
+  }
+}
+
+.toastr-warning {
+  background: $toastr-warning-bg-color;
+  border: 1px solid $toastr-warning-border-color;
+  .toastr-message {
+    &:before {
+      content: "●";
+      color: $toastr-warning-color;
+    }
+  }
+}
+
+.toastr-info {
+  background: $toastr-info-bg-color;
+  border: 1px solid $toastr-info-border-color;
+  .toastr-message {
+    &:before {
+      content: "●";
+      color: $toastr-info-color;
     }
   }
 }

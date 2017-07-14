@@ -109,20 +109,37 @@ $alert-desc-font-color:#666 !default;
 $alert-font-color:#333 !default;
 $alert-close-font-color:#999 !default;
 //toastr
+$toastr-close-font-size:14px !default;
+$toastr-close-font-color:#999 !default;
+$toastr-icon-top:10px !default;
+$toastr-icon-left:22px !default;
+$toastr-padding: 10px 16px 10px 36px !default;
+$toastr-close-top:10px !default;
+$toastr-close-right:20px !default;
 $toastr-max-width:400px !default;
 $toastr-padding: 8px 16px 8px 40px !default;
-$toastr-icon-top:10px !default;
-$toastr-icon-left:17px !default;
-$toastr-bg-color:#fff !default;
-$toastr-success-color:#3DBD7D !default;
-$toastr-error-color:#F04134 !default;
+$toastr-max-width:400px !default;
+$toastr-icon-font-size:16px !default;
+$toastr-success-color:#00A854 !default;
+$toastr-success-border-color:#A6DCB8 !default;
+$toastr-success-bg-color:#E8F6EE !default;
+$toastr-error-color:#E6412C !default;
+$toastr-error-border-color:#EBB3A8 !default;
+$toastr-error-bg-color:#FAECEA!default;
 $toastr-warning-color:#FFBF00 !default;
+$toastr-warning-border-color:#F9E58C !default;
+$toastr-warning-bg-color:#FDF8E4 !default;
+$toastr-info-color:#3187F6 !default;
+$toastr-info-border-color:#B4CFFF !default;
+$toastr-info-bg-color:#ECF3FF !default;
+$toastr-bg-color:#fff !default;
 $toastr-border-radius:4px !default;
 $toastr-box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.20);
-$toastr-font-size:12px !default;
+$toastr-font-size:14px !default;
 $toastr-icon-font-size:12px !default;
 $toastr-desc-font-color:rgba(0, 0, 0, 0.75) !default;
-$toastr-font-color:rgba(0, 0, 0, 0.65) !default;
+$toastr-font-color:#333 !default;
+$toastr-line-height-base:18px !default;
 //Links
 $link-color: $brand-primary !default;
 $link-decoration: none !default;
@@ -148,33 +165,27 @@ $btn-height: 30px !default;
 $btn-font-weight: 500 !default;
 $btn-border-radius: 2px !default;
 $btn-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
-
 $btn-color-disabled: $disabled-color !default;
 $btn-border-color-disabled: $disabled-border-color !default;
 $btn-background-color-disabled: $disabled-background-color !default;
 $btn-link-color-disabled: $gray-400 !default;
-
 $btn-color: $gray-700 !default;
 $btn-border-color: $gray-300 !default;
 $btn-background-color: $white !default;
 $btn-background-color-hover: $gray-100 !default;
 $btn-background-color-active: $gray-300 !default;
-
 $btn-primary-color: $white !default;
 $btn-primary-border-color: $blue !default;
 $btn-primary-background-color: $blue !default;
 $btn-primary-background-color-hover: #519afa !default;
 $btn-primary-background-color-active: #2577e0 !default;
-
 $btn-secondary-primary-color: $blue !default;
 $btn-secondary-primary-border-color: $blue !default;
 $btn-secondary-primary-background-color: $white !default;
 $btn-secondary-primary-background-color-hover: #D0E8FE !default;
 $btn-secondary-primary-background-color-active: $blue !default;
 $btn-secondary-color-active: $white !default;
-
 $btn-icon-padding-x: 16px !default;
-
 // Forms
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: .75rem !default;
@@ -453,7 +464,7 @@ $seleter-item-padding: 0 5px !default;
 $seleter-background-color-disabled: $gray-100 !default;
 $selecter-input-line-height: 20px !default;
 $seleter-selected-color: $gray-800 !default;
-$selecter-box-shadow:0 1px 4px 0 rgba(49,135,246,0.3) !default;
+$selecter-box-shadow:0 1px 4px 0 rgba(49, 135, 246, 0.3) !default;
 $selecter-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
 $seleter-noborder-selected-color: $blue !default;
 $seleter-noborder-padding: 4px 9px !default;
