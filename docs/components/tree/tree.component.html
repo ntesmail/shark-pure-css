@@ -1,57 +1,58 @@
 <div class="bd-example">
     <p>基础树形</p>
-    <ul class="shark-tree tree-open tree-checkable">
+    <ul class="tree" style="padding-left: 0px;">
         <li>
-            <label class="tree-group" style="padding-left: 0px;">
-                <a class="tree-icon tree-icon-down"></a>
-                <a class="tree-icon tree-icon-check-minus"></a>
-                <span class="tree-node-name">所有组件</span>
-            </label>
-            <ul class="tree-open">
+            <span class="tree-switcher tree-icon tree-icon-down"></span>
+            <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
+            <span class="tree-title tree-node-name">所有组件</span>
+            <ul class="tree-open" style="padding-left: 14px;">
                 <li>
-                    <label class="tree-group" style="padding-left: 28px;">
-                        <a class="tree-icon tree-icon-check"></a>
-                        <span class="tree-node-name">autocomplete组件</span>
-                    </label>
+                    <span class="tree-switcher tree-icon tree-icon-right"></span>
+                    <span class="tree-checkbox tree-icon tree-icon-check"></span>
+                    <span class="tree-title tree-node-name">autocomplete组件</span>
+                    <ul class="" style="padding-left: 28px;">
+                        <li><span class="tree-checkbox tree-icon tree-icon-check"></span>
+                            <span class="tree-title tree-node-name">autocomplete组件1</span>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <label class="tree-group" style="padding-left: 28px;">
-                        <a class="tree-icon tree-icon-check-empty"></a>
-                        <span class="tree-node-name">dropdown组件</span>
-                    </label>
+                    <span class="tree-checkbox tree-icon tree-icon-check"></span>
+                    <span class="tree-title tree-node-name">dropdown组件</span>
                 </li>
                 <li>
-                    <label class="tree-group" style="padding-left: 28px;">
-                        <a class="tree-icon tree-icon-check-empty"></a>
-                        <span class="tree-node-name tree-node-selected">fileupload组件</span>
-                    </label>
+                    <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                    <span class="tree-title tree-node-name tree-node-selected">fileupload组件</span>
                 </li>
             </ul>
-        </li>
-        <li>
-            <label class="tree-group" style="padding-left: 0px;">
-                <a class="tree-icon tree-icon-right"></a>
-                <a class="tree-icon tree-icon-check-minus"></a>
-                <span class="tree-node-name">所有组件</span>
-            </label>
         </li>
     </ul>
 </div>
 <div class="bd-example">
     <p>disabled</p>
-    <ul class="shark-tree tree-open tree-checkable disabled">
+    <ul class="tree disabled" style="padding-left: 0px;">
         <li>
-            <label class="tree-group" style="padding-left: 0px;">
-                <a class="tree-icon tree-icon-down"></a>
-                <a class="tree-icon tree-icon-check-empty"></a>
-                <span class="tree-node-name">所有组件</span>
-            </label>
-            <ul class=" tree-open">
+            <span class="tree-switcher tree-icon tree-icon-down"></span>
+            <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
+            <span class="tree-title tree-node-name">所有组件</span>
+            <ul class="tree-open" style="padding-left: 14px;">
                 <li>
-                    <label class="tree-group" style="padding-left: 28px;">
-                        <a class="tree-icon tree-icon-check-empty"></a>
-                        <span class="tree-node-name">autocomplete组件</span>
-                    </label>
+                    <span class="tree-switcher tree-icon tree-icon-right"></span>
+                    <span class="tree-checkbox tree-icon tree-icon-check"></span>
+                    <span class="tree-title tree-node-name">autocomplete组件</span>
+                    <ul class="" style="padding-left: 28px;">
+                        <li><span class="tree-checkbox tree-icon tree-icon-check"></span>
+                            <span class="tree-title tree-node-name">autocomplete组件1</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="tree-checkbox tree-icon tree-icon-check"></span>
+                    <span class="tree-title tree-node-name">dropdown组件</span>
+                </li>
+                <li>
+                    <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                    <span class="tree-title tree-node-name tree-node-selected">fileupload组件</span>
                 </li>
             </ul>
         </li>

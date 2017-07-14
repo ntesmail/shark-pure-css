@@ -16,6 +16,8 @@
     background-color: $background-color-active;
   }
 }
+
+// Button disabled
 @mixin button-variant-disabled($color, $border-color, $background-color) {
   &.disabled,
   &:disabled {
