@@ -1,4 +1,29 @@
 <!--提示弹框-->
+<h4>modal-alert</h4>
+<!-- <div class="modal-backdrop fade in"></div> -->
+<!-- <div class="modal modal-sm fade in" style="display: block;"> -->
+<div class="modal-alert ">
+    <div class="modal-content" style="width:500px; margin-bottom:40px;">
+        <!-- <shark-modal-alert> -->
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+            <div class="modal-confirm-body">
+                <span class="tip-message">不能这么干！</span>
+                <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
+            </div>
+            <div class="modal-confirm-btns">
+                <button class="btn btn-primary" type="button">确定</button>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+        <!-- </shark-modal-alert> -->
+    </div>
+</div>
+<!-- </div> -->
+
+<!--确定弹框-->
 <h4>modal-confirm</h4>
 <!-- <div class="modal-backdrop fade in"></div> -->
 <!-- <div class="modal modal-sm fade in" style="display: block;"> -->
@@ -9,7 +34,6 @@
         </div>
         <div class="modal-body">
             <div class="modal-confirm-body">
-                <i class="modal-tip-icon">哈</i>
                 <span class="tip-message">不能这么干！</span>
                 <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
             </div>
@@ -34,10 +58,13 @@
     <div class="modal-content" style="width:500px;margin-bottom:40px;">
         <!-- <shark-modal-dialog> -->
         <div class="modal-header">
-            <button class="close">×</button>
-            <div class="modal-title">
+            <a class="modal-close" href=""></a>
+            <span class="modal-title">
                 曾内人
-            </div>
+            </span>
+            <span class="modal-title-desc">
+                曾内人
+            </span>
         </div>
         <div class="modal-body">
             <div>
@@ -65,7 +92,6 @@
     <div class="modal-content" style="width:500px;margin-bottom:40px;">
         <!-- <shark-modal-datail> -->
         <div class="modal-header">
-            <button class="close">×</button>
             <div class="modal-title">
                 曾内人
             </div>

@@ -1,33 +1,29 @@
 // Button variants
 
-@mixin button-variant($color, $background-color, $border-color) {
+@mixin button-variant($color, $border-color, $background-color, $background-color-hover, $background-color-active) {
   & {
     color: $color;
-    background-color: $background-color;
     border-color: $border-color;
+    background-color: $background-color;
   }
-}
-@mixin button-variant-hover($color, $background-color, $border-color) {
+
   &:hover {
-    color: $color;
-    background-color: $background-color;
-    border-color: $border-color;
+    background-color: $background-color-hover;
   }
-}
-@mixin button-variant-active($color, $background-color, $border-color) {
+
   &.active,
   &:active {
-    color: $color;
-    background-color: $background-color;
-    border-color: $border-color;
+    background-color: $background-color-active;
   }
 }
-@mixin button-variant-disabled($color, $background-color, $border-color) {
+
+// Button disabled
+@mixin button-variant-disabled($color, $border-color, $background-color) {
   &.disabled,
   &:disabled {
     color: $color;
-    background-color: $background-color;
     border-color: $border-color;
+    background-color: $background-color;
   }
 }
 

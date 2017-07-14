@@ -8,11 +8,11 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: $input-border-width solid transparent;
+  border: 1px solid transparent;
   background-image: none;
   @include button-size($btn-height, $btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
-  @include box-shadow(none);
+  box-shadow: none;
 
   // Share hover and focus styles
   @include hover-focus {
@@ -26,50 +26,25 @@
   &.disabled,
   &:disabled {
     cursor: not-allowed;
+    @include button-variant-disabled($btn-color-disabled, $btn-border-color-disabled, $btn-background-color-disabled);
   }
 }
 
 // Primary
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-background-color, $btn-primary-background-color);
-  &:hover {
-    @include button-variant($btn-primary-color, $btn-primary-background-color-hover, $btn-primary-background-color-hover);
-  }
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    @include button-variant($btn-primary-color, $btn-primary-background-color-disabled, $btn-primary-background-color-disabled);
-  }
-
-  &:active,
-  &.active {
-    @include button-variant($btn-primary-color, $btn-primary-background-color-active, $btn-primary-background-color-active);
-  }
+    @include button-variant($btn-primary-color, $btn-primary-border-color, $btn-primary-background-color, $btn-primary-background-color-hover, $btn-primary-background-color-active);
 }
 
 // secondary
 .btn-secondary {
-  @include button-variant($btn-color, $btn-background-color, $btn-border-color);
-  &:hover {
-    @include button-variant($btn-color-hover, $btn-background-color-hover, $btn-border-color-hover);
-  }
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    @include button-variant($btn-color-disabled, $btn-background-color-disabled, $btn-border-color-disabled);
-  }
-
-  &:active,
-  &.active {
-    @include button-variant($btn-color-active, $btn-background-color-active, $btn-border-color-active);
-    // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-  }
-}
-
-// border style is dashed
-.btn-dashed {
-  @extend .btn-secondary;
-  border-style: dashed;
+    @include button-variant($btn-color, $btn-border-color, $btn-background-color, $btn-background-color-hover, $btn-background-color-active);
+    &.btn-primary {
+      @include button-variant($btn-secondary-primary-color, $btn-secondary-primary-border-color, $btn-secondary-primary-background-color, $btn-secondary-primary-background-color-hover, $btn-secondary-primary-background-color-active);
+      &.active,
+      &:active {
+       color: $btn-secondary-color-active;
+      }
+    }
 }
 
 // Button with icon
@@ -93,6 +68,15 @@ a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
 }
+a.btn {
+  &.btn-primary,
+  &.btn-primary:hover,
+  &.btn-primary:active,
+  &.btn-primary.active
+  {
+    color: $btn-primary-color;
+  }
+}
 
 // Link buttons
 
@@ -115,7 +99,7 @@ fieldset[disabled] a.btn {
   &:focus,
   &:active {
     border-color: transparent;
-    @include box-shadow(none);
+
   }
   &:focus,
   &.active,
@@ -131,7 +115,7 @@ fieldset[disabled] a.btn {
   }
   &.disabled,
   &:disabled {
-    color: $btn-link-disabled-color;
+    color: $btn-link-color-disabled;
 
     @include hover-focus {
       text-decoration: none;

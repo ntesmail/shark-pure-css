@@ -8,7 +8,7 @@
         </div>
         <span class="progress-text">30%</span>
     </div>
-    <div class="progress progress-circle">
+    <div class="progress progress-line">
         <div class="progress-outter">
             <div class="progress-inner">
                 <div class="progress-bg" style="width: 60%; height: 10px;"></div>
@@ -18,26 +18,40 @@
 </div>
 <div class="bd-example">
     <p>加载中</p>
-    <div class="progress progress-circle" style="width: 100px; height:100px;">
-        <svg class="progress-circle-svg" view-box="0 0 100 100">
-            <circle cx="50" cy="50" r="25" stroke-width="6" stroke="#f7f7f7" fill="none"></circle>
-            <circle cx="50" cy="50" r="25" stroke-width="6" stroke="#108ee9" stroke-dasharray="78 157" fill="none"></circle>
-        </svg>
+    <div>
+        <div class="progress progress-circle" style="width: 104px; height:104px;">
+            <svg width="100%" height="100%" view-box="0 0 100 100">
+                <circle cx="52" cy="52" r="50" stroke-width="2" stroke="#f7f7f7" fill="none"></circle>
+                <circle cx="52" cy="52" r="50" stroke-width="2" stroke="#108ee9" stroke-dasharray="157 314" fill="none"></circle>
+            </svg>
+        </div>
     </div>
-    <div class="progress progress-circle progress-show-info" style="width:100px; height:100px;">
-        <svg class="progress-circle-svg" view-box="0 0 100 100">
-            <circle cx="50" cy="50" r="25" stroke-width="6" stroke="#f7f7f7" fill="none"></circle>
-            <circle cx="50" cy="50" r="25" stroke-width="6" stroke="#108ee9" stroke-dasharray="95 157" fill="none"></circle>
-        </svg>
-        <span class="progress-text">60%</span>
+    <div>
+        <div class="progress progress-circle progress-show-info" style="width:104px; height:104px;">
+            <svg width="100%" height="100%" view-box="0 0 100 100">
+                <circle cx="52" cy="52" r="50" stroke-width="2" stroke="#f7f7f7" fill="none"></circle>
+                <circle cx="52" cy="52" r="50" stroke-width="2" stroke="#108ee9" stroke-dasharray="190 314" fill="none"></circle>
+            </svg>
+            <span class="progress-text">60%</span>
+        </div>
     </div>
-</div>
-<div class="bd-example">
-    <p>完整</p>
+    <div>
+        <div class="progress progress-circle progress-show-loading">
+            <svg width="100%" height="100%" width="40" height="40" view-box="0 0 40 40">
+                <circle cx="20" cy="20" r="18" stroke-width="2" stroke="#f7f7f7" fill="none"></circle>
+                <circle cx="20" cy="20" r="18" stroke-width="2" stroke="#108ee9" stroke-dasharray="37 113" fill="none"></circle>
+            </svg>
+            <div class="progress-loading-text">加载中...</div>
+            <button class="btn btn-link progress-cancel-loading" type="button">取消加载 </button>
+        </div>
+    </div>
 
-</div>
-<div class="bd-example">
-    <p>迷你</p>
+    <div class="bd-example">
+        <p>完整</p>
+
+    </div>
+    <div class="bd-example">
+        <p>迷你</p>
 
 
-</div>
+    </div>
