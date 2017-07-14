@@ -21,9 +21,9 @@ $blue: #3187f6 !default;
 $teal: #7bdff1 !default;
 $pink: #d67ce9 !default;
 $purple: #ad6de5 !default;
-$disable-color: $gray-600 !default;
-$disable-border-color: $gray-300 !default;
-$disable-background-color: $gray-100 !default;
+$disabled-color: $gray-600 !default;
+$disabled-border-color: $gray-300 !default;
+$disabled-background-color: $gray-100 !default;
 $theme-colors: ( primary: $blue, secondary: $gray-600, success: $green, warning: $yellow, danger: $red) !default;
 // Create grayscale
 $gray-dark: #292b2c !default;
@@ -140,41 +140,41 @@ $table-border-color: $gray-lighter !default;
 $table-head-bg: $gray-lighter !default;
 $table-head-color: $gray !default;
 // Buttons
-$btn-padding-y: 5px !default;
-$btn-padding-x: 20px !default;
-$btn-font-size: 12px !default;
+$btn-padding-y: 4px !default;
+$btn-padding-x: 16px !default;
+$btn-font-size: 14px !default;
 $btn-line-height: 1.5 !default;
 $btn-height: 30px !default;
 $btn-font-weight: 500 !default;
-$btn-box-shadow: inset 0 1px 0 rgba($white, .15),
-0 1px 1px rgba($black, .075) !default;
-$btn-focus-box-shadow: 0 0 0 3px rgba(theme-color("primary"), .25) !default;
-$btn-active-box-shadow: inset 0 3px 5px rgba($black, .125) !default;
-$btn-disabled-background-color: #e7e7e7 !default;
-$btn-disabled-border-color: #e7e7e7 !default;
-$btn-link-disabled-color: #e7e7e7 !default;
-$btn-block-spacing-y: .5rem !default;
-$btn-color: rgba(0, 0, 0, 0.65) !default;
-$btn-background-color: #fff !default;
-$btn-border-color: #d9d9d9 !default;
-$btn-color-hover: #108ee9 !default;
-$btn-background-color-hover: #fff !default;
-$btn-border-color-hover: #108ee9 !default;
-$btn-color-active: #0e77ca !default;
-$btn-background-color-active: #fff !default;
-$btn-border-color-active: #0e77ca !default;
-$btn-color-disabled: rgba(0, 0, 0, .25) !default;
-$btn-background-color-disabled: #fff !default;
-$btn-border-color-disabled: #d9d9d9 !default;
-$btn-primary-color: #fff !default;
-$btn-primary-background-color: #1b9afe !default;
-$btn-primary-background-color-hover: #4dadf9 !default;
-$btn-primary-background-color-active: #1076C7 !default;
-$btn-primary-background-color-disabled: $disable-background-color !default;
-$btn-icon-padding-x: 16px !default;
-// Allows for customizing button radius independently from global border radius
-$btn-border-radius: $border-radius !default;
+$btn-border-radius: 2px !default;
 $btn-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
+
+$btn-color-disabled: $disabled-color !default;
+$btn-border-color-disabled: $disabled-border-color !default;
+$btn-background-color-disabled: $disabled-background-color !default;
+$btn-link-color-disabled: $gray-400 !default;
+
+$btn-color: $gray-700 !default;
+$btn-border-color: $gray-300 !default;
+$btn-background-color: $white !default;
+$btn-background-color-hover: $gray-100 !default;
+$btn-background-color-active: $gray-300 !default;
+
+$btn-primary-color: $white !default;
+$btn-primary-border-color: $blue !default;
+$btn-primary-background-color: $blue !default;
+$btn-primary-background-color-hover: #519afa !default;
+$btn-primary-background-color-active: #2577e0 !default;
+
+$btn-secondary-primary-color: $blue !default;
+$btn-secondary-primary-border-color: $blue !default;
+$btn-secondary-primary-background-color: $white !default;
+$btn-secondary-primary-background-color-hover: #D0E8FE !default;
+$btn-secondary-primary-background-color-active: $blue !default;
+$btn-secondary-color-active: $white !default;
+
+$btn-icon-padding-x: 16px !default;
+
 // Forms
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: .75rem !default;
@@ -194,7 +194,7 @@ $input-box-shadow: inset 0 1px 1px rgba($black, .075) !default;
 $input-focus-bg: $input-bg !default;
 $input-focus-border-color: lighten($brand-primary, 25%) !default;
 $input-focus-box-shadow: $input-box-shadow,
-$btn-focus-box-shadow !default;
+0 0 0 3px rgba(theme-color("primary"), .25) !default;
 $input-focus-color: $input-color !default;
 $input-border-radius: $border-radius !default;
 $input-border-radius-lg: $border-radius-lg !default;
