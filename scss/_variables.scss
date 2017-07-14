@@ -2,33 +2,35 @@
 $sizels: (ls, md, lg) !default;
 $sizemap: (ls: 5px, md: 10px, lg: 15px) !default;
 //color
+//色板中的颜色梯度是按照主题色掺白20% 40% 60% 90%
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: #f4f4f4 !default;
+$gray-200: #ebf3ff !default;
+$gray-300: #d9d9d9 !default;
+$gray-400: #ccc !default;
+$gray-500: #7f92a5 !default;
+$gray-600: #999 !default;
+$gray-700: #666 !default;
+$gray-800: #333 !default;
 $black: #000 !default;
-$red: #db7671 !default;
-$orange: #f4aa6b !default;
-$yellow: #f4db6b !default;
-$green: #beed8a !default;
-$blue: #7ebbe6 !default;
-$teal: #5093c3 !default;
+$red: #e6412c !default;
+$orange: #fce593 !default;
+$yellow: #ffbf00 !default;
+$green: #00A854 !default;
+$blue: #3187f6 !default;
+$teal: #7bdff1 !default;
 $pink: #d67ce9 !default;
 $purple: #ad6de5 !default;
-$disable: #e6e6e6 !default;
+$disable-color: $gray-600 !default;
+$disable-border-color: $gray-300 !default;
+$disable-background-color: $gray-100 !default;
+$theme-colors: ( primary: $blue, secondary: $gray-600, success: $green, warning: $yellow, danger: $red) !default;
 // Create grayscale
 $gray-dark: #292b2c !default;
 $gray: #464a4c !default;
 $gray-light: #636c72 !default;
 $gray-lighter: #eceeef !default;
 $gray-lightest: #f7f7f9 !default;
-$theme-colors: ( primary: #4CA6E6, secondary: #FFFFFF, success: #5EA512, warning: #BD1911, danger: #EF760E) !default;
 // Reassign color vars to semantic color scheme
 $brand-primary: $blue !default;
 $brand-success: $green !default;
@@ -167,7 +169,7 @@ $btn-primary-color: #fff !default;
 $btn-primary-background-color: #1b9afe !default;
 $btn-primary-background-color-hover: #4dadf9 !default;
 $btn-primary-background-color-active: #1076C7 !default;
-$btn-primary-background-color-disabled: $disable !default;
+$btn-primary-background-color-disabled: $disable-background-color !default;
 $btn-icon-padding-x: 16px !default;
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: $border-radius !default;
