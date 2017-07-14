@@ -370,10 +370,10 @@ $modal-transition: transform .3s ease-out !default;
 // tree
 $tree-font-size: 12px !default; //字体大小
 $tree-icon-size: 14px !default; //图标宽度
-$tree-color: rgba(0,0,0,.65) !default;
+$tree-color: rgba(0, 0, 0, .65) !default;
 $tree-background-color-hover: #ecf6fd !default;
 $tree-selected-bg: #d2eafb !default; //选中节点后的背景色
-$tree-disable-color: rgba(0,0,0,.25) !default; //禁用后的颜色
+$tree-disable-color: rgba(0, 0, 0, .25) !default; //禁用后的颜色
 // Close
 $close-font-size: $font-size-base * 1.5 !default;
 $close-font-weight: $font-weight-bold !default;
@@ -450,6 +450,7 @@ $seleter-selected-color: #979797 !default;
 $selecter-transition: all .3s cubic-bezier(.645, .045, .355, 1);
 //progress
 $progress-font-size-base: 12px;
+$progress-loading-text-font-size: 18px;
 $progress-line-bg: #f7f7f7;
 $progess-primary-color: #108EE9;
 //breadcrumb
