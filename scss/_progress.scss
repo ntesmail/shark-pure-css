@@ -1,8 +1,9 @@
 .progress {
-  display: inline-block;
-  font-size: $progress-font-size-base;
+  display: inline-block; // font-size: $progress-font-size;
+  font-size: 0;
 }
 
+//横线进度条
 .progress-line {
   width: 100%;
   .progress-outter {
@@ -18,7 +19,7 @@
       vertical-align: middle;
       .progress-bg {
         border-radius: 100px;
-        background: $progess-primary-color;
+        background: $progress-primary-color;
       }
     }
   }
@@ -34,33 +35,139 @@
     vertical-align: middle;
     display: inline-block;
   }
+  &.progress-line-aniamte {
+    .progress-bg {
+      transition: width .1s;
+    }
+  }
 }
 
+//圈圈进度条 
 .progress-circle {
-  margin-right: 8px;
-  margin-bottom: 8px;
   position: relative;
   text-align: center;
+  font-size: 0;
+  .progress-circle-layer {
+    stroke: $progress-line-bg;
+  }
+  .progress-circle-upper {
+    stroke: $progress-primary-color;
+  }
   .progress-text {
     position: absolute;
     width: 100%;
     text-align: center;
     line-height: 1;
+    font-size: $progress-font-size;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     margin: 0;
+    display: none;
+    visibility: hidden;
   }
-  &.progress-show-loading {
+  .btn.progress-cancel-loading {
+    display: none;
+    visibility: hidden;
+  }
+  .progress-loading-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: $progress-loading-text-font-size;
+    color: $progress-loading-text-color;
+  }
+  .btn-link.progress-cancel-loading {
     font-size: 0;
-    .progress-loading-text {
-      margin-top: 15px;
-      text-align: center;
-      font-size: $progress-loading-text-font-size;
+    margin-top: 9px;
+    height: 20px;
+    color: $progress-primary-color;
+  }
+  &.progress-show-info {
+    width: 40px;
+    height: 40px;
+    .progress-text {
+      display: block;
+      visibility: visible;
     }
+  }
+  &.progress-show-cancel {
+    font-size: 0;
+    .progress-loading-text,
     .progress-cancel-loading {
-      margin-top: 9px;
-      height: 20px;
+      display: block;
+      visibility: visible;
     }
+    .btn-link.progress-cancel-loading {
+      font-size: $progress-font-size;
+    }
+  }
+}
+
+// 容器加载
+.progress-wrap {
+  position: relative;
+  .progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } // 完成状态
+  &.progress-status-finish {
+    .progress-text {
+      color: $progress-status-finish-color;
+    }
+    .progress,
+    .progress-text {
+      animation: .3s ease-out progress-fade-out forwards;
+    }
+    .progress-circle-svg {
+      animation: .3s ease-out progress-svg-fade-out forwards;
+    }
+  } // 错误状态
+  &.progress-status-error {
+    .progress-text {
+      color: $progress-status-error-color;
+    }
+    .progress-circle-upper {
+      stroke: $progress-status-error-color;
+    }
+  }
+}
+
+@keyframes progress-svg-fade-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+  }
+}
+
+@keyframes progress-svg-fade-out {
+  // 99% {
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   display: none !important;
+  // }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important; // width: 0;
+    height: 0;
+    width: 0;
+  }
+}
+
+// 全屏加载
+.progress-wrap.progress-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
