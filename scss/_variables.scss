@@ -453,7 +453,10 @@ $seleter-item-padding: 0 5px !default;
 $seleter-background-color-disabled: $gray-100 !default;
 $selecter-input-line-height: 20px !default;
 $seleter-selected-color: $gray-800 !default;
-$selecter-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+$selecter-box-shadow:0 1px 4px 0 rgba(49,135,246,0.3) !default;
+$selecter-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
+$seleter-noborder-selected-color: $blue !default;
+$seleter-noborder-padding: 4px 9px !default;
 //progress
 $progress-font-size-base: 12px;
 $progress-loading-text-font-size: 18px;

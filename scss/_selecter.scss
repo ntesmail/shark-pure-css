@@ -1,7 +1,5 @@
 .selecter {
-  display: inline-block;
   position: relative;
-  width: 100%;
   height: $selecter-height;
   color: $seleter-color;
   background-color: $seleter-background-color;
@@ -13,6 +11,11 @@
   transition: $selecter-transition;
   &:hover {
     border-color: $seleter-border-color-hover;
+  }
+  
+  &.active {
+    border-color: $seleter-border-color-hover;
+    @include box-shadow($selecter-box-shadow);
   }
 
   &.disabled {
@@ -49,15 +52,10 @@
 
 }
 
-// 单选下拉
-.selecter-single {
-  padding: $selecter-padding;
-
-  &:after {
+%selecter-caret {
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: 10px;
     margin-top: -2px;
     width: 0;
     height: 0;
@@ -65,6 +63,35 @@
     border: $seleter-caret-border-width solid transparent;
     border-top-color: $seleter-color;
     content: " ";
+}
+
+//没边框
+.selecter-noborder,
+.selecter-noborder.active,
+ .selecter-noborder:hover {
+  border-color: transparent;
+  @include box-shadow(none);
+}
+.selecter-noborder{
+  padding: $seleter-noborder-padding;
+  &:after {
+    @extend %selecter-caret;
+    margin-left: 4px;
+  }
+  &.active {    
+    .selected{
+      color: $seleter-noborder-selected-color;
+    }
+  }
+}
+
+// 单选下拉
+.selecter-single {
+  padding: $selecter-padding;
+
+  &:after {
+    @extend %selecter-caret;
+    right: 10px;
   }
 }
 
