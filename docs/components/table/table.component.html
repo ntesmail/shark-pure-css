@@ -1,19 +1,68 @@
-<h4>
-    normal table： 默认没有border，只有tbody>td 有bottom-border
-</h4>
-<h4>
-    borderd table： 有border
-</h4>
-<h4>
-    带选择框的table
-</h4>
-
-
+<h4>normal table</h4>
+<hr>
 <div>
     <table class="table">
         <thead>
             <tr>
-                <th>
+                <th>col-1col-1</th>
+                <th>col-1col-1</th>
+                <th>col-1</th>
+                <th>col-1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col-1col-1</td>
+                <td>col-1col-1</td>
+                <td>col-1</td>
+                <td>col-1</td>
+            </tr>
+            <tr>
+                <td>col-1col-1</td>
+                <td>col-1col-1</td>
+                <td>col-1</td>
+                <td>col-1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>table noborder</h4>
+<hr>
+<div>
+    <table class="table table-noborder">
+        <thead>
+            <tr>
+                <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
+                <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
+                <th>col-1</th>
+                <th>col-1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col-1col-1col-1col-1col-1col-1col-1col-1</td>
+                <td>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</td>
+                <td>col-1</td>
+                <td>col-1</td>
+            </tr>
+            <tr>
+                <td>col-1col-1col-1col-1col-1col-1col-1col-1</td>
+                <td>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</td>
+                <td>col-1</td>
+                <td>col-1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>table with selection</h4>
+<hr>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="table-selection">
                     <label class="checkbox-wrapper">
                         <span class="checkbox">
                             <input type="checkbox" class="checkbox-input"/>
@@ -22,14 +71,14 @@
                     </label>
                 </th>
                 <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
-                <th>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</th>
+                <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
                 <th>col-1</th>
                 <th>col-1</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>
+                <td class="table-selection">
                     <label class="checkbox-wrapper checked">
                         <span class="checkbox">
                             <input type="checkbox" class="checkbox-input"/>
@@ -43,7 +92,7 @@
                 <td>col-1</td>
             </tr>
             <tr>
-                <td>
+                <td class="table-selection">
                     <label class="checkbox-wrapper disabled">
                         <span class="checkbox">
                             <input type="checkbox" class="checkbox-input"/>
@@ -59,69 +108,63 @@
         </tbody>
     </table>
 </div>
-<div>
 
+<h4>table with operation</h4>
+<hr>
+<div>
     <table class="table">
         <thead>
             <tr>
+                <th class="table-selection">
+                    <label class="checkbox-wrapper">
+                        <span class="checkbox">
+                            <input type="checkbox" class="checkbox-input"/>
+                            <span class="checkbox-inner"></span>
+                        </span>
+                    </label>
+                </th>
                 <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
-                <th>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</th>
+                <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
                 <th>col-1</th>
-                <th>col-1</th>
+                <th>操作</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td class="table-selection">
+                    <label class="checkbox-wrapper checked">
+                        <span class="checkbox">
+                            <input type="checkbox" class="checkbox-input"/>
+                            <span class="checkbox-inner"></span>
+                        </span>
+                    </label>
+                </td>
                 <td>col-1col-1col-1col-1col-1col-1col-1col-1</td>
                 <td>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</td>
                 <td>col-1</td>
-                <td>col-1</td>
+                <td class="table-operation">
+                    <button type="button" class="btn btn-link">Link</button>
+                    <button class="btn btn-primary" type="submit">Button</button>
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </td>
             </tr>
             <tr>
+                <td class="table-selection">
+                    <label class="checkbox-wrapper disabled">
+                        <span class="checkbox">
+                            <input type="checkbox" class="checkbox-input"/>
+                            <span class="checkbox-inner"></span>
+                        </span>
+                    </label>
+                </td>
                 <td>col-1col-1col-1col-1col-1col-1col-1col-1</td>
                 <td>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</td>
                 <td>col-1</td>
-                <td>col-1</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
-                <th>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</th>
-                <th>col-1</th>
-                <th>col-1</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>col-1col-1col-1col-1col-1col-1col-1col-1</td>
-                <td>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</td>
-                <td>col-1</td>
-                <td>col-1</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>col-1col-1col-1col-1col-1col-1col-1col-1</th>
-                <th>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</th>
-                <th>col-1</th>
-                <th>col-1</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>col-1col-1col-1col-1col-1col-1col-1col-1</td>
-                <td>col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1col-1</td>
-                <td>col-1</td>
-                <td>col-1</td>
+                <td class="table-operation table-operation-block">
+                    <button type="button" class="btn btn-link">Link</button>
+                    <button class="btn btn-primary" type="submit">Button</button>
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </td>
             </tr>
         </tbody>
     </table>
