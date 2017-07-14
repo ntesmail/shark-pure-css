@@ -18,6 +18,7 @@
       line-height: 24px;
     }
     ul {
+      padding-left: 14px;
       display: none;
       &.tree-open {
         display: block;
@@ -61,14 +62,15 @@
     margin: 0 5px;
   }
 
-  &.disabled {
-    .tree-icon,
-    .tree-node-name {
-      color: $tree-disable-color;
-      cursor: not-allowed;
-      &:hover {
-        background-color: #fff;
-      }
+  .tree-icon.disabled,
+  .tree-node-name.disabled {
+    color: $tree-disable-color;
+    cursor: not-allowed;
+    &:hover {
+      background-color: #fff;
+    }
+    &.tree-node-selected {
+      background-color: $tree-selected-bg;
     }
   }
 
@@ -95,5 +97,8 @@
   .tree-node-selected {
     // color: $tree-selected-color;
     background-color: $tree-selected-bg;
+    &:hover {
+      background-color: $tree-selected-bg;
+    }
   }
 }
