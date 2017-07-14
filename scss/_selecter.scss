@@ -1,7 +1,7 @@
 .selecter {
   display: inline-block;
   position: relative;
-  width: $selecter-width;
+  width: 100%;
   height: $selecter-height;
   color: $seleter-color;
   background-color: $seleter-background-color;
@@ -10,12 +10,9 @@
   font-size: $select-font-size;
   vertical-align: middle;
   cursor: pointer;
+  transition: $selecter-transition;
   &:hover {
     border-color: $seleter-border-color-hover;
-  }
-
-  .value {
-    display: inline-block;
   }
 
   &.disabled {
@@ -73,9 +70,7 @@
 
 // 多选下拉
 .selecter-multiple {
-  display: block;
   padding: $selecter-multiple-padding;
-  width: $selecter-multiple-width;
   min-height: $selecter-multiple-min-height;
   height: auto;
   max-height: $selecter-multiple-max-height;
