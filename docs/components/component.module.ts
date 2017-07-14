@@ -20,6 +20,7 @@ import { CssFormModule } from './form/form.module';
 import { CssTreeModule } from './tree/tree.module';
 import { CssProgressModule } from './progress/progress.module';
 import { CssBreadcrumbModule } from './breadcrumb/breadcrumb.module';
+import { CsscalendarModule } from './calendar/calendar.module';
 @NgModule({
     imports: [
         CssButtonModule,
@@ -39,7 +40,8 @@ import { CssBreadcrumbModule } from './breadcrumb/breadcrumb.module';
         CssFormModule,
         CssTreeModule,
         CssProgressModule,
-        CssBreadcrumbModule
+        CssBreadcrumbModule,
+        CsscalendarModule
     ]
 })
 export class ComponentModule { }
