@@ -1,5 +1,30 @@
+.alert-sm-container {
+  font-size: 12px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 16px;
+  left: 0;
+  pointer-events: none;
+}
+
+.alert-lg-container {
+  font-size: 12px;
+  position: fixed;
+  z-index: 1010;
+  height: 100%;
+  top: 0px;
+  right: 0;
+  pointer-events: none;
+}
+
 .alert {
   position: relative;
+  display: block;
+  margin: 8px auto;
+  overflow: hidden;
+  animation-duration: .3s;
+  animation-play-state: running;
   width: $alert-width;
   border-radius: $border-radius;
   font-size: $alert-font-size-base;
@@ -112,5 +137,51 @@
       content: "●";
       color: $alert-info-color;
     }
+  }
+}
+
+@keyframes alertTopMoveIn {
+  0% {
+    transform: translate(0, -16px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes alertTopMoveOut {
+  0% {
+    opacity: 1;
+    max-height: 150px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+@keyframes alertRightMoveIn {
+  0% {
+    transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    transform: translate(0, 0);
+  }
+  100% {
+    transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    transform: translate(-528px, 0);
+  }
+}
+
+@keyframes alertRightMoveOut {
+  0% {
+    opacity: 1;
+    max-height: 300px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
   }
 }
