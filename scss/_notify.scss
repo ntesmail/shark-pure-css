@@ -37,7 +37,12 @@
     top: $notify-close-top;
     right: $notify-close-right;
     &:after {
-      content: "X";
+      font-family: "iconfont" !important;
+      content: "\ee64";
+      font-size: 8px;
+      position: absolute;
+      top: -5px;
+      right: 0;
       color: $notify-close-font-color;
     }
   }
@@ -68,7 +73,7 @@
   .notify-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee62";
       color: $notify-success-color;
     }
   }
@@ -80,7 +85,7 @@
   .notify-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee60";
       color: $notify-error-color;
     }
   }
@@ -92,7 +97,7 @@
   .notify-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee5e";
       color: $notify-warning-color;
     }
   }
@@ -104,7 +109,7 @@
   .notify-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee5a";
       color: $notify-info-color;
     }
   }

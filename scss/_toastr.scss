@@ -50,10 +50,16 @@
     margin-left: $toastr-icon-margin-left;
     font-size: $toastr-icon-font-size;
   }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .toastr-message-link {
   text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @keyframes ToastrMoveIn {
@@ -82,7 +88,7 @@
   .toastr-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee61";
       color: $toastr-success-color;
     }
   }
@@ -94,7 +100,7 @@
   .toastr-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee5f";
       color: $toastr-error-color;
     }
   }
@@ -106,7 +112,7 @@
   .toastr-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee5d";
       color: $toastr-warning-color;
     }
   }
@@ -118,7 +124,7 @@
   .toastr-message {
     &:before {
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee59";
       color: $toastr-info-color;
     }
   }

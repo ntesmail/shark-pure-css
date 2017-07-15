@@ -164,7 +164,7 @@
       &:before {
         position: absolute;
         font-family: "iconfont" !important;
-        content: "\e789";
+        content: "\ee5d";
         color: $toastr-warning-color;
         top: 18px;
         margin-left: -20px;
@@ -182,7 +182,7 @@
     }
   }
 
-  .shark-tooltip {
+  .popover-tooltip {
     border: 0px;
     background: $tooltip-bg-color;
     @include border-radius($tooltip-border-radius);

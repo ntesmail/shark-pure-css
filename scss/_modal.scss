@@ -93,12 +93,15 @@
       color: #3187F6;
     }
     &:before {
-      content: "X";
-      font-size: 10px;
-      height: 10px;
+      font-family: "iconfont" !important;
+      content: "\ee64";
+      position: absolute;
+      top: -4px;
+      right: -2px;
+      font-size: 14px;
     }
-    top: 18px;
-    right: 18px;
+    top: 16px;
+    right: 16px;
   }
 }
 
@@ -193,7 +196,7 @@
     &:before {
       position: absolute;
       font-family: "iconfont" !important;
-      content: "\e789";
+      content: "\ee5d";
       top: $modal-tip-icon-top;
       left: $modal-tip-icon-left;
       color: $modal-tip-icon-color;
