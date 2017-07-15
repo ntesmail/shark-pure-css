@@ -47,12 +47,9 @@ import { CssTagModule } from './tag/tag.module';
                 CsscalendarModule,
                 CssLayoutModule,
                 CssNotifyModule,
-<<<<<<< 8e9f65b9562390eb9a154bae8cfaace5cdf71dbd
                 CssUploadModule,
-                CssIconfontModule
-=======
-        CssTagModule,
->>>>>>> misc:新增标签样式
+                CssIconfontModule,
+                CssTagModule
         ]
 })
 export class ComponentModule { }
