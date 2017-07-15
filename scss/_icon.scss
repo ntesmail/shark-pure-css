@@ -4,12 +4,5 @@
   display: inline-block;
   font-style: normal;
   vertical-align: baseline;
-  text-align: center;
   line-height: 1;
-  //TODO
-  &:before {
-    //font-family: '';
-    content: 'T';
-    display: block;
-  }
 }
