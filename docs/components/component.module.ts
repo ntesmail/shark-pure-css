@@ -7,7 +7,6 @@ import { CssPaginationModule } from './pagination/pagination.module';
 import { CssSelectModule } from './select/select.module';
 import { CssImagesModule } from './images/images.module';
 import { CssToastrModule } from './toastr/toastr.module';
-import { CssAlertModule } from './alert/alert.module';
 import { CssModalModule } from './modal/modal.module';
 import { CssInputModule } from './input/input.module';
 import { CssTipModule } from './tip/tip.module';
@@ -30,7 +29,6 @@ import { CssNotifyModule } from './notify/notify.module';
         CssSelectModule,
         CssImagesModule,
         CssToastrModule,
-        CssAlertModule,
         CssModalModule,
         CssInputModule,
         CssTipModule,

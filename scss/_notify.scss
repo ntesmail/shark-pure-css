@@ -103,7 +103,7 @@
   }
 }
 
-@keyframes notifyMoveIn {
+@keyframes NotifyMoveIn {
   0% {
     transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -118,7 +118,7 @@
   }
 }
 
-@keyframes notifyMoveOut {
+@keyframes NotifyMoveOut {
   0% {
     opacity: 1;
     max-height: 300px;
