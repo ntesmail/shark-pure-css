@@ -25,11 +25,13 @@ $upload-img-height: 100px;
     }
   }
   .upload-filename {
-    // i{}
     font-size: $upload-font-size;
     line-height: 17px;
     vertical-align: middle;
     margin-left: 10px;
+    .icon-attachment {
+      color: $upload-btn-color;
+    }
   }
   &.upload-file-status-succeed {
     .upload-filename {
@@ -41,6 +43,11 @@ $upload-img-height: 100px;
       color: $upload-file-status-failed-clor;
     }
   }
+  .upload-availiable-type {
+    font-size: $upload-font-size;
+    color: $gray-600;
+    margin-top: 11px;
+  }
 }
 
 .upload.upload-img {
@@ -50,6 +57,31 @@ $upload-img-height: 100px;
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+  .upload-img-list-item {
+    position: relative;
+    &::after {
+      content: "T";
+      display: none;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(51, 51, 51, 0.4);
+      text-align: center;
+      color: #fff;
+      line-height: $upload-img-height;
+      font-size: $upload-font-size;
+      cursor: pointer;
+    }
+    &:hover {
+      &::after {
+        display: block;
+        visibility: visible;
+      }
     }
   }
   .upload-img-list-item,
@@ -69,6 +101,7 @@ $upload-img-height: 100px;
     background-color: $upload-img-btn-bg-color;
     text-align: center;
     padding: 20px 0;
+    cursor: pointer;
     .icon-cross {
       font-size: 28px;
       color: #999;
@@ -76,6 +109,16 @@ $upload-img-height: 100px;
     .upload-text {
       font-size: $upload-font-size;
       margin-top: 13px;
+    }
+    &:hover {
+      border-color: $upload-img-btn-active-color;
+    }
+    &:active {
+      border-color: $upload-img-btn-active-color;
+      .icon-cross,
+      .upload-text {
+        color: $upload-img-btn-active-color;
+      }
     }
   }
 }
