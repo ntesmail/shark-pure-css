@@ -1,22 +1,21 @@
 //input group
 .input-group {
-  display: inline-block;
-  font-size: 0;
-}
+  position: relative;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
 
-.input-group {
-  > * {
-    position: relative;
-    width: auto;
-    vertical-align: middle;
-    
+  .input-group-addon,
+  .input,
+  .btn,
+  .selecter,
+  .input-affix-wrapper {
+    display: table-cell;
+
     &:hover,
     &:focus {
       z-index: 1;
-    }
-
-    &:not(:first-child) {
-      margin-left: -1px;
     }
 
     &:not(:first-child):not(:last-child) {
@@ -31,27 +30,47 @@
       @include border-left-radius(0);
     }
   }
+
+
+
+  .input-group-addon,
+  .btn,
+  .selecter {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
+
+  .input,
+  .input-affix-wrapper {
+    float: left;
+  }
+
+  .input-affix-wrapper {
+    width: 100%;
+  }
+
 }
+
 
 .input-group-addon {
+  @extend .text-xs;
   display: inline-block;
-  height: 30px;  //高度与input 常规高度保持一致
-  line-height: 30px;
-  padding: 0 7px;
-  font-size: 12px;  //与input字体大小保持一致
-  text-align: center;
-  background: #eee;
+  padding: 5px 10px;
+  background: #fff;
   border: 1px solid #d9d9d9;
+  text-align: center;
   transition: all .3s;
-}
+} 
 
-
-.input-group-addon-lg {
-  height: 32px;
-  line-height: 32px;
-}
-
-.input-group-addon-sm {
-  height: 22px;
-  line-height: 22px;
+.input-group-addon.input-group-addon-sm {
+ padding: 1px 10px;
 }

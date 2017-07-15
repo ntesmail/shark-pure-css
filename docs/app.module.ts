@@ -4,6 +4,7 @@ import { BrowserModule } from "@angular/platform-browser";
 //router auth
 import { RouterModule } from "@angular/router";
 import { ComponentModule } from './components/component.module';
+import { CssDemoModule } from './demo/demo.module';
 //components
 import { AppComponent } from './app.component';
 
@@ -20,7 +21,8 @@ const appRoutes: any = [
     imports: [
         BrowserModule,
         RouterModule.forRoot(appRoutes, { useHash: true }),
-        ComponentModule
+        ComponentModule,
+        CssDemoModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]

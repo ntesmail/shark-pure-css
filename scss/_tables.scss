@@ -40,12 +40,27 @@
     white-space: nowrap;
     text-align: center;
 
+    //去掉link的padding,避免太多的间距
+    .btn-link {
+      height: 20px;  
+      padding: 0;
+    }
+
+    .btn:not(:last-child) {
+      margin: 0 6px 0 0;
+    }
+
     &.table-operation-block {
       .btn:not(:last-child) {
         display: block;
         margin: 0 auto 6px
       }
     }
+  }
+
+  td.table-operation {
+    padding-left: 27px;
+    padding-right: 27px;
   }
 
   //重置input、button的字体

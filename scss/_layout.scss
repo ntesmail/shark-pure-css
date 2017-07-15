@@ -67,7 +67,7 @@
   }
 
   .layout-main {
-    margin-left: 260px;
+    overflow: hidden; //BFC
     padding: 20px;
     background: #fff;
   }
@@ -88,9 +88,6 @@
         overflow: hidden;
       }
       width: 0;
-    }
-    .layout-main {
-      margin-left: 0;
     }
   }
 }
