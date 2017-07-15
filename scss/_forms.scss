@@ -1,6 +1,7 @@
 //form
 
 .form-item {
+  @extend .clearfix;
   margin-bottom: 24px;
   font-size: 12px;  //input 的font-size
   color: rgba(0,0,0,.65);
@@ -39,10 +40,23 @@
   vertical-align: top; 
 }
 
-.form-inline {
+.form {
+  .form-item-label {
+    padding-right: 26px;
+  }
+}
+.form.form-inline {
+  .form-item-label {
+    padding-right: 0px;
+  }
   .form-item {
     display: inline-block;
-    padding: 0 20px; //间距
+    padding: 0 15px; //间距
   }
+}
+
+.row {
+  @extend .clearfix;
+  margin: 0 -15px;
 }
 

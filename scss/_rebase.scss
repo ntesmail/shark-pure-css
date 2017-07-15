@@ -63,15 +63,6 @@ dl {
   list-style: none;
 }
 
-dt {
-  font-weight: $dt-font-weight;
-}
-
-dd {
-  margin-bottom: .5rem;
-  margin-left: 0; // Undo browser default
-}
-
 //Links
 a {
   color: $link-color;
@@ -105,7 +96,6 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace; // 修正继承属性
-  font-size: 1em; 
 }
 
 pre {
@@ -137,20 +127,6 @@ img {
 table {
   border-collapse: collapse; // Prevent double borders
 }
-
-caption {
-  padding-top: $table-cell-padding;
-  padding-bottom: $table-cell-padding;
-  color: $text-muted;
-  text-align: center;
-  caption-side: bottom;
-}
-
-th,
-td {
-  text-align: center;
-}
-
 
 // Forms
 

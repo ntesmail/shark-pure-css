@@ -62,6 +62,10 @@
   width: 80px;
 }
 
+.input.input-textarea {
+  height: 60px;
+}
+
 .input-affix-wrapper {
   position: relative;
   .input:not(:last-child) {
