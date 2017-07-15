@@ -1,0 +1,63 @@
+$upload-img-width: 96px;
+$upload-img-height: 100px;
+.upload.upload-file {
+  display: inline-block;
+  outline: 0;
+  input[type=file] {
+    cursor: pointer;
+  }
+  .btn {
+    color: $upload-btn-color;
+    font-size: $upload-font-size;
+    width: $upload-file-btn-width;
+    height: $upload-file-btn-height;
+    background-color: $upload-file-btn-bg-color;
+    border: $upload-btn-border-width $upload-file-btn-border-style $upload-btn-border-color;
+    border-radius: $upload-btn-border-radius;
+  }
+}
+
+.upload.upload-img {
+  font-size: 0;
+  .upload-img-list {
+    display: inline-block;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .upload-img-list-item,
+  .upload-btn-cross {
+    display: inline-block;
+    width: $upload-img-width;
+    height: $upload-img-height + 2*$upload-btn-border-width;
+    border: $upload-btn-border-width $upload-img-btn-border-style $upload-btn-border-color;
+    border-radius: $upload-btn-border-radius;
+    vertical-align: top;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .upload-btn-cross {
+    background-color: $upload-img-btn-bg-color;
+    text-align: center;
+    padding: 20px 0;
+    .icon-cross {
+      font-size: 28px;
+      color: #999;
+    }
+    .upload-text {
+      font-size: $upload-font-size;
+      margin-top: 13px;
+    }
+  }
+}
+
+.download {
+  display: inline-block;
+  .download-file-name {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
