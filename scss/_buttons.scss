@@ -23,11 +23,7 @@
     outline: 0;
   }
   
-  &.disabled,
-  &:disabled {
-    cursor: not-allowed;
-    @include button-variant-disabled($btn-color-disabled, $btn-border-color-disabled, $btn-background-color-disabled);
-  }
+  @include button-variant-disabled($btn-color-disabled, $btn-border-color-disabled, $btn-background-color-disabled);
 
   // Small Button
   &.btn-sm {
@@ -94,15 +90,13 @@ a.btn {
   &.active,
   &:disabled,
   &.disabled {
-    background-color: transparent;
-    border-color: transparent;
+    &,
+    &:hover{
+      background-color: transparent;
+      border-color: transparent;
+    }
   }
   &,
-  &:focus,
-  &:active {
-    border-color: transparent;
-
-  }
   &:focus,
   &.active,
   &:active {
@@ -116,11 +110,9 @@ a.btn {
     background-color: transparent;
   }
   &.disabled,
-  &:disabled {
-    color: $btn-link-color-disabled;
-
-    @include hover-focus {
-      text-decoration: none;
-    }
+  &:disabled,
+  &.active,
+  &:active {
+   text-decoration: none;
   }
 }

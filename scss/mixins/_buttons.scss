@@ -22,9 +22,13 @@
 @mixin button-variant-disabled($color, $border-color, $background-color) {
   &.disabled,
   &:disabled {
-    color: $color;
-    border-color: $border-color;
-    background-color: $background-color;
+    &,
+    &:hover{
+      cursor: not-allowed;
+      color: $color;
+      border-color: $border-color;
+      background-color: $background-color;
+    }
   }
 }
 
