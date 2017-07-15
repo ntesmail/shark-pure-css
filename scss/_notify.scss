@@ -1,0 +1,130 @@
+.notify-container {
+  font-size: 12px;
+  position: fixed;
+  z-index: 1010;
+  height: 100%;
+  top: 0px;
+  right: 0;
+  pointer-events: none;
+}
+
+.notify {
+  position: relative;
+  display: block;
+  margin: 8px auto;
+  overflow: hidden;
+  animation-duration: .3s;
+  animation-play-state: running;
+  width: $notify-width;
+  border-radius: $border-radius;
+  font-size: $notify-font-size-base;
+  color: $notify-font-color;
+  padding: $notify-padding;
+  line-height: $notify-line-height-base;
+  p {
+    margin: 0;
+  }
+  .notify-close {
+    position: absolute;
+    cursor: pointer;
+    color: $notify-close-font-color;
+  }
+}
+
+.notify {
+  .notify-close {
+    top: $notify-close-top;
+    right: $notify-close-right;
+    &:after {
+      content: "X";
+      color: $notify-close-font-color;
+    }
+  }
+  .notify-message {
+    display: block;
+    font-size: $notify-font-size-lg;
+    line-height: $line-height-base;
+    margin-bottom: $notify-desc-margin-bottom;
+    &:before {
+      position: absolute;
+      top: $notify-icon-top;
+      margin-left: -40px;
+      line-height: 1;
+      font-size: $notify-icon-font-size;
+    }
+  }
+  .notify-desc {
+    color: $notify-desc-font-color;
+    display: block;
+  }
+}
+
+.notify-success {
+  background: $notify-success-bg-color;
+  border: 1px solid $notify-success-border-color;
+  .notify-message {
+    &:before {
+      content: "●";
+      color: $notify-success-color;
+    }
+  }
+}
+
+.notify-error {
+  background: $notify-error-bg-color;
+  border: 1px solid $notify-error-border-color;
+  .notify-message {
+    &:before {
+      content: "●";
+      color: $notify-error-color;
+    }
+  }
+}
+
+.notify-warning {
+  background: $notify-warning-bg-color;
+  border: 1px solid $notify-warning-border-color;
+  .notify-message {
+    &:before {
+      content: "●";
+      color: $notify-warning-color;
+    }
+  }
+}
+
+.notify-info {
+  background: $notify-info-bg-color;
+  border: 1px solid $notify-info-border-color;
+  .notify-message {
+    &:before {
+      content: "●";
+      color: $notify-info-color;
+    }
+  }
+}
+
+@keyframes notifyMoveIn {
+  0% {
+    transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    transform: translate(0, 0);
+  }
+  100% {
+    transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    transform: translate(-528px, 0);
+  }
+}
+
+@keyframes notifyMoveOut {
+  0% {
+    opacity: 1;
+    max-height: 300px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+  }
+}

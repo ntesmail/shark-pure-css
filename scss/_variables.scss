@@ -487,7 +487,7 @@ $pickercontainer-color: $gray-800 !default; // #333
 $pickercontainer-border-color: $gray-300 !default; // #d9d9d9
 $pickercontainer-padding: 10px 5px !default;
 $pickercontainer-border-radius: 2px !default;
-$pickercontainer-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06) !default;
+$pickercontainer-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06) !default;
 $calendar-day-width: 22px !default;
 $calendar-day-height: 22px !default;
 $calendar-day-line-height: 18px !default;
@@ -517,7 +517,7 @@ $calendar-input-time-height: 30px !default;
 $calendar-input-time-line-height: 28px !default;
 $calendar-input-time-border-color: $gray-400 !default; // #ccc
 $calendar-input-time-border-color-hover: $blue !default;
-$calendar-input-time-box-shadow: 0 0 2px 1px rgba(49,135,246,0.30) !default;
+$calendar-input-time-box-shadow: 0 0 2px 1px rgba(49, 135, 246, 0.30) !default;
 $calendar-input-time-padding: 6px !default;
 $calendar-input-time-color: $gray-700 !default;
 $calendar-input-time-transition: all .3s !default;
@@ -526,7 +526,7 @@ $calendar-input-time-border-color-disabled: $disabled-border-color !default;
 $calendar-input-time-background-color-disabled: $disabled-background-color !default;
 $timepanel-margin-top: 4px !default;
 $timepanel-border-color: $gray-300 !default;
-$timepanel-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06) !default;
+$timepanel-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06) !default;
 $timepanel-list-height: 160px !default;
 $timepanel-list-item-padding: 5px 0 5px 10px !default;
 $timepanel-list-item-background-color-hover: $gray-200 !default;
@@ -534,3 +534,30 @@ $timepanel-list-item-background-color-active: $gray-200 !default;
 $timepanel-list-item-color-disabled: $gray-600 !default;
 $timepanel-list-item-background-color-disabled: $gray-100 !default; // #f4f4f4
 $timepanel-list-item-transition: background-color .3s ease !default;
+//notify
+$notify-width:528px !default;
+$notify-padding:15px 14px 15px 60px !default;
+$notify-desc-margin-bottom:4px !default;
+$notify-icon-top:15px !default;
+$notify-icon-left:20px !default;
+$notify-close-top:15px !default;
+$notify-close-right:14px !default;
+$notify-success-color:#00A854 !default;
+$notify-success-border-color:#A6DCB8 !default;
+$notify-success-bg-color:#E8F6EE !default;
+$notify-error-color:#E6412C !default;
+$notify-error-border-color:#EBB3A8 !default;
+$notify-error-bg-color:#FAECEA!default;
+$notify-warning-color:#FFBF00 !default;
+$notify-warning-border-color:#F9E58C !default;
+$notify-warning-bg-color:#FDF8E4 !default;
+$notify-info-color:#3187F6 !default;
+$notify-info-border-color:#B4CFFF !default;
+$notify-info-bg-color:#ECF3FF !default;
+$notify-font-size-base:12px !default;
+$notify-font-size-lg:14px !default;
+$notify-icon-font-size:24px !default;
+$notify-line-height-base:18px !default;
+$notify-desc-font-color:#666 !default;
+$notify-font-color:#333 !default;
+$notify-close-font-color:#999 !default;

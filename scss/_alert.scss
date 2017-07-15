@@ -1,13 +1,3 @@
-.alert-sm-container {
-  font-size: 12px;
-  position: fixed;
-  z-index: 1010;
-  width: 100%;
-  top: 16px;
-  left: 0;
-  pointer-events: none;
-}
-
 .alert-lg-container {
   font-size: 12px;
   position: fixed;
@@ -40,32 +30,6 @@
     position: absolute;
     cursor: pointer;
     color: $alert-close-font-color;
-  }
-}
-
-.alert-sm {
-  text-align: center;
-  padding: $alert-sm-padding;
-  a {
-    color: $alert-font-color;
-    text-decoration: underline;
-  }
-  .alert-close {
-    font-size: $alert-font-size-lg;
-    line-height: $alert-line-height-base;
-    color: $alert-close-font-color;
-    top: $alert-sm-close-top;
-    right: $alert-sm-close-right;
-    text-decoration: none;
-  }
-  .alert-message {
-    line-height: 16px;
-    &:before {
-      line-height: 1;
-      top: $alert-sm-icon-top;
-      margin-left: -20px;
-      font-size: $alert-icon-font-size-sm;
-    }
   }
 }
 
@@ -137,26 +101,6 @@
       content: "●";
       color: $alert-info-color;
     }
-  }
-}
-
-@keyframes alertTopMoveIn {
-  0% {
-    transform: translate(0, -16px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes alertTopMoveOut {
-  0% {
-    opacity: 1;
-    max-height: 150px;
-  }
-  100% {
-    opacity: 0;
-    max-height: 0;
   }
 }
 
