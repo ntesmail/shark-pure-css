@@ -5,16 +5,15 @@
   }
 
   .steps {
+    &.steps-horizontal {
+      .steps-description {
+        margin-left: 36px;
+      }
+    }
     .steps-item {
       position: relative;
       display: inline-block;
-      vertical-align: top;
-      width: 200px;
-      &.steps-horizontal {
-        .steps-description {
-          margin-left: 36px;
-        }
-      }
+      vertical-align: top; // width: 200px;
       .steps-head {
         background: #fff;
         position: relative;
