@@ -26,18 +26,17 @@
   a {
     color: $toastr-font-color;
   }
-}
-
-.toastr-close {
-  position: absolute;
-  cursor: pointer;
-  color: $toastr-close-font-color;
-  font-size: $toastr-close-font-size;
-  line-height: $toastr-line-height-base;
-  color: $toastr-close-font-color;
-  top: $toastr-close-top;
-  right: $toastr-close-right;
-  text-decoration: none;
+  .toastr-close {
+    position: absolute;
+    cursor: pointer;
+    color: $toastr-close-font-color;
+    font-size: $toastr-close-font-size;
+    line-height: $toastr-line-height-base;
+    color: $toastr-close-font-color;
+    top: $toastr-close-top;
+    right: $toastr-close-right;
+    text-decoration: none;
+  }
 }
 
 .toastr-message {
