@@ -23,29 +23,33 @@ import { CsscalendarModule } from './calendar/calendar.module';
 import { CssLayoutModule } from './layout/layout.module';
 import { CssNotifyModule } from './notify/notify.module';
 import { CssUploadModule } from './upload/upload.module';
+import { CssIconfontModule } from './iconfont/iconfont.module';
+import { CssTagModule } from './tag/tag.module';
 @NgModule({
-    imports: [
-        CssButtonModule,
-        CssPaginationModule,
-        CssSelectModule,
-        CssImagesModule,
-        CssToastrModule,
-        CssModalModule,
-        CssInputModule,
-        CssTipModule,
-        CssSwitchModule,
-        CssStepsModule,
-        CssTabsModule,
-        CssSelecterModule,
-        CssTableModule,
-        CssFormModule,
-        CssTreeModule,
-        CssProgressModule,
-        CssBreadcrumbModule,
-        CsscalendarModule,
-        CssLayoutModule,
-        CssNotifyModule,
-        CssUploadModule
-    ]
+        imports: [
+                CssButtonModule,
+                CssPaginationModule,
+                CssSelectModule,
+                CssImagesModule,
+                CssToastrModule,
+                CssModalModule,
+                CssInputModule,
+                CssTipModule,
+                CssSwitchModule,
+                CssStepsModule,
+                CssTabsModule,
+                CssSelecterModule,
+                CssTableModule,
+                CssFormModule,
+                CssTreeModule,
+                CssProgressModule,
+                CssBreadcrumbModule,
+                CsscalendarModule,
+                CssLayoutModule,
+                CssNotifyModule,
+                CssUploadModule,
+                CssIconfontModule,
+                CssTagModule
+        ]
 })
 export class ComponentModule { }

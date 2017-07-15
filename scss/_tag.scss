@@ -1,0 +1,59 @@
+.tag {
+  display: inline-block;
+  line-height: $tag-line-height;
+  padding: $tag-padding;
+  border-radius: $tag-border-radius;
+  border: $tag-border;
+  background-color: $tag-bg-color;
+  font-size: $tag-font-size;
+  color: $tag-color;
+  margin-right: $tag-margin-right;
+  cursor: pointer;
+  white-space: nowrap;
+  .tag-text {
+    margin: 0;
+    max-width: $tag-max-width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &:hover {
+    border-color: $tag-hover-color;
+  }
+}
+
+.tag-closable {
+  padding: $tag-closable-padding;
+  .tag-text {
+    &:after {
+      content: "X";
+      position: absolute;
+      color: $tag-close-icon-color;
+      margin-left: $tag-close-icon-margin-left;
+    }
+  }
+}
+
+.tag-addible {
+  padding: $tag-addible-padding;
+  background-color: $tag-addible-bg-color;
+  border: $tag-addible-border;
+  .tag-text {
+    &:before {
+      content: "+";
+      position: absolute;
+      margin-left: $tag-add-icon-margin-left;
+      color: $tag-add-icon-color;
+    }
+  }
+}
+
+.active {
+  border-color: $tag-hover-color;
+  .tag-text,
+  .tag-text:before,
+  .tag-text:after {
+    color: $tag-hover-color
+  }
+}
