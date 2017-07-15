@@ -124,12 +124,17 @@ $table-border-color: $gray-lighter !default;
 $table-head-bg: $gray-lighter !default;
 $table-head-color: $gray !default;
 // Buttons
+$btn-height: 30px !default;
 $btn-padding-y: 4px !default;
 $btn-padding-x: 16px !default;
 $btn-font-size: 14px !default;
 $btn-line-height: 1.5 !default;
-$btn-height: 30px !default;
-$btn-font-weight: 500 !default;
+$btn-height-sm: 24px !default;
+$btn-padding-y-sm: 3px !default;
+$btn-padding-x-sm: 10px !default;
+$btn-font-size-sm: 12px !default;
+$btn-line-height-sm: 1.25 !default;
+$btn-font-weight: $font-weight-normal !default;
 $btn-border-radius: 2px !default;
 $btn-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
 $btn-color-disabled: $disabled-color !default;
@@ -152,7 +157,6 @@ $btn-secondary-primary-background-color: $white !default;
 $btn-secondary-primary-background-color-hover: #D0E8FE !default;
 $btn-secondary-primary-background-color-active: $blue !default;
 $btn-secondary-color-active: $white !default;
-$btn-icon-padding-x: 16px !default;
 // Forms
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: .75rem !default;
