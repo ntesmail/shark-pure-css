@@ -1,11 +1,10 @@
 .progress {
   display: inline-block; // font-size: $progress-font-size;
   font-size: 0;
-}
-
-//横线进度条
+} //横线进度条
 .progress-line {
   width: 100%;
+  font-size: $progress-font-size;
   .progress-outter {
     display: inline-block;
     width: 100%;
@@ -40,9 +39,7 @@
       transition: width .1s;
     }
   }
-}
-
-//圈圈进度条 
+} //圈圈进度条 
 .progress-circle {
   position: relative;
   text-align: center;
@@ -53,7 +50,7 @@
   .progress-circle-upper {
     stroke: $progress-primary-color;
   }
-  .progress-text {
+  .progress-status-text {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -82,14 +79,6 @@
     height: 20px;
     color: $progress-primary-color;
   }
-  &.progress-show-info {
-    width: 40px;
-    height: 40px;
-    .progress-text {
-      display: block;
-      visibility: visible;
-    }
-  }
   &.progress-show-cancel {
     font-size: 0;
     .progress-loading-text,
@@ -101,9 +90,7 @@
       font-size: $progress-font-size;
     }
   }
-}
-
-// 容器加载
+} // 容器加载
 .progress-wrap {
   position: relative;
   .progress {
@@ -111,21 +98,34 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  } // 完成状态
-  &.progress-status-finish {
-    .progress-text {
-      color: $progress-status-finish-color;
+  }
+  &.progress-status-finish,
+  &.progress-status-error {
+    width: 40px;
+    height: 40px;
+    .progress-status-text {
+      display: block;
+      visibility: visible;
     }
-    .progress,
-    .progress-text {
-      animation: .3s ease-out progress-fade-out forwards;
+    .progress {
+      animation: .3s ease-out .3s progress-fade-out forwards;
     }
     .progress-circle-svg {
-      animation: .3s ease-out progress-svg-fade-out forwards;
+      animation: .3s ease-out .3s progress-svg-fade-out forwards;
+    }
+    .progress-status-text {
+      color: $progress-status-finish-color;
+      display: block;
+      visibility: visible;
+    }
+  } // 完成状态
+  &.progress-status-finish {
+    .progress-status-text {
+      color: $progress-status-finish-color;
     }
   } // 错误状态
   &.progress-status-error {
-    .progress-text {
+    .progress-status-text {
       color: $progress-status-error-color;
     }
     .progress-circle-upper {
@@ -134,30 +134,63 @@
   }
 }
 
-@keyframes progress-svg-fade-out {
+@keyframes progress-fade-out {
+  99% {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+    width: auto;
+    height: auto;
+  }
   to {
     opacity: 0;
     visibility: hidden;
     display: none !important;
-  }
-}
-
-@keyframes progress-svg-fade-out {
-  // 99% {
-  //   opacity: 0;
-  //   visibility: hidden;
-  //   display: none !important;
-  // }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    display: none !important; // width: 0;
     height: 0;
     width: 0;
   }
 }
 
-// 全屏加载
+// @mixin progress-status-text-fade-out($progress-status-text-current-color: $progress-primary-color) {
+//   @keyframes progress-status-text-fade-out {
+//     70% {
+//       display: block;
+//       visibility: visible;
+//       color: $progress-status-text-current-color;
+//       opacity: 1;
+//     }
+//     99% {
+//       opacity: 0;
+//       visibility: hidden;
+//       display: none !important;
+//       width: 100%;
+//       height: auto;
+//     }
+//     to {
+//       opacity: 0;
+//       visibility: hidden;
+//       display: none !important;
+//       width: 0;
+//       height: 0;
+//     }
+//   }
+// }
+@keyframes progress-svg-fade-out {
+  99% {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+    width: 40px;
+    height: 40px;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+    height: 0;
+    width: 0;
+  }
+} // 全屏加载
 .progress-wrap.progress-fullscreen {
   position: fixed;
   top: 0;
