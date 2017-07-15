@@ -24,30 +24,35 @@ import { CssLayoutModule } from './layout/layout.module';
 import { CssNotifyModule } from './notify/notify.module';
 import { CssUploadModule } from './upload/upload.module';
 import { CssIconfontModule } from './iconfont/iconfont.module';
+import { CssTagModule } from './tag/tag.module';
 @NgModule({
-    imports: [
-        CssButtonModule,
-        CssPaginationModule,
-        CssSelectModule,
-        CssImagesModule,
-        CssToastrModule,
-        CssModalModule,
-        CssInputModule,
-        CssTipModule,
-        CssSwitchModule,
-        CssStepsModule,
-        CssTabsModule,
-        CssSelecterModule,
-        CssTableModule,
-        CssFormModule,
-        CssTreeModule,
-        CssProgressModule,
-        CssBreadcrumbModule,
-        CsscalendarModule,
-        CssLayoutModule,
-        CssNotifyModule,
-        CssUploadModule,
-        CssIconfontModule
-    ]
+        imports: [
+                CssButtonModule,
+                CssPaginationModule,
+                CssSelectModule,
+                CssImagesModule,
+                CssToastrModule,
+                CssModalModule,
+                CssInputModule,
+                CssTipModule,
+                CssSwitchModule,
+                CssStepsModule,
+                CssTabsModule,
+                CssSelecterModule,
+                CssTableModule,
+                CssFormModule,
+                CssTreeModule,
+                CssProgressModule,
+                CssBreadcrumbModule,
+                CsscalendarModule,
+                CssLayoutModule,
+                CssNotifyModule,
+<<<<<<< 8e9f65b9562390eb9a154bae8cfaace5cdf71dbd
+                CssUploadModule,
+                CssIconfontModule
+=======
+        CssTagModule,
+>>>>>>> misc:新增标签样式
+        ]
 })
 export class ComponentModule { }

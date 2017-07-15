@@ -9,6 +9,7 @@
 }
 
 .notify {
+  pointer-events: auto;
   position: relative;
   display: block;
   margin: 8px auto;
@@ -42,6 +43,7 @@
   }
   .notify-message {
     display: block;
+    padding-top: $notify-message-padding-top;
     font-size: $notify-font-size-lg;
     line-height: $line-height-base;
     margin-bottom: $notify-desc-margin-bottom;
@@ -54,6 +56,7 @@
     }
   }
   .notify-desc {
+    padding-bottom: $notify-desc-padding-bottom;
     color: $notify-desc-font-color;
     display: block;
   }
@@ -108,13 +111,13 @@
     transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
     -webkit-transform-origin: 100% 0%;
-    transform: translate(0, 0);
+    transform: translate(528px, 0);
   }
   100% {
     transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
     -webkit-transform-origin: 100% 0%;
-    transform: translate(-528px, 0);
+    transform: translate(0, 0);
   }
 }
 
@@ -125,6 +128,6 @@
   }
   100% {
     opacity: 0;
-    max-height: 0;
+    max-height: -1px;
   }
 }

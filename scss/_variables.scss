@@ -503,7 +503,7 @@ $timepanel-list-item-background-color-disabled: $gray-100 !default; // #f4f4f4
 $timepanel-list-item-transition: background-color .3s ease !default;
 //notify
 $notify-width:528px !default;
-$notify-padding:15px 14px 15px 60px !default;
+$notify-padding:0px 14px 0px 60px !default;
 $notify-desc-margin-bottom:4px !default;
 $notify-icon-top:15px !default;
 $notify-icon-left:20px !default;
@@ -528,3 +528,25 @@ $notify-line-height-base:18px !default;
 $notify-desc-font-color:#666 !default;
 $notify-font-color:#333 !default;
 $notify-close-font-color:#999 !default;
+$notify-message-padding-top:15px !default;
+$notify-desc-padding-bottom:15px !default;
+//tag
+$tag-line-height:18px !default;
+$tag-padding:3px 16px !default;
+$tag-border-radius: 2px !default;
+$tag-border: 1px solid #e9e9e9 !default;
+$tag-bg-color: #F4F4F4 !default;
+$tag-font-size: 12px !default;
+$tag-color: #666 !default;
+$tag-margin-right:8px !default;
+$tag-max-width:80px !default;
+$tag-hover-color: #3187F6 !default;
+$tag-closable-padding: 3px 22px 3px 10px !default;
+$tag-close-icon-color:$tag-color;
+$tag-close-icon-margin-left:4px !default;
+$tag-addible-padding:3px 10px 3px 22px !default;
+$tag-add-icon-color:$tag-color;
+$tag-add-icon-margin-left:-12px !default;
+$tag-addible-bg-color: #fff !default;
+$tag-addible-border: 1px dashed #e9e9e9 !default;
+$tag-font-size: 12px !default;
