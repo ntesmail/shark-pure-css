@@ -64,7 +64,7 @@
   .pagination-jump-next {
     outline: 0;
     &:after {
-      content: "•••";
+      content: "\2022\2022\2022";
       display: block;
       letter-spacing: 2px;
       color: $pagination-disabled-color;
@@ -76,7 +76,7 @@
         color: $pagination-primary-color;
         @include iconfont-size-under-12px(8px);
         letter-spacing: -1px;
-        font-family: "anticon";
+        font-family: "iconfont" !important;
       }
     }
   }
@@ -84,7 +84,7 @@
     &:focus,
     &:hover {
       &:after {
-        content: "\e620\e620";
+        content: "\ee49";
       }
     }
   }
@@ -92,7 +92,7 @@
     &:focus,
     &:hover {
       &:after {
-        content: "\e61f\e61f";
+        content: "\ee48";
       }
     }
   }
@@ -146,16 +146,18 @@
   .pagination-prev {
     a {
       &:after {
-        content: "\e620";
+        content: "\EE51";
         display: block;
+        font-family: "iconfont" !important;
       }
     }
   }
   .pagination-next {
     a {
       &:after {
-        content: "\e61f";
+        content: "\EE50";
         display: block;
+        font-family: "iconfont" !important;
       }
     }
   }

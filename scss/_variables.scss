@@ -209,7 +209,7 @@ $list-group-color: $gray-700 !default;
 $list-group-border-color: $gray-300 !default;
 $list-group-background-color: #fff !default;
 $list-group-border-radius: 2px !default;
-$list-group-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06) !default;
+$list-group-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06) !default;
 $list-group-item-padding-x: 9px !default;
 $list-group-item-height: 40px !default;
 $list-group-item-background-color-hover: $gray-200 !default;
@@ -231,7 +231,7 @@ $pagination-color: rgba(0, 0, 0, 0.65) !default;
 $pagination-disabled-color: rgba(0, 0, 0, .25) !default;
 $pagination-bg: transparent !default;
 $pagination-active-bg: transparent !default;
-$pagination-primary-color: #108EE9 !default;
+$pagination-primary-color: #3187F6 !default;
 $pagination-primary-color-5: #49a9ee !default;
 $pagination-border-width: 1px !default;
 $pagination-border-style: solid !default;
@@ -352,8 +352,9 @@ $modal-md: 500px !default;
 $modal-sm: 300px !default;
 $modal-transition: transform .3s ease-out !default;
 // tree
-$tree-font-size: 13px !default; //字体大小
+$tree-font-size: 14px !default; //字体大小
 $tree-icon-size: 14px !default; //图标宽度
+$tree-icon-width: 18px !default;
 $tree-color: $gray-700 !default;
 $tree-background-color-hover: #ecf6fd !default;
 $tree-selected-bg: #d2eafb !default; //选中节点后的背景色
