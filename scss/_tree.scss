@@ -12,13 +12,8 @@
   li {
     margin: 8px 0;
     outline: 0;
-    label {
-      display: block;
-      height: 24px;
-      line-height: 24px;
-    }
     ul {
-      padding-left: 14px;
+      padding-left: $tree-icon-width;
       display: none;
       &.tree-open {
         display: block;
@@ -34,13 +29,10 @@
 
   .tree-icon {
     float: left;
-    width: $tree-icon-size;
-    height: $tree-icon-size;
+    width: $tree-icon-width;
     font-size: $tree-font-size;
-    vertical-align: top;
-    background-size: 100% 100%;
+    vertical-align: middle;
     position: relative;
-    top: 5px;
   }
 
   .tree-node-name {
@@ -48,18 +40,13 @@
     color: $tree-color;
     overflow: hidden;
     font-size: $tree-font-size;
-    line-height: $tree-icon-size;
-    padding: 5px;
+    line-height: 21px;
+    padding: 0 5px;
     border-radius: 4px;
     transition: all .3s;
     &:hover {
       background-color: $tree-background-color-hover;
     }
-  }
-  .tree-icon-check,
-  .tree-icon-check-empty,
-  .tree-icon-check-minus {
-    margin: 0 5px;
   }
 
   .tree-icon.disabled,
@@ -75,27 +62,22 @@
   }
 
   .tree-icon-check {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEUAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhjDG72AAAAD3RSTlMA5jtT4A+fSklAG/FeMSxlVxwlAAAASUlEQVQI12PAAhr/A8HHBgYGIRCPSYCB4QNY/AOEwbwAylAMgDBYncFSTBPYEsAMXmGTAIjiJzuhurgOwLWDSITJhWC7CuB2AwDh2iJE/F97swAAAABJRU5ErkJggg==");
+    @extend .icon-checksquare;
   }
-
   .tree-icon-check-empty {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAACIiIiIiIiIiIiIiIhTGFtKAAAABHRSTlMAS+fkeQRH8QAAACdJREFUCNdjwAKEXIDASYCBQRHEY1RgYHAAiztQiwE3GWqXswDcbgATkwfuFORrngAAAABJRU5ErkJggg==");
+    @extend .icon-emptysquare;
   }
-
   .tree-icon-check-minus {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAACIiIiIiIiIiIiIiIhTGFtKAAAABHRSTlMA5UxJT3aN7AAAACxJREFUCNdjwAIMXYDA0YCBQQjEYxJgYHAAizvgZ4gAdQk4EKMYbjLCLhgAAGMgCR1GQI2wAAAAAElFTkSuQmCC");
+    @extend .icon-minussquare;
   }
-
   .tree-icon-right {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgnTYS+AAAAC3RSTlMABrWdsJmqkwh6eVcUOkAAAAAxSURBVAjXY0ACXA1QBrsiTChIAMpghQuZwISYHWFCZnAGQgqhGKEdYSDCCs4GBmQAABs+A/AaJMGkAAAAAElFTkSuQmCC");
+    @extend .icon-right;
   }
-
   .tree-icon-down {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAACIiIiIiIiIiIiIiIiIiIiIiIgPEjmxAAAAB3RSTlMAOzXjztlpaXfY9gAAACtJREFUCNdjIAmwCIBIFQYGJkMGKKEsAMJgHkQAxAUJgITMDKEaVQWItAEApMYCb1YUXYwAAAAASUVORK5CYII=");
+    @extend .icon-down;
   }
 
   .tree-node-selected {
-    // color: $tree-selected-color;
     background-color: $tree-selected-bg;
     &:hover {
       background-color: $tree-selected-bg;

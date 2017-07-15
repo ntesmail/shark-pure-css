@@ -352,8 +352,9 @@ $modal-md: 500px !default;
 $modal-sm: 300px !default;
 $modal-transition: transform .3s ease-out !default;
 // tree
-$tree-font-size: 13px !default; //字体大小
+$tree-font-size: 14px !default; //字体大小
 $tree-icon-size: 14px !default; //图标宽度
+$tree-icon-width: 18px !default;
 $tree-color: $gray-700 !default;
 $tree-background-color-hover: #ecf6fd !default;
 $tree-selected-bg: #d2eafb !default; //选中节点后的背景色

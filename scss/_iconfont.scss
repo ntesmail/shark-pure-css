@@ -16,6 +16,8 @@ i ,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-emptysquare:before { content: "\e628"; }
+
 .icon-caretright:before { content: "\ee35"; }
 
 .icon-caretleft:before { content: "\ee36"; }
