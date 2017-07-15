@@ -5,12 +5,13 @@ import {
 @Component({
     styles: [`
         .icon_lists {
-            width: 800px;
+            width: 1000px;
             text-align: center;
         }
         .icon_lists li {
             display: inline-block;
-            padding: 20px;
+            width: 150px;
+            height: 80px;
             float: left;
             cursor: pointer;
             border-radius: 2px;
