@@ -3,17 +3,43 @@ $upload-img-height: 100px;
 .upload.upload-file {
   display: inline-block;
   outline: 0;
+  font-size: 0;
+  .upload-file-inner {
+    display: inline-block;
+    font-size: 0;
+  }
   input[type=file] {
     cursor: pointer;
   }
   .btn {
     color: $upload-btn-color;
     font-size: $upload-font-size;
-    width: $upload-file-btn-width;
-    height: $upload-file-btn-height;
+    width: 88px;
+    height: 26px;
     background-color: $upload-file-btn-bg-color;
     border: $upload-btn-border-width $upload-file-btn-border-style $upload-btn-border-color;
     border-radius: $upload-btn-border-radius;
+    .icon-upload {
+      vertical-align: baseline;
+      font-size: $upload-font-size;
+    }
+  }
+  .upload-filename {
+    // i{}
+    font-size: $upload-font-size;
+    line-height: 17px;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  &.upload-file-status-succeed {
+    .upload-filename {
+      color: $upload-file-status-succeed-clor;
+    }
+  }
+  &.upload-file-status-failed {
+    .upload-filename {
+      color: $upload-file-status-failed-clor;
+    }
   }
 }
 
@@ -56,7 +82,7 @@ $upload-img-height: 100px;
 
 .download {
   display: inline-block;
-  .download-file-name {
+  .download-filename {
     vertical-align: middle;
     margin-right: 5px;
   }
