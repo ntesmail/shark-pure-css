@@ -39,7 +39,7 @@ app.use(SharkConfig.contextPath + '/xhr', function (req, res) {
 });
 
 //font
-app.use(SharkConfig.contextPath + '/font', express.static(path.join(__dirname, 'docs/asset/font')));
+app.use(SharkConfig.contextPath + '/fonts', express.static(path.join(__dirname, 'docs/asset/fonts')));
 
 //start server & listen 
 devMiddleware.waitUntilValid(() => {

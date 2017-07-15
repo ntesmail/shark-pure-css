@@ -23,6 +23,7 @@ import { CsscalendarModule } from './calendar/calendar.module';
 import { CssLayoutModule } from './layout/layout.module';
 import { CssNotifyModule } from './notify/notify.module';
 import { CssUploadModule } from './upload/upload.module';
+import { CssIconfontModule } from './iconfont/iconfont.module';
 @NgModule({
     imports: [
         CssButtonModule,
@@ -45,7 +46,8 @@ import { CssUploadModule } from './upload/upload.module';
         CsscalendarModule,
         CssLayoutModule,
         CssNotifyModule,
-        CssUploadModule
+        CssUploadModule,
+        CssIconfontModule
     ]
 })
 export class ComponentModule { }
