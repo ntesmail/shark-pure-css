@@ -13,6 +13,7 @@
 
   &.active,
   &:active {
+    border-color: $border-color;
     background-color: $background-color-active;
   }
 }

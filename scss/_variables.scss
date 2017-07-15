@@ -204,16 +204,16 @@ $state-danger-text: #a94442 !default;
 $state-danger-bg: #f2dede !default;
 $state-danger-border-color: darken($state-danger-bg, 5%) !default;
 //List Groups
-$list-min-width: 160px !default;
-$list-bg: #fff !default;
-$list-border: 1px solid #979797 !default;
-$list-border-radius: 0 !default;
-$list-box-shadow: none !default;
-$list-single-li-padding-y: 7px !default;
-$list-single-li-padding-x: 18px !default;
-$list-multiple-li-padding-y: $list-single-li-padding-y !default;
-$list-multiple-li-padding-x: 9px !default;
-$list-li-hover-bg: #e7e7e7 !default;
+$list-group-font-size: 14px !default;
+$list-group-color: $gray-700 !default;
+$list-group-border-color: $gray-300 !default;
+$list-group-background-color: #fff !default;
+$list-group-border-radius: 2px !default;
+$list-group-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06) !default;
+$list-group-item-padding-x: 9px !default;
+$list-group-item-height: 40px !default;
+$list-group-item-background-color-hover: $gray-200 !default;
+$list-group-item-color-active: $blue !default;
 //Drop Down
 // Image thumbnails
 $thumbnail-padding: 4px !default;
