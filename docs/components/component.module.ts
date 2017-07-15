@@ -22,6 +22,7 @@ import { CssBreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { CsscalendarModule } from './calendar/calendar.module';
 import { CssLayoutModule } from './layout/layout.module';
 import { CssNotifyModule } from './notify/notify.module';
+import { CssUploadModule } from './upload/upload.module';
 @NgModule({
     imports: [
         CssButtonModule,
@@ -43,7 +44,8 @@ import { CssNotifyModule } from './notify/notify.module';
         CssBreadcrumbModule,
         CsscalendarModule,
         CssLayoutModule,
-        CssNotifyModule
+        CssNotifyModule,
+        CssUploadModule
     ]
 })
 export class ComponentModule { }
