@@ -23,49 +23,38 @@
   max-width: $toastr-max-width;
   font-size: $toastr-font-size;
   color: $toastr-font-color;
-}
-
-.toastr {
   a {
     color: $toastr-font-color;
-    text-decoration: underline;
   }
-  .toastr-close {
-    position: absolute;
-    cursor: pointer;
-    color: $toastr-close-font-color;
-    font-size: $toastr-close-font-size;
-    line-height: $toastr-line-height-base;
-    color: $toastr-close-font-color;
-    top: $toastr-close-top;
-    right: $toastr-close-right;
-    text-decoration: none;
-  }
-  .toastr-message {
-    line-height: 16px;
-    text-decoration: none;
-    &:before {
-      line-height: 1;
-      top: $toastr-icon-top;
-      margin-left: -20px;
-      font-size: $toastr-icon-font-size;
-    }
-  }
-  .toastr-message-link {
-    text-decoration: underline;
-  }
+}
+
+.toastr-close {
+  position: absolute;
+  cursor: pointer;
+  color: $toastr-close-font-color;
+  font-size: $toastr-close-font-size;
+  line-height: $toastr-line-height-base;
+  color: $toastr-close-font-color;
+  top: $toastr-close-top;
+  right: $toastr-close-right;
+  text-decoration: none;
 }
 
 .toastr-message {
   margin: 0;
+  text-decoration: none;
   line-height: 16px;
   &:before {
     position: absolute;
     line-height: 1;
     top: $toastr-icon-top;
-    margin-left: -20px;
+    margin-left: $toastr-icon-margin-left;
     font-size: $toastr-icon-font-size;
   }
+}
+
+.toastr-message-link {
+  text-decoration: underline;
 }
 
 @keyframes ToastrMoveIn {
@@ -89,38 +78,12 @@
 }
 
 .toastr-success {
-  .toastr-message {
-    &:before {
-      content: "●";
-      color: $toastr-success-color;
-    }
-  }
-}
-
-.toastr-error {
-  .toastr-message {
-    &:before {
-      content: "●";
-      color: $toastr-error-color;
-    }
-  }
-}
-
-.toastr-warning {
-  .toastr-message {
-    &:before {
-      content: "●";
-      color: $toastr-warning-color;
-    }
-  }
-}
-
-.toastr-success {
   background: $toastr-success-bg-color;
   border: 1px solid $toastr-success-border-color;
   .toastr-message {
     &:before {
-      content: "●";
+      font-family: "iconfont" !important;
+      content: "\e789";
       color: $toastr-success-color;
     }
   }
@@ -131,7 +94,8 @@
   border: 1px solid $toastr-error-border-color;
   .toastr-message {
     &:before {
-      content: "●";
+      font-family: "iconfont" !important;
+      content: "\e789";
       color: $toastr-error-color;
     }
   }
@@ -142,7 +106,8 @@
   border: 1px solid $toastr-warning-border-color;
   .toastr-message {
     &:before {
-      content: "●";
+      font-family: "iconfont" !important;
+      content: "\e789";
       color: $toastr-warning-color;
     }
   }
@@ -153,7 +118,8 @@
   border: 1px solid $toastr-info-border-color;
   .toastr-message {
     &:before {
-      content: "●";
+      font-family: "iconfont" !important;
+      content: "\e789";
       color: $toastr-info-color;
     }
   }

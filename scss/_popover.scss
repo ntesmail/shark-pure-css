@@ -142,7 +142,6 @@
   }
 
   .popover-content {
-    padding: $popover-content-padding;
     color: $popover-content-color;
     p {
       margin: 0px;
@@ -151,18 +150,65 @@
       color: $popover-content-link-color;
       text-decoration: underline;
     }
-    .popover-content-message {
-      padding-left: $popover-content-message-padding-left;
-      position: relative;
-      .popover-icon {
+  }
+
+  .popover-content-message {
+    padding: $popover-content-padding;
+    color: $popover-content-color;
+  }
+
+  .popover-content-message-icon {
+    padding: 16px 16px 0 36px;
+    p {
+      margin: 0;
+      &:before {
         position: absolute;
-        top: 0;
-        left: 0;
-        color: $popover-icon-color;
+        font-family: "iconfont" !important;
+        content: "\e789";
+        color: $toastr-warning-color;
+        top: 18px;
+        margin-left: -20px;
+        font-size: 12px;
       }
     }
-    .popover-content-btns {
-      text-align: right;
-      margin-top: $popover-content-btns-margin-top;
+  }
+
+  .popover-content-btns {
+    padding: 0 16px 16px 36px;
+    text-align: right;
+    margin-top: $popover-content-btns-margin-top;
+    .btn {
+      margin-left: 8px;
+    }
+  }
+
+  .shark-tooltip {
+    border: 0px;
+    background: $tooltip-bg-color;
+    @include border-radius($tooltip-border-radius);
+    @include box-shadow($tooltip-box-shadow);
+    .popover-content {
+      color: $tooltip-color;
+      padding: $tooltip-padding;
+    }
+    &.top {
+      .arrow::after {
+        border-top-color: $tooltip-bg-color;
+      }
+    }
+    &.bottom {
+      .arrow::after {
+        border-bottom-color: $tooltip-bg-color;
+      }
+    }
+    &.left {
+      .arrow::after {
+        border-left-color: $tooltip-bg-color;
+      }
+    }
+    &.right {
+      .arrow::after {
+        border-right-color: $tooltip-bg-color;
+      }
     }
   }

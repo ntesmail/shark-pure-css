@@ -192,7 +192,8 @@
     margin-bottom: $modal-tip-message-margin-bottom;
     &:before {
       position: absolute;
-      content: "●";
+      font-family: "iconfont" !important;
+      content: "\e789";
       top: $modal-tip-icon-top;
       left: $modal-tip-icon-left;
       color: $modal-tip-icon-color;
