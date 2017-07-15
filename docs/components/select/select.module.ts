@@ -5,7 +5,7 @@ import { CssSelectComponent } from "./select.component"
 // 定义常量 路由
 const routes: any = [
     {
-        path: 'cssradio',
+        path: 'cssselect',
         component: CssSelectComponent
     }
 ];

@@ -1,0 +1,121 @@
+<div style="position: relative;">
+    <div class="layout">
+        <div class="layout-header"  style="position: absolute;">
+            <a class="logo" href="#"></a>
+            <div class="product-name">shark-css</div>
+            <div class="user-info">
+                <div class="user-name">欢迎你，corp.netease.com</div>
+                <div class="arrow-btn"></div>
+            </div>
+        </div>
+        <div class="layout-body">
+            <div class="layout-aside">
+                <ul class="menu">
+                    <li>
+                        <div class="menu-title">
+                            <i class="icon"></i>
+                            <span>布局</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csslayout" routerLinkActive="active">Layout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-title">
+                            <i class="icon"></i>
+                            <span>导航</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="cssbreadcrumb" routerLinkActive="active">面包屑</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csstabs" routerLinkActive="active">tab</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csspagination" routerLinkActive="active">分页条</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssprogress" routerLinkActive="active">步骤条</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-title">
+                            <i class="icon"></i>
+                            <span>数据收集</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssbutton" routerLinkActive="active">按钮</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssselect" routerLinkActive="active">选择框</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssinput" routerLinkActive="active">输入框</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssselecter" routerLinkActive="active">下拉选择框</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssform" routerLinkActive="active">FORM</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssswitch" routerLinkActive="active">开关</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csscalendar" routerLinkActive="active">时间选择器</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-title">
+                            <i class="icon"></i>
+                            <span>数据展示</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssimages" routerLinkActive="active">图像</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csstip" routerLinkActive="active">文字提示</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssstable" routerLinkActive="active">表格</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csstree" routerLinkActive="active">树形控件</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-title">
+                            <i class="icon"></i>
+                            <span>反馈</span>
+                        </div>
+                        <ul class="menu-content">
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssalert" routerLinkActive="active">alert</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssmodal" routerLinkActive="active">对话框</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/cssprogress" routerLinkActive="active">进度条</a>
+                            </li>
+                            <li class="menu-nav">
+                                <a class="btn btn-link" routerLink="/csstoastr" routerLinkActive="active">全局提示</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="layout-main">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
