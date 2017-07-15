@@ -485,46 +485,52 @@ $breadcrumb-separator-padding:0 8px !default;
 //pickercontainer
 $pickercontainer-color: $gray-800 !default; // #333
 $pickercontainer-border-color: $gray-300 !default; // #d9d9d9
-$pickercontainer-padding: 10px 5px;
-$pickercontainer-border-radius: 2px;
-$pickercontainer-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06);
-$calendar-day-width: 22px;
-$calendar-day-height: 22px;
-$calendar-day-line-height: 18px;
-$calendar-day-margin: 6px;
-$calendar-font-size: 14px;
-$calendar-font-weight: $font-weight-bold;
-$calendar-day-border-color-hover: $blue;
-$calendar-day-background-color-active: $blue;
-$calendar-day-font-size: 13px;
-$calendar-weekday-color: $gray-600; // #999
-$calendar-day-color: $gray-700; // #666
-$calendar-day-border-color-hover: $blue;
-$calendar-day-background-color-hover: $gray-200; // #ebf3ff
-$calendar-day-color-active: $white;
-$calendar-day-border-color-active: $blue;
-$calendar-day-background-color-active: $blue;
-$calendar-day-disabled: $gray-400;
-$calendar-timewrap-padding: 5px 10px;
-$calendar-nowtime-width: 75px;
-$calendar-nowtime-height: 25px;
-$calendar-nowtime-line-height: 25px;
-$calendar-nowtime-font-size: 14px;
-$calendar-nowtime-color: $blue;
-$calendar-input-time-width: 136px;
-$calendar-input-time-height: 30px;
-$calendar-input-time-line-height: 28px;
-$calendar-input-time-border-color: $gray-400; // #ccc
-$calendar-input-time-border-color-hover: $blue;
-$calendar-input-time-box-shadow: 0 0 2px 1px rgba(49,135,246,0.30);
-$calendar-input-time-padding: 6px;
-$calendar-input-time-color: $gray-700;
-$timepanel-margin-top: 4px;
-$timepanel-border-color: $gray-300;
-$timepanel-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06);
-$timepanel-list-height: 160px;
-$timepanel-list-item-padding: 5px 0 5px 10px;
-$timepanel-list-item-background-color-hover: $gray-200;
-$timepanel-list-item-background-color-active: $gray-200;
-$timepanel-list-item-color-disabled: $gray-600;
-$timepanel-list-item-background-color-disabled: $gray-100; // #f4f4f4
+$pickercontainer-padding: 10px 5px !default;
+$pickercontainer-border-radius: 2px !default;
+$pickercontainer-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06) !default;
+$calendar-day-width: 22px !default;
+$calendar-day-height: 22px !default;
+$calendar-day-line-height: 18px !default;
+$calendar-day-margin: 6px !default;
+$calendar-font-size: 14px !default;
+$calendar-font-weight: $font-weight-bold !default;
+$calendar-day-border-color-hover: $blue !default;
+$calendar-day-background-color-active: $blue !default;
+$calendar-day-font-size: 13px !default;
+$calendar-weekday-color: $gray-600 !default; // #999
+$calendar-day-color: $gray-700 !default; // #666
+$calendar-day-border-color-hover: $blue !default;
+$calendar-day-background-color-hover: $gray-200 !default; // #ebf3ff
+$calendar-day-color-active: $white !default;
+$calendar-day-border-color-active: $blue !default;
+$calendar-day-background-color-active: $blue !default;
+$calendar-day-disabled: $gray-400 !default;
+$calendar-day-transition: all .3s ease !default;
+$calendar-timewrap-padding: 5px 10px !default;
+$calendar-nowtime-width: 75px !default;
+$calendar-nowtime-height: 25px !default;
+$calendar-nowtime-line-height: 25px !default;
+$calendar-nowtime-font-size: 14px !default;
+$calendar-nowtime-color: $blue !default;
+$calendar-input-time-width: 136px !default;
+$calendar-input-time-height: 30px !default;
+$calendar-input-time-line-height: 28px !default;
+$calendar-input-time-border-color: $gray-400 !default; // #ccc
+$calendar-input-time-border-color-hover: $blue !default;
+$calendar-input-time-box-shadow: 0 0 2px 1px rgba(49,135,246,0.30) !default;
+$calendar-input-time-padding: 6px !default;
+$calendar-input-time-color: $gray-700 !default;
+$calendar-input-time-transition: all .3s !default;
+$calendar-input-time-color-disabled: $disabled-color !default;
+$calendar-input-time-border-color-disabled: $disabled-border-color !default;
+$calendar-input-time-background-color-disabled: $disabled-background-color !default;
+$timepanel-margin-top: 4px !default;
+$timepanel-border-color: $gray-300 !default;
+$timepanel-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06) !default;
+$timepanel-list-height: 160px !default;
+$timepanel-list-item-padding: 5px 0 5px 10px !default;
+$timepanel-list-item-background-color-hover: $gray-200 !default;
+$timepanel-list-item-background-color-active: $gray-200 !default;
+$timepanel-list-item-color-disabled: $gray-600 !default;
+$timepanel-list-item-background-color-disabled: $gray-100 !default; // #f4f4f4
+$timepanel-list-item-transition: background-color .3s ease !default;

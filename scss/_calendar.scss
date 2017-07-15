@@ -1,4 +1,4 @@
-.shark-calendar {
+.calendar {
 	background-color: #ffffff;
 	z-index: 999999;
 	width: ((22)*7+6*2*7) + px;
@@ -86,6 +86,7 @@
 		}
 		.calendar-day {
 			color: $calendar-day-color;
+			@include transition($calendar-day-transition);
 			&:hover {
 				border-color: $calendar-day-border-color-hover;
 				background-color: $calendar-day-background-color-hover;
@@ -115,7 +116,7 @@
 	}
 }
 
-.shark-timepanel {
+.timepanel {
 	margin-top: $timepanel-margin-top;
 	position: absolute;
 	display: none;
@@ -176,6 +177,7 @@
 	.timepanel-list-item {
 		cursor: pointer;
 		padding: $timepanel-list-item-padding;
+		@include transition($timepanel-list-item-transition);
 		&:hover {
 			background-color: $timepanel-list-item-background-color-hover;
 		}
@@ -190,7 +192,7 @@
 	}
 }
 
-.shark-pickercontainer {
+.pickercontainer {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -201,7 +203,7 @@
 	padding: $pickercontainer-padding;
 	border-radius: $pickercontainer-border-radius;
 	@include box-shadow($pickercontainer-box-shadow);
-	.shark-timewrap{
+	.timewrap{
 		padding: $calendar-timewrap-padding;
 		.nowtime{
 			cursor:pointer;
@@ -211,6 +213,9 @@
 			display: inline-block;
 			font-size: $calendar-nowtime-font-size;
 			color: $calendar-nowtime-color;
+			&:hover {
+				color: $calendar-nowtime-color;
+			}
 		}
 		.input-time-wrap{
 			display: inline-block;
@@ -226,12 +231,21 @@
 				vertical-align: middle;
 				border-radius: $pickercontainer-border-radius;
 				color: $calendar-input-time-color;
+				@include transition($calendar-input-time-transition);
 				&:hover,
 				&:focus {
 					border-color: $calendar-input-time-border-color-hover;
 				}
 				&:focus {
 					@include box-shadow($calendar-input-time-box-shadow);
+				}
+				&:disabled,
+				&.disabled {
+					cursor: not-allowed;
+					color: $calendar-input-time-color-disabled;
+					border-color: $calendar-input-time-border-color-disabled;
+					background-color: $calendar-input-time-background-color-disabled;
+					@include box-shadow(none);
 				}
 			}
 		}
