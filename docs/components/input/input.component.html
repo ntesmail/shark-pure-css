@@ -88,7 +88,9 @@
         </div>
     </section>
     <section class="highlight-wrapper">
-       <div transfer [type]="'html'" [content]="pager1html"></div>
+       <div transfer>
+           <input type="text" class="input"/>
+       </div>
     </section>
 </section>
 
@@ -98,7 +100,9 @@
             <div class="input-group">
                 <span class="input-group-addon">http://</span>
                 <input type="text" class="input"/>
-                <button type="button" class="btn">button</button>
+                <span class="input-group-addon">
+                    <button type="button" class="btn">button</button>
+                </span>
             </div>
         </div>
         <div class="wrapper">
@@ -133,11 +137,13 @@
             用于配置一些固定组合。提供input、input-affix-wrapper(带前缀后缀的输入框)与btn、selecter、input-group-addon的组合。
         </div>
     </section>
+
     <section class="highlight-wrapper">
-       <div transfer [type]="'html'" [content]="pager1html"></div>
-       <div transfer [type]="'html'" [content]="smheight"></div>
-       <div transfer [type]="'html'" [content]="mdwidth"></div>
-       <div transfer [type]="'html'" [content]="smwidth"></div>
+       <div transfer>
+           <input type="text" class="input input-sm"/>
+           <input type="text" class="input input-w-md"/>
+           <input type="text" class="input input-w-sm"/>
+       </div>
     </section>
 </section>
 
@@ -165,10 +171,12 @@
         </div>
     </section>
     <section class="highlight-wrapper">
-       <div transfer [type]="'html'" [content]="pager1html"></div>
-       <div transfer [type]="'html'" [content]="smheight"></div>
-       <div transfer [type]="'html'" [content]="mdwidth"></div>
-       <div transfer [type]="'html'" [content]="smwidth"></div>
+       <div transfer>
+           <input type="text" class="input"/>
+           <input type="text" class="input input-sm"/>
+           <input type="text" class="input input-w-md"/>
+           <input type="text" class="input input-w-sm"/>
+       </div>
     </section>
 </section>
 

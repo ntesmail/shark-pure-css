@@ -1,40 +1,47 @@
 import { Directive, ElementRef, Input, Output, EventEmitter } from '@angular/core';
+import * as Prism from 'prismjs';
 
 @Directive({
     selector: '[transfer]',
     exportAs: 'transfer'
 })
 export class TransferDirective {
-    @Input('type') type: any;
-    @Input('content') content: any;
-    innerHtml:any;
     constructor(
         private elementRef: ElementRef
     ) { 
     }
     render() {
-        let type=this.type=='js'? 'ts':this.type;
-        let html='<pre><code class="language-'+this.type+'">'+this.content.replace(/>/g,'&gt;').replace(/</g,'&lt;')+'</code></pre>';
-        this.elementRef.nativeElement.innerHTML=html;
-        this.reloadJs();
+        console.log(12);
+        const nativeEle = this.elementRef.nativeElement;
+        const html = Prism.highlight(nativeEle.innerHTML, this.getLanguage(nativeEle));
+        const htmlrst = `<pre class="language-html">
+                            <code class="language-html">
+                                <span class="token tag">
+                                    ${html}
+                                </span>
+                            </code>
+                        </pre>`;
+        nativeEle.innerHTML = htmlrst;
+    }
+    getLanguage(ele) {
+        if (ele.className.indexOf('css') > -1) {
+            return Prism.languages.css;
+        } else if (ele.className.indexOf('js') > -1) {
+            return Prism.languages.javascript;
+        } else {
+            return Prism.languages.markup;
+        }
     }
     reloadJs(){
-        if(document.getElementById('js-prism')){
-            document.getElementById('js-prism').remove();
-        }
-        let script= document.createElement('script');   
-        script.type= 'text/javascript';
-        script.id = 'js-prism';   
-        script.src= '//mimg.127.net/h/lib/prism.js?time='+new Date().getTime();   
-        document.body.appendChild(script);
+        
+    }
+    ngOnInit() {
+        this.render();
     }
     ngOnChanges(v) {
-        this.type = v.type.currentValue;
-        this.content = v.content.currentValue;
         this.render();
     }
     ngOnDestroy() {
-        this.elementRef.nativeElement.innerHTML='';
     }
 
 }
