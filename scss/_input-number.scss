@@ -9,6 +9,10 @@
   transition: all .1s linear;
 }
 
+%icon-size {
+  @extend .text-xs;
+}
+
 .input-number {
   @extend %input;
   padding: 0;
@@ -49,9 +53,15 @@
 
 .input-number-handle-up {
   @extend %input-number-handle;
+  i, [class*="icon-"] {
+    @extend %icon-size
+  }
 }
 
 .input-number-handle-down {
   @extend %input-number-handle;
   border-top: 1px solid #d9d9d9;
+  i, [class*="icon-"] {
+    @extend %icon-size
+  }
 }

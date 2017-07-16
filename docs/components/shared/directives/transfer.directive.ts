@@ -1,5 +1,6 @@
 import { Directive, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import * as Prism from 'prismjs';
+import 'prismjs/components/prism-bash';
 
 @Directive({
     selector: '[transfer]',
@@ -11,7 +12,6 @@ export class TransferDirective {
     ) { 
     }
     render() {
-        console.log(12);
         const nativeEle = this.elementRef.nativeElement;
         const html = Prism.highlight(nativeEle.innerHTML, this.getLanguage(nativeEle));
         const htmlrst = `<pre class="language-html">
@@ -24,7 +24,9 @@ export class TransferDirective {
         nativeEle.innerHTML = htmlrst;
     }
     getLanguage(ele) {
-        if (ele.className.indexOf('css') > -1) {
+        if (ele.className.indexOf('bash') > -1) {
+            return Prism.languages.bash;
+        } else if (ele.className.indexOf('css') > -1) {
             return Prism.languages.css;
         } else if (ele.className.indexOf('js') > -1) {
             return Prism.languages.javascript;
@@ -32,16 +34,14 @@ export class TransferDirective {
             return Prism.languages.markup;
         }
     }
-    reloadJs(){
-        
-    }
     ngOnInit() {
         this.render();
     }
     ngOnChanges(v) {
-        this.render();
+        
     }
     ngOnDestroy() {
+        
     }
 
 }
