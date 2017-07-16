@@ -123,6 +123,12 @@
     .progress-status-text {
       color: $progress-status-finish-color;
     }
+    .progress-status-icon {
+      &:after {
+        @include iconfont-font("\EE63");
+        font-size: 23px;
+      }
+    }
   } // 错误状态
   &.progress-status-error {
     .progress-status-text {
@@ -130,6 +136,12 @@
     }
     .progress-circle-upper {
       stroke: $progress-status-error-color;
+    }
+    .progress-status-icon {
+      &:after {
+        @include iconfont-font("\EE64");
+        font-size: 18px;
+      }
     }
   }
 }
@@ -151,30 +163,6 @@
   }
 }
 
-// @mixin progress-status-text-fade-out($progress-status-text-current-color: $progress-primary-color) {
-//   @keyframes progress-status-text-fade-out {
-//     70% {
-//       display: block;
-//       visibility: visible;
-//       color: $progress-status-text-current-color;
-//       opacity: 1;
-//     }
-//     99% {
-//       opacity: 0;
-//       visibility: hidden;
-//       display: none !important;
-//       width: 100%;
-//       height: auto;
-//     }
-//     to {
-//       opacity: 0;
-//       visibility: hidden;
-//       display: none !important;
-//       width: 0;
-//       height: 0;
-//     }
-//   }
-// }
 @keyframes progress-svg-fade-out {
   99% {
     opacity: 0;
