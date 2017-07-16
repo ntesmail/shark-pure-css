@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 	user-select: none;
 	.calendar-montharea {
-		padding: 5px 0;
+		padding: 5px 15px;
 		text-align: center;
 		.calendar-prev-year,
 		.calendar-prev-month,
@@ -13,35 +13,29 @@
 		.calendar-next-month {
 			display: block;
 			cursor: pointer;
-			margin: 0 5px;
-			width: 21px;
-			height: 21px;
-			background-size: 9px 9px;
-			background-position: center center;
-			background-repeat: no-repeat;
 			&.calendar-disabled {
 					cursor: not-allowed;
 			}
 		}
 		.calendar-prev-month,
 		.calendar-next-month {
-			background-size: 12px 12px;
-		}
-		.calendar-prev-year {
-			float: left;
-			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALcob2oAAAAKdFJOUwD+dlMMvZ7aMZlYDG2gAAAAM0lEQVQI12NgYGBgKmFgrgDSDIpCDIaSIAHBBGbBEJCAGIOhqAMxAggGXIpYIailEGcAAHOtDG28kPRsAAAAAElFTkSuQmCC);
+			margin: 0 10px;
+    }
+    .calendar-prev-year {
+      float: left;
+      @extend .icon-doubleleft;
 		}
 		.calendar-prev-month {
-			float: left;
-			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURQAAAAAAAAAAAAAAADXpN5YAAAAEdFJOUwD+dlQZqnPdAAAALklEQVQI12NgYOBiAALVBiAx9QADA1M4kMEZAxIqQBYCE2AuRAKsBFkQZAAXAwCMqgoLR0QF3wAAAABJRU5ErkJggg==);
+      float: left;
+      @extend .icon-left;
 		}
 		.calendar-next-year {
-			float: right;
-			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3RSMEAAAALdFJOUwB4VJ0KvW/aJkr+00F2iwAAADZJREFUCNdjaFdgaBdgAAKrRQxZC0EM11UKzKtAQixRixisiBBayWC1DJkBk4IrximAsBTmDAD8xRxNDQ62FwAAAABJRU5ErkJggg==);
+      float: right;
+      @extend .icon-doubleright;
 		}
 		.calendar-next-month {
 			float: right;
-			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURQAAAAAAAAAAAAAAADXpN5YAAAAEdFJOUwD+dlQZqnPdAAAALklEQVQI12NgWMDAwMAUASSYw4AEw9UGIGGaACR40QRBBJgLlgArgQuBDQAZBQCn8wqhEuR6awAAAABJRU5ErkJggg==);
+      @extend .icon-right;
 		}
 		input {
 			display: inline-block;
@@ -58,7 +52,6 @@
 		}
 	}
 	.calendar-dayarea {
-		// margin: -15px 0 0 -15px;
 		.calendar-day-wrap::after,
 		.calendar-weekday-wrap::after {
 			content: '';
@@ -224,38 +217,11 @@
 			display: inline-block;
       position: relative;
       width: $calendar-input-time-width;
-      // @include transition($calendar-input-time-transition);
 			.input-time{
 				width: $calendar-input-time-width;
         .input {
           cursor:pointer;
         }
-				// height: $calendar-input-time-height;
-        // line-height: $calendar-input-time-line-height;
-				// border: 1px solid $calendar-input-time-border-color;
-				// font-size: 12px;
-				// padding: $calendar-input-time-padding;
-				// vertical-align: middle;
-				// border-radius: $pickercontainer-border-radius;
-				// color: $calendar-input-time-color;
-				// @include transition($calendar-input-time-transition);
-				// &:hover,
-        // &:focus,
-        // &.active {
-				// 	border-color: $calendar-input-time-border-color-hover;
-				// }
-				// &:focus,
-        // &.active {
-				// 	@include box-shadow($calendar-input-time-box-shadow);
-				// }
-				// &:disabled,
-				// &.disabled {
-				// 	cursor: not-allowed;
-				// 	color: $calendar-input-time-color-disabled;
-				// 	border-color: $calendar-input-time-border-color-disabled;
-				// 	background-color: $calendar-input-time-background-color-disabled;
-				// 	@include box-shadow(none);
-				// }
 			}
 		}
 	}

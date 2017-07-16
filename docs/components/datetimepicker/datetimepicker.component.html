@@ -2,7 +2,7 @@
     <div class="datetimepicker input-group" style="margin-bottom:30px;">
         <div class="input-affix-wrapper">
             <input type="text" class="input" value="2017-07-10" />
-            <span class="input-suffix input-suffix-focus">
+            <span class="input-suffix input-suffix-focus clear">
                 <i class="icon-closecircle"></i>
             </span>
         </div>
@@ -21,15 +21,24 @@
         <div class="datepicker">
             <div class="calendar">
                 <div class="calendar-montharea">
-                    <a class="calendar-prev-year calendar-disabled"></a>
-                    <a class="calendar-prev-month calendar-disabled"></a>
+                    <i class="calendar-prev-year calendar-disabled"></i>
+                    <i class="calendar-prev-month calendar-disabled"></i>
                     <input class="calendar-current-year" readonly="readonly" type="text" value="2017年" />
                     <input class="calendar-current-month" readonly="readonly" type="text" value="5月" />
-                    <a class="calendar-next-year calendar-disabled"></a>
-                    <a class="calendar-next-month calendar-disabled"></a>
+                    <i class="calendar-next-year calendar-disabled"></i>
+                    <i class="calendar-next-month calendar-disabled"></i>
                 </div>
                 <div class="calendar-dayarea">
                     <div class="calendar-weekday-wrap">
+                        <span class="calendar-weekday">日</span>
+                        <span class="calendar-weekday">一</span>
+                        <span class="calendar-weekday">二</span>
+                        <span class="calendar-weekday">三</span>
+                        <span class="calendar-weekday">四</span>
+                        <span class="calendar-weekday">五</span>
+                        <span class="calendar-weekday">六</span>
+                    </div>
+                    <div class="calendar-day-wrap">
                         <span class="calendar-day calendar-disabled calendar-premonthday">25</span>
                         <span class="calendar-day calendar-disabled calendar-premonthday">26</span>
                         <span class="calendar-day calendar-disabled calendar-premonthday">27</span>
@@ -65,22 +74,18 @@
                         <span class="calendar-day calendar-disabled calendar-nextmonthday">4</span>
                         <span class="calendar-day calendar-disabled calendar-nextmonthday">5</span>
                     </div>
-                    <div class="calendar-day-wrap"> </div>
                 </div>
             </div>
         </div>
         <div class="timewrap">
             <a class="nowtime">当前</a>
             <div class="input-time-wrap">
-                <div class="input-time input-group">
-                    <div class="input-affix-wrapper">
-                        <input type="text" class="input" readonly="readonly" value="19:25:23" />
-                        <span class="input-suffix">
-                            <i class="icon-clockcircleo"></i>
-                        </span>
-                    </div>
+                <div class="input-time input-affix-wrapper">
+                    <input type="text" class="input " readonly="readonly" value="19:25:23" />
+                    <span class="input-suffix">
+                        <i class="icon-clockcircleo"></i>
+                    </span>
                 </div>
-                <!-- <input class="input-time active" readonly="readonly" value="19:25:23" /> -->
                 <div class="timepanel" style="display: block;">
                     <div class="timepanel-list timepanel-list-hours">
                         <div class="timepanel-list-item timepanel-disabled">00</div>
