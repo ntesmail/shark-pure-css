@@ -115,7 +115,7 @@
 	display: none;
 	background-color: #ffffff;
 	z-index: 9999999;
-	width: 156px;
+	width: 157px;
 	box-sizing: border-box;
 	user-select: none;
 	&::after {
@@ -124,14 +124,14 @@
 		clear: both;
 	}
 	border: 1px solid $timepanel-border-color;
-	border-right-color: transparent; 
+	border-right: none; 
 	@include box-shadow($timepanel-box-shadow);
 	border-radius: $pickercontainer-border-radius;
 	.timepanel-list {
 		display: block;
 		height: $timepanel-list-height;
 		float: left;
-		width: 33.33%;
+		width: 52px;
 		overflow: auto;
 		&:first-child {
 			border-left: none;
@@ -182,6 +182,9 @@
 			color: $timepanel-list-item-color-disabled;
 			background-color: $timepanel-list-item-background-color-disabled;
 		}
+	&:last-child {
+		margin-bottom: 125px; 
+	}
 	}
 }
 
