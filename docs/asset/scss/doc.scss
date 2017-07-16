@@ -51,3 +51,18 @@ section {
   overflow: auto;
   border-radius: 0 0 4px 4px;
 }
+
+.icon_lists {
+  width: 1000px;
+  text-align: center;
+}
+.icon_lists li {
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.icon_lists li:hover {
+  background-color: #f4f4f4;
+}
