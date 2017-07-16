@@ -1,0 +1,260 @@
+<div class="page-header">
+    <h1>List Group 下拉选项</h1>
+</div>
+
+<!--part1 说明-->
+<div class="page-header">
+    <h2>组件说明</h2>
+</div>
+<div class="u-tips">
+	<ul>
+        <li>1. 可与 select 组件一起使用完成自定义下拉框</li>
+    </ul>
+</div>
+
+<div class="page-header">
+    <h2>代码演示</h2>
+</div>
+
+
+<!-- 普通下拉菜单 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>普通下拉菜单</h3>
+        </div>
+        <div>
+            宽度需与 select 等宽，最多展示七条数据，多余的数据会出现滚动条，left top width 通过js计算，内联添加
+        </div>
+    </section>
+    <section class="code-box-demo" style="height:400px;">
+        <div class="select select-noborder select-sm" style="margin-right:100px;">
+            <span>请选择</span>
+        </div>
+        <div class="tree list-group show" style="left: 20px; top: 122px; width: 80px;">
+            <div class="tree">
+                <ul>
+                    <li class="active">
+                        <span class="tree-node-name">Top1</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top2</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top3</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top4</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top5</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top6</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top7</span>
+                    </li>
+                    <li>
+                        <span class="tree-node-name">Top8</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="tree list-group">
+    <div class="tree">
+        <ul>
+            <li class="active">
+                <span class="tree-node-name">Top1</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top2</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top3</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top4</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top5</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top6</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top7</span>
+            </li>
+            <li>
+                <span class="tree-node-name">Top8</span>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 多选下拉 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>多选下拉</h3>
+        </div>
+        <div>
+            与 tree 结合，可多选，可全选
+        </div>
+    </section>
+    <section class="code-box-demo" style="height:370px">
+        <div class="select select-multiple select-lg" style="margin-right:100px;">
+            <ul class="select-items">
+                <li class="select-item">选项1<i class="icon-close"></i></li>
+                <li class="select-item">选项2<i class="icon-close"></i></li>
+                <li class="select-item">选项3<i class="icon-close"></i></li>
+            </ul>
+        </div>
+        <div class="tree list-group" style="left: 20px; top: 122px; width: 240px; display:block;">
+            <div class="check-all-warp">
+                <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
+                <span class="tree-node-name">全选</span>
+            </div>
+            <div class="tree">
+                <ul>
+                    <li>
+                        <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
+                        <span class="tree-node-name">哈哈1</span>
+                    </li>
+                    <li>
+                        <span class="tree-checkbox tree-icon tree-icon-check"></span>
+                        <span class="tree-node-name">哈哈2</span>
+                    </li>
+                    <li>
+                        <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                        <span class="tree-node-name">哈哈3</span>
+                    </li>
+                    <li>
+                        <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                        <span class="tree-node-name">哈哈4</span>
+                    </li>
+                    <li>
+                        <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                        <span class="tree-node-name">哈哈5</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+
+<div class="tree list-group">
+    <div class="check-all-warp">
+        <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
+        <span class="tree-node-name">全选</span>
+    </div>
+    <div class="tree">
+        <ul>
+            <li>
+                <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
+                <span class="tree-node-name">哈哈1</span>
+            </li>
+            <li>
+                <span class="tree-checkbox tree-icon tree-icon-check"></span>
+                <span class="tree-node-name">哈哈2</span>
+            </li>
+            <li>
+                <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                <span class="tree-node-name">哈哈3</span>
+            </li>
+            <li>
+                <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                <span class="tree-node-name">哈哈4</span>
+            </li>
+            <li>
+                <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
+                <span class="tree-node-name">哈哈5</span>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 多层级下拉选择 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>多层级下拉选择</h3>
+        </div>
+        <div>
+            可二级菜单选择
+        </div>
+    </section>
+    <section class="code-box-demo" style="height:290px">
+        <div class="select select-single select-md" style="margin-right:100px;">
+            <span>请选择</span>
+        </div>
+        <div class="list-group" style="left: 20px; top: 122px; width: 155px; display:block;">
+            <ul>
+                <li class="list-group-item" value="">
+                    <span>请选择</span>
+                </li>
+                <li class="list-group-item active" value="1">
+                    <span>哈哈1</span>
+                </li>
+                <li class="list-group-item" value="2">
+                    <span>哈哈2</span>
+                </li>
+                <li class="list-group-item" value="3">
+                    <span>哈哈3</span>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group" style="left: 174px; top: 162px; width: 155px; display:block;">
+            <ul>
+                <li class="list-group-item" value="">
+                    <span>请选择</span>
+                </li>
+                <li class="list-group-item active" value="1">
+                    <span>哈哈1-1</span>
+                </li>
+            </ul> 
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="list-group">
+    <ul>
+        <li class="list-group-item" value="">
+            <span>请选择</span>
+        </li>
+        <li class="list-group-item active" value="1">
+            <span>哈哈1</span>
+        </li>
+        <li class="list-group-item" value="2">
+            <span>哈哈2</span>
+        </li>
+        <li class="list-group-item" value="3">
+            <span>哈哈3</span>
+        </li>
+    </ul>
+</div>
+<div class="list-group">
+    <ul>
+        <li class="list-group-item" value="">
+            <span>请选择</span>
+        </li>
+        <li class="list-group-item active" value="1">
+            <span>哈哈1-1</span>
+        </li>
+    </ul> 
+</div>
+        </div>
+    </section>
+</section>
+
+    
