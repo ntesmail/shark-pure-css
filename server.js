@@ -6,7 +6,6 @@ var SharkConfig = require('./shark-deploy-conf');
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
-var bodyParser = require('body-parser');
 var openurl = require('openurl');
 var IP = require('ip');
 
@@ -24,19 +23,6 @@ app.use(webpackHotMiddleware(compiler, {
     reload: true
 }));
 
-//ajax
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-//ajax mock
-app.use(SharkConfig.contextPath + '/xhr', function (req, res) {
-    console.log('request url:' + req.url);
-    var data = path.join(__dirname, 'test/mock/xhr', req.path);
-    if (fs.existsSync(data)) {
-        res.send(fs.readFileSync(data));
-    } else {
-        res.status(404).send('file not exist !');
-    }
-});
 
 //font
 app.use(SharkConfig.contextPath + '/fonts', express.static(path.join(__dirname, 'docs/asset/fonts')));

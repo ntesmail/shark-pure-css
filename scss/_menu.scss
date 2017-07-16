@@ -64,5 +64,9 @@
   .menu-nav {
     width: 100%;
     display: block;
+
+    &:nth-child(even) {
+      padding-left: 0;
+    }
   }
 }
