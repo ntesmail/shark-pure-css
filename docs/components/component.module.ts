@@ -25,7 +25,6 @@ import { CssNotifyModule } from './notify/notify.module';
 import { CssUploadModule } from './upload/upload.module';
 import { CssIconfontModule } from './iconfont/iconfont.module';
 import { CssTagModule } from './tag/tag.module';
-import { CssListgroupModule } from './listgroup/listgroup.module';
 @NgModule({
         imports: [
                 CssButtonModule,
@@ -50,8 +49,7 @@ import { CssListgroupModule } from './listgroup/listgroup.module';
                 CssNotifyModule,
                 CssUploadModule,
                 CssIconfontModule,
-                CssTagModule,
-                CssListgroupModule
+                CssTagModule
         ]
 })
 export class ComponentModule { }

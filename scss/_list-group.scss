@@ -15,6 +15,8 @@
     box-shadow: $list-group-box-shadow;
     border-radius: $list-group-border-radius;
     margin-top: 4px;
+    max-height: $list-group-item-height * 7;
+    overflow-y: auto;
   }
 
   .list-group-item,
@@ -37,6 +39,11 @@
   }
   
   &.tree li {
+    &.active {
+      .tree-node-name {
+        color: $list-group-item-color-active;
+      }
+    }
     .tree-node-name {
       font-size: $list-group-font-size;
       height: $list-group-item-height;
