@@ -16,7 +16,8 @@
         height: 40px;
         line-height: 40px;
         padding: 0 40px;
-        background: $tabs-tab-background; // position: relative;
+        text-align: center;
+        background-color: $tabs-tab-background; // position: relative;
         margin-bottom: -$tabs-tab-border-width;
         cursor: pointer;
         &:first-child {
@@ -43,13 +44,38 @@
       }
     }
   }
-}
-
-.tabs.tabs-vertical {
-  .tabs-nav {
-    .tabs-tab {
-      text-align: right;
-      display: block;
+  &.tabs-card.tabs-vertical {
+    @extend .clearfix;
+    .tabs-nav {
+      font-size: 0; // display: inline-block;
+      float: left;
+      .tabs-tab {
+        font-size: $tabs-tab-font-size; // display: iblock;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: $tabs-card-vertical-tab-bg-color; // position: relative;
+        color: $tabs-card-vertical-tab-active-color;
+        cursor: pointer;
+      }
+      .tabs-tab-active {
+        background-color: $tabs-card-vertical-tab-active-bg-color;
+        border-left: 4px $tabs-tab-border-style $tabs-primary-color; // box-shadow: 0 -2px 0 -0 $tabs-primary-color;
+        border-top: none;
+      }
+    }
+    .tabs-content {
+      margin-left: 140px;
+      .tabs-tabpane {
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+      }
+      .tabs-tabpane-active {
+        opacity: 1;
+        display: block;
+      }
     }
   }
 }
