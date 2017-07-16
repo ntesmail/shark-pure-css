@@ -11,10 +11,12 @@
 		.calendar-prev-month,
 		.calendar-next-year,
 		.calendar-next-month {
+      font-size: 14px;
 			display: block;
 			cursor: pointer;
 			&.calendar-disabled {
-					cursor: not-allowed;
+        color: $calendar-day-disabled;
+        cursor: not-allowed;
 			}
 		}
 		.calendar-prev-month,
@@ -23,19 +25,27 @@
     }
     .calendar-prev-year {
       float: left;
-      @extend .icon-doubleleft;
+      &:before {
+       @include iconfont-font("\EE49");
+      }
 		}
 		.calendar-prev-month {
       float: left;
-      @extend .icon-left;
+      &:before {
+        @include iconfont-font("\EE51");
+      }
 		}
 		.calendar-next-year {
       float: right;
-      @extend .icon-doubleright;
+      &:before {
+        @include iconfont-font("\EE48");
+      }
 		}
 		.calendar-next-month {
 			float: right;
-      @extend .icon-right;
+      &:before {
+        @include iconfont-font("\EE50");
+      }
 		}
 		input {
 			display: inline-block;
