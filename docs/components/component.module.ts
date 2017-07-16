@@ -27,6 +27,7 @@ import { CssIconfontModule } from './iconfont/iconfont.module';
 import { CssFunctionModule } from './function/function.module';
 import { CssTagModule } from './tag/tag.module';
 import { CssListgroupModule } from './listgroup/listgroup.module';
+import { CssGridModule } from './grid/grid.module';
 @NgModule({
         imports: [
                 CssButtonModule,
@@ -53,7 +54,8 @@ import { CssListgroupModule } from './listgroup/listgroup.module';
                 CssIconfontModule,
                 CssTagModule,
                 CssListgroupModule,
-                CssFunctionModule
+                CssFunctionModule,
+                CssGridModule
         ]
 })
 export class ComponentModule { }

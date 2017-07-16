@@ -35,7 +35,7 @@ module.exports = {
                 loader: 'url-loader',
                 query: {
                     name: 'images/[name].[ext]',
-                    limit: 100
+                    limit: 5
                 }
             }, {
                 test: /\.scss$/,

@@ -1,0 +1,71 @@
+<div class="page-header">
+    <h1>Grid</h1>
+</div>
+
+<!--part1 说明-->
+<div class="page-header">
+    <h2>组件说明</h2>
+</div>
+<div class="u-tips">
+	<ul>
+        <li>1. 栅格布局。</li>
+    </ul>
+</div>
+
+
+<div class="page-header">
+    <h2>
+        代码演示
+    </h2>
+</div>
+
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>基本使用</h3>
+        </div>
+        <div>
+            栅格布局默认分成24等分，可以通过scss变量<strong>$grid-columns</strong>来自定义等分数
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="clearfix" style="width: 900px;">
+            <div class="col-8" style="height:100px;text-align:center;line-height: 100px;background: rgba(0,160,233,.7);">
+                8/12
+            </div>
+            <div class="col-12" style="height:100px;text-align:center;line-height: 100px; background: blue;">
+                12/24
+            </div>
+            <div class="col-4" style="height:100px;text-align:center;line-height: 100px;background: rgba(0,160,233,.7);">
+                4/24
+            </div>
+            <div class="col-3" style="height:100px;text-align:center;line-height: 100px; background: blue;">
+                3/24
+            </div>
+            <div class="col-21" style="height:100px;text-align:center;line-height: 100px; background: rgba(0,160,233,.7);">
+                21/24
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+       <div transfer style="display: none;">
+<div class="clearfix">
+    <div class="col-8">
+        8/12
+    </div>
+    <div class="col-12">
+        12/24
+    </div>
+    <div class="col-4">
+        4/24
+    </div>
+    <div class="col-3">
+        3/24
+    </div>
+    <div class="col-21">
+        21/24
+    </div>
+</div>
+       </div>
+    </section>
+</section>

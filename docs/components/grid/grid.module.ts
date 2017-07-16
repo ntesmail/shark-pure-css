@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
-import { CssUploadComponent } from "./upload.component";
+import { CssGridComponent } from "./grid.component";
 import { SharedModule } from '../shared/shared.module';
-
 
 // 定义常量 路由
 const routes: any = [
     {
-        path: 'cssupload',
-        component: CssUploadComponent
+        path: 'cssgrid',
+        component: CssGridComponent
     }
 ];
 
@@ -17,6 +16,6 @@ const routes: any = [
         RouterModule.forChild(routes),
         SharedModule
     ],
-    declarations: [CssUploadComponent]
+    declarations: [CssGridComponent]
 })
-export class CssUploadModule { }
+export class CssGridModule { }
