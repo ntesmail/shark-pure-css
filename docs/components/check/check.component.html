@@ -1,137 +1,11 @@
 
-<!--<div style="margin-bottom: 20px;">
-    <div class="radio-group">
-        <label class="radio-wrapper">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-
-        <label class="radio-wrapper checked">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-
-        <label class="radio-wrapper disabled">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-
-        <label class="radio-wrapper checked disabled">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-    </div>
-</div>
-
-<div style="margin-bottom: 20px;">
-    <div class="radio-group">
-        <label class="radio-wrapper checked disabled">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-        <label class="radio-wrapper checked disabled">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-    </div>  
-</div>
-
-<div style="margin-bottom: 20px;">
-    <div class="radio-group radio-group-vertical">
-        <label class="radio-wrapper checked disabled">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-        <label class="radio-wrapper checked disabled">
-            <span class="radio">
-                <input type="radio" class="radio-input"/>
-                <span class="radio-inner"></span>
-            </span>
-            <span>radio</span>
-        </label>
-    </div>  
-</div>
-
-<div style="margin-bottom: 20px;">
-    <div class="checkbox-group">
-        <label class="checkbox-wrapper">
-            <span class="checkbox">
-                <input type="checkbox" class="checkbox-input"/>
-                <span class="checkbox-inner"></span>
-            </span>
-            <span>check</span>
-        </label>
-
-            <label class="checkbox-wrapper checked">
-            <span class="checkbox">
-                <input type="checkbox" class="checkbox-input"/>
-                <span class="checkbox-inner"></span>
-            </span>
-            <span>check</span>
-        </label>
-
-            <label class="checkbox-wrapper disabled">
-            <span class="checkbox">
-                <input type="checkbox" class="checkbox-input"/>
-                <span class="checkbox-inner"></span>
-            </span>
-            <span>check</span>
-        </label>
-
-        <label class="checkbox-wrapper checked disabled">
-            <span class="checkbox">
-                <input type="checkbox" class="checkbox-input"/>
-                <span class="checkbox-inner"></span>
-            </span>
-            <span>check</span>
-        </label>
-
-        <label class="checkbox-wrapper checked-some">
-            <span class="checkbox">
-                <input type="checkbox" class="checkbox-input"/>
-                <span class="checkbox-inner"></span>
-            </span>
-            <span>check</span>
-        </label>
-
-        <label class="checkbox-wrapper checked-some disabled">
-            <span class="checkbox">
-                <input type="checkbox" class="checkbox-input"/>
-                <span class="checkbox-inner"></span>
-            </span>
-            <span>check</span>
-        </label>
-    </div>
-</div>-->
-
 <div class="page-header">
     <h1>Radio/checkbox 选择框</h1>
 </div>
 
 <!--part1 说明-->
 <div class="page-header">
-    <h1><small>组件说明</small></h1>
+    <h2>组件说明</h2>
 </div>
 <div class="u-tips">
 	<ul>
@@ -141,12 +15,20 @@
 
 
 <div class="page-header">
-    <h1>
-        <small>代码演示</small>
-    </h1>
+    <h2>
+        代码演示
+    </h2>
 </div>
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>基本使用</h3>
+        </div>
+        <div>
+            最简单的用法
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="wrapper">
             <label class="radio-wrapper">
@@ -165,14 +47,6 @@
                 </span>
                 <span>checkbox</span>
             </label>
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>基本使用</span>
-        </div>
-        <div>
-            最简单的用法
         </div>
     </section>
     <section class="highlight-wrapper">
@@ -201,6 +75,14 @@
 </section>
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>状态</h3>
+        </div>
+        <div>
+            提供了选中状态，不可选状态，及这两种状态的组合。通过disabled、checked两个类来控制状态
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="wrapper">
             <div class="radio-group">
@@ -265,14 +147,6 @@
                     <span>checkbox</span>
                 </label>
             </div>
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>状态</span>
-        </div>
-        <div>
-            提供了选中状态，不可选状态，及这两种状态的组合。通过disabled、checked两个类来控制状态
         </div>
     </section>
     <section class="highlight-wrapper">
@@ -343,6 +217,14 @@
 
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>选择框组</h3>
+        </div>
+        <div>
+            用于多个选择框一起使用的状态
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="wrapper">
             <div class="radio-group">
@@ -379,14 +261,6 @@
                     <span>checkbox</span>
                 </label>
             </div>
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>选择框组</span>
-        </div>
-        <div>
-            用于多个选择框一起使用的状态
         </div>
     </section>
     <section class="highlight-wrapper">
