@@ -39,7 +39,8 @@ export class MarkdownDirective {
         tables.forEach((t) => {
             t.className += ' table';
         });
-        nativeEle.innerHTML = mdEle.outerHTML;
+        nativeEle.parentElement.replaceChild(mdEle, nativeEle);
+        // nativeEle.innerHTML = mdEle.outerHTML;
     }
     getLanguage(ele) {
         if (ele.className.indexOf('bash') > -1) {

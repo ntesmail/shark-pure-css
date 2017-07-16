@@ -14,14 +14,10 @@ export class TransferDirective {
     render() {
         const nativeEle = this.elementRef.nativeElement;
         const html = Prism.highlight(nativeEle.innerHTML, this.getLanguage(nativeEle));
-        const htmlrst = `<pre class="language-html">
-                            <code class="language-html">
-                                <span class="token tag">
-                                    ${html}
-                                </span>
-                            </code>
-                        </pre>`;
-        nativeEle.innerHTML = htmlrst;
+        const doc = document.createElement('div');
+        const htmlrst = `<pre class="language-html"><code class="language-html">${html.trim()}</code></pre>`;
+        doc.innerHTML = htmlrst;
+        nativeEle.parentElement.replaceChild(doc, nativeEle);
     }
     getLanguage(ele) {
         if (ele.className.indexOf('bash') > -1) {
