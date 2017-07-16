@@ -1,115 +1,250 @@
-<!--提示弹框-->
-<h4>modal-alert</h4>
-<!-- <div class="modal-backdrop fade in"></div> -->
-<!-- <div class="modal modal-sm fade in" style="display: block;"> -->
-<div class="modal-alert ">
-    <div class="modal-content" style="width:500px; margin-bottom:40px;">
-        <!-- <shark-modal-alert> -->
-        <div class="modal-header">
-        </div>
-        <div class="modal-body">
-            <div class="modal-confirm-body">
-                <span class="tip-message">不能这么干！</span>
-                <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
-            </div>
-            <div class="modal-confirm-btns">
-                <button class="btn btn-primary" type="button">确定</button>
-            </div>
-        </div>
-        <div class="modal-footer">
-        </div>
-        <!-- </shark-modal-alert> -->
-    </div>
+<div class="page-header">
+    <h1>modal 弹框提示</h1>
 </div>
-<!-- </div> -->
 
-<!--确定弹框-->
-<h4>modal-confirm</h4>
-<!-- <div class="modal-backdrop fade in"></div> -->
-<!-- <div class="modal modal-sm fade in" style="display: block;"> -->
-<div class="modal-confirm ">
-    <div class="modal-content" style="width:500px; margin-bottom:40px;">
-        <!-- <shark-modal-confirm> -->
-        <div class="modal-header">
-        </div>
-        <div class="modal-body">
-            <div class="modal-confirm-body">
-                <span class="tip-message">不能这么干！</span>
-                <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
-            </div>
-            <div class="modal-confirm-btns">
-                <button class="btn btn-secondary" type="button">取消</button>
-                <button class="btn btn-primary" type="button">确定</button>
-            </div>
-        </div>
-        <div class="modal-footer">
-        </div>
-        <!-- </shark-modal-confirm> -->
-    </div>
+<!--part1 说明-->
+<div class="page-header">
+    <h1><small>组件说明</small></h1>
 </div>
-<!-- </div> -->
-
-
-<!--输入型弹框-->
-<h4>modal-dialog</h4>
-<!-- <div class="modal-backdrop fade in"></div> -->
-<!-- <div class="modal modal-md fade in" style="display: block;"> -->
-<div class="modal-dialog">
-    <div class="modal-content" style="width:500px;margin-bottom:40px;">
-        <!-- <shark-modal-dialog> -->
-        <div class="modal-header">
-            <a class="modal-close" href=""></a>
-            <span class="modal-title">
-                曾内人
-            </span>
-            <span class="modal-title-desc">
-                曾内人
-            </span>
-        </div>
-        <div class="modal-body">
-            <div>
-                禁门宫树月痕过，媚眼惟看宿鹭窠。斜拔玉钗灯影畔，剔开红焰救飞蛾。
-            </div>
-            <div>
-                <button class="btn btn-primary" type="button">查看详细</button>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-secondary" type="button">取消</button>
-            <button class="btn btn-primary" type="button">确定</button>
-        </div>
-        <!-- </shark-modal-dialog> -->
-    </div>
+<div class="u-tips">
+    <ul>
+        <li>模态对话框。</li>
+        <li>1.需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。</li>
+        <li>2.当需要一个简洁的确认框询问用户时，可以使用 Modal封装好的确认弹框</li>
+        <li>3.当需要一个简洁的提示框提醒用户时，可以使用 Modal封装好的提示弹框</li>
+    </ul>
 </div>
-<!-- </div> -->
 
 
-<!--自定义弹框-->
-<h4>modal-detail</h4>
-<!-- <div class="modal-backdrop fade in"></div> -->
-<!-- <div class="modal modal-lg fade in" style="display: block;"> -->
-<div class="modal-detail">
-    <div class="modal-content" style="width:500px;margin-bottom:40px;">
-        <!-- <shark-modal-datail> -->
-        <div class="modal-header">
-            <div class="modal-title">
-                曾内人
-            </div>
-        </div>
-        <div class="modal-body">
-            <div style="background-color:rgba(204,204,204,0.50);height:200px;">
-                自定义内容区。
-            </div>
-        </div>
-        <div class="modal-footer">
-            <div class="secondary">
-                <button class="btn btn-secondary" type="button">次要操作</button>
-                <span class="secondary-desc">次要描述</span>
-            </div>
-            <button class="btn btn-secondary" type="button">取消</button>
-            <button class="btn btn-primary" type="button">确定</button>
-        </div>
-        <!-- </shark-modal-datail> -->
-    </div>
+<div class="page-header">
+    <h1>
+        <small>代码演示</small>
+    </h1>
 </div>
-<!-- </div> -->
+
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class="modal-alert ">
+            <div class="modal-content" style="width:500px; margin-bottom:40px;">
+                <!-- <shark-modal-alert> -->
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-confirm-body">
+                        <span class="tip-message">不能这么干！</span>
+                        <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
+                    </div>
+                    <div class="modal-confirm-btns">
+                        <button class="btn btn-primary" type="button">确定</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+                <!-- </shark-modal-alert> -->
+            </div>
+        </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>提示弹框</span>
+        </div>
+        <div>
+            基本使用，只要定义tip-message提示信息和tip-deac提示描述的文本内容就可以了
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="modal modal-sm fade in" style="display: block;">
+                <div class="modal-alert ">
+                    <div class="modal-content" style="width:500px; margin-bottom:40px;">
+                        <div class="modal-header">
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-confirm-body">
+                                <span class="tip-message">不能这么干！</span>
+                                <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
+                            </div>
+                            <div class="modal-confirm-btns">
+                                <button class="btn btn-primary" type="button">确定</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class="modal-confirm ">
+            <div class="modal-content" style="width:500px; margin-bottom:40px;">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-confirm-body">
+                        <span class="tip-message">不能这么干！</span>
+                        <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
+                    </div>
+                    <div class="modal-confirm-btns">
+                        <button class="btn btn-secondary" type="button">取消</button>
+                        <button class="btn btn-primary" type="button">确定</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>确认弹框</span>
+        </div>
+        <div>
+            基本使用，只要定义tip-message提示信息和tip-deac提示描述的文本内容就可以了
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="modal modal-sm fade in" style="display: block;">
+                <div class="modal-confirm ">
+                    <div class="modal-content" style="width:500px; margin-bottom:40px;">
+                        <div class="modal-header">
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-confirm-body">
+                                <span class="tip-message">不能这么干！</span>
+                                <span class="tip-desc">这是描述，可有可无，没有的时候标题下移！</span>
+                            </div>
+                            <div class="modal-confirm-btns">
+                                <button class="btn btn-secondary" type="button">取消</button>
+                                <button class="btn btn-primary" type="button">确定</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width:500px;margin-bottom:40px;">
+                <div class="modal-header">
+                    <a class="modal-close" href=""></a>
+                    <span class="modal-title">标题</span>
+                    <span class="modal-title-desc">次要描述</span>
+                </div>
+                <div class="modal-body">
+                    <div style="background-color:rgba(204,204,204,0.50);height:200px;">
+                        自定义内容区。
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button">取消</button>
+                    <button class="btn btn-primary" type="button">确定</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>输入弹框</span>
+        </div>
+        <div>
+            基本使用：用户可自定义弹框标题，描述，Botton名称以及modal-body中的内容。
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="modal modal-md fade in" style="display: block;">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="width:500px;margin-bottom:40px;">
+                        <div class="modal-header">
+                            <a class="modal-close" href=""></a>
+                            <span class="modal-title">标题</span>
+                            <span class="modal-title-desc">次要描述</span>
+                        </div>
+                        <div class="modal-body">
+                            <div style="background-color:rgba(204,204,204,0.50);height:200px;">
+                                自定义内容区。
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button">取消</button>
+                            <button class="btn btn-primary" type="button">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class="modal-detail">
+            <div class="modal-content" style="width:500px;margin-bottom:40px;">
+                <!-- <shark-modal-datail> -->
+                <div class="modal-header">
+                    <div class="modal-title">
+                        标题
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div style="background-color:rgba(204,204,204,0.50);height:200px;">
+                        自定义内容区。
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="secondary">
+                        <button class="btn btn-secondary" type="button">次要操作</button>
+                        <span class="secondary-desc">次要描述</span>
+                    </div>
+                    <button class="btn btn-secondary" type="button">取消</button>
+                    <button class="btn btn-primary" type="button">确定</button>
+                </div>
+                <!-- </shark-modal-datail> -->
+            </div>
+        </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>自定义弹框</span>
+        </div>
+        <div>
+            基本使用：用户可自定义弹框 标题，modal-footer以及modal-body中的内容。
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="modal modal-lg fade in" style="display: block;">
+                <div class="modal-detail">
+                    <div class="modal-content" style="width:500px;margin-bottom:40px;">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                标题
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div style="background-color:rgba(204,204,204,0.50);height:200px;">
+                                自定义内容区。
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="secondary">
+                                <button class="btn btn-secondary" type="button">次要操作</button>
+                                <span class="secondary-desc">次要描述</span>
+                            </div>
+                            <button class="btn btn-secondary" type="button">取消</button>
+                            <button class="btn btn-primary" type="button">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

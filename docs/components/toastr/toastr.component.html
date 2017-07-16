@@ -1,15 +1,62 @@
-<div style="height:250px;">
-    <h3>主动消失</h3>
-    <div class="toastr-container" style="padding:10px;">
-        <!-- <div class=" toastr toastr-warning">
-            <p class="toastr-message">这是一条询问消息，会主动消失。</p>
+<div class="page-header">
+    <h1>toastr 全局提示</h1>
+</div>
+
+<!--part1 说明-->
+<div class="page-header">
+    <h1><small>组件说明</small></h1>
+</div>
+<div class="u-tips">
+    <ul>
+        <li>警告提示，展现需要关注的信息。</li>
+        <li>1.当某个页面需要向用户显示警告的信息时</li>
+        <li>2.非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。</li>
+    </ul>
+</div>
+
+
+<div class="page-header">
+    <h1>
+        <small>代码演示</small>
+    </h1>
+</div>
+
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class=" toastr toastr-success">
+            <a class="toastr-message" href="javascript:void(0);">成功类提示</a>
+            <a class="toastr-close" href="javascript:void(0);"></a>
         </div>
-        <div class="toastr toastr-error">
-            <p class="toastr-message"> 这是一条异常消息，会主动消失。</p>
+        <div class=" toastr toastr-info">
+            <a class="toastr-message toastr-message-link" href="javascript:void(0);"> 消息类提示</a>
+            <a class="toastr-close" href="javascript:void(0);">不再提醒</a>
         </div>
-        <div class="toastr toastr-success">
-            <p class="toastr-message"> 这是一条成功消息，会主动消失。</p>
-        </div> -->
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>基本使用</span>
+        </div>
+        <div>
+            基本使用，信息提示的内容分为两个部分：toastr-message和toastr-close，两部分的内容为文字，若需要链接提示，则可通过toastr-message-link来设置链接样式。
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="toastr-container">
+                <div class=" toastr toastr-success">
+                    <a class="toastr-message" href="javascript:void(0);">成功类提示</a>
+                    <a class="toastr-close" href="javascript:void(0);"></a>
+                </div>
+                <div class=" toastr toastr-info">
+                    <a class="toastr-message toastr-message-link" href="javascript:void(0);"> 消息类提示</a>
+                    <a class="toastr-close" href="javascript:void(0);">不再提醒</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="code-box">
+    <section class="code-box-demo">
         <div class=" toastr toastr-success">
             <a class="toastr-message" href="javascript:void(0);">成功类提示</a>
             <a class="toastr-close" href="javascript:void(0);"></a>
@@ -26,17 +73,35 @@
             <a class="toastr-message" href="javascript:void(0);"> 消息类提示</a>
             <a class="toastr-close" href="javascript:void(0);"></a>
         </div>
-        <div class=" toastr toastr-info">
-            <a class="toastr-message toastr-message-link" href="javascript:void(0);"> 消息类提示</a>
-            <a class="toastr-close" href="javascript:void(0);">不再提醒</a>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>信息类型</span>
         </div>
-        <div class=" toastr toastr-sm toastr-warning">
-            <a class="toastr-message toastr-message-link" href="javascript:void(0);"> 警告类提示</a>
-            <a class="toastr-close" href="javascript:void(0);">不再提醒</a>
+        <div>
+            信息提示类型分为toastr-success,toastr-error,toastr-warning,toastr-info四类.
         </div>
-    </div>
-</div>
-<div style="height:150px;">
-    <h3>手动关闭</h3>
-
-</div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="toastr-container">
+                <div class=" toastr toastr-success">
+                    <a class="toastr-message" href="javascript:void(0);">成功类提示</a>
+                    <a class="toastr-close" href="javascript:void(0);"></a>
+                </div>
+                <div class=" toastr toastr-error">
+                    <a class="toastr-message" href="javascript:void(0);"> 错误类提示</a>
+                    <a class="toastr-close" href="javascript:void(0);"></a>
+                </div>
+                <div class=" toastr toastr-warning">
+                    <a class="toastr-message" href="javascript:void(0);"> 警告类提示</a>
+                    <a class="toastr-close" href="javascript:void(0);"></a>
+                </div>
+                <div class=" toastr toastr-info">
+                    <a class="toastr-message" href="javascript:void(0);"> 消息类提示</a>
+                    <a class="toastr-close" href="javascript:void(0);"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
