@@ -1,5 +1,7 @@
-$progress-circle-width: 82px;
-$progress-circle-height: 112px;
+$progress-fullscreen-circle-width: 82px;
+$progress-fullscreen-circle-height: 112px;
+$progress-circle-width: 40px;
+$progress-circle-height: 40px;
 .progress {
   display: inline-block; // font-size: $progress-font-size;
   font-size: 0;
@@ -46,8 +48,8 @@ $progress-circle-height: 112px;
   position: relative;
   text-align: center;
   font-size: 0;
-  width: $progress-circle-width;
-  height: $progress-circle-height;
+  width: $progress-fullscreen-circle-width;
+  height: $progress-fullscreen-circle-height;
   .progress-circle-layer {
     stroke: $progress-line-bg;
   }
@@ -77,14 +79,15 @@ $progress-circle-height: 112px;
     font-size: $progress-loading-text-font-size;
     color: $progress-loading-text-color;
   }
-  .btn-link.progress-cancel-loading {
+  .progress-cancel-loading {
     font-size: 0;
     margin-top: 9px;
     height: 20px;
     color: $progress-primary-color;
   }
 } // 容器加载
-.progress-wrap {
+  .progress-wrap,
+.progress-fullscreen {
   position: relative;
   .progress {
     position: absolute;
@@ -98,15 +101,15 @@ $progress-circle-height: 112px;
         display: block;
         visibility: visible;
       }
-      .btn-link.progress-cancel-loading {
+      .progress-cancel-loading {
         font-size: $progress-font-size;
       }
     }
   }
   &.progress-status-finish,
   &.progress-status-error {
-    width: 40px;
-    height: 40px;
+     width: 40px;
+     height: 40px;
     .progress-status-text {
       display: block;
       visibility: visible;
@@ -115,7 +118,7 @@ $progress-circle-height: 112px;
       animation: .3s ease-out .3s progress-fade-out forwards;
     }
     .progress-circle-svg {
-      animation: .3s ease-out 2s progress-svg-fade-out forwards;
+      animation: .3s ease-out .3s keyframes-progress-svg-fade-out($progress-circle-width, $progress-circle-height) forwards;
     }
     .progress-status-text {
       color: $progress-status-finish-color;
@@ -124,7 +127,8 @@ $progress-circle-height: 112px;
     }
     .progress-loading-text,
     .progress-cancel-loading {
-      @extend .invisible;
+      display: none;
+      //@extend .invisible;
     }
   } // 完成状态
   &.progress-status-finish {
@@ -153,13 +157,22 @@ $progress-circle-height: 112px;
     }
   }
 }
-
+.progress-fullscreen{
+    &.progress-status-finish,
+    &.progress-status-error {
+      width: 100%;
+      height: 100%;
+    }
+   .progress-circle-svg {
+     animation: 3s ease-out 3s keyframes-progress-svg-fade-out($progress-fullscreen-circle-width, $progress-fullscreen-circle-height) forwards;
+   }
+}
 @keyframes progress-fade-out {
   99% {
     opacity: 0;
     visibility: hidden;
-    width: $progress-circle-width;
-    height: $progress-circle-height;
+    width: $progress-fullscreen-circle-width;
+    height: $progress-fullscreen-circle-height;
   }
   to {
     opacity: 0;
@@ -170,21 +183,7 @@ $progress-circle-height: 112px;
   }
 }
 
-@keyframes progress-svg-fade-out {
-  99% {
-    opacity: 0;
-    visibility: hidden;
-    width: 40px;
-    height: 40px;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    display: none !important;
-    height: 0;
-    width: 0;
-  }
-} // 全屏加载
+// 全屏加载
 .progress-fullscreen {
   position: fixed;
   top: 0;
@@ -196,5 +195,23 @@ $progress-circle-height: 112px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@mixin keyframes-progress-svg-fade-out($width:40px, $height: 40px){
+  @keyframes progress-svg-fade-out {
+    99% {
+      opacity: 0;
+      visibility: hidden;
+      width: $width;
+      height: $height;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+      display: none !important;
+      height: 0;
+      width: 0;
+    }
   }
 }

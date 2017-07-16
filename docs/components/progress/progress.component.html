@@ -23,7 +23,7 @@
             <h3>进度条</h3>
         </div>
         <div>
-            一般用于全局页面加载过于缓慢 导航栏底部显示。添加样式.progress-show-info显示具体进度。
+            一般用于全局页面加载过于缓慢，显示在导航栏底部。添加样式.progress-show-info显示具体进度。
         </div>
     </section>
     <section class="code-box-demo">
@@ -45,21 +45,21 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-            <div class="progress progress-line">
-                <div class="progress-outter">
-                    <div class="progress-inner">
-                        <div class="progress-bg" style="width: 60%; height: 3px;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress progress-line progress-show-info ">
-                <div class="progress-outter">
-                    <div class="progress-inner">
-                        <div class="progress-bg" style="width: 30%; height: 3px;"></div>
-                    </div>
-                </div>
-                <span class="progress-text">30%</span>
-            </div>
+<div class="progress progress-line">
+    <div class="progress-outter">
+        <div class="progress-inner">
+            <div class="progress-bg" style="width: 60%; height: 3px;"></div>
+        </div>
+    </div>
+</div>
+<div class="progress progress-line progress-show-info ">
+    <div class="progress-outter">
+        <div class="progress-inner">
+            <div class="progress-bg" style="width: 30%; height: 3px;"></div>
+        </div>
+    </div>
+    <span class="progress-text">30%</span>
+</div>
         </div>
     </section>
 </section>
@@ -83,25 +83,25 @@
                     <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
                     <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="56 113 " fill="none " class="progress-circle-upper "></circle>
                 </svg>
-                <span class="progress-text "><i class="progress-status-icon "></i></span>
-                <div class="progress-loading-text ">加载中...</div>
+                <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+                <div clapss="progress-loading-text ">加载中...</div>
                 <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
             </div>
         </div>
     </section>
      <section class="highlight-wrapper">
         <div transfer>
-    <div class="progress-fullscreen">
-        <div class="progress progress-circle progress-show-cancel">
-                <svg width="40 " height="40 " view-box="0 0 40 40 ">
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="56 113 " fill="none " class="progress-circle-upper "></circle>
-            </svg> 
-                <span class="progress-text "><i class="progress-status-icon "></i></span>  
-            <div class="progress-loading-text ">加载中...</div>
-                <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>   
-        </div>
+<div class="progress-fullscreen">
+    <div class="progress progress-circle progress-show-cancel">
+            <svg width="40 " height="40 " view-box="0 0 40 40 ">
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="56 113 " fill="none " class="progress-circle-upper "></circle>
+        </svg> 
+            <span class="progress-status-text "><i class="progress-status-icon "></i></span>  
+        <div class="progress-loading-text ">加载中...</div>
+            <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>   
     </div>
+</div>
          </div> 
     </section> 
 </section>
@@ -130,8 +130,7 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<p>容器加载</p>
-<div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
+<div class="progress-wrap ">
     <div class="progress progress-circle progress-show-cancel ">
         <svg width="40 " height="40 " view-box="0 0 40 40 ">
             <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
@@ -169,7 +168,7 @@
             </div>
         </div>
         <p>Finished</p>
-         <div><button (click)="toggle('progressStatusFinish')" class="btn">Toggle Finished</button></div> 
+         <div><button (click)="toggle('progressStatusFinish')" class="btn btn-primary margin-b-10">Toggle Finished</button></div> 
          <div [ngClass]="{'progress-status-finish': progressStatusFinish}" class="progress-wrap" style="width:200px; height:200px; border: 1px solid #ccc; "> 
             <div class="progress progress-circle progress-show-info">
                 <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
@@ -182,7 +181,7 @@
             </div>
         </div>
         <p>Error</p>
-         <div><button (click)="toggle('progressStatusError')">Toggle Error</button></div> 
+         <div><button (click)="toggle('progressStatusError')" class="btn btn-primary margin-b-10">Toggle Error</button></div> 
          <div [ngClass]="{'progress-status-error': progressStatusError}" class="progress-wrap progress-status-error " style="width:200px; height:200px; border: 1px solid #ccc; "> 
             <div class="progress progress-circle progress-show-info ">
                 <svg width="40 " height="40 " view-box="0 0 40 40 ">
@@ -197,7 +196,7 @@
     <section class="highlight-wrapper">
         <div transfer>
 <!-- Normal -->
-<div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
+<div class="progress-wrap ">
     <div class="progress progress-circle ">
         <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
             <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
@@ -209,7 +208,7 @@
     </div>
 </div>
 <!-- Finished -->
-<div class="progress-wrap progress-status-finish " style="width:200px; height:200px; border: 1px solid #ccc; ">
+<div class="progress-wrap progress-status-finish ">
     <div class="progress progress-circle progress-show-info ">
         <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
             <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
