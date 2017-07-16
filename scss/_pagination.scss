@@ -200,6 +200,9 @@
   }
   .pagination-size-changer {
     margin-right: 8px;
+    .selecter .selected {
+      color: $pagination-color;
+    }
   }
   .pagination-quick-jumper {
     height: $pagination-input-height;
