@@ -1,76 +1,243 @@
-<div class="bd-example">
-    <p>基础单选</p>
-    <div class="select select-single">
-        <span class="selected">已选中2</span>
-    </div>
+<div class="page-header">
+    <h1>Select 下拉选择框</h1>
 </div>
-<div class="bd-example">
-    <p>被选中</p>
-    <div class="select select-single active">
-        <span class="selected">已选中2</span>
-    </div>
+
+<div class="u-tips">
+	<ul>
+        <li>1. 自定义 select 标签</li>
+    </ul>
 </div>
-<div class="bd-example">
-    <p>没边框</p>
-    <div class="select select-noborder">
-        <span class="selected">已选中2</span>
-    </div>
-</div>
-<div class="bd-example">
-    <p>没边框被选中</p>
-    <div class="select select-noborder active">
-        <span class="selected">已选中2</span>
-    </div>
-</div>
-<div class="bd-example">
-    <p>可搜索单选</p>
-    <div class="select select-single select-search">
-        <div class="search-wrap">
-            <input class="select-input" type="text" placeholder="请选择" />
+
+
+<!-- 基础单选 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>基础单选</h3>
         </div>
-    </div>
-</div>
-<div class="bd-example">
-    <p>基础多选</p>
-    <div class="select select-multiple">
-        <ul class="select-items">
-            <li class="select-item">选项1<i class="icon-close"></i></li>
-            <li class="select-item">选项2<i class="icon-close"></i></li>
-            <li class="select-item">选项3<i class="icon-close"></i></li>
-        </ul>
-    </div>
-</div>
-<div class="bd-example">
-    <p>可搜索多选</p>
-    <div class="select select-multiple select-search">
-        <ul class="select-items">
-            <li class="select-item">选项1<i class="icon-close"></i></li>
-            <li class="select-item">选项2<i class="icon-close"></i></li>
-            <li class="select-item">选项3<i class="icon-close"></i></li>
-        </ul>
-        <div class="search-wrap">
-            <input class="select-input" type="text" placeholder="请选择" />
+        <div>
+            基类是 select ，扩展类为 select-single 
         </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-single">
+            <span>已选中2</span>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-single">
+    <span>已选中2</span>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 被选中 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>被选中</h3>
+        </div>
+        <div>
+            被选择时增加 active 类，被选中的值被 selected 类包裹，会有更好的样式
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-single active">
+            <span class="selected">已选中2</span>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-single active">
+    <span class="selected">已选中2</span>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 无边框下拉选择 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>无边框下拉选择</h3>
+        </div>
+        <div>
+            基类是 select ，扩展类为 select-noborder ，同样，被选中是增加 active 类，选中的值被 selected 类包裹
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-noborder">
+            <span class="selected">已选中2</span>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-noborder">
+    <span class="selected">已选中2</span>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 可搜索单选 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>可搜索单选</h3>
+        </div>
+        <div>
+            基类是 select ，扩展类为 select-search 
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-single select-search">
+            <div class="search-wrap">
+                <input class="select-input" type="text" placeholder="请选择" />
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-single select-search">
+    <div class="search-wrap">
+        <input class="select-input" type="text" placeholder="请选择" />
     </div>
 </div>
-<div class="bd-example">
-    <p>disabled</p>
-    <div class="select select-single disabled">
-        请选择
+        </div>
+    </section>
+</section>
+
+<!-- 基础多选 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>基础多选</h3>
+        </div>
+        <div>
+            基类是 select ，扩展类为 select-multiple ，选中的项需要被 select-items 包裹，每一项需要加 select-item 类
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-multiple">
+            <ul class="select-items">
+                <li class="select-item">选项1<i class="icon-close"></i></li>
+                <li class="select-item">选项2<i class="icon-close"></i></li>
+                <li class="select-item">选项3<i class="icon-close"></i></li>
+            </ul>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-multiple">
+    <ul class="select-items">
+        <li class="select-item">选项1<i class="icon-close"></i></li>
+        <li class="select-item">选项2<i class="icon-close"></i></li>
+        <li class="select-item">选项3<i class="icon-close"></i></li>
+    </ul>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 可搜索多选 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>可搜索多选</h3>
+        </div>
+        <div>
+            基类是 select ，扩展类为 select-search 
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-multiple select-search">
+            <ul class="select-items">
+                <li class="select-item">选项1<i class="icon-close"></i></li>
+                <li class="select-item">选项2<i class="icon-close"></i></li>
+                <li class="select-item">选项3<i class="icon-close"></i></li>
+            </ul>
+            <div class="search-wrap">
+                <input class="select-input" type="text" placeholder="请选择" />
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-multiple select-search">
+    <ul class="select-items">
+        <li class="select-item">选项1<i class="icon-close"></i></li>
+        <li class="select-item">选项2<i class="icon-close"></i></li>
+        <li class="select-item">选项3<i class="icon-close"></i></li>
+    </ul>
+    <div class="search-wrap">
+        <input class="select-input" type="text" placeholder="请选择" />
     </div>
 </div>
-<div class="bd-example">
-    <p>三种宽度：80px / 155px / 240px</p>
-    <div class="select select-noborder select-sm" style="margin-right:100px;">
-        请选择
-    </div>
-    <div class="select select-single select-md" style="margin-right:100px;">
-        请选择
-    </div>
-    <div class="select select-multiple select-lg" style="margin-right:100px;">
-        请选择
-    </div>
+        </div>
+    </section>
+</section>
+
+<!-- disabled状态 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>disabled状态</h3>
+        </div>
+        <div>
+            增加 disabled 类
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-single disabled">
+            请选择
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-single disabled">
+    请选择
 </div>
+        </div>
+    </section>
+</section>
+
+<!-- 三种宽度 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>三种宽度</h3>
+        </div>
+        <div>
+            三种宽度：80px / 155px / 240px 对应的类为 select-sm / select-md / select-lg
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="select select-noborder select-sm" style="margin-right:100px;">
+            请选择
+        </div>
+        <div class="select select-single select-md" style="margin-right:100px;">
+            请选择
+        </div>
+        <div class="select select-multiple select-lg" style="margin-right:100px;">
+            请选择
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="select select-noborder select-sm" style="margin-right:100px;">
+    请选择
+</div>
+<div class="select select-single select-md" style="margin-right:100px;">
+    请选择
+</div>
+<div class="select select-multiple select-lg" style="margin-right:100px;">
+    请选择
+</div>
+        </div>
+    </section>
+</section>
 
 <div class="tree list-group" style="left: 280px; top: 875px; width: 80px; display:block;">
     <div class="tree">
