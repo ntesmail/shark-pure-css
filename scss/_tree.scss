@@ -13,7 +13,7 @@
     margin: 8px 0;
     outline: 0;
     ul {
-      padding-left: $tree-icon-width;
+      padding-left: $tree-icon-width * 2;
       display: none;
       &.tree-open {
         display: block;
