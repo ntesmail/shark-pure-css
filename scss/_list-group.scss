@@ -55,6 +55,12 @@
       &:hover {
         background-color: transparent;
       }
+      &.tree-node-selected {
+        background-color: transparent;
+        &:hover {
+          background-color: transparent;
+        }
+      }
     }
   }
 }
