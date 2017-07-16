@@ -114,7 +114,7 @@
 }
 
 .modal-title-desc {
-  font-size: $modal-font-size-base;
+  font-size: $modal-font-size-sm;
   line-height: $modal-title-line-height;
   color: $modal-title-desc-color;
 }
@@ -217,6 +217,9 @@
 }
 
 .modal-detail {
+  .modal-title{
+    color:$modal-detail-title-color;
+  }
   .modal-header {
     height: $modal-detail-height;
     border-bottom-width: 0;
