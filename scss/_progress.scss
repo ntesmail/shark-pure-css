@@ -1,3 +1,5 @@
+$progress-circle-width: 82px;
+$progress-circle-height: 112px;
 .progress {
   display: inline-block; // font-size: $progress-font-size;
   font-size: 0;
@@ -44,6 +46,8 @@
   position: relative;
   text-align: center;
   font-size: 0;
+  width: $progress-circle-width;
+  height: $progress-circle-height;
   .progress-circle-layer {
     stroke: $progress-line-bg;
   }
@@ -56,14 +60,14 @@
     text-align: center;
     line-height: 1;
     font-size: $progress-font-size;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     display: none;
     visibility: hidden;
   }
-  .btn.progress-cancel-loading {
+  .progress-cancel-loading {
     display: none;
     visibility: hidden;
   }
@@ -79,17 +83,6 @@
     height: 20px;
     color: $progress-primary-color;
   }
-  &.progress-show-cancel {
-    font-size: 0;
-    .progress-loading-text,
-    .progress-cancel-loading {
-      display: block;
-      visibility: visible;
-    }
-    .btn-link.progress-cancel-loading {
-      font-size: $progress-font-size;
-    }
-  }
 } // 容器加载
 .progress-wrap {
   position: relative;
@@ -98,6 +91,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    &.progress-show-cancel {
+      font-size: 0;
+      .progress-loading-text,
+      .progress-cancel-loading {
+        display: block;
+        visibility: visible;
+      }
+      .btn-link.progress-cancel-loading {
+        font-size: $progress-font-size;
+      }
+    }
   }
   &.progress-status-finish,
   &.progress-status-error {
@@ -111,12 +115,16 @@
       animation: .3s ease-out .3s progress-fade-out forwards;
     }
     .progress-circle-svg {
-      animation: .3s ease-out .3s progress-svg-fade-out forwards;
+      animation: .3s ease-out 2s progress-svg-fade-out forwards;
     }
     .progress-status-text {
       color: $progress-status-finish-color;
       display: block;
       visibility: visible;
+    }
+    .progress-loading-text,
+    .progress-cancel-loading {
+      @extend .invisible;
     }
   } // 完成状态
   &.progress-status-finish {
@@ -150,9 +158,8 @@
   99% {
     opacity: 0;
     visibility: hidden;
-    display: none !important;
-    width: auto;
-    height: auto;
+    width: $progress-circle-width;
+    height: $progress-circle-height;
   }
   to {
     opacity: 0;
@@ -167,7 +174,6 @@
   99% {
     opacity: 0;
     visibility: hidden;
-    display: none !important;
     width: 40px;
     height: 40px;
   }
