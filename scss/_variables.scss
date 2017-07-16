@@ -359,6 +359,7 @@ $modal-transition: transform .3s ease-out !default;
 $tree-font-size: 14px !default; //字体大小
 $tree-icon-size: 14px !default; //图标宽度
 $tree-icon-width: 18px !default;
+$tree-icon-color: $blue !default;
 $tree-color: $gray-700 !default;
 $tree-background-color-hover: #ecf6fd !default;
 $tree-selected-bg: #d2eafb !default; //选中节点后的背景色
@@ -454,7 +455,9 @@ $breadcrumb-font-size:12px !default;
 $breadcrumb-link-color:$breadcrumb-color;
 $breadcrumb-tag-last-color:#666 !default;
 $breadcrumb-separator-padding:0 8px !default;
-//pickercontainer
+//datetimepicker
+$datetimepicker-width: 155px !default;
+$datetimepicker-lg-width: 210px !default;
 $pickercontainer-color: $gray-800 !default; // #333
 $pickercontainer-border-color: $gray-300 !default; // #d9d9d9
 $pickercontainer-padding: 10px 5px !default;
@@ -478,8 +481,8 @@ $calendar-day-border-color-active: $blue !default;
 $calendar-day-background-color-active: $blue !default;
 $calendar-day-disabled: $gray-400 !default;
 $calendar-day-transition: all .3s ease !default;
-$calendar-timewrap-padding: 5px 10px !default;
-$calendar-nowtime-width: 75px !default;
+$calendar-timewrap-padding: 5px 0 !default;
+$calendar-nowtime-width: 50px !default;
 $calendar-nowtime-height: 25px !default;
 $calendar-nowtime-line-height: 25px !default;
 $calendar-nowtime-font-size: 14px !default;

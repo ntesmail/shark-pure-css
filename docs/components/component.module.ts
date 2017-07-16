@@ -19,7 +19,7 @@ import { CssFormModule } from './form/form.module';
 import { CssTreeModule } from './tree/tree.module';
 import { CssProgressModule } from './progress/progress.module';
 import { CssBreadcrumbModule } from './breadcrumb/breadcrumb.module';
-import { CsscalendarModule } from './calendar/calendar.module';
+import { CssDatetimepickerModule } from './datetimepicker/datetimepicker.module';
 import { CssLayoutModule } from './layout/layout.module';
 import { CssNotifyModule } from './notify/notify.module';
 import { CssUploadModule } from './upload/upload.module';
@@ -45,7 +45,7 @@ import { CssListgroupModule } from './listgroup/listgroup.module';
                 CssTreeModule,
                 CssProgressModule,
                 CssBreadcrumbModule,
-                CsscalendarModule,
+                CssDatetimepickerModule,
                 CssLayoutModule,
                 CssNotifyModule,
                 CssUploadModule,

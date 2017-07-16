@@ -210,6 +210,9 @@
 			width: $calendar-nowtime-width;
 			height: $calendar-nowtime-height;
 			line-height: $calendar-nowtime-line-height;
+      text-align: center;
+      padding: 0 10px;
+      margin-right: 38px;
 			display: inline-block;
 			font-size: $calendar-nowtime-font-size;
 			color: $calendar-nowtime-color;
@@ -219,35 +222,48 @@
 		}
 		.input-time-wrap{
 			display: inline-block;
-			position: relative;
+      position: relative;
+      width: $calendar-input-time-width;
+      // @include transition($calendar-input-time-transition);
 			.input-time{
-				cursor:pointer;
 				width: $calendar-input-time-width;
-				height: $calendar-input-time-height;
-				line-height: $calendar-input-time-line-height;
-				border: 1px solid $calendar-input-time-border-color;
-				font-size: 12px;
-				padding: $calendar-input-time-padding;
-				vertical-align: middle;
-				border-radius: $pickercontainer-border-radius;
-				color: $calendar-input-time-color;
-				@include transition($calendar-input-time-transition);
-				&:hover,
-				&:focus {
-					border-color: $calendar-input-time-border-color-hover;
-				}
-				&:focus {
-					@include box-shadow($calendar-input-time-box-shadow);
-				}
-				&:disabled,
-				&.disabled {
-					cursor: not-allowed;
-					color: $calendar-input-time-color-disabled;
-					border-color: $calendar-input-time-border-color-disabled;
-					background-color: $calendar-input-time-background-color-disabled;
-					@include box-shadow(none);
-				}
+        .input {
+          cursor:pointer;
+        }
+				// height: $calendar-input-time-height;
+        // line-height: $calendar-input-time-line-height;
+				// border: 1px solid $calendar-input-time-border-color;
+				// font-size: 12px;
+				// padding: $calendar-input-time-padding;
+				// vertical-align: middle;
+				// border-radius: $pickercontainer-border-radius;
+				// color: $calendar-input-time-color;
+				// @include transition($calendar-input-time-transition);
+				// &:hover,
+        // &:focus,
+        // &.active {
+				// 	border-color: $calendar-input-time-border-color-hover;
+				// }
+				// &:focus,
+        // &.active {
+				// 	@include box-shadow($calendar-input-time-box-shadow);
+				// }
+				// &:disabled,
+				// &.disabled {
+				// 	cursor: not-allowed;
+				// 	color: $calendar-input-time-color-disabled;
+				// 	border-color: $calendar-input-time-border-color-disabled;
+				// 	background-color: $calendar-input-time-background-color-disabled;
+				// 	@include box-shadow(none);
+				// }
 			}
 		}
 	}
+}
+
+.datetimepicker {
+  width: $datetimepicker-width;
+}
+.datetimepicker-lg {
+  width: $datetimepicker-lg-width;
 }

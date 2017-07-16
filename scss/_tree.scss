@@ -61,6 +61,11 @@
     }
   }
 
+  .tree-icon-check,
+  .tree-icon-check-empty,
+  .tree-icon-check-minus {
+    color: $tree-icon-color;
+  }
   .tree-icon-check {
     @extend .icon-checksquare;
   }

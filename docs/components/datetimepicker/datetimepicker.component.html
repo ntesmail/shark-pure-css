@@ -1,5 +1,23 @@
 <div class="bd-example">
-    <div class="pickercontainer" id="uuid-2" style="left: 300px; top: 100px; display: block;">
+    <div class="datetimepicker input-group" style="margin-bottom:30px;">
+        <div class="input-affix-wrapper">
+            <input type="text" class="input" value="2017-07-10" />
+            <span class="input-suffix input-suffix-focus">
+                <i class="icon-closecircle"></i>
+            </span>
+        </div>
+        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+    </div>
+    <div class="datetimepicker-lg input-group">
+        <div class="input-affix-wrapper">
+            <input type="text" class="input" value="2017-07-10 10:10:10" />
+            <span class="input-suffix input-suffix-focus">
+                <i class="icon-closecircle"></i>
+            </span>
+        </div>
+        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+    </div>
+    <div class="pickercontainer" style="left: 280px; top: 178px; display: block;">
         <div class="datepicker">
             <div class="calendar">
                 <div class="calendar-montharea">
@@ -54,7 +72,15 @@
         <div class="timewrap">
             <a class="nowtime">当前</a>
             <div class="input-time-wrap">
-                <input class="input-time" readonly="readonly" value="19:25:23" />
+                <div class="input-time input-group">
+                    <div class="input-affix-wrapper">
+                        <input type="text" class="input" readonly="readonly" value="19:25:23" />
+                        <span class="input-suffix">
+                            <i class="icon-clockcircleo"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- <input class="input-time active" readonly="readonly" value="19:25:23" /> -->
                 <div class="timepanel" style="display: block;">
                     <div class="timepanel-list timepanel-list-hours">
                         <div class="timepanel-list-item timepanel-disabled">00</div>
