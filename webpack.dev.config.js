@@ -40,7 +40,8 @@ module.exports = {
             }, {
                 test: /\.scss$/,
                 include: [
-                    path.join(__dirname, 'scss')
+                    path.join(__dirname, 'scss'),
+                    path.join(__dirname, 'docs/asset/scss')
                 ],
                 loaders: [
                     'style-loader',

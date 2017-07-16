@@ -5,4 +5,9 @@ import {
 @Component({
     templateUrl: './input.component.html',
 })
-export class CssInputComponent {};
+export class CssInputComponent {
+    pager1html:string = '';
+    constructor() {
+        this.pager1html = `<input type="text" class="input"/>`;
+    }
+};
