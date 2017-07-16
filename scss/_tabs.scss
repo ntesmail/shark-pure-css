@@ -55,10 +55,11 @@
       float: left;
       .tabs-tab {
         font-size: $tabs-tab-font-size; // display: iblock;
-        width: 140px;
+        max-width: 300px;
         height: 40px;
         line-height: 40px;
         text-align: center;
+        padding: 0 40px;
         background-color: $tabs-card-vertical-tab-bg-color; // position: relative;
         color: $tabs-card-vertical-tab-active-color;
         cursor: pointer;
@@ -109,7 +110,7 @@
         border-left: none;
         height: 30px;
         line-height: 30px;
-        padding: 0 28px;
+        padding: 0 30px;
         text-align: center;
         cursor: pointer;
         &:first-child {
