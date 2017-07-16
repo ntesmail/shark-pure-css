@@ -18,9 +18,62 @@
     <h2>代码演示</h2>
 </div>
 
-
-<div class="bd-example">
-    <div class="datetimepicker input-group" style="margin-bottom:30px;">
+<!-- 两种类型 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>两种类型</h3>
+        </div>
+        <div>
+            datetimepicker 类是只有一个时间，datetimepicker-range 类是选时间段
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="datetimepicker">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-07-10" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
+                </div>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div><br/>
+        <div class="datetimepicker-range">
+            <div class="datetimepicker-start">
+                <div class="datetimepicker">
+                    <div class="input-group">
+                        <div class="input-affix-wrapper">
+                            <input type="text" class="input" value="2017-07-10" />
+                            <span class="input-suffix input-suffix-focus clear">
+                                <i class="icon-closecircle"></i>
+                            </span>
+                        </div>
+                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+            <span class="datetimepicker-split">至</span>
+            <div class="datetimepicker-end">
+                <div class="datetimepicker">
+                    <div class="input-group">
+                        <div class="input-affix-wrapper">
+                            <input type="text" class="input" value="2017-08-10" />
+                            <span class="input-suffix input-suffix-focus clear">
+                                <i class="icon-closecircle"></i>
+                            </span>
+                        </div>
+                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="datetimepicker">
+    <div class="input-group">
         <div class="input-affix-wrapper">
             <input type="text" class="input" value="2017-07-10" />
             <span class="input-suffix input-suffix-focus clear">
@@ -29,237 +82,611 @@
         </div>
         <span class="input-group-addon"><i class="icon-calendar"></i></span>
     </div>
-    <div class="datetimepicker-lg input-group">
+</div>
+<div class="datetimepicker-range">
+    <div class="datetimepicker-start">
+        <div class="datetimepicker">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-07-10" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
+                </div>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div>
+    </div>
+    <span class="datetimepicker-split">至</span>
+    <div class="datetimepicker-end">
+        <div class="datetimepicker">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-08-10" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
+                </div>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 两种大小 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>两种大小</h3>
+        </div>
+        <div>
+            datetimepicker 类对应的lg是 datetimepicker-lg，datetimepicker-range 类对应的lg是 datetimepicker-range-lg，此处的大小不是扩展，所以可以直接替换
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="datetimepicker-lg">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-07-10" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
+                </div>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div><br/>
+        <div class="datetimepicker-range-lg">
+            <div class="datetimepicker-start">
+                <div class="datetimepicker">
+                    <div class="input-group">
+                        <div class="input-affix-wrapper">
+                            <input type="text" class="input" value="2017-07-10" />
+                            <span class="input-suffix input-suffix-focus clear">
+                                <i class="icon-closecircle"></i>
+                            </span>
+                        </div>
+                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+            <span class="datetimepicker-split">至</span>
+            <div class="datetimepicker-end">
+                <div class="datetimepicker">
+                    <div class="input-group">
+                        <div class="input-affix-wrapper">
+                            <input type="text" class="input" value="2017-08-10" />
+                            <span class="input-suffix input-suffix-focus clear">
+                                <i class="icon-closecircle"></i>
+                            </span>
+                        </div>
+                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="datetimepicker-lg">
+    <div class="input-group">
         <div class="input-affix-wrapper">
-            <input type="text" class="input" value="2017-07-10 10:10:10" />
-            <span class="input-suffix input-suffix-focus">
+            <input type="text" class="input" value="2017-07-10 01:00:20" />
+            <span class="input-suffix input-suffix-focus clear">
                 <i class="icon-closecircle"></i>
             </span>
         </div>
         <span class="input-group-addon"><i class="icon-calendar"></i></span>
     </div>
-    <div class="pickercontainer" style="left: 280px; top: 423px; display: block;">
-        <div class="datepicker">
-            <div class="calendar">
-                <div class="calendar-montharea">
-                    <i class="calendar-prev-year calendar-disabled"></i>
-                    <i class="calendar-prev-month"></i>
-                    <input class="calendar-current-year" readonly="readonly" type="text" value="2017年" />
-                    <input class="calendar-current-month" readonly="readonly" type="text" value="5月" />
-                    <i class="calendar-next-year calendar-disabled"></i>
-                    <i class="calendar-next-month"></i>
+</div>
+<div class="datetimepicker-range-lg">
+    <div class="datetimepicker-start">
+        <div class="datetimepicker">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-07-10 01:00:20" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
                 </div>
-                <div class="calendar-dayarea">
-                    <div class="calendar-weekday-wrap">
-                        <span class="calendar-weekday">日</span>
-                        <span class="calendar-weekday">一</span>
-                        <span class="calendar-weekday">二</span>
-                        <span class="calendar-weekday">三</span>
-                        <span class="calendar-weekday">四</span>
-                        <span class="calendar-weekday">五</span>
-                        <span class="calendar-weekday">六</span>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div>
+    </div>
+    <span class="datetimepicker-split">至</span>
+    <div class="datetimepicker-end">
+        <div class="datetimepicker">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-08-10 01:00:20" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
+                </div>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 时间日期选择器 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>时间日期选择器</h3>
+        </div>
+        <div>
+            时间日期选择器内容被 pickercontainer 类包裹，位置（left，top）由js计算。时间选择器（timewrap 类）跟日期选择器（datepicker 类）也可单独使用，但是需要在 pickercontainer 类的包裹下
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="datetimepicker-lg">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <input type="text" class="input" value="2017-07-10 01:00:20" />
+                    <span class="input-suffix input-suffix-focus clear">
+                        <i class="icon-closecircle"></i>
+                    </span>
+                </div>
+                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+            </div>
+        </div>
+        <div class="pickercontainer" style="left: 20px; top: 144px; display: block;">
+            <div class="datepicker">
+                <div class="calendar">
+                    <div class="calendar-montharea">
+                        <i class="calendar-prev-year calendar-disabled"></i>
+                        <i class="calendar-prev-month"></i>
+                        <input class="calendar-current-year" readonly="readonly" type="text" value="2017年" />
+                        <input class="calendar-current-month" readonly="readonly" type="text" value="5月" />
+                        <i class="calendar-next-year calendar-disabled"></i>
+                        <i class="calendar-next-month"></i>
                     </div>
-                    <div class="calendar-day-wrap">
-                        <span class="calendar-day calendar-disabled calendar-premonthday">25</span>
-                        <span class="calendar-day calendar-disabled calendar-premonthday">26</span>
-                        <span class="calendar-day calendar-disabled calendar-premonthday">27</span>
-                        <span class="calendar-day calendar-disabled calendar-premonthday">28</span>
-                        <span class="calendar-day calendar-disabled calendar-premonthday">29</span>
-                        <span class="calendar-day calendar-disabled calendar-premonthday">30</span>
-                        <span class="calendar-day calendar-disabled">1</span>
-                        <span class="calendar-day calendar-disabled">2</span>
-                        <span class="calendar-day calendar-disabled">3</span>
-                        <span class="calendar-day calendar-disabled">4</span>
-                        <span class="calendar-day calendar-selected">5</span>
-                        <span class="calendar-day">6</span>
-                        <span class="calendar-day">7</span>
-                        <span class="calendar-day">8</span>
-                        <span class="calendar-day">9</span>
-                        <span class="calendar-day">10</span>
-                        <span class="calendar-day">11</span>
-                        <span class="calendar-day">12</span>
-                        <span class="calendar-day">13</span>
-                        <span class="calendar-day calendar-today">14</span>
-                        <span class="calendar-day">15</span>
-                        <span class="calendar-day">16</span><span class="calendar-day">17</span><span class="calendar-day">18</span>
-                        <span class="calendar-day calendar-disabled">19</span><span class="calendar-day calendar-disabled">20</span>
-                        <span class="calendar-day calendar-disabled">21</span>
-                        <span class="calendar-day calendar-disabled">22</span><span class="calendar-day calendar-disabled">23</span>
-                        <span class="calendar-day calendar-disabled">24</span><span class="calendar-day calendar-disabled">25</span>
-                        <span class="calendar-day calendar-disabled">26</span><span class="calendar-day calendar-disabled">27</span>
-                        <span class="calendar-day calendar-disabled">28</span><span class="calendar-day calendar-disabled">29</span>
-                        <span class="calendar-day calendar-disabled">30</span><span class="calendar-day calendar-disabled">31</span>
-                        <span class="calendar-day calendar-disabled calendar-nextmonthday">1</span>
-                        <span class="calendar-day calendar-disabled calendar-nextmonthday">2</span>
-                        <span class="calendar-day calendar-disabled calendar-nextmonthday">3</span>
-                        <span class="calendar-day calendar-disabled calendar-nextmonthday">4</span>
-                        <span class="calendar-day calendar-disabled calendar-nextmonthday">5</span>
+                    <div class="calendar-dayarea">
+                        <div class="calendar-weekday-wrap">
+                            <span class="calendar-weekday">日</span>
+                            <span class="calendar-weekday">一</span>
+                            <span class="calendar-weekday">二</span>
+                            <span class="calendar-weekday">三</span>
+                            <span class="calendar-weekday">四</span>
+                            <span class="calendar-weekday">五</span>
+                            <span class="calendar-weekday">六</span>
+                        </div>
+                        <div class="calendar-day-wrap">
+                            <span class="calendar-day calendar-disabled calendar-premonthday">25</span>
+                            <span class="calendar-day calendar-disabled calendar-premonthday">26</span>
+                            <span class="calendar-day calendar-disabled calendar-premonthday">27</span>
+                            <span class="calendar-day calendar-disabled calendar-premonthday">28</span>
+                            <span class="calendar-day calendar-disabled calendar-premonthday">29</span>
+                            <span class="calendar-day calendar-disabled calendar-premonthday">30</span>
+                            <span class="calendar-day calendar-disabled">1</span>
+                            <span class="calendar-day calendar-disabled">2</span>
+                            <span class="calendar-day calendar-disabled">3</span>
+                            <span class="calendar-day calendar-disabled">4</span>
+                            <span class="calendar-day calendar-selected">5</span>
+                            <span class="calendar-day">6</span>
+                            <span class="calendar-day">7</span>
+                            <span class="calendar-day">8</span>
+                            <span class="calendar-day">9</span>
+                            <span class="calendar-day">10</span>
+                            <span class="calendar-day">11</span>
+                            <span class="calendar-day">12</span>
+                            <span class="calendar-day">13</span>
+                            <span class="calendar-day calendar-today">14</span>
+                            <span class="calendar-day">15</span>
+                            <span class="calendar-day">16</span><span class="calendar-day">17</span><span class="calendar-day">18</span>
+                            <span class="calendar-day calendar-disabled">19</span><span class="calendar-day calendar-disabled">20</span>
+                            <span class="calendar-day calendar-disabled">21</span>
+                            <span class="calendar-day calendar-disabled">22</span><span class="calendar-day calendar-disabled">23</span>
+                            <span class="calendar-day calendar-disabled">24</span><span class="calendar-day calendar-disabled">25</span>
+                            <span class="calendar-day calendar-disabled">26</span><span class="calendar-day calendar-disabled">27</span>
+                            <span class="calendar-day calendar-disabled">28</span><span class="calendar-day calendar-disabled">29</span>
+                            <span class="calendar-day calendar-disabled">30</span><span class="calendar-day calendar-disabled">31</span>
+                            <span class="calendar-day calendar-disabled calendar-nextmonthday">1</span>
+                            <span class="calendar-day calendar-disabled calendar-nextmonthday">2</span>
+                            <span class="calendar-day calendar-disabled calendar-nextmonthday">3</span>
+                            <span class="calendar-day calendar-disabled calendar-nextmonthday">4</span>
+                            <span class="calendar-day calendar-disabled calendar-nextmonthday">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timewrap">
+                <a class="nowtime">当前</a>
+                <div class="input-time-wrap">
+                    <div class="input-time input-affix-wrapper">
+                        <input type="text" class="input " readonly="readonly" value="19:25:23" />
+                        <span class="input-suffix">
+                            <i class="icon-clockcircleo"></i>
+                        </span>
+                    </div>
+                    <div class="timepanel" style="display: block;">
+                        <div class="timepanel-list timepanel-list-hours">
+                            <div class="timepanel-list-item timepanel-disabled">00</div>
+                            <div class="timepanel-list-item timepanel-disabled">01</div>
+                            <div class="timepanel-list-item timepanel-disabled">02</div>
+                            <div class="timepanel-list-item timepanel-disabled">03</div>
+                            <div class="timepanel-list-item timepanel-disabled">04</div>
+                            <div class="timepanel-list-item">05</div>
+                            <div class="timepanel-list-item">06</div>
+                            <div class="timepanel-list-item">07</div>
+                            <div class="timepanel-list-item">08</div>
+                            <div class="timepanel-list-item">09</div>
+                            <div class="timepanel-list-item timepanel-selected">10</div>
+                            <div class="timepanel-list-item">11</div>
+                            <div class="timepanel-list-item">12</div>
+                            <div class="timepanel-list-item">13</div>
+                            <div class="timepanel-list-item">14</div>
+                            <div class="timepanel-list-item">15</div>
+                            <div class="timepanel-list-item">16</div>
+                            <div class="timepanel-list-item">17</div>
+                            <div class="timepanel-list-item">18</div>
+                            <div class="timepanel-list-item">19</div>
+                            <div class="timepanel-list-item">20</div>
+                            <div class="timepanel-list-item">21</div>
+                            <div class="timepanel-list-item">22</div>
+                            <div class="timepanel-list-item">23</div>
+                        </div>
+                        <div class="timepanel-list timepanel-list-minutes">
+                            <div class="timepanel-list-item">00</div>
+                            <div class="timepanel-list-item">01</div>
+                            <div class="timepanel-list-item">02</div>
+                            <div class="timepanel-list-item">03</div>
+                            <div class="timepanel-list-item">04</div>
+                            <div class="timepanel-list-item">05</div>
+                            <div class="timepanel-list-item">06</div>
+                            <div class="timepanel-list-item">07</div>
+                            <div class="timepanel-list-item">08</div>
+                            <div class="timepanel-list-item">09</div>
+                            <div class="timepanel-list-item timepanel-selected">10</div>
+                            <div class="timepanel-list-item">11</div>
+                            <div class="timepanel-list-item">12</div>
+                            <div class="timepanel-list-item">13</div>
+                            <div class="timepanel-list-item">14</div>
+                            <div class="timepanel-list-item">15</div>
+                            <div class="timepanel-list-item">16</div>
+                            <div class="timepanel-list-item">17</div>
+                            <div class="timepanel-list-item">18</div>
+                            <div class="timepanel-list-item">19</div>
+                            <div class="timepanel-list-item">20</div>
+                            <div class="timepanel-list-item">21</div>
+                            <div class="timepanel-list-item">22</div>
+                            <div class="timepanel-list-item">23</div>
+                            <div class="timepanel-list-item">24</div>
+                            <div class="timepanel-list-item">25</div>
+                            <div class="timepanel-list-item">26</div>
+                            <div class="timepanel-list-item">27</div>
+                            <div class="timepanel-list-item">28</div>
+                            <div class="timepanel-list-item">29</div>
+                            <div class="timepanel-list-item">30</div>
+                            <div class="timepanel-list-item">31</div>
+                            <div class="timepanel-list-item">32</div>
+                            <div class="timepanel-list-item">33</div>
+                            <div class="timepanel-list-item">34</div>
+                            <div class="timepanel-list-item">35</div>
+                            <div class="timepanel-list-item">36</div>
+                            <div class="timepanel-list-item">37</div>
+                            <div class="timepanel-list-item">38</div>
+                            <div class="timepanel-list-item">39</div>
+                            <div class="timepanel-list-item">40</div>
+                            <div class="timepanel-list-item">41</div>
+                            <div class="timepanel-list-item">42</div>
+                            <div class="timepanel-list-item">43</div>
+                            <div class="timepanel-list-item">44</div>
+                            <div class="timepanel-list-item">45</div>
+                            <div class="timepanel-list-item">46</div>
+                            <div class="timepanel-list-item">47</div>
+                            <div class="timepanel-list-item">48</div>
+                            <div class="timepanel-list-item">49</div>
+                            <div class="timepanel-list-item">50</div>
+                            <div class="timepanel-list-item">51</div>
+                            <div class="timepanel-list-item">52</div>
+                            <div class="timepanel-list-item">53</div>
+                            <div class="timepanel-list-item">54</div>
+                            <div class="timepanel-list-item">55</div>
+                            <div class="timepanel-list-item">56</div>
+                            <div class="timepanel-list-item">57</div>
+                            <div class="timepanel-list-item">58</div>
+                            <div class="timepanel-list-item">59</div>
+                        </div>
+                        <div class="timepanel-list timepanel-list-seconds">
+                            <div class="timepanel-list-item">00</div>
+                            <div class="timepanel-list-item">01</div>
+                            <div class="timepanel-list-item">02</div>
+                            <div class="timepanel-list-item">03</div>
+                            <div class="timepanel-list-item">04</div>
+                            <div class="timepanel-list-item">05</div>
+                            <div class="timepanel-list-item">06</div>
+                            <div class="timepanel-list-item">07</div>
+                            <div class="timepanel-list-item">08</div>
+                            <div class="timepanel-list-item">09</div>
+                            <div class="timepanel-list-item timepanel-selected">10</div>
+                            <div class="timepanel-list-item">11</div>
+                            <div class="timepanel-list-item">12</div>
+                            <div class="timepanel-list-item">13</div>
+                            <div class="timepanel-list-item">14</div>
+                            <div class="timepanel-list-item">15</div>
+                            <div class="timepanel-list-item">16</div>
+                            <div class="timepanel-list-item">17</div>
+                            <div class="timepanel-list-item">18</div>
+                            <div class="timepanel-list-item">19</div>
+                            <div class="timepanel-list-item">20</div>
+                            <div class="timepanel-list-item">21</div>
+                            <div class="timepanel-list-item">22</div>
+                            <div class="timepanel-list-item">23</div>
+                            <div class="timepanel-list-item">24</div>
+                            <div class="timepanel-list-item">25</div>
+                            <div class="timepanel-list-item">26</div>
+                            <div class="timepanel-list-item">27</div>
+                            <div class="timepanel-list-item">28</div>
+                            <div class="timepanel-list-item">29</div>
+                            <div class="timepanel-list-item">30</div>
+                            <div class="timepanel-list-item">31</div>
+                            <div class="timepanel-list-item">32</div>
+                            <div class="timepanel-list-item">33</div>
+                            <div class="timepanel-list-item">34</div>
+                            <div class="timepanel-list-item">35</div>
+                            <div class="timepanel-list-item">36</div>
+                            <div class="timepanel-list-item">37</div>
+                            <div class="timepanel-list-item">38</div>
+                            <div class="timepanel-list-item">39</div>
+                            <div class="timepanel-list-item">40</div>
+                            <div class="timepanel-list-item">41</div>
+                            <div class="timepanel-list-item">42</div>
+                            <div class="timepanel-list-item">43</div>
+                            <div class="timepanel-list-item">44</div>
+                            <div class="timepanel-list-item">45</div>
+                            <div class="timepanel-list-item">46</div>
+                            <div class="timepanel-list-item">47</div>
+                            <div class="timepanel-list-item">48</div>
+                            <div class="timepanel-list-item">49</div>
+                            <div class="timepanel-list-item">50</div>
+                            <div class="timepanel-list-item">51</div>
+                            <div class="timepanel-list-item">52</div>
+                            <div class="timepanel-list-item">53</div>
+                            <div class="timepanel-list-item">54</div>
+                            <div class="timepanel-list-item">55</div>
+                            <div class="timepanel-list-item">56</div>
+                            <div class="timepanel-list-item">57</div>
+                            <div class="timepanel-list-item">58</div>
+                            <div class="timepanel-list-item">59</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="timewrap">
-            <a class="nowtime">当前</a>
-            <div class="input-time-wrap">
-                <div class="input-time input-affix-wrapper">
-                    <input type="text" class="input " readonly="readonly" value="19:25:23" />
-                    <span class="input-suffix">
-                        <i class="icon-clockcircleo"></i>
-                    </span>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="pickercontainer">
+    <div class="datepicker">
+        <div class="calendar">
+            <div class="calendar-montharea">
+                <i class="calendar-prev-year calendar-disabled"></i>
+                <i class="calendar-prev-month"></i>
+                <input class="calendar-current-year" readonly="readonly" type="text" value="2017年" />
+                <input class="calendar-current-month" readonly="readonly" type="text" value="5月" />
+                <i class="calendar-next-year calendar-disabled"></i>
+                <i class="calendar-next-month"></i>
+            </div>
+            <div class="calendar-dayarea">
+                <div class="calendar-weekday-wrap">
+                    <span class="calendar-weekday">日</span>
+                    <span class="calendar-weekday">一</span>
+                    <span class="calendar-weekday">二</span>
+                    <span class="calendar-weekday">三</span>
+                    <span class="calendar-weekday">四</span>
+                    <span class="calendar-weekday">五</span>
+                    <span class="calendar-weekday">六</span>
                 </div>
-                <div class="timepanel" style="display: block;">
-                    <div class="timepanel-list timepanel-list-hours">
-                        <div class="timepanel-list-item timepanel-disabled">00</div>
-                        <div class="timepanel-list-item timepanel-disabled">01</div>
-                        <div class="timepanel-list-item timepanel-disabled">02</div>
-                        <div class="timepanel-list-item timepanel-disabled">03</div>
-                        <div class="timepanel-list-item timepanel-disabled">04</div>
-                        <div class="timepanel-list-item">05</div>
-                        <div class="timepanel-list-item">06</div>
-                        <div class="timepanel-list-item">07</div>
-                        <div class="timepanel-list-item">08</div>
-                        <div class="timepanel-list-item">09</div>
-                        <div class="timepanel-list-item timepanel-selected">10</div>
-                        <div class="timepanel-list-item">11</div>
-                        <div class="timepanel-list-item">12</div>
-                        <div class="timepanel-list-item">13</div>
-                        <div class="timepanel-list-item">14</div>
-                        <div class="timepanel-list-item">15</div>
-                        <div class="timepanel-list-item">16</div>
-                        <div class="timepanel-list-item">17</div>
-                        <div class="timepanel-list-item">18</div>
-                        <div class="timepanel-list-item">19</div>
-                        <div class="timepanel-list-item">20</div>
-                        <div class="timepanel-list-item">21</div>
-                        <div class="timepanel-list-item">22</div>
-                        <div class="timepanel-list-item">23</div>
-                    </div>
-                    <div class="timepanel-list timepanel-list-minutes">
-                        <div class="timepanel-list-item">00</div>
-                        <div class="timepanel-list-item">01</div>
-                        <div class="timepanel-list-item">02</div>
-                        <div class="timepanel-list-item">03</div>
-                        <div class="timepanel-list-item">04</div>
-                        <div class="timepanel-list-item">05</div>
-                        <div class="timepanel-list-item">06</div>
-                        <div class="timepanel-list-item">07</div>
-                        <div class="timepanel-list-item">08</div>
-                        <div class="timepanel-list-item">09</div>
-                        <div class="timepanel-list-item timepanel-selected">10</div>
-                        <div class="timepanel-list-item">11</div>
-                        <div class="timepanel-list-item">12</div>
-                        <div class="timepanel-list-item">13</div>
-                        <div class="timepanel-list-item">14</div>
-                        <div class="timepanel-list-item">15</div>
-                        <div class="timepanel-list-item">16</div>
-                        <div class="timepanel-list-item">17</div>
-                        <div class="timepanel-list-item">18</div>
-                        <div class="timepanel-list-item">19</div>
-                        <div class="timepanel-list-item">20</div>
-                        <div class="timepanel-list-item">21</div>
-                        <div class="timepanel-list-item">22</div>
-                        <div class="timepanel-list-item">23</div>
-                        <div class="timepanel-list-item">24</div>
-                        <div class="timepanel-list-item">25</div>
-                        <div class="timepanel-list-item">26</div>
-                        <div class="timepanel-list-item">27</div>
-                        <div class="timepanel-list-item">28</div>
-                        <div class="timepanel-list-item">29</div>
-                        <div class="timepanel-list-item">30</div>
-                        <div class="timepanel-list-item">31</div>
-                        <div class="timepanel-list-item">32</div>
-                        <div class="timepanel-list-item">33</div>
-                        <div class="timepanel-list-item">34</div>
-                        <div class="timepanel-list-item">35</div>
-                        <div class="timepanel-list-item">36</div>
-                        <div class="timepanel-list-item">37</div>
-                        <div class="timepanel-list-item">38</div>
-                        <div class="timepanel-list-item">39</div>
-                        <div class="timepanel-list-item">40</div>
-                        <div class="timepanel-list-item">41</div>
-                        <div class="timepanel-list-item">42</div>
-                        <div class="timepanel-list-item">43</div>
-                        <div class="timepanel-list-item">44</div>
-                        <div class="timepanel-list-item">45</div>
-                        <div class="timepanel-list-item">46</div>
-                        <div class="timepanel-list-item">47</div>
-                        <div class="timepanel-list-item">48</div>
-                        <div class="timepanel-list-item">49</div>
-                        <div class="timepanel-list-item">50</div>
-                        <div class="timepanel-list-item">51</div>
-                        <div class="timepanel-list-item">52</div>
-                        <div class="timepanel-list-item">53</div>
-                        <div class="timepanel-list-item">54</div>
-                        <div class="timepanel-list-item">55</div>
-                        <div class="timepanel-list-item">56</div>
-                        <div class="timepanel-list-item">57</div>
-                        <div class="timepanel-list-item">58</div>
-                        <div class="timepanel-list-item">59</div>
-                    </div>
-                    <div class="timepanel-list timepanel-list-seconds">
-                        <div class="timepanel-list-item">00</div>
-                        <div class="timepanel-list-item">01</div>
-                        <div class="timepanel-list-item">02</div>
-                        <div class="timepanel-list-item">03</div>
-                        <div class="timepanel-list-item">04</div>
-                        <div class="timepanel-list-item">05</div>
-                        <div class="timepanel-list-item">06</div>
-                        <div class="timepanel-list-item">07</div>
-                        <div class="timepanel-list-item">08</div>
-                        <div class="timepanel-list-item">09</div>
-                        <div class="timepanel-list-item timepanel-selected">10</div>
-                        <div class="timepanel-list-item">11</div>
-                        <div class="timepanel-list-item">12</div>
-                        <div class="timepanel-list-item">13</div>
-                        <div class="timepanel-list-item">14</div>
-                        <div class="timepanel-list-item">15</div>
-                        <div class="timepanel-list-item">16</div>
-                        <div class="timepanel-list-item">17</div>
-                        <div class="timepanel-list-item">18</div>
-                        <div class="timepanel-list-item">19</div>
-                        <div class="timepanel-list-item">20</div>
-                        <div class="timepanel-list-item">21</div>
-                        <div class="timepanel-list-item">22</div>
-                        <div class="timepanel-list-item">23</div>
-                        <div class="timepanel-list-item">24</div>
-                        <div class="timepanel-list-item">25</div>
-                        <div class="timepanel-list-item">26</div>
-                        <div class="timepanel-list-item">27</div>
-                        <div class="timepanel-list-item">28</div>
-                        <div class="timepanel-list-item">29</div>
-                        <div class="timepanel-list-item">30</div>
-                        <div class="timepanel-list-item">31</div>
-                        <div class="timepanel-list-item">32</div>
-                        <div class="timepanel-list-item">33</div>
-                        <div class="timepanel-list-item">34</div>
-                        <div class="timepanel-list-item">35</div>
-                        <div class="timepanel-list-item">36</div>
-                        <div class="timepanel-list-item">37</div>
-                        <div class="timepanel-list-item">38</div>
-                        <div class="timepanel-list-item">39</div>
-                        <div class="timepanel-list-item">40</div>
-                        <div class="timepanel-list-item">41</div>
-                        <div class="timepanel-list-item">42</div>
-                        <div class="timepanel-list-item">43</div>
-                        <div class="timepanel-list-item">44</div>
-                        <div class="timepanel-list-item">45</div>
-                        <div class="timepanel-list-item">46</div>
-                        <div class="timepanel-list-item">47</div>
-                        <div class="timepanel-list-item">48</div>
-                        <div class="timepanel-list-item">49</div>
-                        <div class="timepanel-list-item">50</div>
-                        <div class="timepanel-list-item">51</div>
-                        <div class="timepanel-list-item">52</div>
-                        <div class="timepanel-list-item">53</div>
-                        <div class="timepanel-list-item">54</div>
-                        <div class="timepanel-list-item">55</div>
-                        <div class="timepanel-list-item">56</div>
-                        <div class="timepanel-list-item">57</div>
-                        <div class="timepanel-list-item">58</div>
-                        <div class="timepanel-list-item">59</div>
-                    </div>
+                <div class="calendar-day-wrap">
+                    <span class="calendar-day calendar-disabled calendar-premonthday">25</span>
+                    <span class="calendar-day calendar-disabled calendar-premonthday">26</span>
+                    <span class="calendar-day calendar-disabled calendar-premonthday">27</span>
+                    <span class="calendar-day calendar-disabled calendar-premonthday">28</span>
+                    <span class="calendar-day calendar-disabled calendar-premonthday">29</span>
+                    <span class="calendar-day calendar-disabled calendar-premonthday">30</span>
+                    <span class="calendar-day calendar-disabled">1</span>
+                    <span class="calendar-day calendar-disabled">2</span>
+                    <span class="calendar-day calendar-disabled">3</span>
+                    <span class="calendar-day calendar-disabled">4</span>
+                    <span class="calendar-day calendar-selected">5</span>
+                    <span class="calendar-day">6</span>
+                    <span class="calendar-day">7</span>
+                    <span class="calendar-day">8</span>
+                    <span class="calendar-day">9</span>
+                    <span class="calendar-day">10</span>
+                    <span class="calendar-day">11</span>
+                    <span class="calendar-day">12</span>
+                    <span class="calendar-day">13</span>
+                    <span class="calendar-day calendar-today">14</span>
+                    <span class="calendar-day">15</span>
+                    <span class="calendar-day">16</span><span class="calendar-day">17</span><span class="calendar-day">18</span>
+                    <span class="calendar-day calendar-disabled">19</span><span class="calendar-day calendar-disabled">20</span>
+                    <span class="calendar-day calendar-disabled">21</span>
+                    <span class="calendar-day calendar-disabled">22</span><span class="calendar-day calendar-disabled">23</span>
+                    <span class="calendar-day calendar-disabled">24</span><span class="calendar-day calendar-disabled">25</span>
+                    <span class="calendar-day calendar-disabled">26</span><span class="calendar-day calendar-disabled">27</span>
+                    <span class="calendar-day calendar-disabled">28</span><span class="calendar-day calendar-disabled">29</span>
+                    <span class="calendar-day calendar-disabled">30</span><span class="calendar-day calendar-disabled">31</span>
+                    <span class="calendar-day calendar-disabled calendar-nextmonthday">1</span>
+                    <span class="calendar-day calendar-disabled calendar-nextmonthday">2</span>
+                    <span class="calendar-day calendar-disabled calendar-nextmonthday">3</span>
+                    <span class="calendar-day calendar-disabled calendar-nextmonthday">4</span>
+                    <span class="calendar-day calendar-disabled calendar-nextmonthday">5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timewrap">
+        <a class="nowtime">当前</a>
+        <div class="input-time-wrap">
+            <div class="input-time input-affix-wrapper">
+                <input type="text" class="input " readonly="readonly" value="19:25:23" />
+                <span class="input-suffix">
+                    <i class="icon-clockcircleo"></i>
+                </span>
+            </div>
+            <div class="timepanel" style="display: block;">
+                <div class="timepanel-list timepanel-list-hours">
+                    <div class="timepanel-list-item timepanel-disabled">00</div>
+                    <div class="timepanel-list-item timepanel-disabled">01</div>
+                    <div class="timepanel-list-item timepanel-disabled">02</div>
+                    <div class="timepanel-list-item timepanel-disabled">03</div>
+                    <div class="timepanel-list-item timepanel-disabled">04</div>
+                    <div class="timepanel-list-item">05</div>
+                    <div class="timepanel-list-item">06</div>
+                    <div class="timepanel-list-item">07</div>
+                    <div class="timepanel-list-item">08</div>
+                    <div class="timepanel-list-item">09</div>
+                    <div class="timepanel-list-item timepanel-selected">10</div>
+                    <div class="timepanel-list-item">11</div>
+                    <div class="timepanel-list-item">12</div>
+                    <div class="timepanel-list-item">13</div>
+                    <div class="timepanel-list-item">14</div>
+                    <div class="timepanel-list-item">15</div>
+                    <div class="timepanel-list-item">16</div>
+                    <div class="timepanel-list-item">17</div>
+                    <div class="timepanel-list-item">18</div>
+                    <div class="timepanel-list-item">19</div>
+                    <div class="timepanel-list-item">20</div>
+                    <div class="timepanel-list-item">21</div>
+                    <div class="timepanel-list-item">22</div>
+                    <div class="timepanel-list-item">23</div>
+                </div>
+                <div class="timepanel-list timepanel-list-minutes">
+                    <div class="timepanel-list-item">00</div>
+                    <div class="timepanel-list-item">01</div>
+                    <div class="timepanel-list-item">02</div>
+                    <div class="timepanel-list-item">03</div>
+                    <div class="timepanel-list-item">04</div>
+                    <div class="timepanel-list-item">05</div>
+                    <div class="timepanel-list-item">06</div>
+                    <div class="timepanel-list-item">07</div>
+                    <div class="timepanel-list-item">08</div>
+                    <div class="timepanel-list-item">09</div>
+                    <div class="timepanel-list-item timepanel-selected">10</div>
+                    <div class="timepanel-list-item">11</div>
+                    <div class="timepanel-list-item">12</div>
+                    <div class="timepanel-list-item">13</div>
+                    <div class="timepanel-list-item">14</div>
+                    <div class="timepanel-list-item">15</div>
+                    <div class="timepanel-list-item">16</div>
+                    <div class="timepanel-list-item">17</div>
+                    <div class="timepanel-list-item">18</div>
+                    <div class="timepanel-list-item">19</div>
+                    <div class="timepanel-list-item">20</div>
+                    <div class="timepanel-list-item">21</div>
+                    <div class="timepanel-list-item">22</div>
+                    <div class="timepanel-list-item">23</div>
+                    <div class="timepanel-list-item">24</div>
+                    <div class="timepanel-list-item">25</div>
+                    <div class="timepanel-list-item">26</div>
+                    <div class="timepanel-list-item">27</div>
+                    <div class="timepanel-list-item">28</div>
+                    <div class="timepanel-list-item">29</div>
+                    <div class="timepanel-list-item">30</div>
+                    <div class="timepanel-list-item">31</div>
+                    <div class="timepanel-list-item">32</div>
+                    <div class="timepanel-list-item">33</div>
+                    <div class="timepanel-list-item">34</div>
+                    <div class="timepanel-list-item">35</div>
+                    <div class="timepanel-list-item">36</div>
+                    <div class="timepanel-list-item">37</div>
+                    <div class="timepanel-list-item">38</div>
+                    <div class="timepanel-list-item">39</div>
+                    <div class="timepanel-list-item">40</div>
+                    <div class="timepanel-list-item">41</div>
+                    <div class="timepanel-list-item">42</div>
+                    <div class="timepanel-list-item">43</div>
+                    <div class="timepanel-list-item">44</div>
+                    <div class="timepanel-list-item">45</div>
+                    <div class="timepanel-list-item">46</div>
+                    <div class="timepanel-list-item">47</div>
+                    <div class="timepanel-list-item">48</div>
+                    <div class="timepanel-list-item">49</div>
+                    <div class="timepanel-list-item">50</div>
+                    <div class="timepanel-list-item">51</div>
+                    <div class="timepanel-list-item">52</div>
+                    <div class="timepanel-list-item">53</div>
+                    <div class="timepanel-list-item">54</div>
+                    <div class="timepanel-list-item">55</div>
+                    <div class="timepanel-list-item">56</div>
+                    <div class="timepanel-list-item">57</div>
+                    <div class="timepanel-list-item">58</div>
+                    <div class="timepanel-list-item">59</div>
+                </div>
+                <div class="timepanel-list timepanel-list-seconds">
+                    <div class="timepanel-list-item">00</div>
+                    <div class="timepanel-list-item">01</div>
+                    <div class="timepanel-list-item">02</div>
+                    <div class="timepanel-list-item">03</div>
+                    <div class="timepanel-list-item">04</div>
+                    <div class="timepanel-list-item">05</div>
+                    <div class="timepanel-list-item">06</div>
+                    <div class="timepanel-list-item">07</div>
+                    <div class="timepanel-list-item">08</div>
+                    <div class="timepanel-list-item">09</div>
+                    <div class="timepanel-list-item timepanel-selected">10</div>
+                    <div class="timepanel-list-item">11</div>
+                    <div class="timepanel-list-item">12</div>
+                    <div class="timepanel-list-item">13</div>
+                    <div class="timepanel-list-item">14</div>
+                    <div class="timepanel-list-item">15</div>
+                    <div class="timepanel-list-item">16</div>
+                    <div class="timepanel-list-item">17</div>
+                    <div class="timepanel-list-item">18</div>
+                    <div class="timepanel-list-item">19</div>
+                    <div class="timepanel-list-item">20</div>
+                    <div class="timepanel-list-item">21</div>
+                    <div class="timepanel-list-item">22</div>
+                    <div class="timepanel-list-item">23</div>
+                    <div class="timepanel-list-item">24</div>
+                    <div class="timepanel-list-item">25</div>
+                    <div class="timepanel-list-item">26</div>
+                    <div class="timepanel-list-item">27</div>
+                    <div class="timepanel-list-item">28</div>
+                    <div class="timepanel-list-item">29</div>
+                    <div class="timepanel-list-item">30</div>
+                    <div class="timepanel-list-item">31</div>
+                    <div class="timepanel-list-item">32</div>
+                    <div class="timepanel-list-item">33</div>
+                    <div class="timepanel-list-item">34</div>
+                    <div class="timepanel-list-item">35</div>
+                    <div class="timepanel-list-item">36</div>
+                    <div class="timepanel-list-item">37</div>
+                    <div class="timepanel-list-item">38</div>
+                    <div class="timepanel-list-item">39</div>
+                    <div class="timepanel-list-item">40</div>
+                    <div class="timepanel-list-item">41</div>
+                    <div class="timepanel-list-item">42</div>
+                    <div class="timepanel-list-item">43</div>
+                    <div class="timepanel-list-item">44</div>
+                    <div class="timepanel-list-item">45</div>
+                    <div class="timepanel-list-item">46</div>
+                    <div class="timepanel-list-item">47</div>
+                    <div class="timepanel-list-item">48</div>
+                    <div class="timepanel-list-item">49</div>
+                    <div class="timepanel-list-item">50</div>
+                    <div class="timepanel-list-item">51</div>
+                    <div class="timepanel-list-item">52</div>
+                    <div class="timepanel-list-item">53</div>
+                    <div class="timepanel-list-item">54</div>
+                    <div class="timepanel-list-item">55</div>
+                    <div class="timepanel-list-item">56</div>
+                    <div class="timepanel-list-item">57</div>
+                    <div class="timepanel-list-item">58</div>
+                    <div class="timepanel-list-item">59</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+        </div>
+    </section>
+</section>

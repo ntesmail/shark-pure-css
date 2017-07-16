@@ -517,6 +517,10 @@ $timepanel-list-item-background-color-active: $gray-200 !default;
 $timepanel-list-item-color-disabled: $gray-600 !default;
 $timepanel-list-item-background-color-disabled: $gray-100 !default; // #f4f4f4
 $timepanel-list-item-transition: background-color .3s ease !default;
+$datetimepicker-split-width: 30px !default;
+$datetimepicker-split-height: 30px !default;
+$datetimepicker-split-color: $gray-800 !default;
+$datetimepicker-split-font-size: 16px !default;
 //notify
 $notify-width:528px !default;
 $notify-padding:0px 14px 0px 60px !default;
