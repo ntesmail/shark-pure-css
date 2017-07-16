@@ -15,6 +15,9 @@
     overflow: hidden;
     visibility: hidden;
   }
+  li {
+    display: inline-block;
+  }
   .pagination-item {
     cursor: pointer;
     border-radius: $pagination-border-radius;
@@ -24,7 +27,6 @@
     line-height: 28px;
     text-align: center;
     list-style: none;
-    display: inline-block;
     vertical-align: middle;
     border: $pagination-border-width $pagination-border-style $pagination-border-color;
     background-color: $pagination-bg;
@@ -96,11 +98,15 @@
       }
     }
   }
+  .pagination-first,
   .pagination-prev,
+  .pagination-next,
   .pagination-jump-prev,
   .pagination-jump-next {
     margin-right: 8px;
   }
+  .pagination-first,
+  .pagination-last,
   .pagination-prev,
   .pagination-next,
   .pagination-jump-prev,
@@ -118,6 +124,8 @@
     display: inline-block;
     vertical-align: middle;
   }
+  .pagination-first,
+  .pagination-last,
   .pagination-prev,
   .pagination-next {
     border: $pagination-border-width $pagination-border-style $pagination-border-color;
@@ -143,21 +151,31 @@
       }
     }
   }
+  .pagination-first {
+    a {
+      &:after {
+        @include iconfont-font("\EE42");
+      }
+    }
+  }
+  .pagination-last {
+    a {
+      &:after {
+        @include iconfont-font("\EE41");
+      }
+    }
+  }
   .pagination-prev {
     a {
       &:after {
-        content: "\EE51";
-        display: block;
-        font-family: "iconfont" !important;
+        @include iconfont-font("\EE51");
       }
     }
   }
   .pagination-next {
     a {
       &:after {
-        content: "\EE50";
-        display: block;
-        font-family: "iconfont" !important;
+        @include iconfont-font("\EE50");
       }
     }
   }
@@ -186,6 +204,7 @@
   .pagination-quick-jumper {
     height: $pagination-input-height;
     line-height: $pagination-input-height;
+    color: $pagination-color;
     .input {
       margin: 0 8px;
       width: 50px;
@@ -202,6 +221,8 @@
     height: 20px;
     line-height: 20px;
   }
+  &.mini .pagination-first,
+  &.mini .pagination-last,
   &.mini .pagination-prev,
   &.mini .pagination-next {
     margin: 0;
@@ -221,15 +242,18 @@
     height: 20px;
     line-height: 20px;
   }
-  &.mini .pagination-options {
-    margin-left: 8px;
-    .pagination-quick-jumper {
-      height: 20px;
-      line-height: 20px;
-      input {
-        // .input-sm;
-        width: 44px;
-      }
+  &.mini .pagination-quick-jumper {
+    height: 20px;
+    line-height: 20px;
+    input {
+      width: 44px;
+      height: 22px;
+    }
+  }
+  &.mini .pagination-size-changer {
+    .selecter {
+      width: 82px;
+      height: 22px;
     }
   }
 }
