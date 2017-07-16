@@ -31,12 +31,16 @@
         background-color: $tabs-tab-background;
         margin-bottom: -$tabs-tab-border-width;
         cursor: pointer;
+        transition: color .3s;        
         &:first-child {
           border-left: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
           border-radius: $tabs-tab-border-radius 0 0 0;
         }
         &:last-child {
           border-radius: 0 $tabs-tab-border-radius 0 0;
+        }
+        &:hover{
+          color: $tabs-primary-color;
         }
       }
       .tabs-tab-active {
@@ -63,7 +67,12 @@
         background-color: $tabs-card-vertical-tab-bg-color; // position: relative;
         color: $tabs-card-vertical-tab-active-color;
         cursor: pointer;
+        transition: background-color .3s;
+        &:hover{
+        background-color: $tabs-card-vertical-tab-active-bg-color;          
+        }
       }
+     
       .tabs-tab-active {
         background-color: $tabs-card-vertical-tab-active-bg-color;
         border-left: 4px $tabs-tab-border-style $tabs-primary-color; // box-shadow: 0 -2px 0 -0 $tabs-primary-color;
@@ -89,8 +98,12 @@
         margin-left: 15px;
         margin-bottom: -$tabs-tab-border-width;
         cursor: pointer;
+        transition: color .3s;
         &:first-child {
           margin-left: 0;
+        }
+        &:hover {
+          color: $tabs-primary-color;
         }
       }
       .tabs-tab-active {
@@ -113,11 +126,15 @@
         padding: 0 30px;
         text-align: center;
         cursor: pointer;
+        transition: color .3s;
         &:first-child {
           border-radius: $tabs-tab-border-radius 0 0 $tabs-tab-border-radius;
         }
         &:last-child {
           border-radius: 0 $tabs-tab-border-radius $tabs-tab-border-radius 0;
+        }
+        &:hover{
+          color: $tabs-primary-color;
         }
       }
       .tabs-tab-active {
