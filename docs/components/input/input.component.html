@@ -45,30 +45,31 @@
             <h3>规格</h3>
         </div>
         <div>
-            input框，高度提供了两种规格，30px(默认)、24px。宽度默认100%，固定宽度提供了两种规格，240px、80px.
+            input框，高度提供了两种规格，30px(默认)、24px。宽度默认100%，固定宽度提供了三种规格，240px、150px、80px.
         </div>
     </section>
     <section class="code-box-demo">
         <div class="wrapper">
-            <input type="text" class="input"/>
+            <input type="text" class="input" placeholder="高30px，宽度100%(默认)"/>
         </div>
         <div class="wrapper">
-            <input type="text" class="input"/>
+            <input type="text" class="input input-sm" placeholder="高24px，宽度100%"/>
         </div>
         <div class="wrapper">
-            <input type="text" class="input input-sm"/>
+            <input type="text" class="input input-w-lg" placeholder="高30px，宽度240px"/>
         </div>
         <div class="wrapper">
-            <input type="text" class="input input-w-md"/>
+            <input type="text" class="input input-w-md" placeholder="高30px，宽度150px"/>
         </div>
         <div class="wrapper">
-            <input type="text" class="input input-w-sm"/>
+            <input type="text" class="input input-w-sm" placeholder="高30px，宽度80px"/>
         </div>
     </section>
     <section class="highlight-wrapper">
        <div transfer>
 <input type="text" class="input"/>
 <input type="text" class="input input-sm"/>
+<input type="text" class="input input-w-lg"/>
 <input type="text" class="input input-w-md"/>
 <input type="text" class="input input-w-sm"/>
        </div>
@@ -102,7 +103,7 @@
                 <span class="input-prefix">
                     <i class="icon-user"></i>
                 </span>
-                <input type="text" class="input"/>
+                <input type="text" class="input" placeholder="后缀只有hover、focus时才出现"/>
                 <span class="input-suffix input-suffix-focus">
                     <i class="icon-close"></i>
                 </span>
@@ -226,43 +227,39 @@
 
     <section class="highlight-wrapper">
        <div transfer>
-<div class="wrapper">
-    <div class="input-group">
-        <span class="input-group-addon">http://</span>
+<div class="input-group">
+    <span class="input-group-addon"></span>
+    <input type="text" class="input"/>
+    <div class="select select-single">
+        <span class="selected"></span>
+    </div>
+</div>
+
+<div class="input-group">
+    <div class="input-affix-wrapper">
+        <span class="input-prefix">
+            <i class="icon-user"></i>
+        </span>
         <input type="text" class="input"/>
-        <div class="select select-single">
-            <span class="selected">已选中2</span>
-        </div>
+    </div>
+    <div class="input-group-btn-wrapper">
+        <button type="btn" class="btn"></button>
     </div>
 </div>
-<div class="wrapper">
-    <div class="input-group">
-        <div class="input-affix-wrapper">
-            <span class="input-prefix">
-                <i class="icon-user"></i>
-            </span>
-            <input type="text" class="input"/>
-        </div>
-        <div class="input-group-btn-wrapper">
-            <button type="btn" class="btn">button</button>
-        </div>
-    </div>
-</div>
-<div class="wrapper">
-    <div class="input-group">
-        <span class="input-group-addon">
-            <i class="icon-search"></i>
+
+<div class="input-group">
+    <span class="input-group-addon">
+        <i class="icon-search"></i>
+    </span>
+    <div class="input-affix-wrapper">
+        <span class="input-prefix">
+            <i class="icon-user"></i>
         </span>
-        <div class="input-affix-wrapper">
-            <span class="input-prefix">
-                <i class="icon-user"></i>
-            </span>
-            <input type="text" class="input"/>
-        </div>
-        <span class="input-group-addon">
-            <i class="icon-search"></i>
-        </span>
+        <input type="text" class="input"/>
     </div>
+    <span class="input-group-addon">
+        <i class="icon-search"></i>
+    </span>
 </div>
        </div>
     </section>
