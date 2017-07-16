@@ -3,6 +3,17 @@
   position: relative; // overflow: hidden;
   zoom: 1;
   color: $tabs-tab-color;
+  .tabs-content {
+    .tabs-tabpane {
+      opacity: 0;
+      display: none;
+      pointer-events: none;
+    }
+    .tabs-tabpane-active {
+      opacity: 1;
+      display: block;
+    }
+  }
   &.tabs-card.tabs-horizontal {
     .tabs-nav {
       font-size: 0;
@@ -17,11 +28,15 @@
         line-height: 40px;
         padding: 0 40px;
         text-align: center;
-        background-color: $tabs-tab-background; // position: relative;
+        background-color: $tabs-tab-background;
         margin-bottom: -$tabs-tab-border-width;
         cursor: pointer;
         &:first-child {
           border-left: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
+          border-radius: $tabs-tab-border-radius 0 0 0;
+        }
+        &:last-child {
+          border-radius: 0 $tabs-tab-border-radius 0 0;
         }
       }
       .tabs-tab-active {
@@ -30,17 +45,6 @@
         border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-active-bg-color; // border-top: 2px $tabs-tab-border-style $tabs-primary-color;
         box-shadow: 0 -2px 0 -0 $tabs-primary-color;
         border-top: none;
-      }
-    }
-    .tabs-content {
-      .tabs-tabpane {
-        opacity: 0;
-        display: none;
-        pointer-events: none;
-      }
-      .tabs-tabpane-active {
-        opacity: 1;
-        display: block;
       }
     }
   }
@@ -67,14 +71,60 @@
     }
     .tabs-content {
       margin-left: 140px;
-      .tabs-tabpane {
-        opacity: 0;
-        display: none;
-        pointer-events: none;
+    }
+  }
+  &.tabs-line {
+    .tabs-nav {
+      font-size: 0;
+      padding: 0 0 0 26px;
+      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color; // &::before {
+      .tabs-tab {
+        font-size: $tabs-tab-font-size;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 16px;
+        text-align: center;
+        margin-left: 15px;
+        margin-bottom: -$tabs-tab-border-width;
+        cursor: pointer;
+        &:first-child {
+          margin-left: 0;
+        }
       }
-      .tabs-tabpane-active {
-        opacity: 1;
-        display: block;
+      .tabs-tab-active {
+        background-color: $tabs-tab-active-bg-color;
+        color: $tabs-primary-color;
+        border-bottom: 2px $tabs-tab-border-style $tabs-primary-color;
+      }
+    }
+  }
+  &.tabs-block {
+    .tabs-nav {
+      font-size: 0;
+      .tabs-tab {
+        font-size: $tabs-tab-font-size;
+        display: inline-block;
+        border: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
+        border-left: none;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 28px;
+        text-align: center;
+        cursor: pointer;
+        &:first-child {
+          border-radius: $tabs-tab-border-radius 0 0 $tabs-tab-border-radius;
+        }
+        &:last-child {
+          border-radius: 0 $tabs-tab-border-radius $tabs-tab-border-radius 0;
+        }
+      }
+      .tabs-tab-active {
+        background-color: $tabs-primary-color;
+        color: $tabs-tab-active-bg-color;
+        border: $tabs-tab-border-width $tabs-tab-border-style $tabs-primary-color;
+        border-left: none;
+        margin-left: -1px;
       }
     }
   }
