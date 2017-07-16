@@ -69,11 +69,11 @@
 .input-affix-wrapper {
   position: relative;
   .input:not(:last-child) {
-    padding-left: 28px;
+    padding-right: 28px;
   }
 
   .input:not(:first-child) {
-    padding-right: 28px;
+    padding-left: 28px;
   }
 
   .input-suffix {
