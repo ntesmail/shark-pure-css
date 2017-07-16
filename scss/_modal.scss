@@ -88,6 +88,7 @@
   .modal-close {
     position: absolute;
     color: $modal-close-color;
+    cursor: pointer;
     text-decoration: none;
     &:hover {
       color: $modal-close-hover-color;
