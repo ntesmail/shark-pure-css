@@ -1,32 +1,34 @@
 .tabs {
   box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
+  position: relative; // overflow: hidden;
   zoom: 1;
   color: $tabs-tab-color;
   &.tabs-card.tabs-horizontal {
     .tabs-nav {
       font-size: 0;
-      padding: 0;
-      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
+      padding: 0 0 0 21px;
+      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color; // &::before {
       .tabs-tab {
         font-size: $tabs-tab-font-size;
         display: inline-block;
-        border: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
-        border-radius: $tabs-tab-border-radius;
+        border-top: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
+        border-right: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
         height: 40px;
         line-height: 40px;
         padding: 0 40px;
-        background: $tabs-tab-background;
-        position: relative;
-        z-index: 1;
+        background: $tabs-tab-background; // position: relative;
         margin-bottom: -$tabs-tab-border-width;
         cursor: pointer;
+        &:first-child {
+          border-left: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
+        }
       }
       .tabs-tab-active {
         background-color: $tabs-tab-active-bg-color;
         color: $tabs-primary-color;
-        border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-active-bg-color;
+        border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-active-bg-color; // border-top: 2px $tabs-tab-border-style $tabs-primary-color;
+        box-shadow: 0 -2px 0 -0 $tabs-primary-color;
+        border-top: none;
       }
     }
     .tabs-content {
