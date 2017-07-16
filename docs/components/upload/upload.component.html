@@ -1,45 +1,141 @@
-<div class="bd-example">
-    <p>文件上传-succeed</p>
-    <div class="upload upload-file upload-file-status-succeed ">
-        <span class="upload-file-inner" role="button">
+<div class="page-header">
+    <h1>Upload&Download 上传下载</h1>
+</div>
+
+<!--part1 说明-->
+<div class="page-header">
+    <h2>组件说明</h2>
+</div>
+<div class="u-tips">
+    <ul>
+        <li>文件选择上传和多图片上传</li>
+        <li>1. 当需要上传一个或一些文件时。</li>
+        <li>2. 当需要展现上传的进度时。</li>
+        <li>3. 当需要展现上传的状态时。</li>
+    </ul>
+</div>
+
+
+<div class="page-header">
+    <h2>
+        代码演示
+    </h2>
+</div>
+<!-- 文件上传 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>文件上传</h3>
+        </div>
+        <div>
+             提供两种上传状态样式，上传成功状态.upload-file-status-succeed， 上传失败状态.upload-file-status-failed。
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="upload upload-file upload-file-status-succeed ">
+            <span class="upload-file-inner" role="button">
             <input type="file" accept="" style="display: none;">
             <button type="button" class="btn"><i class="icon icon-upload"></i><span>上传文件</span></button>
-        </span>
-        <span class="upload-filename"><i class="icon icon-link"></i>美少女.png</span>
-        <div class="upload-availiable-type">支持扩展名：.rar .zip .doc .docx .pdf .jpg...</div>
-    </div>
-</div>
-<div class="bd-example">
-    <p>文件上传-failed</p>
-    <div class="upload upload-file upload-file-status-failed">
-        <span class="upload-file-inner" role="button">
+            </span>
+            <span class="upload-filename"><i class="icon icon-link"></i>美少女.png</span>
+            <div class="upload-availiable-type">支持扩展名：.rar .zip .doc .docx .pdf .jpg...</div>
+        </div>
+        <div class="upload upload-file upload-file-status-failed">
+            <span class="upload-file-inner" role="button">
+        <input type="file" accept="" style="display: none;">
+        <button type="button" class="btn"><i class="icon icon-upload"></i><span>上传文件</span></button>
+            </span>
+            <span class="upload-filename"><i class="icon icon-link"></i>美少女.png</span>
+            <div class="upload-availiable-type">支持扩展名：.rar .zip .doc .docx .pdf .jpg...</div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="upload upload-file upload-file-status-succeed ">
+    <span class="upload-file-inner" role="button">
             <input type="file" accept="" style="display: none;">
             <button type="button" class="btn"><i class="icon icon-upload"></i><span>上传文件</span></button>
-        </span>
-        <span class="upload-filename"><i class="icon icon-link"></i>美少女.png</span>
-        <div class="upload-availiable-type">支持扩展名：.rar .zip .doc .docx .pdf .jpg...</div>
-    </div>
+    </span>
+    <span class="upload-filename"><i class="icon icon-link"></i>美少女.png</span>
+    <div class="upload-availiable-type">支持扩展名：.rar .zip .doc .docx .pdf .jpg...</div>
 </div>
-<div class="bd-example">
-    <p>图片上传</p>
-    <div class="upload upload-img">
-        <div class="upload-img-list">
-            <div class="upload-img-list-item">
-                <img src="http://mimg.127.net/hxm/shark/logo/shark.png">
+<div class="upload upload-file upload-file-status-failed">
+    <span class="upload-file-inner" role="button">
+        <input type="file" accept="" style="display: none;">
+        <button type="button" class="btn"><i class="icon icon-upload"></i><span>上传文件</span></button>
+    </span>
+    <span class="upload-filename"><i class="icon icon-link"></i>美少女.png</span>
+    <div class="upload-availiable-type">支持扩展名：.rar .zip .doc .docx .pdf .jpg...</div>
+</div>
+        </div>
+    </section>
+</section>
+
+<!-- 图片上传 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>图片上传</h3>
+        </div>
+        <div>
+            可上传多张图片和删除图片。
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="upload upload-img">
+            <div class="upload-img-list">
+                <div class="upload-img-list-item">
+                    <img src="http://mimg.127.net/hxm/shark/logo/shark.png">
+                </div>
+                <div class="upload-img-list-item">
+                    <img src="http://mimg.127.net/hxm/shark/logo/shark.png">
+                </div>
             </div>
-            <div class="upload-img-list-item">
-                <img src="http://mimg.127.net/hxm/shark/logo/shark.png">
+            <div class="upload-btn-cross" role="button">
+                <i class="icon icon-plus"></i>
+                <div class="upload-text">上传图片</div>
             </div>
         </div>
-        <div class="upload-btn-cross" role="button">
-            <i class="icon icon-plus"></i>
-            <div class="upload-text">上传图片</div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="upload upload-img">
+    <div class="upload-img-list">
+        <div class="upload-img-list-item">
+            <img src="http://mimg.127.net/hxm/shark/logo/shark.png">
+        </div>
+        <div class="upload-img-list-item">
+            <img src="http://mimg.127.net/hxm/shark/logo/shark.png">
         </div>
     </div>
-</div>
-<div class="bd-example">
-    <p>文件下载</p>
-    <div class="download">
-        <span class="download-filename">文件.xls</span><button class="btn btn-link">下载</button>
+    <div class="upload-btn-cross" role="button">
+        <i class="icon icon-plus"></i>
+        <div class="upload-text">上传图片</div>
     </div>
 </div>
+        </div>
+    </section>
+</section>
+<!-- 文件下载 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>文件下载</h3>
+        </div>
+        <div>
+             文件下载
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="download">
+            <span class="download-filename">文件.xls</span><button class="btn btn-link">下载</button>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="download">
+    <span class="download-filename">文件.xls</span><button class="btn btn-link">下载</button>
+</div>
+        </div>
+    </section>
+</section>
