@@ -1,57 +1,245 @@
-<div class="bd-example">
-    <p>三种类型</p>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-link">Link</button>
+<div class="page-header">
+    <h1>Button 按钮</h1>
 </div>
-<div class="bd-example">
-    <p>三种主题 </p>
-    <button type="button" class="btn btn-secondary btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary btn-danger">Danger</button>
+
+<!--part1 说明-->
+<div class="page-header">
+    <h1><small>组件说明</small></h1>
 </div>
-<div class="bd-example">
-    <p>小button</p>
-    <button type="button" class="btn btn-sm btn-secondary btn-primary">Primary</button>
-    <button type="button" class="btn btn-sm btn-secondary btn-danger">Danger</button>
+<div class="u-tips">
+	<ul>
+        <li>1. 可用于各种操作</li>
+    </ul>
 </div>
-<div class="bd-example">
-    <p>不同标签</p>
-    <a class="btn btn-primary" href="#" role="button">Link</a>
-    <button class="btn btn-primary" type="submit">Button</button>
-    <input class="btn btn-primary" type="button" value="Input">
-    <input class="btn btn-primary" type="submit" value="Submit">
-    <input class="btn btn-primary" type="reset" value="Reset">
+
+<div class="page-header">
+    <h1>
+        <small>代码演示</small>
+    </h1>
 </div>
-<div class="bd-example">
-    <p>active状态</p>
-    <button type="button" class="btn btn-primary active">Primary</button>
-    <button type="button" class="btn btn-secondary active">Secondary</button>
-    <button type="button" class="btn btn-link active">Link</button>
-</div>
-<div class="bd-example">
-    <p>disabled状态，注意a标签是加disbled类，其他是加disabled属性</p>
-    <button type="button" class="btn btn-primary" disabled>Primary</button>
-    <button type="button" class="btn btn-secondary" disabled>Secondary</button>
-    <button type="button" class="btn btn-link disabled">Link</button>
-</div>
-<div class="bd-example">
-    <p>带图标按钮</p>
-    <button type="button" class="btn btn-primary"><i class="icon-like btn-icon-left"></i>Primary</button>
-    <button type="button" class="btn btn-secondary">Primary<i class="icon-caretdown btn-icon-right"></i></button>
-</div>
-<div class="bd-example">
-    <p>组合按钮</p>
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary">Secondary1</button>
-        <button type="button" class="btn btn-secondary">Secondary2</button>
-        <button type="button" class="btn btn-secondary">Secondary3</button>
-    </div>
-</div>
-<div class="bd-example">
-    <p>垂直组合按钮</p>
-    <div class="btn-group-vertical">
-        <button type="button" class="btn btn-secondary">Secondary1</button>
-        <button type="button" class="btn btn-secondary">Secondary2</button>
-        <button type="button" class="btn btn-secondary">Secondary3</button>
-    </div>
-</div>
+
+<!-- 三种类型 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>三种类型</span>
+        </div>
+        <div>
+            基类是 btn ,扩展类为 btn-primary btn-secondary btn-link
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+    </section>
+</section>
+
+<!-- 三种主题 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <button type="button" class="btn btn-secondary btn-secondary-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">secondary</button>
+        <button type="button" class="btn btn-secondary btn-secondary-danger">Danger</button>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>三种主题</span>
+        </div>
+        <div>
+            主题是在 btn-secondary 进行扩展，默认是次要按钮，对应增加的两个类为 btn-secondary-primary btn-secondary-danger
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <button type="button" class="btn btn-secondary btn-secondary-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">secondary</button>
+            <button type="button" class="btn btn-secondary btn-secondary-danger">Danger</button>
+        </div>
+    </section>
+</section>
+
+<!-- 两种大小 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <button type="button" class="btn btn-sm btn-secondary btn-secondary-primary">Primary</button>
+        <button type="button" class="btn btn-sm btn-secondary">secondary</button>
+        <button type="button" class="btn btn-sm btn-secondary btn-secondary-danger">Danger</button>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>两种大小</span>
+        </div>
+        <div>
+            默认是30px高的按钮，btn-sm 对应的高是24px
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <button type="button" class="btn btn-sm btn-secondary btn-secondary-primary">Primary</button>
+            <button type="button" class="btn btn-sm btn-secondary">secondary</button>
+            <button type="button" class="btn btn-sm btn-secondary btn-secondary-danger">Danger</button>
+        </div>
+    </section>
+</section>
+
+<!-- 可作为按钮使用的标签或元素 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>可作为按钮使用的标签或元素</span>
+        </div>
+        <div>
+            a 标签，input 标签（type为 submit button reset），button标签
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+    </section>
+</section>
+
+<!-- active状态 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <button type="button" class="btn btn-primary active">Primary</button>
+        <button type="button" class="btn btn-secondary active">Secondary</button>
+        <button type="button" class="btn btn-link active">Link</button>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>active状态</span>
+        </div>
+        <div>
+            添加 active 类即可
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <button type="button" class="btn btn-primary active">Primary</button>
+            <button type="button" class="btn btn-secondary active">Secondary</button>
+            <button type="button" class="btn btn-link active">Link</button>
+        </div>
+    </section>
+</section>
+
+<!-- disabled状态 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <button type="button" class="btn btn-primary" disabled>Primary</button>
+        <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+        <button type="button" class="btn btn-link disabled">Link</button>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>disabled状态</span>
+        </div>
+        <div>
+            disabled 状态，注意 a 标签是加 disbled 类，其他是加 disabled 属性 或者 disabled 类
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <button type="button" class="btn btn-primary" disabled>Primary</button>
+            <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+            <button type="button" class="btn btn-link disabled">Link</button>
+        </div>
+    </section>
+</section>
+
+<!-- 带图标按钮 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <button type="button" class="btn btn-primary"><i class="icon-like btn-icon-left"></i>Primary</button>
+        <button type="button" class="btn btn-secondary">Primary<i class="icon-caretdown btn-icon-right"></i></button>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>带图标按钮</span>
+        </div>
+        <div>
+            注意左图标跟右图标需要在i标签上对应增加 btn-icon-left 和 btn-icon-right 类
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <button type="button" class="btn btn-primary"><i class="icon-like btn-icon-left"></i>Primary</button>
+            <button type="button" class="btn btn-secondary">Primary<i class="icon-caretdown btn-icon-right"></i></button>
+        </div>
+    </section>
+</section>
+
+<!-- 水平组合按钮 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Secondary1</button>
+            <button type="button" class="btn btn-secondary">Secondary2</button>
+            <button type="button" class="btn btn-secondary">Secondary3</button>
+        </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>组合按钮</span>
+        </div>
+        <div>
+            给按钮增加 btn-group 包裹即可实现按钮组
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Secondary1</button>
+            <button type="button" class="btn btn-secondary">Secondary2</button>
+            <button type="button" class="btn btn-secondary">Secondary3</button>
+        </div>
+        </div>
+    </section>
+</section>
+
+<!-- 垂直组合按钮 -->
+<section class="code-box">
+    <section class="code-box-demo">
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-secondary">Secondary1</button>
+            <button type="button" class="btn btn-secondary">Secondary2</button>
+            <button type="button" class="btn btn-secondary">Secondary3</button>
+        </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>垂直组合按钮</span>
+        </div>
+        <div>
+            给按钮增加 btn-group-vertical 包裹即可实现垂直按钮组
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-secondary">Secondary1</button>
+            <button type="button" class="btn btn-secondary">Secondary2</button>
+            <button type="button" class="btn btn-secondary">Secondary3</button>
+        </div>
+        </div>
+    </section>
+</section>

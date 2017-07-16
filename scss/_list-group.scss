@@ -18,7 +18,8 @@
     max-height: $list-group-item-height * 7;
     overflow-y: auto;
   }
-
+  
+  .check-all-warp,
   .list-group-item,
   &.tree li {
     position: relative;
@@ -38,6 +39,7 @@
     }
   }
   
+  .check-all-warp,
   &.tree li {
     &.active {
       .tree-node-name {

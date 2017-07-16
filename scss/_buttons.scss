@@ -51,8 +51,15 @@
 // secondary
 .btn-secondary {
     @include button-variant($btn-color, $btn-border-color, $btn-background-color, $btn-background-color-hover, $btn-background-color-active);
-    &.btn-primary {
+    &.btn-secondary-primary {
       @include button-variant($btn-secondary-primary-color, $btn-secondary-primary-border-color, $btn-secondary-primary-background-color, $btn-secondary-primary-background-color-hover, $btn-secondary-primary-background-color-active);
+      &.active,
+      &:active {
+       color: $btn-secondary-color-active;
+      }
+    }
+    &.btn-secondary-danger {
+      @include button-variant($btn-secondary-danger-color, $btn-secondary-danger-border-color, $btn-secondary-danger-background-color, $btn-secondary-danger-background-color-hover, $btn-secondary-danger-background-color-active);
       &.active,
       &:active {
        color: $btn-secondary-color-active;
