@@ -15,9 +15,18 @@
 
 .input-number {
   @extend %input;
-  padding: 0;
+  padding: 1px 0;
   &:hover,
   &:focus {
+    .input-number-handle-wrapper {
+      opacity: 1;
+    }
+  }
+
+  &.focus {
+    border-color: #3187f6;
+    outline: 0;
+    box-shadow: 0 0 2px 1px rgba(49,135,246,.50);
     .input-number-handle-wrapper {
       opacity: 1;
     }

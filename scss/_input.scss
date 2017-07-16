@@ -89,6 +89,10 @@
   .input-suffix-focus {
     display: none;
     cursor: pointer;
+
+    &:hover {
+      display: block;
+    }
   }
 
   .input:focus,

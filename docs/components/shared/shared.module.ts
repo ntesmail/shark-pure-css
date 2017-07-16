@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 //directive
 import { TransferDirective } from './directives/transfer.directive';
 import { MarkdownDirective } from './directives/markdown.directive';
+//import { TransferDirective2 } from './directives/transfer2.directive.ts';
 
 let modules: Array<any> = [CommonModule, FormsModule, HttpModule];
 let directives: Array<any> = [TransferDirective, MarkdownDirective];

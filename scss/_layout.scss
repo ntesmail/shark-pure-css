@@ -45,6 +45,8 @@
 
 .layout-body {
   @extend .clearfix;
+  position: relative;
+  z-index: 0;
   padding-top: 64px;
   .layout-aside {
     float: left;

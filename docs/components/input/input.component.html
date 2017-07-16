@@ -4,7 +4,7 @@
 
 <!--part1 说明-->
 <div class="page-header">
-    <h1><small>组件说明</small></h1>
+    <h2>组件说明</h2>
 </div>
 <div class="u-tips">
 	<ul>
@@ -15,31 +15,42 @@
 
 
 <div class="page-header">
-    <h1>
-        <small>代码演示</small>
-    </h1>
+    <h2>
+        代码演示
+    </h2>
 </div>
 
 <section class="code-box">
-    <section class="code-box-demo">
-        <input type="text" class="input"/>
-    </section>
     <section class="code-box-meta">
         <div class="code-box-title">
-            <span>基本使用</span>
+            <h3>基本使用</h3>
         </div>
         <div>
             基本使用，宽度默认100%、高度30px.
         </div>
     </section>
+    <section class="code-box-demo">
+        <input type="text" class="input"/>
+    </section>
     <section class="highlight-wrapper">
-       <div transfer>
+       <div transfer style="display: none;">
 <input type="text" class="input"/>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-link">Link</button>
        </div>
     </section>
 </section>
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>规格</h3>
+        </div>
+        <div>
+            input框，高度提供了两种规格，30px(默认)、24px。宽度默认100%，固定宽度提供了两种规格，240px、80px.
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="wrapper">
             <input type="text" class="input"/>
@@ -57,14 +68,6 @@
             <input type="text" class="input input-w-sm"/>
         </div>
     </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>规格</span>
-        </div>
-        <div>
-            input框，高度提供了两种规格，30px(默认)、24px。宽度默认100%，固定宽度提供了两种规格，240px、80px.
-        </div>
-    </section>
     <section class="highlight-wrapper">
        <div transfer>
 <input type="text" class="input"/>
@@ -77,6 +80,14 @@
 
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>前缀和后缀</h3>
+        </div>
+        <div>
+            在输入框中添加前缀和后缀。后缀可以增加input-suffix-focus扩展类，input只有在hover和focus状态下显示
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="wrapper">
             <div class="input-affix-wrapper">
@@ -99,14 +110,6 @@
                     <i class="icon-close"></i>
                 </span>
             </div>
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>前缀和后缀</span>
-        </div>
-        <div>
-            在输入框中添加前缀和后缀。后缀可以增加input-suffix-focus扩展类，input只有在hover和focus状态下显示
         </div>
     </section>
     <section class="highlight-wrapper">
@@ -136,6 +139,14 @@
 
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>数字输入框</h3>
+        </div>
+        <div>
+            用于输入数字。他的focus状态，需要手动在<strong>input-number</strong>类上，加上focus类
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="input-number">
             <div class="input-number-handle-wrapper">
@@ -147,14 +158,6 @@
                 </div>
             </div>
             <input type="number" class="input-number-input">
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>数字输入框</span>
-        </div>
-        <div>
-            用于输入数字
         </div>
     </section>
     <section class="highlight-wrapper">
@@ -175,11 +178,35 @@
 </section>
 
 <section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>前置/后置标签</h3>
+        </div>
+        <div>
+            用于配置一些固定组合。提供input、input-affix-wrapper(带前缀后缀的输入框)与select、btn、input-group-addon的组合。
+        </div>
+    </section>
     <section class="code-box-demo">
         <div class="wrapper">
             <div class="input-group">
                 <span class="input-group-addon">http://</span>
                 <input type="text" class="input"/>
+                <div class="select select-single">
+                    <span class="selected">已选中2</span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="input-group">
+                <div class="input-affix-wrapper">
+                    <span class="input-prefix">
+                        <i class="icon-user"></i>
+                    </span>
+                    <input type="text" class="input"/>
+                </div>
+                <div class="input-group-btn-wrapper">
+                    <button type="btn" class="btn">button</button>
+                </div>
             </div>
         </div>
         <div class="wrapper">
@@ -193,47 +220,53 @@
                     </span>
                     <input type="text" class="input"/>
                 </div>
-                <div class="select select-single">
-                    <span class="selected">已选中2</span>
-                </div>
+                <span class="input-group-addon">
+                    <i class="icon-search"></i>
+                </span>
             </div>
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>前置/后置标签</span>
-        </div>
-        <div>
-            用于配置一些固定组合。提供input、input-affix-wrapper(带前缀后缀的输入框)与select、input-group-addon的组合。
         </div>
     </section>
 
     <section class="highlight-wrapper">
        <div transfer>
-<div class="input-group">
-    <span class="input-group-addon">http://</span>
-    <input type="text" class="input"/>
-</div>
-
-
-<div class="input-group">
-    <span class="input-group-addon">
-        <i class="icon-upcircleo"></i>
-    </span>
-    <div class="input-affix-wrapper">
-        <span class="input-prefix">
-            <i class="icon-upcircleo"></i>
-        </span>
-        <input type="text" class="input input-radius"/>
-        <span class="input-suffix input-suffix-focus">
-            <i class="icon-upcircleo"></i>
-        </span>
+<div class="wrapper">
+    <div class="input-group">
+        <span class="input-group-addon">http://</span>
+        <input type="text" class="input"/>
+        <div class="select select-single">
+            <span class="selected">已选中2</span>
+        </div>
     </div>
-    <div class="select select-single">
-        <span class="selected">已选中2</span>
+</div>
+<div class="wrapper">
+    <div class="input-group">
+        <div class="input-affix-wrapper">
+            <span class="input-prefix">
+                <i class="icon-user"></i>
+            </span>
+            <input type="text" class="input"/>
+        </div>
+        <div class="input-group-btn-wrapper">
+            <button type="btn" class="btn">button</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="icon-search"></i>
+        </span>
+        <div class="input-affix-wrapper">
+            <span class="input-prefix">
+                <i class="icon-user"></i>
+            </span>
+            <input type="text" class="input"/>
+        </div>
+        <span class="input-group-addon">
+            <i class="icon-search"></i>
+        </span>
     </div>
 </div>
        </div>
     </section>
 </section>
-
