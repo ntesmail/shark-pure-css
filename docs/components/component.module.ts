@@ -24,6 +24,7 @@ import { CssLayoutModule } from './layout/layout.module';
 import { CssNotifyModule } from './notify/notify.module';
 import { CssUploadModule } from './upload/upload.module';
 import { CssIconfontModule } from './iconfont/iconfont.module';
+import { CssFunctionModule } from './function/function.module';
 import { CssTagModule } from './tag/tag.module';
 import { CssListgroupModule } from './listgroup/listgroup.module';
 @NgModule({
@@ -51,7 +52,8 @@ import { CssListgroupModule } from './listgroup/listgroup.module';
                 CssUploadModule,
                 CssIconfontModule,
                 CssTagModule,
-                CssListgroupModule
+                CssListgroupModule,
+                CssFunctionModule
         ]
 })
 export class ComponentModule { }
