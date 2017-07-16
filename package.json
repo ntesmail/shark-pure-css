@@ -13,18 +13,20 @@
     "server": "node server",
     "dll": "webpack --config webpack.dll.config.js"
   },
-  "pre-commit": ["sass-lint"],
+  "pre-commit": [
+    "sass-lint"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ntesmail/shark-pure-css.git"
+    "url": "https://git.mail.netease.com/shark/shark-css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ntesmail/shark-pure-css/issues"
+    "url": "https://git.mail.netease.com/shark/shark-css/issues"
   },
-  "homepage": "https://github.com/ntesmail/shark-pure-css#readme",
+  "homepage": "http://shark.mail.netease.com/",
   "dependencies": {
     "@angular/animations": "^4.1.0",
     "@angular/common": "^4.1.0",
@@ -37,7 +39,6 @@
     "@angular/platform-browser-dynamic": "^4.1.0",
     "@angular/platform-server": "^4.1.0",
     "@angular/router": "^4.1.0",
-    "@ntesmail/shark-ui": "^2.0.4",
     "@types/core-js": "^0.9.41",
     "@types/node": "^6.0.46",
     "core-js": "^2.4.1",
