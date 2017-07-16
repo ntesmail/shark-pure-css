@@ -1,63 +1,179 @@
-<div class="bd-example">
-    <p>基础</p>
-    <ul class="pagination">
-        <li class="pagination-first  pagination-disabled"><a></a></li>
-        <li class="pagination-prev pagination-disabled"><a></a></li>
-        <li class="pagination-item pagination-item-active"><a>1</a></li>
-        <li class="pagination-item"><a>2</a></li>
-        <li class="pagination-item"><a>3</a></li>
-        <li class="pagination-item"><a>4</a></li>
-        <li class="pagination-item"><a>5</a></li>
-        <li class="pagination-next"><a></a></li>
+<div class="page-header">
+    <h1>Pagination 分页</h1>
+</div>
+
+<!--part1 说明-->
+<div class="page-header">
+    <h2><small>组件说明</small></h2>
+</div>
+<div class="u-tips">
+    <ul>
+        <li>1. 当加载/渲染所有数据将花费很多时间时。</li>
+        <li>2. 可切换页码浏览数据。</li>
     </ul>
 </div>
-<div class="bd-example">
-    <p>基础-更多</p>
-    <ul class="pagination">
-        <li class="pagination-first"><a></a></li>
-        <li class="pagination-prev"><a></a></li>
-        <li class="pagination-item"><a>1</a></li>
-        <li class="pagination-item"><a>2</a></li>
-        <li class="pagination-item pagination-item-active"><a>3</a></li>
-        <li class="pagination-jump-prev"><a></a></li>
-        <li class="pagination-item"><a>14</a></li>
-        <li class="pagination-item"><a>15</a></li>
-        <li class="pagination-item"><a>16</a></li>
-        <li class="pagination-item"><a>17</a></li>
-        <li class="pagination-item"><a>18</a></li>
-        <li class="pagination-jump-next"><a></a></li>
-        <li class="pagination-item"><a>25</a></li>
-        <li class="pagination-next"><a></a></li>
-        <li class="pagination-last"><a></a></li>
-    </ul>
+
+<div class="page-header">
+    <h2>
+        <small>代码演示</small>
+    </h2>
 </div>
-<div class="bd-example">
-    <p>完整</p>
-    <ul class="pagination">
-        <li class="pagination-first  pagination-disabled"><a></a></li>
-        <li class="pagination-prev  pagination-disabled"><a></a></li>
-        <li class="pagination-item pagination-item-active"><a>1</a></li>
-        <li class="pagination-item"><a>2</a></li>
-        <li class="pagination-item"><a>3</a></li>
-        <li class="pagination-item"><a>4</a></li>
-        <li class="pagination-item"><a>5</a></li>
-        <li class="pagination-item"><a>6</a></li>
-        <li class="pagination-item"><a>7</a></li>
-        <li class="pagination-item"><a>8</a></li>
-        <li class="pagination-item"><a>9</a></li>
-        <li class="pagination-next"><a></a></li>
-        <li class="pagination-last"><a></a></li>
-        <li class="pagination-size-changer">
-            <div class="select select-single">
-                <span class="selected">10条/页</span>
-            </div>
-        </li>
-        <li class="pagination-quick-jumper">跳至<input class="input" type="text">页</li>
-    </ul>
-</div>
-<div class="bd-example">
-    <p>迷你</p>
-    <div>
+
+<section class="code-box">
+    <section class="code-box-demo">
+        <ul class="pagination">
+            <li class="pagination-first  pagination-disabled"><a></a></li>
+            <li class="pagination-prev pagination-disabled"><a></a></li>
+            <li class="pagination-item pagination-item-active"><a>1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item"><a>3</a></li>
+            <li class="pagination-item"><a>4</a></li>
+            <li class="pagination-item"><a>5</a></li>
+            <li class="pagination-next"><a></a></li>
+        </ul>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>基本使用</span>
+        </div>
+        <div>
+            分页页数小于等于5时，显示总页数，页码。
+        </div>
+    </section>
+
+    <section class="highlight-wrapper">
+        <div transfer>
+<ul class="pagination">
+    <li class="pagination-first  pagination-disabled"><a></a></li>
+    <li class="pagination-prev pagination-disabled"><a></a></li>
+    <li class="pagination-item pagination-item-active"><a>1</a></li>
+    <li class="pagination-item"><a>2</a></li>
+    <li class="pagination-item"><a>3</a></li>
+    <li class="pagination-item"><a>4</a></li>
+    <li class="pagination-item"><a>5</a></li>
+    <li class="pagination-next"><a></a></li>
+</ul>
+        </div>
+    </section>
+</section>
+
+<section class="code-box">
+    <section class="code-box-demo">
+         <ul class="pagination">
+            <li class="pagination-first"><a></a></li>
+            <li class="pagination-prev"><a></a></li>
+            <li class="pagination-item"><a>1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item pagination-item-active"><a>3</a></li>
+            <li class="pagination-jump-prev"><a></a></li>
+            <li class="pagination-item"><a>14</a></li>
+            <li class="pagination-item"><a>15</a></li>
+            <li class="pagination-item"><a>16</a></li>
+            <li class="pagination-item"><a>17</a></li>
+            <li class="pagination-item"><a>18</a></li>
+            <li class="pagination-jump-next"><a></a></li>
+            <li class="pagination-item"><a>25</a></li>
+            <li class="pagination-next"><a></a></li>
+            <li class="pagination-last"><a></a></li>
+        </ul>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>更多</span>
+        </div>
+        <div>
+             更多分页。
+        </div>
+    </section>
+
+    <section class="highlight-wrapper">
+        <div transfer>
+<ul class="pagination">
+    <li class="pagination-first"><a></a></li>
+    <li class="pagination-prev"><a></a></li>
+    <li class="pagination-item"><a>1</a></li>
+    <li class="pagination-item"><a>2</a></li>
+    <li class="pagination-item pagination-item-active"><a>3</a></li>
+    <li class="pagination-jump-prev"><a></a></li>
+    <li class="pagination-item"><a>14</a></li>
+    <li class="pagination-item"><a>15</a></li>
+    <li class="pagination-item"><a>16</a></li>
+    <li class="pagination-item"><a>17</a></li>
+    <li class="pagination-item"><a>18</a></li>
+    <li class="pagination-jump-next"><a></a></li>
+    <li class="pagination-item"><a>25</a></li>
+    <li class="pagination-next"><a></a></li>
+    <li class="pagination-last"><a></a></li>
+</ul>
+        </div>
+    </section>
+</section>
+
+<section class="code-box">
+    <section class="code-box-demo">
+        <ul class="pagination">
+            <li class="pagination-first"><a></a></li>
+            <li class="pagination-prev"><a></a></li>
+            <li class="pagination-item"><a>1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item pagination-item-active"><a>3</a></li>
+            <li class="pagination-jump-prev"><a></a></li>
+            <li class="pagination-item"><a>14</a></li>
+            <li class="pagination-item"><a>15</a></li>
+            <li class="pagination-item"><a>16</a></li>
+            <li class="pagination-item"><a>17</a></li>
+            <li class="pagination-item"><a>18</a></li>
+            <li class="pagination-jump-next"><a></a></li>
+            <li class="pagination-item"><a>25</a></li>
+            <li class="pagination-last"><a></a></li>
+            <li class="pagination-size-changer">
+                <div class="select select-single">
+                    <span class="selected">10条/页</span>
+                </div>
+            </li>
+            <li class="pagination-quick-jumper">跳至<input class="input" type="text">页</li>
+        </ul>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>完整</span>
+        </div>
+        <div>
+            包含页码和前后控制、快速页码跳转、总数、每页数量控制
+        </div>
+    </section>
+
+    <section class="highlight-wrapper">
+        <div transfer>
+<ul class="pagination">
+    <li class="pagination-first"><a></a></li>
+    <li class="pagination-prev"><a></a></li>
+    <li class="pagination-item"><a>1</a></li>
+    <li class="pagination-item"><a>2</a></li>
+    <li class="pagination-item pagination-item-active"><a>3</a></li>
+    <li class="pagination-jump-prev"><a></a></li>
+    <li class="pagination-item"><a>14</a></li>
+    <li class="pagination-item"><a>15</a></li>
+    <li class="pagination-item"><a>16</a></li>
+    <li class="pagination-item"><a>17</a></li>
+    <li class="pagination-item"><a>18</a></li>
+    <li class="pagination-jump-next"><a></a></li>
+    <li class="pagination-item"><a>25</a></li>
+    <li class="pagination-next"><a></a></li>
+    <li class="pagination-last"><a></a></li>
+    <li class="pagination-size-changer">
+        <div class="select select-single">
+            <span class="selected">10条/页</span>
+        </div>
+    </li>
+    <li class="pagination-quick-jumper">跳至<input class="input" type="text">页</li>
+</ul>
+        </div>
+    </section>
+</section>
+
+<section class="code-box">
+    <section class="code-box-demo">
         <ul class="pagination mini">
             <li class="pagination-first  pagination-disabled"><a></a></li>
             <li class="pagination-disabled pagination-prev"><a></a></li>
@@ -69,8 +185,35 @@
             <li class="pagination-next"><a></a></li>
             <li class="pagination-last"><a></a></li>
         </ul>
-    </div>
-    <div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>迷你</span>
+        </div>
+        <div>
+            迷你版本.
+        </div>
+    </section>
+
+    <section class="highlight-wrapper">
+        <div transfer>
+<ul class="pagination mini">
+    <li class="pagination-first  pagination-disabled"><a></a></li>
+    <li class="pagination-disabled pagination-prev"><a></a></li>
+    <li class="pagination-item  pagination-item-active"><a>1</a></li>
+    <li class="pagination-item"><a>2</a></li>
+    <li class="pagination-item"><a>3</a></li>
+    <li class="pagination-item"><a>4</a></li>
+    <li class="pagination-item"><a>5</a></li>
+    <li class="pagination-next"><a></a></li>
+    <li class="pagination-last"><a></a></li>
+</ul>
+        </div>
+    </section>
+</section>
+
+<section class="code-box">
+    <section class="code-box-demo">
         <ul class="pagination mini">
             <li class="pagination-first  pagination-disabled"><a></a></li>
             <li class="pagination-disabled pagination-prev"><a></a></li>
@@ -88,6 +231,35 @@
             </li>
             <li class="pagination-quick-jumper">跳至<input class="input" type="text">页</li>
         </ul>
-    </div>
+    </section>
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <span>迷你-完整</span>
+        </div>
+        <div>
+            迷你完整版本。
+        </div>
+    </section>
 
-</div>
+    <section class="highlight-wrapper">
+        <div transfer>
+<ul class="pagination mini">
+    <li class="pagination-first  pagination-disabled"><a></a></li>
+    <li class="pagination-disabled pagination-prev"><a></a></li>
+    <li class="pagination-item  pagination-item-active"><a>1</a></li>
+    <li class="pagination-item"><a>2</a></li>
+    <li class="pagination-item"><a>3</a></li>
+    <li class="pagination-item"><a>4</a></li>
+    <li class="pagination-item"><a>5</a></li>
+    <li class="pagination-next"><a></a></li>
+    <li class="pagination-last"><a></a></li>
+    <li class="pagination-size-changer">
+        <div class="select select-single">
+            <span class="selected">10条/页</span>
+        </div>
+    </li>
+    <li class="pagination-quick-jumper">跳至<input class="input" type="text">页</li>
+</ul>
+        </div>
+    </section>
+</section>
