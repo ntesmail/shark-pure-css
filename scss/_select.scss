@@ -1,54 +1,149 @@
-%select-wrapper {
+.select {
   position: relative;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 20px; //视觉规范  高度为20px;
-  color: #333;
-  white-space: nowrap;
+  height: $select-height;
+  color: $select-color;
+  background-color: $select-background-color;
+  border: 1px solid $select-border-color;
+  border-radius: $select-border-radius;
+  // @extend .text-md;
+  font-size: $select-font-size;
+  line-height: $select-height - 2px;
+  vertical-align: middle;
   cursor: pointer;
-}
-
-%select-item {
-  position: relative;
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  vertical-align: text-bottom;
-}
-
-%select-input {
-  position: absolute;
-  top: 0;
-  left:0;
-  z-index: 1;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  opacity: 0;
-}
-
-%select-inner {
-  position: relative;
-  display: block;  //解决line-height大于1时，且为inline-block时，其实际高度大于100%，导致布局错误
-  width: 100%;
-  height: 100%;
-  border: 1px solid #9d9d9d;
-  background-color: #fff;
-  transition: all .3s;
-}
-
-%select-group {
-  display: inline-block;
-
-  %select-wrapper {
-    margin-right: 10px;
+  transition: $select-transition;
+  &:hover {
+    border-color: $select-border-color-hover;
   }
 
-  &%select-group-vertical {
-    %select-wrapper {
-      display: block;
+  &.active {
+    border-color: $select-border-color-hover;
+    @include box-shadow($select-box-shadow);
+  }
+
+  &.disabled {
+    background-color: $select-background-color-disabled;
+    cursor: not-allowed;
+    &:hover {
+      border-color: $select-border-color;
     }
   }
 
+  // 带搜索下拉
+  &.select-search {
+    .search-wrap {
+      .select-input {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        line-height: $select-height - 4px;
+        color: $select-selected-color;
+        // Placeholder
+        &::placeholder {
+          color: $select-color;
+          // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  .selected {
+    color: $select-selected-color;
+  }
+
+}
+
+%select-caret {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border: $select-caret-border-width solid transparent;
+    border-top-color: $select-color;
+    content: " ";
+}
+
+//没边框
+.select-noborder,
+.select-noborder.active,
+ .select-noborder:hover {
+  border-color: transparent;
+  @include box-shadow(none);
+}
+.select-noborder{
+  padding: $select-noborder-padding;
+  &:after {
+    @extend %select-caret;
+    margin-left: 4px;
+  }
+  &:hover,
+  &.active {
+    &,  
+    .selected {
+      color: $select-noborder-selected-color;
+    }
+  }
+}
+
+// 单选下拉
+.select-single {
+  padding: $select-padding;
+
+  &:after {
+    @extend %select-caret;
+    right: 10px;
+  }
+}
+
+// 多选下拉
+.select-multiple {
+  padding: $select-multiple-padding;
+  min-height: $select-multiple-min-height;
+  height: auto;
+  max-height: $select-multiple-max-height;
+  overflow-y: auto;
+
+  .select-items {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    .select-item {
+      display: inline-block;
+      height: $select-item-height;
+      line-height: $select-item-height;
+      padding: $select-item-padding;
+      color: $select-item-color;
+      background-color: $select-item-background-color;
+      border-radius: $select-item-border-radius;
+      i[class*="icon-"] {
+        @include iconfont-size-under-12px(8px);
+      }
+    }
+  }
+  
+  &.select-search {
+    .search-wrap {
+      display: inline-block;
+    }
+  }
+}
+
+// 三种大小
+.select-sm,
+.select-md,
+.select-lg {
+  display: inline-block;
+}
+.select-sm {
+  width: $select-sm-width;
+}
+.select-md {
+  width: $select-md-width;
+}
+.select-lg {
+  width: $select-lg-width;
 }

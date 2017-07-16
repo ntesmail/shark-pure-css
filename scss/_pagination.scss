@@ -200,7 +200,7 @@
   }
   .pagination-size-changer {
     margin-right: 8px;
-    .selecter .selected {
+    .select .selected {
       color: $pagination-color;
     }
   }
@@ -254,7 +254,7 @@
     }
   }
   &.mini .pagination-size-changer {
-    .selecter {
+    .select {
       width: 82px;
       height: 22px;
     }

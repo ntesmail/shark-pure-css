@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 //Examples
 import { CssButtonModule } from './button/button.module';
 import { CssPaginationModule } from './pagination/pagination.module';
-import { CssSelectModule } from './select/select.module';
+import { CssCheckModule } from './check/check.module';
 import { CssImagesModule } from './images/images.module';
 import { CssToastrModule } from './toastr/toastr.module';
 import { CssModalModule } from './modal/modal.module';
@@ -13,7 +13,7 @@ import { CssTipModule } from './tip/tip.module';
 import { CssSwitchModule } from './switch/switch.module';
 import { CssStepsModule } from './steps/steps.module';
 import { CssTabsModule } from './tabs/tabs.module';
-import { CssSelecterModule } from './selecter/selecter.module';
+import { CssSelectModule } from './select/select.module';
 import { CssTableModule } from './table/table.module';
 import { CssFormModule } from './form/form.module';
 import { CssTreeModule } from './tree/tree.module';
@@ -29,7 +29,7 @@ import { CssTagModule } from './tag/tag.module';
         imports: [
                 CssButtonModule,
                 CssPaginationModule,
-                CssSelectModule,
+                CssCheckModule,
                 CssImagesModule,
                 CssToastrModule,
                 CssModalModule,
@@ -38,7 +38,7 @@ import { CssTagModule } from './tag/tag.module';
                 CssSwitchModule,
                 CssStepsModule,
                 CssTabsModule,
-                CssSelecterModule,
+                CssSelectModule,
                 CssTableModule,
                 CssFormModule,
                 CssTreeModule,
