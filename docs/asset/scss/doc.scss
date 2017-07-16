@@ -50,6 +50,11 @@ section {
 .highlight-wrapper {
   overflow: auto;
   border-radius: 0 0 4px 4px;
+  background-color: #FCFCFC;
+  pre[class*="language-"]{
+    background-color: #FCFCFC;
+    font-size: 12px;    
+  }
 }
 
 .icon_lists {
