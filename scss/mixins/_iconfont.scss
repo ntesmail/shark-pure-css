@@ -8,7 +8,8 @@
 }
 
 @mixin iconfont-font($content) {
-  font-family: "iconfont";
+  font-family: "iconfont" !important;
+  font-style: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
