@@ -119,7 +119,7 @@
       color: $selecter-item-color;
       background-color: $selecter-item-background-color;
       border-radius: $seleter-item-border-radius;
-      [class*="icon-"] {
+      i[class*="icon-"] {
         @include iconfont-size-under-12px(8px);
       }
     }

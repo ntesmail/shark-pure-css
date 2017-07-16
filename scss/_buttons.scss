@@ -29,6 +29,18 @@
   &.btn-sm {
     @include button-size($btn-height-sm, $btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius);
   }
+  
+  // Button with icon
+  i[class*="icon-"] {
+    @include iconfont-size-under-12px(10px);
+    &.btn-icon-left {
+      margin-right: 4px;
+    }
+    &.btn-icon-right {
+      margin-left: 4px;
+    }
+  }
+
 }
 
 // Primary
@@ -46,19 +58,6 @@
        color: $btn-secondary-color-active;
       }
     }
-}
-
-// Button with icon
-.btn-icon {
-  i {
-    font-size: 10px;
-  }
-  .btn-icon-left {
-    margin-right: 4px;
-  }
-  .btn-icon-right {
-    margin-left: 4px;
-  }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
