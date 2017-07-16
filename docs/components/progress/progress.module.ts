@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
+// import { NgClass } from '@angular/common';
 import { RouterModule } from "@angular/router";
-import { CssProgressComponent } from "./progress.component"
+import { CssProgressComponent } from "./progress.component";
+import { SharedModule } from '../shared/shared.module';
+
 
 // 定义常量 路由
 const routes: any = [
@@ -12,7 +15,9 @@ const routes: any = [
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        SharedModule,
+        // NgClass
     ],
     declarations: [CssProgressComponent]
 })

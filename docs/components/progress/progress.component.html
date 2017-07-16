@@ -1,84 +1,234 @@
-<div class="bd-example">
-    <p>进度条</p>
-    <div class="progress progress-line">
-        <div class="progress-outter">
-            <div class="progress-inner">
-                <div class="progress-bg" style="width: 60%; height: 3px;"></div>
-            </div>
-        </div>
-    </div>
-    <div class="progress progress-line progress-show-info ">
-        <div class="progress-outter">
-            <div class="progress-inner">
-                <div class="progress-bg" style="width: 30%; height: 3px;"></div>
-            </div>
-        </div>
-        <span class="progress-text">30%</span>
-    </div>
+<div class="page-header">
+    <h1>Progress 加载进度</h1>
 </div>
-<div class="bd-example" style="width: 400px; height:400px;">
-    <p>全屏加载</p>
-    <div class="progress-wrap progress-fullscreen" style="width: 400px; height:400px; margin-top: 70px; margin-left: 300px;">
-        <div class=" progress progress-circle ">
-            <svg width="40 " height="40 " view-box="0 0 40 40 ">
+
+<!--part1 说明-->
+<div class="page-header">
+    <h2>组件说明</h2>
+</div>
+<div class="u-tips">
+    <ul>
+        <li>展示操作的当前进度。在操作需要较长时间才能完成时，为用户显示该操作的当前进度和状态。</li>
+        <li>1. 当一个操作会打断当前界面，或者需要在后台运行，且耗时可能超过2秒时。</li>
+    </ul>
+</div>
+
+<div class="page-header">
+    <h2>代码演示</h2>
+</div>
+<!-- 进度条 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>进度条</h3>
+        </div>
+        <div>
+            一般用于全局页面加载过于缓慢 导航栏底部显示。添加样式.progress-show-info显示具体进度。
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="progress progress-line">
+            <div class="progress-outter">
+                <div class="progress-inner">
+                    <div class="progress-bg" style="width: 60%; height: 3px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="progress progress-line progress-show-info ">
+            <div class="progress-outter">
+                <div class="progress-inner">
+                    <div class="progress-bg" style="width: 30%; height: 3px;"></div>
+                </div>
+            </div>
+            <span class="progress-text">30%</span>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+            <div class="progress progress-line">
+                <div class="progress-outter">
+                    <div class="progress-inner">
+                        <div class="progress-bg" style="width: 60%; height: 3px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress progress-line progress-show-info ">
+                <div class="progress-outter">
+                    <div class="progress-inner">
+                        <div class="progress-bg" style="width: 30%; height: 3px;"></div>
+                    </div>
+                </div>
+                <span class="progress-text">30%</span>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- 全屏加载 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>全屏加载</h3>
+        </div>
+        <div>
+            1. 重要内容的加载（例如不加载成功影响后续操），全屏覆盖，加载过程中不可再进行其他操作。<br/> 
+            2. 加载时间超过8秒后提供取消加载操作。<br/> 
+            3. 为.progress添加样式.progress-show-cancel，显示取消操作按钮。
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="progress-wrap" style="width: 100%; height:400px;">
+            <div class=" progress progress-circle progress-show-cancel">
+                <svg width="40 " height="40 " view-box="0 0 40 40 ">
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="56 113 " fill="none " class="progress-circle-upper "></circle>
+                </svg>
+                <span class="progress-text "><i class="progress-status-icon "></i></span>
+                <div class="progress-loading-text ">加载中...</div>
+                <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+            </div>
+        </div>
+    </section>
+     <section class="highlight-wrapper">
+        <div transfer>
+    <div class="progress-fullscreen">
+        <div class="progress progress-circle progress-show-cancel">
+                <svg width="40 " height="40 " view-box="0 0 40 40 ">
                 <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
                 <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="56 113 " fill="none " class="progress-circle-upper "></circle>
-            </svg>
-            <span class="progress-text "><i class="progress-status-icon "></i></span>
+            </svg> 
+                <span class="progress-text "><i class="progress-status-icon "></i></span>  
             <div class="progress-loading-text ">加载中...</div>
-            <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+                <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>   
         </div>
+    </div>
+         </div> 
+    </section> 
+</section>
+<!-- 容器加载 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>容器加载</h3>
+        </div>
+        <div>
+            1. 在一定范围内的容器显示加载进度。<br/> 2. 使用时需要为容器添加样式.progress-wrap。<br/>
+        </div>
+    </section>
+    <section class="code-box-demo">
+<div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
+    <div class="progress progress-circle progress-show-cancel ">
+        <svg width="40 " height="40 " view-box="0 0 40 40 ">
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="60 113 " fill="none " class="progress-circle-upper "></circle>
+        </svg>
+        <span class="progress-text "><i class="progress-status-icon "></i></span>
+        <div class="progress-loading-text ">加载中...</div>
+        <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
     </div>
 </div>
-<div class="bd-example ">
-    <p>容器加载</p>
-    <div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
-        <div class="progress progress-circle progress-show-cancel ">
-            <svg width="40 " height="40 " view-box="0 0 40 40 ">
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="60 113 " fill="none " class="progress-circle-upper "></circle>
-            </svg>
-            <span class="progress-text "><i class="progress-status-icon "></i></span>
-            <div class="progress-loading-text ">加载中...</div>
-            <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
-        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<p>容器加载</p>
+<div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
+    <div class="progress progress-circle progress-show-cancel ">
+        <svg width="40 " height="40 " view-box="0 0 40 40 ">
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="60 113 " fill="none " class="progress-circle-upper "></circle>
+        </svg>
+        <span class="progress-text "><i class="progress-status-icon "></i></span>
+        <div class="progress-loading-text ">加载中...</div>
+        <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
     </div>
 </div>
-<div class="bd-example ">
-    <p>状态</p>
-    <p>Normal</p>
-    <div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
-        <div class="progress progress-circle ">
-            <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="60 113 " fill="none " class="progress-circle-upper "></circle>
-            </svg>
-            <span class="progress-status-text "><i class="progress-status-icon "></i></span>
-            <div class="progress-loading-text ">加载中...</div>
-            <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
         </div>
-    </div>
-    <p>Finished</p>
-    <div class="progress-wrap progress-status-finish " style="width:200px; height:200px; border: 1px solid #ccc; ">
-        <div class="progress progress-circle progress-show-info ">
-            <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-upper "></circle>
-            </svg>
-            <span class="progress-status-text "><i class="progress-status-icon "></i></span>
-            <div class="progress-loading-text ">加载中...</div>
-            <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+    </section>
+</section>
+<!-- 状态 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>进度状态</h3>
         </div>
-    </div>
-    <p>Error</p>
-    <div class="progress-wrap progress-status-error " style="width:200px; height:200px; border: 1px solid #ccc; ">
-        <div class="progress progress-circle progress-show-info ">
-            <svg width="40 " height="40 " view-box="0 0 40 40 ">
-                <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-upper "></circle>
-            </svg>
-            <span class="progress-status-text "><i class="progress-status-icon "></i></span>
-            <div class="progress-loading-text ">加载中...</div>
-            <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+        <div>
+            提供三种状态：常规、完成、错误，分别通过添加样式.progress-status-finish、.progress-status-error为组件添加 完成和错误状态样式。
         </div>
+    </section>
+    <section class="code-box-demo">
+        <p>Normal</p>
+        <div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
+            <div class="progress progress-circle ">
+                <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="60 113 " fill="none " class="progress-circle-upper "></circle>
+                </svg>
+                <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+                <div class="progress-loading-text ">加载中...</div>
+                <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+            </div>
+        </div>
+        <p>Finished</p>
+         <div><button (click)="toggle('progressStatusFinish')">Toggle Finished</button></div> 
+         <div [ngClass]="{'progress-status-finish': progressStatusFinish}" class="progress-wrap" style="width:200px; height:200px; border: 1px solid #ccc; "> 
+            <div class="progress progress-circle progress-show-info">
+                <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-upper "></circle>
+                </svg>
+                <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+                <div class="progress-loading-text ">加载中...</div>
+                <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+            </div>
+        </div>
+        <p>Error</p>
+         <div><button (click)="toggle('progressStatusError')">Toggle Error</button></div> 
+         <div [ngClass]="{'progress-status-error': progressStatusError}" class="progress-wrap progress-status-error " style="width:200px; height:200px; border: 1px solid #ccc; "> 
+            <div class="progress progress-circle progress-show-info ">
+                <svg width="40 " height="40 " view-box="0 0 40 40 ">
+                    <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-upper "></circle>
+                </svg>
+                <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+                <div class="progress-loading-text ">加载中...</div>
+                <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+            </div>
+        </div>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<!-- Normal -->
+<div class="progress-wrap " style="width:200px; height:200px; border: 1px solid #ccc; ">
+    <div class="progress progress-circle ">
+        <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " stroke-dasharray="60 113 " fill="none " class="progress-circle-upper "></circle>
+        </svg>
+        <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+        <div class="progress-loading-text ">加载中...</div>
+        <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
     </div>
 </div>
+<!-- Finished -->
+<div class="progress-wrap progress-status-finish " style="width:200px; height:200px; border: 1px solid #ccc; ">
+    <div class="progress progress-circle progress-show-info ">
+        <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-layer "></circle>
+            <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-upper "></circle>
+        </svg>
+        <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+        <div class="progress-loading-text ">加载中...</div>
+        <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+    </div>
+</div>
+<!-- Error -->
+<div class="progress progress-circle progress-show-info ">
+    <svg width="40 " height="40 " view-box="0 0 40 40 ">
+        <circle cx="20 " cy="20 " r="18 " stroke-width="2 " fill="none " class="progress-circle-upper "></circle>
+    </svg>
+    <span class="progress-status-text "><i class="progress-status-icon "></i></span>
+    <div class="progress-loading-text ">加载中...</div>
+    <button class="btn btn-link progress-cancel-loading " type="button ">取消加载</button>
+</div>
+        </div>
+    </section>
+</section>
