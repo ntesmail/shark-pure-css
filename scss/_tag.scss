@@ -43,7 +43,7 @@
   .tag-text {
     font-family: "iconfont" !important;
     &:before {
-      content: "+";
+      content: "\ee5b";
       position: absolute;
       margin-left: $tag-add-icon-margin-left;
       color: $tag-add-icon-color;
