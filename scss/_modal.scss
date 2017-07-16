@@ -87,10 +87,10 @@
   @include border-top-radius($modal-content-border-radius);
   .modal-close {
     position: absolute;
-    color: #999;
+    color: $modal-close-color;
     text-decoration: none;
     &:hover {
-      color: #3187F6;
+      color: $modal-close-hover-color;
     }
     &:before {
       font-family: "iconfont" !important;
@@ -100,8 +100,8 @@
       right: -2px;
       font-size: 14px;
     }
-    top: 16px;
-    right: 16px;
+    top:$modal-close-top;
+    right: $modal-close-right;
   }
 }
 
@@ -135,10 +135,10 @@
   border-top: $modal-footer-border-width solid $modal-footer-border-color;
   @include border-bottom-radius($modal-content-border-radius); // Easily place margin between footer elements
   > :not(:first-child) {
-    margin-left: 5px;
+    margin-left: $modal-footer-btn-margin;
   }
   > :not(:last-child) {
-    margin-right: 5px;
+    margin-right: $modal-footer-btn-margin;
   }
 }
 
@@ -186,6 +186,12 @@
   }
   .modal-confirm-btns {
     text-align: right;
+    > :not(:first-child) {
+      margin-left: $modal-footer-btn-margin;
+    }
+    > :not(:last-child) {
+      margin-right: $modal-footer-btn-margin;
+    }
   }
   .tip-message {
     display: block;
@@ -200,7 +206,7 @@
       top: $modal-tip-icon-top;
       left: $modal-tip-icon-left;
       color: $modal-tip-icon-color;
-      font-size: 24px;
+      font-size: $modal-tip-icon-font-size;
     }
   }
   .tip-desc {
@@ -212,9 +218,9 @@
 
 .modal-detail {
   .modal-header {
-    height: 62px;
+    height: $modal-detail-height;
     border-bottom-width: 0;
-    padding: 21px 16px 20px 16px;
+    padding: $modal-detail-padding;
   }
   .modal-body {
     padding: $modal-detail-body-padding;
