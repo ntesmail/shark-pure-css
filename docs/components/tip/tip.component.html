@@ -8,11 +8,11 @@
 </div>
 <div class="u-tips">
     <ul>
-        <li>气泡提示分成以下两类：
+        <li>点击/鼠标移入元素，弹出气泡式的卡片浮层
         </li>
-        <li>1.鼠标移入元素，弹出气泡式的卡片信息提示。
+        <li>1.当目标元素有进一步的描述和相关操作时，可以收纳到卡片中，根据用户的操作行为进行展现
         </li>
-        <li>2.点击元素，弹出气泡式的卡片信息提示：提示内容自定义，可以是文字，链接或者按钮等。
+        <li>2.用户可以对浮层上的元素进行操作，因此它可以承载更复杂的内容，比如链接或按钮等
         </li>
     </ul>
 </div>
@@ -24,77 +24,54 @@
     </h1>
 </div>
 <section class="code-box">
-
-    <section class="code-box-demo">
-        <div class="popover popover-tooltip top" style="dispaly:block;">
-            <div class="arrow"></div>
-            <div class="popover-content">悬浮出现的气泡消息</div>
-        </div>
-        <div class="popover popover-tooltip left" style="dispaly:block;left:250px;">
-            <div class="arrow"></div>
-            <div class="popover-content">悬浮出现的气泡消息</div>
-        </div>
-        <div class="popover popover-tooltip right" style="dispaly:block;left:500px;">
-            <div class="arrow"></div>
-            <div class="popover-content">悬浮出现的气泡消息</div>
-        </div>
-        <div class="popover popover-tooltip bottom" style="dispaly:block;left:800px;">
-            <div class="arrow"></div>
-            <div class="popover-content">悬浮出现的气泡消息</div>
-        </div>
-    </section>
     <section class="code-box-meta">
         <div class="code-box-title">
-            <span>方向</span>
-        </div>
-        <div>
-            hover效果的气泡提示有上下左右四个定位方向，分别对应的样式类名为top,bottom,left,rignt
-        </div>
-    </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>基本使用</span>
+            <h3>hover气泡提示</h3>
         </div>
         <div>
             hover效果的气泡提示：鼠标移入元素，弹出气泡式的卡片信息提示：最简单的用法，浮层的大小由内容区域决定。
         </div>
     </section>
+    <section class="code-box-demo">
+        <div class="popover popover-tooltip top" style="display:inline-block;position: relative;">
+            <div class="arrow"></div>
+            <div class="popover-content">悬浮出现的气泡消息</div>
+        </div>
+    </section>
+    
     <section class="highlight-wrapper">
         <div transfer>
-            <div class="popover popover-tooltip top">
-                <div class="arrow"></div>
-                <div class="popover-content">悬浮出现的气泡消息</div>
-            </div>
-            <div class="popover popover-tooltip left">
-                <div class="arrow"></div>
-                <div class="popover-content">悬浮出现的气泡消息</div>
-            </div>
-            <div class="popover popover-tooltip right">
-                <div class="arrow"></div>
-                <div class="popover-content">悬浮出现的气泡消息</div>
-            </div>
-            <div class="popover popover-tooltip bottom">
-                <div class="arrow"></div>
-                <div class="popover-content">悬浮出现的气泡消息</div>
-            </div>
+<div class="popover popover-tooltip top">
+    <div class="arrow"></div>
+    <div class="popover-content">悬浮出现的气泡消息</div>
+</div>
         </div>
     </section>
 </section>
+
 <section class="code-box">
-    <section class="code-box-demo" style="height:300px;">
-        <div class="popover left" style="dispaly:block;">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>click气泡提示</h3>
+        </div>
+        <div>
+            click效果的气泡提示：点击元素，弹出气泡式的卡片信息提示框：信息内容可自定义，提供了文字，链接，按钮三种内容的样式。
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="popover left" style="display:inline-block;position: relative;">
             <div class="arrow"></div>
             <div class="popover-content">
                 <p class="popover-content-message">地址：杭州市滨江区网商路599号地址：杭州市滨江区网商路599号</p>
             </div>
         </div>
-        <div class="popover right" style="dispaly:block;left:400px;">
+        <div class="popover right" style="display:inline-block;position: relative;">
             <div class="arrow"></div>
             <div class="popover-content">
                 <div class="popover-content-message"><a href="">这里输入一段长文字可点击跳转新页面。</a></div>
             </div>
         </div>
-        <div class="popover top" style="dispaly:block;top:100px;">
+        <div class="popover top" style="display:inline-block;position: relative;">
             <div class="arrow"></div>
             <div class="popover-content">
                 <div class="popover-content-message-icon">
@@ -106,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="popover bottom" style="dispaly:block;left:400px;top:100px">
+        <div class="popover bottom" style="display:inline-block;position: relative;">
             <div class="arrow"></div>
             <div class="popover-content">
                 <div class="popover-content-message-icon">
@@ -118,59 +95,101 @@
             </div>
         </div>
     </section>
-    <section class="code-box-meta">
-        <div class="code-box-title">
-            <span>方向</span>
+    
+    <section class="highlight-wrapper">
+        <div transfer>
+<div class="popover left">
+    <div class="arrow"></div>
+    <div class="popover-content">
+        <p class="popover-content-message">地址：杭州市滨江区网商路599号地址：杭州市滨江区网商路599号</p>
+    </div>
+</div>
+<div class="popover right">
+    <div class="arrow"></div>
+    <div class="popover-content">
+        <div class="popover-content-message"><a href="">这里输入一段长文字可点击跳转新页面。</a></div>
+    </div>
+</div>
+<div class="popover top">
+    <div class="arrow"></div>
+    <div class="popover-content">
+        <div class="popover-content-message-icon">
+            <p>地址：杭州市滨江区网商路599号地址：杭州市滨江区网商路599号</p>
         </div>
-        <div>
-            click效果的气泡提示有上下左右四个定位方向，分别对应的样式类名为top,bottom,left,rignt
+        <div class="popover-content-btns">
+            <button class="btn btn-secondary">取消</button>
+            <button class="btn btn-primary">确定</button>
+        </div>
+    </div>
+</div>
+<div class="popover bottom">
+    <div class="arrow"></div>
+    <div class="popover-content">
+        <div class="popover-content-message-icon">
+            <p>地址：杭州市滨江区网商路599号</p>
+        </div>
+        <div class="popover-content-btns">
+            <button class="btn btn-primary">确定</button>
+        </div>
+    </div>
+</div>
         </div>
     </section>
+</section>
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>方向</h3>
+        </div>
+        <div>
+            气泡提示有上下左右四个定位方向，分别对应的样式类名为top,bottom,left,rignt
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <div class="popover popover-tooltip top" style="display:inline-block;position: relative;">
+            <div class="arrow"></div>
+            <div class="popover-content">悬浮出现的气泡消息</div>
+        </div>
+        <div class="popover popover-tooltip left" style="display:inline-block;position: relative;">
+            <div class="arrow"></div>
+            <div class="popover-content">悬浮出现的气泡消息</div>
+        </div>
+        <div class="popover popover-tooltip right" style="display:inline-block;position: relative;">
+            <div class="arrow"></div>
+            <div class="popover-content">悬浮出现的气泡消息</div>
+        </div>
+        <div class="popover popover-tooltip bottom" style="display:inline-block;position: relative;">
+            <div class="arrow"></div>
+            <div class="popover-content">悬浮出现的气泡消息</div>
+        </div>
+    </section>
+    
     <section class="code-box-meta">
         <div class="code-box-title">
             <span>基本使用</span>
         </div>
         <div>
-            click效果的气泡提示：点击元素，弹出气泡式的卡片信息提示框：信息内容可自定义，提供了文字，链接，按钮三种内容的样式。
+            hover效果的气泡提示：鼠标移入元素，弹出气泡式的卡片信息提示：最简单的用法，浮层的大小由内容区域决定。
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-            <div class="popover left">
-                <div class="arrow"></div>
-                <div class="popover-content">
-                    <p class="popover-content-message">地址：杭州市滨江区网商路599号地址：杭州市滨江区网商路599号</p>
-                </div>
-            </div>
-            <div class="popover right">
-                <div class="arrow"></div>
-                <div class="popover-content">
-                    <div class="popover-content-message"><a href="">这里输入一段长文字可点击跳转新页面。</a></div>
-                </div>
-            </div>
-            <div class="popover top">
-                <div class="arrow"></div>
-                <div class="popover-content">
-                    <div class="popover-content-message-icon">
-                        <p>地址：杭州市滨江区网商路599号地址：杭州市滨江区网商路599号</p>
-                    </div>
-                    <div class="popover-content-btns">
-                        <button class="btn btn-secondary">取消</button>
-                        <button class="btn btn-primary">确定</button>
-                    </div>
-                </div>
-            </div>
-            <div class="popover bottom">
-                <div class="arrow"></div>
-                <div class="popover-content">
-                    <div class="popover-content-message-icon">
-                        <p>地址：杭州市滨江区网商路599号</p>
-                    </div>
-                    <div class="popover-content-btns">
-                        <button class="btn btn-primary">确定</button>
-                    </div>
-                </div>
-            </div>
+<div class="popover popover-tooltip top">
+    <div class="arrow"></div>
+    <div class="popover-content">悬浮出现的气泡消息</div>
+</div>
+<div class="popover popover-tooltip left">
+    <div class="arrow"></div>
+    <div class="popover-content">悬浮出现的气泡消息</div>
+</div>
+<div class="popover popover-tooltip right">
+    <div class="arrow"></div>
+    <div class="popover-content">悬浮出现的气泡消息</div>
+</div>
+<div class="popover popover-tooltip bottom">
+    <div class="arrow"></div>
+    <div class="popover-content">悬浮出现的气泡消息</div>
+</div>
         </div>
     </section>
 </section>
