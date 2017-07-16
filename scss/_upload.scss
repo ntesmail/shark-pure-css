@@ -31,8 +31,10 @@ $upload-img-height: 100px;
     line-height: 17px;
     vertical-align: middle;
     margin-left: 10px;
-    .icon-attachment {
+    .icon-link {
       color: $upload-btn-color;
+      font-size: $upload-font-size;
+      margin-right: 5px;
     }
   }
   &.upload-file-status-succeed {
@@ -43,6 +45,9 @@ $upload-img-height: 100px;
   &.upload-file-status-failed {
     .upload-filename {
       color: $upload-file-status-failed-clor;
+      .icon-link {
+        color: $upload-file-status-failed-clor;
+      }
     }
   }
   .upload-availiable-type {
@@ -105,7 +110,7 @@ $upload-img-height: 100px;
     text-align: center;
     padding: 20px 0;
     cursor: pointer;
-    .icon-cross {
+    .icon-plus {
       font-size: 28px;
       color: #999;
     }
@@ -118,7 +123,7 @@ $upload-img-height: 100px;
     }
     &:active {
       border-color: $upload-img-btn-active-color;
-      .icon-cross,
+      .icon-plus,
       .upload-text {
         color: $upload-img-btn-active-color;
       }
