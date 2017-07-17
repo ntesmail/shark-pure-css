@@ -59,13 +59,14 @@ section {
 
 .icon_lists {
   width: 1000px;
-  text-align: center;
+  margin: 0 auto;
 }
 .icon_lists li {
+  text-align: center;
   display: inline-block;
   width: 150px;
   height: 80px;
-  cursor: pointer;
+  cursor: default;
   border-radius: 2px;
 }
 .icon_lists li:hover {
