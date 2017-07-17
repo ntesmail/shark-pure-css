@@ -5,7 +5,6 @@
   background-color: $select-background-color;
   border: 1px solid $select-border-color;
   border-radius: $select-border-radius;
-  // @extend .text-md;
   font-size: $select-font-size;
   line-height: $select-height - 2px;
   vertical-align: middle;
@@ -106,17 +105,22 @@
   height: auto;
   max-height: $select-multiple-max-height;
   overflow-y: auto;
-
+  
   .select-items {
     display: inline-block;
     margin: 0;
     padding: 0;
+    font-size: 0;
+    vertical-align: top;
     .select-item {
       display: inline-block;
       height: $select-item-height;
       line-height: $select-item-height;
       padding: $select-item-padding;
+      margin-right: 5px;
       color: $select-item-color;
+      font-size: $select-font-size;
+      vertical-align: middle;
       background-color: $select-item-background-color;
       border-radius: $select-item-border-radius;
       i[class*="icon-"] {
