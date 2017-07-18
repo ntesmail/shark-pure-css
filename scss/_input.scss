@@ -54,12 +54,16 @@
   padding: 1px 10px;
 }
 
-.input-w-md {
-  width: 240px;
-}
-
-.input-w-sm {
-  width: 80px;
+.input{
+  &.input-w-lg {
+    width: 240px;
+  }
+  &.input-w-md {
+    width: 150px;
+  }
+    &.input-w-sm {
+    width: 80px;
+  }
 }
 
 .input.input-textarea {
