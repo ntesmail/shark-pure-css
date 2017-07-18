@@ -7,7 +7,9 @@
   border-radius: $select-border-radius;
   font-size: $select-font-size;
   line-height: $select-height - 2px;
+  padding: $select-padding;
   vertical-align: middle;
+  user-select: none;
   cursor: pointer;
   transition: $select-transition;
   &:hover {
@@ -31,7 +33,6 @@
   &.select-search {
     .search-wrap {
       .select-input {
-        display: block;
         width: 100%;
         border: none;
         outline: none;
@@ -73,7 +74,7 @@
   border-color: transparent;
   @include box-shadow(none);
 }
-.select-noborder{
+.select-noborder {
   padding: $select-noborder-padding;
   &:after {
     @extend %select-caret;
@@ -86,15 +87,25 @@
       color: $select-noborder-selected-color;
     }
   }
+  .select-placeholder,
+  .selected {
+    display: inline-block;
+    max-width: 90%;
+    @include text-truncate;
+  }
 }
 
 // 单选下拉
 .select-single {
-  padding: $select-padding;
-
   &:after {
     @extend %select-caret;
     right: 10px;
+  }
+  .select-placeholder,
+  .selected {
+    display: inline-block;
+    max-width: 100%;
+    @include text-truncate;
   }
 }
 
@@ -104,14 +115,27 @@
   min-height: $select-multiple-min-height;
   height: auto;
   max-height: $select-multiple-max-height;
-  overflow-y: auto;
-  
+
+  &:after {
+    @extend %select-caret;
+    right: 10px;
+  }
+
   .select-items {
     display: inline-block;
     margin: 0;
     padding: 0;
     font-size: 0;
     vertical-align: top;
+    min-height: $select-multiple-min-height - 2px;
+    height: auto;
+    max-height: $select-multiple-max-height - (2px*3);
+    overflow-y: hidden;
+    // 滚动条
+    &:hover {
+      overflow-y: auto;
+      @include scrollbar(8px, transparent, $gray-400, $gray-600, transparent);
+    }
     .select-item {
       display: inline-block;
       height: $select-item-height;
@@ -130,24 +154,27 @@
   }
   
   &.select-search {
-    .search-wrap {
+    .select-item-search {
+      font-size: $select-font-size;
+      vertical-align: middle;
+      min-width: 50px;
       display: inline-block;
     }
   }
 }
 
 // 三种大小
-.select-sm,
-.select-md,
-.select-lg {
+.select-w-sm,
+.select-w-md,
+.select-w-lg {
   display: inline-block;
 }
-.select-sm {
-  width: $select-sm-width;
+.select-w-sm {
+  width: $select-w-sm-width;
 }
-.select-md {
-  width: $select-md-width;
+.select-w-md {
+  width: $select-w-md-width;
 }
-.select-lg {
-  width: $select-lg-width;
+.select-w-lg {
+  width: $select-w-lg-width;
 }

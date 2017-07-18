@@ -223,6 +223,7 @@ $list-group-item-padding-x: 9px !default;
 $list-group-item-height: 40px !default;
 $list-group-item-background-color-hover: $gray-200 !default;
 $list-group-item-color-active: $blue !default;
+$list-group-item-color-disabled: $disabled-color !default;
 //Drop Down
 // Image thumbnails
 $thumbnail-padding: 4px !default;
@@ -377,7 +378,7 @@ $tree-icon-color: $blue !default;
 $tree-color: $gray-700 !default;
 $tree-background-color-hover: #ecf6fd !default;
 $tree-selected-bg: #d2eafb !default; //选中节点后的背景色
-$tree-disable-color: rgba(0, 0, 0, .25) !default; //禁用后的颜色
+$tree-disable-color: $disabled-color !default; //禁用后的颜色
 // Close
 $close-font-size: $font-size-base * 1.5 !default;
 $close-font-weight: $font-weight-bold !default;
@@ -385,31 +386,31 @@ $close-color: #000 !default;
 $close-text-shadow: 0 1px 0 $white !default;
 //utilities
 $emsizes: 15 !default;
-//select
-$select-color: rgba(0, 0, 0, .65) !default;
-$select-disabled-color: rgba(0, 0, 0, .25) !default;
-$select-inner-border-color: #d9d9d9 !default;
-$select-inner-hover-border-color: #108ee9 !default;
-$select-inner-bg: #fff !default;
-$select-inner-disabled-bg: #f7f7f7 !default;
+//radio-check
+$radio-check-color: rgba(0, 0, 0, .65) !default;
+$radio-check-disabled-color: rgba(0, 0, 0, .25) !default;
+$radio-check-inner-border-color: #d9d9d9 !default;
+$radio-check-inner-hover-border-color: #108ee9 !default;
+$radio-check-inner-bg: #fff !default;
+$radio-check-inner-disabled-bg: #f7f7f7 !default;
 //radio
-$radio-color: $select-color !default;
-$radio-disabled-color: $select-disabled-color !default;
-$radio-inner-border-color: $select-inner-border-color !default;
-$radio-inner-hover-border-color: $select-inner-hover-border-color !default;
+$radio-color: $radio-check-color !default;
+$radio-disabled-color: $radio-check-disabled-color !default;
+$radio-inner-border-color: $radio-check-inner-border-color !default;
+$radio-inner-hover-border-color: $radio-check-inner-hover-border-color !default;
 $radio-inner-checked-border-color: $radio-inner-hover-border-color !default;
-$radio-inner-bg: $select-inner-bg !default;
-$radio-inner-disabled-bg: $select-inner-disabled-bg !default;
+$radio-inner-bg: $radio-check-inner-bg !default;
+$radio-inner-disabled-bg: $radio-check-inner-disabled-bg !default;
 $radio-after-bg: $radio-inner-hover-border-color !default;
 $radio-disabled-bg: #ccc !default;
 //check
-$check-color: $select-color !default;
-$check-disabled-color: $select-disabled-color !default;
-$check-inner-border-color: $select-inner-border-color !default;
-$check-inner-hover-border-color: $select-inner-hover-border-color !default;
+$check-color: $radio-check-color !default;
+$check-disabled-color: $radio-check-disabled-color !default;
+$check-inner-border-color: $radio-check-inner-border-color !default;
+$check-inner-hover-border-color: $radio-check-inner-hover-border-color !default;
 $check-inner-checked-border-color: $check-inner-hover-border-color !default;
-$check-inner-bg: $select-inner-bg !default;
-$check-inner-disabled-bg: $select-inner-disabled-bg !default;
+$check-inner-bg: $radio-check-inner-bg !default;
+$check-inner-disabled-bg: $radio-check-inner-disabled-bg !default;
 $check-inner-checked-bg: $check-inner-hover-border-color !default;
 $check-inner-checked-some-bg: $check-inner-checked-bg !default;
 $check-after-border-color: #fff !default;
@@ -446,7 +447,7 @@ $select-font-size: 13px !default;
 $select-caret-border-width: 5px !default;
 $select-multiple-min-height: 30px !default;
 $select-multiple-max-height: 90px !default;
-$select-multiple-padding: 0 5px !default;
+$select-multiple-padding: 0 25px 0 5px !default;
 $select-item-color: $gray-700 !default;
 $select-item-background-color: $gray-300 !default;
 $select-item-border-radius: 3px !default;
@@ -457,10 +458,10 @@ $select-selected-color: $gray-800 !default;
 $select-box-shadow:0 1px 4px 0 rgba(49, 135, 246, 0.3) !default;
 $select-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
 $select-noborder-selected-color: $blue !default;
-$select-noborder-padding: 0 0 0 9px !default;
-$select-sm-width: 80px !default;
-$select-md-width: 155px !default;
-$select-lg-width: 240px !default;
+$select-noborder-padding: 0 10px 0 9px !default;
+$select-w-sm-width: 80px !default;
+$select-w-md-width: 155px !default;
+$select-w-lg-width: 240px !default;
 //progress
 $progress-font-size: 12px!default;
 $progress-loading-text-font-size: 18px!default;
@@ -477,7 +478,7 @@ $breadcrumb-tag-last-color:#666 !default;
 $breadcrumb-separator-padding:0 8px !default;
 //datetimepicker
 $datetimepicker-width: 155px !default;
-$datetimepicker-lg-width: 210px !default;
+$datetimepicker-w-lg-width: 210px !default;
 $pickercontainer-color: $gray-800 !default; // #333
 $pickercontainer-border-color: $gray-300 !default; // #d9d9d9
 $pickercontainer-padding: 10px 5px !default;

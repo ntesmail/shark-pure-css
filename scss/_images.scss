@@ -21,5 +21,11 @@
 // Image circle
 .img-circle {
   @include img-fluid;
-  border-radius: 50%; 
+  border-radius: 50%;
+}
+
+// Image rounded
+.img-rounded {
+  @include img-fluid;
+  border-radius: $border-radius;
 }

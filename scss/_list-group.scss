@@ -14,9 +14,10 @@
     border: 1px solid $list-group-border-color;
     box-shadow: $list-group-box-shadow;
     border-radius: $list-group-border-radius;
-    margin-top: 4px;
     max-height: $list-group-item-height * 7;
     overflow-y: auto;
+    user-select: none;
+    @include scrollbar();
   }
   
   .check-all-warp,
@@ -37,6 +38,17 @@
     &.active {
       color: $list-group-item-color-active;
     }
+    &.disabled {
+      &,
+      * {
+        cursor: not-allowed;
+        color: $list-group-item-color-disabled;
+      }
+    }
+    span {
+      display: block;
+      @include text-truncate;
+    }
   }
   
   .check-all-warp,
@@ -52,6 +64,7 @@
       height: $list-group-item-height;
       line-height: $list-group-item-height;
       padding: 0;
+      @include text-truncate;
       &:hover {
         background-color: transparent;
       }
