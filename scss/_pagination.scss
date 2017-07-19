@@ -200,6 +200,11 @@
   }
   .pagination-size-changer {
     margin-right: 8px;
+    .select{
+      width: 82px;
+      height: 28px;   
+      line-height: 28px; 
+    }
     .select .selected {
       color: $pagination-color;
     }
@@ -250,14 +255,14 @@
     line-height: 20px;
     input {
       width: 44px;
-      height: 22px;
+      height:20px;
     }
   }
   &.mini .pagination-size-changer {
     .select {
       width: 82px;
-      height: 22px;
-      line-height: 22px;
+      height: 20px;
+      line-height: 20px;
     }
   }
 }
