@@ -7,17 +7,36 @@
   text-align: center;
   cursor: pointer;
   transition: all .1s linear;
+  i, [class*="icon-"] {
+    @extend .text-xs;
+    display: block;
+    line-height:1;  //限制高度为12px
+  }
+
+  &.disabled {
+    @extend %input-handle-disable;
+  }
 }
 
-%icon-size {
-  @extend .text-xs;
+%input-handle-disable {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+%input-number-disable {
+  &,
+  &:hover {
+    @extend %input-disabled;
+  }
+  .input-number-handle-wrapper {
+    display: none;
+  }
 }
 
 .input-number {
   @extend %input;
-  padding: 1px 0;
-  &:hover,
-  &:focus {
+  padding: 0;
+  &:hover {
     .input-number-handle-wrapper {
       opacity: 1;
     }
@@ -31,18 +50,26 @@
       opacity: 1;
     }
   }
+
+  &.disabled {
+    @extend %input-number-disable;
+  }
 }
 
 .input-number-input {
   width: 100%;
   padding: 0 7px;
-  height: 26px;  //normal - 2
+  height: 28px;  //normal(30) - 2px(border)
   border: 0;
-  border-radius: 4px;  //TODO border-radius
   color: rgba(0,0,0,.65);
   text-align: left;
   outline: 0;
   background-color: #fff;
+
+  //因为他不是input类的扩展，所以需要重新定义disabled效果
+  &[disabled] {
+    @extend %input-disabled;
+  }
 }
 
 .input-number-handle-wrapper {
@@ -62,15 +89,11 @@
 
 .input-number-handle-up {
   @extend %input-number-handle;
-  i, [class*="icon-"] {
-    @extend %icon-size
-  }
+  padding-top: 2px;  
 }
 
 .input-number-handle-down {
   @extend %input-number-handle;
+  padding-top: 1px; //多1px border
   border-top: 1px solid #d9d9d9;
-  i, [class*="icon-"] {
-    @extend %icon-size
-  }
 }

@@ -1,0 +1,56 @@
+%input-affix-wrapper-disabled {
+  &,
+  & * {
+    @extend %disabled;
+  }
+  .input:focus,
+  .input:hover {
+    & ~ .input-suffix-focus {
+      display: none;
+    }
+  }
+}
+.input-affix-wrapper {
+  position: relative;
+  .input:not(:last-child) {
+    padding-right: 28px;
+  }
+
+  .input:not(:first-child) {
+    padding-left: 28px;
+  }
+
+  .input-suffix {
+    @extend %input-affix;
+    right: 9px;
+  }
+
+  .input-prefix {
+    @extend %input-affix;
+    left: 9px;
+  }
+
+  .input-suffix-focus {
+    display: none;
+    cursor: pointer;
+
+    &:hover {
+      display: block;
+    }
+  }
+
+  .input:focus,
+  .input:hover {
+     & ~ .input-suffix-focus {
+      display: block;
+    }
+  }
+
+  .input.input-radius {
+    @include border-radius(30px);
+  }
+
+  &.disabled {
+    @extend %input-affix-wrapper-disabled;
+  }
+}

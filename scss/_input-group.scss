@@ -10,12 +10,17 @@
   .input,
   .select,
   .input-affix-wrapper,
-  .input-group-btn-wrapper {
+  .input-group-btn-wrapper,
+  .input-number {
     display: table-cell;
 
     &:hover,
     &:focus {
       z-index: 1;
+    }
+
+    &.focus {
+      z-index: 1; //有些是input是模拟的，需要手动添加focus类
     }
 
     &:not(:first-child):not(:last-child) {
@@ -31,14 +36,25 @@
     }
   }
 
+  // group中，带输入框的部分
+  .input,
+  .input-affix-wrapper,
+  .input-number {
+    float: left;
+    width: 100%;
+  }
 
+  //group中，不带输入框的部分
+  .input-group-addon,
+  .select,
+  .input-group-btn-wrapper {
+    width: 1px;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
 
   .input-group-addon,
   .select {
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
-
     &:first-child {
       border-right: 0;
     }
@@ -46,21 +62,6 @@
     &:last-child {
       border-left: 0;
     }
-  }
-
-  .input,
-  .input-affix-wrapper {
-    float: left;
-  }
-
-  .input-affix-wrapper {
-    width: 100%;
-  }
-
-  .input-group-btn-wrapper {
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
   }
 
   .input-group-btn-wrapper {
@@ -77,9 +78,23 @@
     }
   }
 
+  &.disabled {
+    &,
+    & > * {
+      @extend %disabled;
+    }
+
+    .input-affix-wrapper {
+      @extend %input-affix-wrapper-disabled;
+    }
+
+    .input-number {
+      @extend %input-number-disable;
+    }
+
+  }
+
 }
-
-
 
 .input-group-addon {
   @extend .text-xs;

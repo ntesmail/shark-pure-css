@@ -7,6 +7,15 @@
   transform: translateY(-50%);
 } 
 
+%disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+%input-disabled {
+  @extend %disabled;
+  border-color: #d9d9d9;
+}
+
 %input {
   @extend .text-xs;
   position: relative;
@@ -43,6 +52,13 @@
       box-shadow: 0 0 2px 1px rgba(230,65,44,.30);
     }
   }
+
+  &[disabled] {
+    &,
+    &:hover {
+      @extend %input-disabled;
+    }
+  }
 }
 
 .input {
@@ -68,45 +84,4 @@
 
 .input.input-textarea {
   height: 60px;
-}
-
-.input-affix-wrapper {
-  position: relative;
-  .input:not(:last-child) {
-    padding-right: 28px;
-  }
-
-  .input:not(:first-child) {
-    padding-left: 28px;
-  }
-
-  .input-suffix {
-    @extend %input-affix;
-    right: 9px;
-  }
-
-  .input-prefix {
-    @extend %input-affix;
-    left: 9px;
-  }
-
-  .input-suffix-focus {
-    display: none;
-    cursor: pointer;
-
-    &:hover {
-      display: block;
-    }
-  }
-
-  .input:focus,
-  .input:hover {
-     & ~ .input-suffix-focus {
-      display: block;
-    }
-  }
-
-  .input.input-radius {
-    @include border-radius(30px);
-  }
 }
