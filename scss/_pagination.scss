@@ -76,7 +76,7 @@
     &:hover {
       &:after {
         color: $pagination-primary-color;
-        @include iconfont-size-under-12px(8px);
+        // @include iconfont-size-under-12px(9px);
         letter-spacing: -1px;
         font-family: "iconfont" !important;
       }
@@ -135,7 +135,7 @@
       color: $pagination-color;
       outline: none;
       &:after {
-        @include iconfont-size-under-12px(8px);
+        // @include iconfont-size-under-12px(9px);
         display: block;
         height: 26px;
         line-height: 26px;
