@@ -37,8 +37,7 @@
     top: $notify-close-top;
     right: $notify-close-right;
     &:after {
-      font-family: "iconfont" !important;
-      content: "\ee64";
+       @include iconfont-font("\EE64");
       font-size: 8px;
       position: absolute;
       top: -5px;
@@ -72,8 +71,7 @@
   border: 1px solid $notify-success-border-color;
   .notify-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee62";
+       @include iconfont-font("\EE62");
       color: $notify-success-color;
     }
   }
@@ -84,8 +82,7 @@
   border: 1px solid $notify-error-border-color;
   .notify-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee60";
+       @include iconfont-font("\EE60");
       color: $notify-error-color;
     }
   }
@@ -96,8 +93,7 @@
   border: 1px solid $notify-warning-border-color;
   .notify-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee5e";
+       @include iconfont-font("\EE5E");
       color: $notify-warning-color;
     }
   }
@@ -108,8 +104,7 @@
   border: 1px solid $notify-info-border-color;
   .notify-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee5a";
+       @include iconfont-font("\EE5A");
       color: $notify-info-color;
     }
   }

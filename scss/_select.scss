@@ -148,7 +148,11 @@
       background-color: $select-item-background-color;
       border-radius: $select-item-border-radius;
       i[class*="icon-"] {
-        @include iconfont-size-under-12px(8px);
+        @include iconfont-size-under-12px(10px);
+        transition: color .2s ease-in-out;
+        &:hover {
+          color: #000;
+        }
       }
     }
   }

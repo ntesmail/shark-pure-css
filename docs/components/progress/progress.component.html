@@ -73,7 +73,8 @@
         <div>
             1. 重要内容的加载（例如不加载成功影响后续操），全屏覆盖，加载过程中不可再进行其他操作。<br/> 
             2. 加载时间超过8秒后提供取消加载操作。<br/> 
-            3. 为.progress添加样式.progress-show-cancel，显示取消操作按钮。
+            3. 为.progress添加样式.progress-show-cancel，显示取消操作按钮。<br>
+            4. 全屏加载组件不需要另外增加父容器。
         </div>
     </section>
     <section class="code-box-demo">
@@ -112,7 +113,8 @@
             <h3>容器加载</h3>
         </div>
         <div>
-            1. 在一定范围内的容器显示加载进度。<br/> 2. 使用时需要为容器添加样式.progress-wrap。<br/>
+            1. 在一定范围内的容器显示加载进度。<br/> 
+            2. 使用时需要为容器添加样式.progress-wrap。
         </div>
     </section>
     <section class="code-box-demo">
@@ -151,7 +153,8 @@
             <h3>进度状态</h3>
         </div>
         <div>
-            提供三种状态：常规、完成、错误，分别通过添加样式.progress-status-finish、.progress-status-error为组件添加 完成和错误状态样式。
+            1. 一共有3种状态：常规、完成、错误。完成状态的状态类为.progress-status-finish、错误状态的状态类为.progress-status-error。<br>
+            2. 将状态类添加到父容器.progress-wrap上即可。
         </div>
     </section>
     <section class="code-box-demo">

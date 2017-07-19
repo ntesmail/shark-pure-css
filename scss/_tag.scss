@@ -27,8 +27,7 @@
   padding: $tag-closable-padding;
   .tag-text {
     &:after {
-      font-family: "iconfont" !important;
-      content: "\ee64";
+      @include iconfont-font("\EE64");
       position: absolute;
       color: $tag-close-icon-color;
       margin-left: $tag-close-icon-margin-left;
@@ -41,9 +40,8 @@
   background-color: $tag-addible-bg-color;
   border: $tag-addible-border;
   .tag-text {
-    font-family: "iconfont" !important;
     &:before {
-      content: "\ee5b";
+      @include iconfont-font("\EE5B");
       position: absolute;
       margin-left: $tag-add-icon-margin-left;
       color: $tag-add-icon-color;

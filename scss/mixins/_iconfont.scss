@@ -7,6 +7,7 @@
   transform: scale($font-scale) rotate($rotate);
 }
 
+// for iconfont used in content 
 @mixin iconfont-font($content) {
   font-family: "iconfont" !important;
   font-style: normal;
