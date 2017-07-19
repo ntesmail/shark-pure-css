@@ -215,8 +215,7 @@
 
 .datetimepicker,
 .datetimepicker-w-lg,
-.datetimepicker-range,
-.datetimepicker-range-w-lg {
+.datetimepicker-range {
   display: inline-block;
 }
 .datetimepicker {
@@ -225,8 +224,7 @@
 .datetimepicker-w-lg {
   width: $datetimepicker-w-lg-width;
 }
-.datetimepicker-range,
-.datetimepicker-range-w-lg {
+.datetimepicker-range {
   font-size: 0;
   .datetimepicker-start,
   .datetimepicker-split,
@@ -241,10 +239,5 @@
     vertical-align: top;
     font-size: $datetimepicker-split-font-size;
     color: $datetimepicker-split-color;
-  }
-}
-.datetimepicker-range-w-lg {
-  .datetimepicker {
-    width: $datetimepicker-w-lg-width;
   }
 }

@@ -28,11 +28,21 @@
   // Small Button
   &.btn-sm {
     @include button-size($btn-height-sm, $btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius);
+    // Button with icon
+    i[class*="icon-"] {
+      @include iconfont-size-under-12px(10px);
+      &.btn-icon-left {
+        margin-right: 2px;
+      }
+      &.btn-icon-right {
+        margin-left: 2px;
+      }
+    }
   }
   
   // Button with icon
   i[class*="icon-"] {
-    @include iconfont-size-under-12px(10px);
+    font-size: 12px;
     &.btn-icon-left {
       margin-right: 4px;
     }

@@ -28,6 +28,7 @@ import { CssFunctionModule } from './function/function.module';
 import { CssTagModule } from './tag/tag.module';
 import { CssListgroupModule } from './listgroup/listgroup.module';
 import { CssGridModule } from './grid/grid.module';
+import { CssDropdownModule } from './dropdown/dropdown.module';
 @NgModule({
         imports: [
                 CssButtonModule,
@@ -55,7 +56,8 @@ import { CssGridModule } from './grid/grid.module';
                 CssTagModule,
                 CssListgroupModule,
                 CssFunctionModule,
-                CssGridModule
+                CssGridModule,
+                CssDropdownModule
         ]
 })
 export class ComponentModule { }
