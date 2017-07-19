@@ -17,6 +17,10 @@
   }
   li {
     display: inline-block;
+    margin-right: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
   .pagination-item {
     cursor: pointer;
@@ -30,7 +34,6 @@
     vertical-align: middle;
     border: $pagination-border-width $pagination-border-style $pagination-border-color;
     background-color: $pagination-bg;
-    margin-right: 8px;
     font-family: Arial;
     outline: 0;
     a {
@@ -97,13 +100,6 @@
         content: "\ee48";
       }
     }
-  }
-  .pagination-first,
-  .pagination-prev,
-  .pagination-next,
-  .pagination-jump-prev,
-  .pagination-jump-next {
-    margin-right: 8px;
   }
   .pagination-first,
   .pagination-last,
@@ -196,10 +192,10 @@
   .pagination-quick-jumper {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 16px;
   }
   .pagination-size-changer {
-    margin-right: 8px;
+    margin-left: 8px;
+    margin-right: 16px;
     .select{
       width: 82px;
       height: 28px;   
