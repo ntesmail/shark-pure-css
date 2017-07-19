@@ -87,8 +87,7 @@
   border: 1px solid $toastr-success-border-color;
   .toastr-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee61";
+       @include iconfont-font("\EE61");
       color: $toastr-success-color;
     }
   }
@@ -99,8 +98,7 @@
   border: 1px solid $toastr-error-border-color;
   .toastr-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee5f";
+       @include iconfont-font("\EE5F");
       color: $toastr-error-color;
     }
   }
@@ -111,8 +109,7 @@
   border: 1px solid $toastr-warning-border-color;
   .toastr-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee5d";
+       @include iconfont-font("\EE5D");
       color: $toastr-warning-color;
     }
   }
@@ -123,8 +120,7 @@
   border: 1px solid $toastr-info-border-color;
   .toastr-message {
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee59";
+       @include iconfont-font("\EE59");
       color: $toastr-info-color;
     }
   }

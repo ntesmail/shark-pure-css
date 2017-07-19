@@ -163,8 +163,7 @@
       margin: 0;
       &:before {
         position: absolute;
-        font-family: "iconfont" !important;
-        content: "\ee5d";
+        @include iconfont-font("\EE5D");
         color: $toastr-warning-color;
         top: 18px;
         margin-left: -20px;

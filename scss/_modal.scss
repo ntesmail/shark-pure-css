@@ -91,8 +91,7 @@
       }
     }
     &:before {
-      font-family: "iconfont" !important;
-      content: "\ee64";
+      @include iconfont-font("\EE64");
       position: absolute;
       top: -4px;
       right: -2px;
@@ -198,8 +197,7 @@
     margin-bottom: $modal-tip-message-margin-bottom;
     &:before {
       position: absolute;
-      font-family: "iconfont" !important;
-      content: "\ee5d";
+       @include iconfont-font("\EE5D");
       top: $modal-tip-icon-top;
       left: $modal-tip-icon-left;
       color: $modal-tip-icon-color;
