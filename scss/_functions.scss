@@ -1,4 +1,2 @@
-// Color contrast
-@function theme-color($key: "primary") {
-  @return map-get($theme-colors, $key);
-}
+@import "functions/_strip_units.scss";
+@import "functions/_theme-color.scss";
