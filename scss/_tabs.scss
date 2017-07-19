@@ -36,6 +36,9 @@
         &:first-child {
           border-left: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
           border-radius: $tabs-tab-border-radius 0 0 0;
+          &.tabs-tab-active{
+            border-radius: 0;
+          }
         }
         &:last-child {
           border-radius: 0 $tabs-tab-border-radius 0 0;
