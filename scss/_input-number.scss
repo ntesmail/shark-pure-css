@@ -24,8 +24,7 @@
 }
 
 %input-number-disable {
-  &,
-  &:hover {
+  & {
     @extend %input-disabled;
   }
   .input-number-handle-wrapper {
@@ -52,7 +51,10 @@
   }
 
   &.disabled {
-    @extend %input-number-disable;
+    &,
+    &:hover {
+      @extend %input-number-disable;
+    }
   }
 }
 

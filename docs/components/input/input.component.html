@@ -26,15 +26,21 @@
             <h3>基本使用</h3>
         </div>
         <div>
-            基本使用，宽度默认100%、高度30px.
+            基本使用，宽度默认100%、高度30px。
         </div>
     </section>
     <section class="code-box-demo">
-        <input type="text" class="input"/>
+        <div class="wrapper">
+            <input type="text" class="input" placeholder="默认输入框"/>
+        </div>
+        <div class="wrapper">
+            <input type="text" class="input" disabled placeholder="输入框禁用状态"/>
+        </div>
     </section>
     <section class="highlight-wrapper">
        <div transfer style="display: none;">
 <input type="text" class="input"/>
+<input type="text" class="input" disabled/>
        </div>
     </section>
 </section>
@@ -83,7 +89,14 @@
             <h3>前缀和后缀</h3>
         </div>
         <div>
-            在输入框中添加前缀和后缀。后缀可以增加input-suffix-focus扩展类，input只有在hover和focus状态下显示
+            <ul>
+                <li>
+                    1.在输入框中添加前缀和后缀。后缀可以增加<strong>input-suffix-focus</strong>扩展类，input只有在hover和focus状态下显示；
+                </li>
+                <li>
+                    2.禁用状态，除了在input中加上disabled属性，还需要在组件最外层input-affix-wrapper上增加<strong>disabled</strong>类。
+                </li>
+            </ul>
         </div>
     </section>
     <section class="code-box-demo">
@@ -104,6 +117,17 @@
                     <i class="icon-user"></i>
                 </span>
                 <input type="text" class="input" placeholder="后缀只有hover、focus时才出现"/>
+                <span class="input-suffix input-suffix-focus">
+                    <i class="icon-close"></i>
+                </span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="input-affix-wrapper disabled">
+                <span class="input-prefix">
+                    <i class="icon-user"></i>
+                </span>
+                <input type="text" class="input" disabled placeholder="禁用效果"/>
                 <span class="input-suffix input-suffix-focus">
                     <i class="icon-close"></i>
                 </span>
@@ -131,6 +155,16 @@
         <i class="icon-close"></i>
     </span>
 </div>
+
+<div class="input-affix-wrapper disabled">
+    <span class="input-prefix">
+        <i class="icon-user"></i>
+    </span>
+    <input type="text" class="input" disabled placeholder="禁用效果"/>
+    <span class="input-suffix input-suffix-focus">
+        <i class="icon-close"></i>
+    </span>
+</div>
        </div>
     </section>
 </section>
@@ -142,20 +176,42 @@
             <h3>数字输入框</h3>
         </div>
         <div>
-            用于输入数字。他的focus状态，需要手动在<strong>input-number</strong>类上，加上focus类
+            <ul>
+                <li>
+                    1.用于输入数字。他的focus状态，需要手动在input-number类上，加上<strong>focus</strong>类
+                </li>
+                <li>
+                    2.禁用状态，除了在input中加上disabled属性，还需要在组件最外层input-number上增加<strong>disabled</strong>类。
+                </li>
+            </ul>
         </div>
     </section>
     <section class="code-box-demo">
-        <div class="input-number">
-            <div class="input-number-handle-wrapper">
-                <div class="input-number-handle-up">
-                    <i class="icon-up"></i>
+        <div class="wrapper">
+            <div class="input-number">
+                <div class="input-number-handle-wrapper">
+                    <div class="input-number-handle-up">
+                        <i class="icon-up"></i>
+                    </div>
+                    <div class="input-number-handle-down">
+                        <i class="icon-down"></i>
+                    </div>
                 </div>
-                <div class="input-number-handle-down">
-                    <i class="icon-down"></i>
-                </div>
+                <input type="number" class="input-number-input">
             </div>
-            <input type="number" class="input-number-input">
+        </div>
+        <div class="wrapper">
+            <div class="input-number disabled">
+                <div class="input-number-handle-wrapper">
+                    <div class="input-number-handle-up">
+                        <i class="icon-up"></i>
+                    </div>
+                    <div class="input-number-handle-down">
+                        <i class="icon-down"></i>
+                    </div>
+                </div>
+                <input type="number" class="input-number-input" disabled placeholder="禁用状态"/>
+            </div>
         </div>
     </section>
     <section class="highlight-wrapper">
@@ -171,6 +227,18 @@
     </div>
     <input type="number" class="input-number-input">
 </div>
+
+<div class="input-number disabled">
+    <div class="input-number-handle-wrapper">
+        <div class="input-number-handle-up">
+            <i class="icon-up"></i>
+        </div>
+        <div class="input-number-handle-down">
+            <i class="icon-down"></i>
+        </div>
+    </div>
+    <input type="number" class="input-number-input" disabled placeholder="禁用状态"/>
+</div>
        </div>
     </section>
 </section>
@@ -181,7 +249,14 @@
             <h3>前置/后置标签</h3>
         </div>
         <div>
-            用于配置一些固定组合。提供input、input-number、input-affix-wrapper(带前缀后缀的输入框)与select、btn、input-group-addon的组合。
+            <ul>
+                <li>
+                    1.用于配置一些固定组合。提供input、input-number、input-affix-wrapper(带前缀后缀的输入框)与select、btn、input-group-addon的组合；
+                </li>
+                <li>
+                    2.禁用状态，除了在input中加上disabled属性，还需要在组件最外层input-group上增加<strong>disabled</strong>类。
+                </li>
+            </ul>
         </div>
     </section>
     <section class="code-box-demo">
@@ -239,6 +314,22 @@
                 </span>
             </div>
         </div>
+        <div class="wrapper">
+            <div class="input-group disabled">
+                <span class="input-group-addon">
+                    <i class="icon-search"></i>
+                </span>
+                <div class="input-affix-wrapper">
+                    <span class="input-prefix">
+                        <i class="icon-user"></i>
+                    </span>
+                    <input type="text" class="input" disabled placeholder="禁用状态"/>
+                </div>
+                <span class="input-group-addon">
+                    <i class="icon-search"></i>
+                </span>
+            </div>
+        </div>
     </section>
 
     <section class="highlight-wrapper">
@@ -287,6 +378,21 @@
             <i class="icon-user"></i>
         </span>
         <input type="text" class="input"/>
+    </div>
+    <span class="input-group-addon">
+        <i class="icon-search"></i>
+    </span>
+</div>
+
+<div class="input-group disabled">
+    <span class="input-group-addon">
+        <i class="icon-search"></i>
+    </span>
+    <div class="input-affix-wrapper">
+        <span class="input-prefix">
+            <i class="icon-user"></i>
+        </span>
+        <input type="text" class="input" disabled placeholder="禁用状态"/>
     </div>
     <span class="input-group-addon">
         <i class="icon-search"></i>

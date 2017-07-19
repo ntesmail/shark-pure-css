@@ -89,7 +89,10 @@
     }
 
     .input-number {
-      @extend %input-number-disable;
+      &,
+      &:hover {
+        @extend %input-number-disable;
+      }
     }
 
   }
