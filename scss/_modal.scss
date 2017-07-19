@@ -91,7 +91,9 @@
     cursor: pointer;
     text-decoration: none;
     &:hover {
-      color: $modal-close-hover-color;
+      &:before {
+        color: $modal-close-hover-color;
+      }
     }
     &:before {
       font-family: "iconfont" !important;

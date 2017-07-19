@@ -152,7 +152,7 @@ $progress-circle-height: 40px;
     .progress-status-icon {
       &:after {
         @include iconfont-font("\EE64");
-        font-size: 18px;
+        font-size: 23px;
       }
     }
   }

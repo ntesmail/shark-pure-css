@@ -9,6 +9,7 @@
 <div class="u-tips">
 	<ul>
         <li>1. 可与 select 组件一起使用完成自定义下拉框</li>
+        <li>2. 下拉选项有两种类型，一种是跟tree结构结合的下拉选项，可以完成单选，多选，全选功能；还有一种是多层级下拉选项</li>
     </ul>
 </div>
 
@@ -24,14 +25,16 @@
             <h3>普通下拉菜单</h3>
         </div>
         <div>
-            宽度需与 select 等宽，最多展示七条数据，多余的数据会出现滚动条，left top width 通过js计算，内联添加
+            宽度需与 select 等宽，最多展示七项，超过七项会出现滚动条，left top width 通过js计算，内联添加<br />
+            需要添加的类为 group-list 跟 tree 结构结合使用时需要增加一个 tree 类以获得更好的样式<br />
+            被选中的项在 li 上增加 active 类获得选中样式，disabled 状态时在 li 上增加 disabled 类
         </div>
     </section>
-    <section class="code-box-demo" style="height:400px;">
-        <div class="select select-noborder select-sm" style="margin-right:100px;">
+    <section class="code-box-demo" style="height:410px">
+        <div class="select select-noborder select-w-sm">
             <span>请选择</span>
         </div>
-        <div class="tree list-group show" style="left: 20px; top: 122px; width: 80px;">
+        <div class="tree list-group show" style="left: 20px; top: 75px; width: 80px;">
             <div class="tree">
                 <ul>
                     <li class="active">
@@ -46,7 +49,7 @@
                     <li>
                         <span class="tree-node-name">Top4</span>
                     </li>
-                    <li>
+                    <li class="disabled">
                         <span class="tree-node-name">Top5</span>
                     </li>
                     <li>
@@ -79,7 +82,7 @@
             <li>
                 <span class="tree-node-name">Top4</span>
             </li>
-            <li>
+            <li class="disabled">
                 <span class="tree-node-name">Top5</span>
             </li>
             <li>
@@ -105,18 +108,20 @@
             <h3>多选下拉</h3>
         </div>
         <div>
-            与 tree 结合，可多选，可全选
+            与 tree 结合，可多选，可全选<br /> 
+            active 状态和 disabled 状态跟普通下拉相同的方式<br /> 
+            如果存在全选情况，需要 check-all-warp 包裹，active 和 disabled 也是加在这个dmo上
         </div>
     </section>
     <section class="code-box-demo" style="height:370px">
-        <div class="select select-multiple select-lg" style="margin-right:100px;">
+        <div class="select select-multiple select-w-lg">
             <ul class="select-items">
                 <li class="select-item">选项1<i class="icon-close"></i></li>
                 <li class="select-item">选项2<i class="icon-close"></i></li>
                 <li class="select-item">选项3<i class="icon-close"></i></li>
             </ul>
         </div>
-        <div class="tree list-group" style="left: 20px; top: 122px; width: 240px; display:block;">
+        <div class="tree list-group" style="left: 20px; top: 75px; width: 240px; display:block;">
             <div class="check-all-warp">
                 <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
                 <span class="tree-node-name">全选</span>
@@ -127,7 +132,7 @@
                         <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
                         <span class="tree-node-name">哈哈1</span>
                     </li>
-                    <li>
+                    <li class="active">
                         <span class="tree-checkbox tree-icon tree-icon-check"></span>
                         <span class="tree-node-name">哈哈2</span>
                     </li>
@@ -135,7 +140,7 @@
                         <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
                         <span class="tree-node-name">哈哈3</span>
                     </li>
-                    <li>
+                    <li class="disabled">
                         <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
                         <span class="tree-node-name">哈哈4</span>
                     </li>
@@ -161,7 +166,7 @@
                 <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
                 <span class="tree-node-name">哈哈1</span>
             </li>
-            <li>
+            <li class="active">
                 <span class="tree-checkbox tree-icon tree-icon-check"></span>
                 <span class="tree-node-name">哈哈2</span>
             </li>
@@ -169,7 +174,7 @@
                 <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
                 <span class="tree-node-name">哈哈3</span>
             </li>
-            <li>
+            <li class="disabled">
                 <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
                 <span class="tree-node-name">哈哈4</span>
             </li>
@@ -191,14 +196,15 @@
             <h3>多层级下拉选择</h3>
         </div>
         <div>
-            可二级菜单选择
+            下拉可出现多层级情况，每个层级的定位是js做的<br />
+            active 状态和 disable 状态都是加在 li 上
         </div>
     </section>
     <section class="code-box-demo" style="height:290px">
-        <div class="select select-single select-md" style="margin-right:100px;">
+        <div class="select select-single select-w-md">
             <span>请选择</span>
         </div>
-        <div class="list-group" style="left: 20px; top: 122px; width: 155px; display:block;">
+        <div class="list-group" style="left: 20px; top: 75px; width: 155px; display:block;">
             <ul>
                 <li class="list-group-item" value="">
                     <span>请选择</span>
@@ -209,12 +215,12 @@
                 <li class="list-group-item" value="2">
                     <span>哈哈2</span>
                 </li>
-                <li class="list-group-item" value="3">
+                <li class="list-group-item disabled" value="3">
                     <span>哈哈3</span>
                 </li>
             </ul>
         </div>
-        <div class="list-group" style="left: 174px; top: 162px; width: 155px; display:block;">
+        <div class="list-group" style="left: 174px; top: 115px; width: 155px; display:block;">
             <ul>
                 <li class="list-group-item" value="">
                     <span>请选择</span>
@@ -238,7 +244,7 @@
         <li class="list-group-item" value="2">
             <span>哈哈2</span>
         </li>
-        <li class="list-group-item" value="3">
+        <li class="list-group-item disabled" value="3">
             <span>哈哈3</span>
         </li>
     </ul>

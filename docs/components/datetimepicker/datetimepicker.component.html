@@ -8,9 +8,9 @@
 </div>
 <div class="u-tips">
 	<ul>
-        <li>1. 用于时间日期选择器</li>
-        <li>2. 也可单独用于时间选择器和日期选择器</li>
-        <li>2. 也可选择时间段</li>
+        <li>1. 可用于选择时间和选择日期</li>
+        <li>2. 也可单独作为时间选择器或日期选择器</li>
+        <li>2. 也可用于选择时间段</li>
     </ul>
 </div>
 
@@ -25,7 +25,7 @@
             <h3>两种类型</h3>
         </div>
         <div>
-            datetimepicker 类是只有一个时间，datetimepicker-range 类是选时间段
+            datetimepicker 类用于选一个时间，datetimepicker-range 类用于选时间段
         </div>
     </section>
     <section class="code-box-demo">
@@ -116,18 +116,20 @@
     </section>
 </section>
 
-<!-- 两种大小 -->
+<!-- 两种宽度 -->
 <section class="code-box">
     <section class="code-box-meta">
         <div class="code-box-title">
-            <h3>两种大小</h3>
+            <h3>两种宽度</h3>
         </div>
         <div>
-            datetimepicker 类对应的lg是 datetimepicker-lg，datetimepicker-range 类对应的lg是 datetimepicker-range-lg，此处的大小不是扩展，所以可以直接替换
+            datetimepicker 类对应的lg是 datetimepicker-w-lg <br />
+            datetimepicker-range 类对应的lg是 datetimepicker-range-w-lg <br />
+            此处的宽度不是扩展，所以可以直接替换
         </div>
     </section>
     <section class="code-box-demo">
-        <div class="datetimepicker-lg">
+        <div class="datetimepicker-w-lg">
             <div class="input-group">
                 <div class="input-affix-wrapper">
                     <input type="text" class="input" value="2017-07-10" />
@@ -138,7 +140,7 @@
                 <span class="input-group-addon"><i class="icon-calendar"></i></span>
             </div>
         </div><br/>
-        <div class="datetimepicker-range-lg">
+        <div class="datetimepicker-range-w-lg">
             <div class="datetimepicker-start">
                 <div class="datetimepicker">
                     <div class="input-group">
@@ -170,7 +172,7 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<div class="datetimepicker-lg">
+<div class="datetimepicker-w-lg">
     <div class="input-group">
         <div class="input-affix-wrapper">
             <input type="text" class="input" value="2017-07-10 01:00:20" />
@@ -181,7 +183,7 @@
         <span class="input-group-addon"><i class="icon-calendar"></i></span>
     </div>
 </div>
-<div class="datetimepicker-range-lg">
+<div class="datetimepicker-range-w-lg">
     <div class="datetimepicker-start">
         <div class="datetimepicker">
             <div class="input-group">
@@ -221,11 +223,12 @@
             <h3>时间日期选择器</h3>
         </div>
         <div>
-            时间日期选择器内容被 pickercontainer 类包裹，位置（left，top）由js计算。时间选择器（timewrap 类）跟日期选择器（datepicker 类）也可单独使用，但是需要在 pickercontainer 类的包裹下
+            时间日期选择器内容被 pickercontainer 类包裹，位置（left，top）由js计算 <br />
+            时间选择器（timewrap 类）跟日期选择器（datepicker 类）也可单独使用，但是需要在 pickercontainer 类的包裹下以获得更好的样式
         </div>
     </section>
     <section class="code-box-demo" style="height:600px;">
-        <div class="datetimepicker-lg">
+        <div class="datetimepicker-w-lg">
             <div class="input-group">
                 <div class="input-affix-wrapper">
                     <input type="text" class="input" value="2017-07-10 01:00:20" />
@@ -236,7 +239,7 @@
                 <span class="input-group-addon"><i class="icon-calendar"></i></span>
             </div>
         </div>
-        <div class="pickercontainer" style="left: 20px; top: 144px; display: block;">
+        <div class="pickercontainer show" style="left: 20px; top: 75px;">
             <div class="datepicker">
                 <div class="calendar">
                     <div class="calendar-montharea">

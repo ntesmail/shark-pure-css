@@ -9,6 +9,8 @@
 <div class="u-tips">
 	<ul>
         <li>1. 自定义 select 标签</li>
+        <li>2. 与 list-group 样式一起完成下拉框样式</li>
+        <li>3. 交互行为需要与 shark-angularX 里的组件一起实现</li>
     </ul>
 </div>
 
@@ -29,13 +31,13 @@
     </section>
     <section class="code-box-demo">
         <div class="select select-single">
-            <span>已选中2</span>
+            <span class="select-placeholder">请选择</span>
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
 <div class="select select-single">
-    <span>已选中2</span>
+    <span class="select-placeholder">请选择</span>
 </div>
         </div>
     </section>
@@ -48,7 +50,8 @@
             <h3>被选中</h3>
         </div>
         <div>
-            被选择时增加 active 类，被选中的值被 selected 类包裹，会有更好的样式
+            下拉框被点击时增加 active 类，可以增加边框以及阴影样式<br/>
+            被选中的值被 selected 类包裹，会有更好的样式
         </div>
     </section>
     <section class="code-box-demo">
@@ -72,17 +75,17 @@
             <h3>无边框下拉选择</h3>
         </div>
         <div>
-            基类是 select ，扩展类为 select-noborder ，同样，被选中是增加 active 类，选中的值被 selected 类包裹
+            基类是 select ，扩展类为 select-noborder 
         </div>
     </section>
     <section class="code-box-demo">
-        <div class="select select-noborder">
+        <div class="select select-noborder active">
             <span class="selected">已选中2</span>
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<div class="select select-noborder">
+<div class="select select-noborder active">
     <span class="selected">已选中2</span>
 </div>
         </div>
@@ -156,7 +159,8 @@
             <h3>可搜索多选</h3>
         </div>
         <div>
-            基类是 select ，扩展类为 select-search 
+            基类是 select ，扩展类为 select-search <br />
+            注意搜索框需要包裹在 li.select-item-search 里，且 li.select-item-search 的宽度需要js根据剩余宽度计算赋值
         </div>
     </section>
     <section class="code-box-demo">
@@ -165,10 +169,12 @@
                 <li class="select-item">选项1<i class="icon-close"></i></li>
                 <li class="select-item">选项2<i class="icon-close"></i></li>
                 <li class="select-item">选项3<i class="icon-close"></i></li>
+                <li class="select-item-search">
+                    <div class="search-wrap">
+                        <input class="select-input" type="text" placeholder="请选择" />
+                    </div>
+                </li>
             </ul>
-            <div class="search-wrap">
-                <input class="select-input" type="text" placeholder="请选择" />
-            </div>
         </div>
     </section>
     <section class="highlight-wrapper">
@@ -178,10 +184,12 @@
         <li class="select-item">选项1<i class="icon-close"></i></li>
         <li class="select-item">选项2<i class="icon-close"></i></li>
         <li class="select-item">选项3<i class="icon-close"></i></li>
+        <li class="select-item-search">
+            <div class="search-wrap">
+                <input class="select-input" type="text" placeholder="请选择" />
+            </div>
+        </li>
     </ul>
-    <div class="search-wrap">
-        <input class="select-input" type="text" placeholder="请选择" />
-    </div>
 </div>
         </div>
     </section>
@@ -199,13 +207,13 @@
     </section>
     <section class="code-box-demo">
         <div class="select select-single disabled">
-            <span>请选择</span>
+            <span class="select-placeholder">请选择</span>
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
 <div class="select select-single disabled">
-    <span>请选择</span>
+    <span class="select-placeholder">请选择</span>
 </div>
         </div>
     </section>
@@ -218,30 +226,30 @@
             <h3>三种宽度</h3>
         </div>
         <div>
-            三种宽度：80px / 155px / 240px 对应的类为 select-sm / select-md / select-lg
+            三种宽度：80px / 155px / 240px 对应的类为 select-w-sm / select-w-md / select-w-lg
         </div>
     </section>
     <section class="code-box-demo">
-        <div class="select select-noborder select-sm" style="margin-right:100px;">
-            <span>请选择</span>
+        <div class="select select-noborder select-w-sm" style="margin-right:100px;">
+            <span class="select-placeholder">请选择</span>
         </div>
-        <div class="select select-single select-md" style="margin-right:100px;">
-            <span>请选择</span>
+        <div class="select select-single select-w-md" style="margin-right:100px;">
+            <span class="select-placeholder">请选择</span>
         </div>
-        <div class="select select-multiple select-lg" style="margin-right:100px;">
-            <span>请选择</span>
+        <div class="select select-multiple select-w-lg" style="margin-right:100px;">
+            <span class="select-placeholder">请选择</span>
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<div class="select select-noborder select-sm" style="margin-right:100px;">
-    <span>请选择</span>
+<div class="select select-noborder select-w-sm">
+    <span class="select-placeholder">请选择</span>
 </div>
-<div class="select select-single select-md" style="margin-right:100px;">
-    <span>请选择</span>
+<div class="select select-single select-w-md">
+    <span class="select-placeholder">请选择</span>
 </div>
-<div class="select select-multiple select-lg" style="margin-right:100px;">
-    <span>请选择</span>
+<div class="select select-multiple select-w-lg">
+    <span class="select-placeholder">请选择</span>
 </div>
         </div>
     </section>
