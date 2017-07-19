@@ -34,7 +34,6 @@
     vertical-align: middle;
     border: $pagination-border-width $pagination-border-style $pagination-border-color;
     background-color: $pagination-bg;
-    font-family: Arial;
     outline: 0;
     a {
       text-decoration: none;
@@ -81,7 +80,6 @@
         color: $pagination-primary-color;
         // @include iconfont-size-under-12px(9px);
         letter-spacing: -1px;
-        font-family: "iconfont" !important;
       }
     }
   }
@@ -89,7 +87,7 @@
     &:focus,
     &:hover {
       &:after {
-        content: "\ee49";
+        @include iconfont-font('\EE49');
       }
     }
   }
@@ -97,7 +95,7 @@
     &:focus,
     &:hover {
       &:after {
-        content: "\ee48";
+        @include iconfont-font('\EE48');
       }
     }
   }
@@ -107,7 +105,6 @@
   .pagination-next,
   .pagination-jump-prev,
   .pagination-jump-next {
-    font-family: Arial;
     cursor: pointer;
     color: $pagination-color;
     border-radius: $pagination-border-radius;
@@ -135,7 +132,6 @@
         display: block;
         height: 26px;
         line-height: 26px;
-        font-family: "anticon";
         text-align: center;
       }
     }
