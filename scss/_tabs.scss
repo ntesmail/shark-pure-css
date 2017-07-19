@@ -31,7 +31,6 @@
         padding: 0 40px;
         text-align: center;
         background-color: $tabs-tab-background;
-        margin-bottom: -$tabs-tab-border-width;
         cursor: pointer;
         transition: color .3s;        
         &:first-child {
@@ -51,6 +50,7 @@
         border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-active-bg-color; 
         box-shadow: 0 -2px 0 -0 $tabs-primary-color;
         border-top: none;
+        margin-bottom: -$tabs-tab-border-width;
       }
     }
   }
