@@ -141,6 +141,7 @@ $btn-color-disabled: $disabled-color !default;
 $btn-border-color-disabled: $disabled-border-color !default;
 $btn-background-color-disabled: $disabled-background-color !default;
 $btn-link-color-disabled: $gray-400 !default;
+$btn-link-color-active: #2577e0  !default;
 $btn-color: $gray-700 !default;
 $btn-border-color: $gray-300 !default;
 $btn-background-color: $white !default;
@@ -596,3 +597,25 @@ $tag-font-size: 12px !default;
 $steps-disabled-color: #ccc !default;
 $steps-done-color: rgba(0, 0, 0, 0.43) !default;
 $steps-primary-color: #3187F6 !default;
+
+$dropdown-height: 30px !default;
+$dropdown-padding-x: 16px !default;
+$dropdown-padding-y: 4px !default;
+$dropdown-font-size: 14px !default;
+$dropdown-color: $gray-600 !default; // #999
+$dropdown-border-color: $gray-300 !default; // #d9d9d9
+$dropdown-background-color: $white !default; // #fff
+$dropdown-color-hover: $blue !default;
+$dropdown-border-color-hover: $blue !default;
+$dropdown-shadow: 0 0 2px 1px rgba(49,135,246,0.30) !default;
+$dropdown-color-disabled: $disabled-color !default;
+$dropdown-border-color-disabled: $disabled-border-color !default;
+$dropdown-background-color-disabled: $disabled-background-color !default;
+$dropdown-height-sm: 24px !default;
+$dropdown-padding-sm-x: 10px !default;
+$dropdown-padding-sm-y: 3px !default;
+$dropdown-font-size-sm: 12px !default;
+$dropdown-link-color: $blue !default;
+$dropdown-link-color-hover: #49a9ee !default;
+$dropdown-link-color-active: #0e77ca !default;
+$dropdown-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;

@@ -48,6 +48,13 @@
     }
   }
   
+  .select-placeholder,
+  .selected {
+    display: inline-block;
+    max-width: 100%;
+    @include text-truncate;
+    vertical-align: middle;
+  }
   .selected {
     color: $select-selected-color;
   }
@@ -89,9 +96,8 @@
   }
   .select-placeholder,
   .selected {
-    display: inline-block;
     max-width: 90%;
-    @include text-truncate;
+    vertical-align: top;
   }
 }
 
@@ -103,9 +109,7 @@
   }
   .select-placeholder,
   .selected {
-    display: inline-block;
-    max-width: 100%;
-    @include text-truncate;
+    vertical-align: top;
   }
 }
 

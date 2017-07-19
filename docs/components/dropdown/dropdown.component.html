@@ -8,7 +8,7 @@
 </div>
 <div class="u-tips">
 	<ul>
-        <li>1. 可用于各种按钮类操作</li>
+        <li>1. 可用于下拉菜单以及一些需要下拉操作的地方</li>
     </ul>
 </div>
 
@@ -17,26 +17,90 @@
 </div>
 
 
-<!-- 带图标按钮看作为dropdown下拉菜单 -->
+<!-- 两种类型 -->
 <section class="code-box">
     <section class="code-box-meta">
         <div class="code-box-title">
-            <h3>带图标按钮看作为dropdown</h3>
+            <h3>两种类型</h3>
         </div>
         <div>
-            
+            dropdown 类是默认的 dropdown 样式，dropdown-link 是带链接样式的 dropdown
         </div>
     </section>
     <section class="code-box-demo">
-        <button type="button" class="btn btn-secondary">Dropdown<i class="icon-down btn-icon-right"></i></button>
-        <button type="button" class="btn btn-secondary btn-sm">Dropdown<i class="icon-down btn-icon-right"></i></button>
-        <button type="button" class="btn btn-link">Dropdown<i class="icon-down btn-icon-right"></i></button>
+        <button type="button" class="dropdown">Dropdown<i class="icon-down"></i></button>
+        <a class="dropdown dropdown-link" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<button type="button" class="btn btn-secondary">Dropdown<i class="icon-down btn-icon-right"></i></button>
-<button type="button" class="btn btn-secondary btn-sm">Dropdown<i class="icon-down btn-icon-right"></i></button>
-<button type="button" class="btn btn-link">Dropdown<i class="icon-down btn-icon-right"></i></button>
+<button type="button" class="dropdown">Dropdown<i class="icon-down"></i></button>
+<a class="dropdown dropdown-link" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
+        </div>
+    </section>
+</section>
+
+<!-- 两种大小 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>两种大小</h3>
+        </div>
+        <div>
+            dropdown 的高为30px，扩展类 dropdown-sm 高为24px
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <button type="button" class="dropdown dropdown-sm">Dropdown<i class="icon-down"></i></button>
+        <a class="dropdown dropdown-link dropdown-sm" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<button type="button" class="dropdown dropdown-sm">Dropdown<i class="icon-down"></i></button>
+<a class="dropdown dropdown-link dropdown-sm" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
+        </div>
+    </section>
+</section>
+
+<!-- active状态 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>active状态</h3>
+        </div>
+        <div>
+            dropdown 增加 active 类即为选中样式
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <button type="button" class="dropdown active">Dropdown<i class="icon-down"></i></button>
+        <a class="dropdown dropdown-link active" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<button type="button" class="dropdown active">Dropdown<i class="icon-down"></i></button>
+<a class="dropdown dropdown-link active" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
+        </div>
+    </section>
+</section>
+
+<!-- disabled状态 -->
+<section class="code-box">
+    <section class="code-box-meta">
+        <div class="code-box-title">
+            <h3>disabled状态</h3>
+        </div>
+        <div>
+            dropdown 增加 disabled 类即为disabled状态
+        </div>
+    </section>
+    <section class="code-box-demo">
+        <button type="button" class="dropdown disabled">Dropdown<i class="icon-down"></i></button>
+        <a class="dropdown dropdown-link disabled" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
+    </section>
+    <section class="highlight-wrapper">
+        <div transfer>
+<button type="button" class="dropdown disabled">Dropdown<i class="icon-down"></i></button>
+<a class="dropdown dropdown-link disabled" href="javascript:void(0);" role="button">Dropdown<i class="icon-down"></i></a>
         </div>
     </section>
 </section>

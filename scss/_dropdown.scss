@@ -1,5 +1,84 @@
 //Drop Down
 
-.shark-dropdown {
+.dropdown {
   display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  background-image: none;
+  @include dropdown-size($dropdown-height, $dropdown-padding-x, $dropdown-padding-y, $dropdown-font-size);
+  @include transition($dropdown-transition);
+  @include box-shadow(none);
+  @include dropdown-variant($dropdown-color, $dropdown-border-color, $dropdown-background-color, $dropdown-color-hover, $dropdown-border-color-hover, $dropdown-shadow);
+  
+  // Share hover and focus styles
+  @include hover-focus {
+    text-decoration: none;
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+  
+  @include dropdown-variant-disabled($dropdown-color-disabled, $dropdown-border-color-disabled, $dropdown-background-color-disabled);
+
+  // Small Button
+  &.dropdown-sm {
+    @include dropdown-size($dropdown-height-sm, $dropdown-padding-sm-x, $dropdown-padding-sm-y, $btn-font-size-sm);
+    // Button with icon
+    i[class*="icon-"] {
+      @include iconfont-size-under-12px(10px);
+      margin-left: 2px;
+    }
+  }
+  
+  // Button with icon
+  i[class*="icon-"] {
+     @include iconfont-size-under-12px(12px);
+    // font-size: 12px;
+    margin-left: 4px;
+  }
+
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.dropdown.disabled,
+fieldset[disabled] a.dropdown {
+  pointer-events: none;
+}
+// Make a dropdown look and behave like a link
+.dropdown-link {
+  color: $dropdown-link-color;
+  border-radius: 0;
+  border-color: transparent;
+
+  &,
+  &:active,
+  &.active,
+  &.disabled {
+    &,
+    &:hover{
+      background-color: transparent;
+      border-color: transparent;
+      @include box-shadow(none);
+    }
+  }
+  &:focus,
+  &.active,
+  &:active {
+    color: $dropdown-link-color-active;
+  }
+  @include hover-focus {
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &.disabled,
+  &.active,
+  &:active {
+   text-decoration: none;
+  }
 }
