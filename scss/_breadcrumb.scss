@@ -2,7 +2,7 @@
   color: $breadcrumb-color;
   font-size: $breadcrumb-font-size;
   line-height: $line-height-base;
-  font-family: PingFangSC-Regular;
+  font-family: $breadcrumb-font-family;
   a {
     color: $breadcrumb-link-color;
     &:hover{
