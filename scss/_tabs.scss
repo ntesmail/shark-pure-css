@@ -1,6 +1,6 @@
 .tabs {
   box-sizing: border-box;
-  position: relative; // overflow: hidden;
+  position: relative; 
   zoom: 1;
   color: $tabs-tab-color;
   .tabs-content {
@@ -8,17 +8,19 @@
       opacity: 0;
       display: none;
       pointer-events: none;
+      &.tabs-tabpane-active {
+        opacity: 1;
+        display: block;
+        pointer-events: auto;
+      }
     }
-    .tabs-tabpane-active {
-      opacity: 1;
-      display: block;
-    }
+    
   }
   &.tabs-card.tabs-horizontal {
     .tabs-nav {
       font-size: 0;
       padding: 0 0 0 21px;
-      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color; // &::before {
+      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color;
       .tabs-tab {
         font-size: $tabs-tab-font-size;
         display: inline-block;
@@ -46,7 +48,7 @@
       .tabs-tab-active {
         background-color: $tabs-tab-active-bg-color;
         color: $tabs-primary-color;
-        border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-active-bg-color; // border-top: 2px $tabs-tab-border-style $tabs-primary-color;
+        border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-active-bg-color; 
         box-shadow: 0 -2px 0 -0 $tabs-primary-color;
         border-top: none;
       }
@@ -55,16 +57,16 @@
   &.tabs-card.tabs-vertical {
     @extend .clearfix;
     .tabs-nav {
-      font-size: 0; // display: inline-block;
+      font-size: 0; 
       float: left;
       .tabs-tab {
-        font-size: $tabs-tab-font-size; // display: iblock;
+        font-size: $tabs-tab-font-size; 
         max-width: 300px;
         height: 40px;
         line-height: 40px;
         text-align: center;
         padding: 0 40px;
-        background-color: $tabs-card-vertical-tab-bg-color; // position: relative;
+        background-color: $tabs-card-vertical-tab-bg-color; 
         color: $tabs-card-vertical-tab-active-color;
         cursor: pointer;
         transition: background-color .3s;
@@ -75,7 +77,7 @@
      
       .tabs-tab-active {
         background-color: $tabs-card-vertical-tab-active-bg-color;
-        border-left: 4px $tabs-tab-border-style $tabs-primary-color; // box-shadow: 0 -2px 0 -0 $tabs-primary-color;
+        border-left: 4px $tabs-tab-border-style $tabs-primary-color; 
         border-top: none;
       }
     }
@@ -87,7 +89,7 @@
     .tabs-nav {
       font-size: 0;
       padding: 0 0 0 26px;
-      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color; // &::before {
+      border-bottom: $tabs-tab-border-width $tabs-tab-border-style $tabs-tab-border-color; 
       .tabs-tab {
         font-size: $tabs-tab-font-size;
         display: inline-block;
