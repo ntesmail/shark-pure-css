@@ -5,6 +5,10 @@
   font-family: PingFangSC-Regular;
   a {
     color: $breadcrumb-link-color;
+    &:hover{
+      text-decoration: none;
+      color:$breadcrumb-link-hover-color;
+    }
   }
   &>span:last-child {
     .breadcrumb-tag {
