@@ -7,8 +7,8 @@ import {
 })
 
 export class CssProgressComponent {
-    progressStatusFinish:boolean = false;
-    progressStatusError:boolean = false;
+    progressFinished:boolean = false;
+    progressError:boolean = false;
     constructor() {
 
     }

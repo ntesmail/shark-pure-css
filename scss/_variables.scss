@@ -141,7 +141,7 @@ $btn-color-disabled: $disabled-color !default;
 $btn-border-color-disabled: $disabled-border-color !default;
 $btn-background-color-disabled: $disabled-background-color !default;
 $btn-link-color-disabled: $gray-400 !default;
-$btn-link-color-active: #2577e0  !default;
+$btn-link-color-active: #2577e0 !default;
 $btn-color: $gray-700 !default;
 $btn-border-color: $gray-300 !default;
 $btn-background-color: $white !default;
@@ -467,8 +467,8 @@ $select-w-lg-width: 240px !default;
 $progress-font-size: 12px!default;
 $progress-loading-text-font-size: 18px!default;
 $progress-line-bg: #f7f7f7!default;
-$progress-status-error-color: #d33017!default;
-$progress-status-finish-color: #1B9AFE!default;
+$progress-error-color: #d33017!default;
+$progress-finished-color: #1B9AFE!default;
 $progress-primary-color: #1B9AFE!default;
 $progress-loading-text-color: #666!default;
 //breadcrumb
@@ -597,7 +597,6 @@ $tag-font-size: 12px !default;
 $steps-disabled-color: #ccc !default;
 $steps-done-color: rgba(0, 0, 0, 0.43) !default;
 $steps-primary-color: #3187F6 !default;
-
 $dropdown-height: 30px !default;
 $dropdown-padding-x: 16px !default;
 $dropdown-padding-y: 4px !default;
@@ -607,7 +606,7 @@ $dropdown-border-color: $gray-300 !default; // #d9d9d9
 $dropdown-background-color: $white !default; // #fff
 $dropdown-color-hover: $blue !default;
 $dropdown-border-color-hover: $blue !default;
-$dropdown-shadow: 0 0 2px 1px rgba(49,135,246,0.30) !default;
+$dropdown-shadow: 0 0 2px 1px rgba(49, 135, 246, 0.30) !default;
 $dropdown-color-disabled: $disabled-color !default;
 $dropdown-border-color-disabled: $disabled-border-color !default;
 $dropdown-background-color-disabled: $disabled-background-color !default;

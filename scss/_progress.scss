@@ -1,9 +1,9 @@
-$progress-fullscreen-circle-width: 82px;
-$progress-fullscreen-circle-height: 112px;
-$progress-circle-width: 40px;
-$progress-circle-height: 40px;
+$progress-width: 82px;
+$progress-height: 112px;
+// $progress-circle-svg-width: 40px;
+// $progress-circle-svg-height: 40px;
 .progress {
-  display: inline-block; // font-size: $progress-font-size;
+  display: inline-block;
   font-size: 0;
 } //横线进度条
 .progress-line {
@@ -48,8 +48,8 @@ $progress-circle-height: 40px;
   position: relative;
   text-align: center;
   font-size: 0;
-  width: $progress-fullscreen-circle-width;
-  height: $progress-fullscreen-circle-height;
+  width: $progress-width;
+  height: $progress-height;
   .progress-circle-layer {
     stroke: $progress-line-bg;
   }
@@ -86,9 +86,10 @@ $progress-circle-height: 40px;
     color: $progress-primary-color;
   }
 } // 容器加载
-  .progress-wrap,
+.progress-wrap,
 .progress-fullscreen {
   position: relative;
+  z-index: 999;
   .progress {
     position: absolute;
     top: 50%;
@@ -105,81 +106,47 @@ $progress-circle-height: 40px;
         font-size: $progress-font-size;
       }
     }
-  }
-  &.progress-status-finish,
-  &.progress-status-error {
-     width: 40px;
-     height: 40px;
-    .progress-status-text {
-      display: block;
-      visibility: visible;
-    }
-    .progress {
-      animation: .3s ease-out .3s progress-fade-out forwards;
-    }
-    .progress-circle-svg {
-      animation: .3s ease-out .3s keyframes-progress-svg-fade-out($progress-circle-width, $progress-circle-height) forwards;
-    }
-    .progress-status-text {
-      color: $progress-status-finish-color;
-      display: block;
-      visibility: visible;
-    }
-    .progress-loading-text,
-    .progress-cancel-loading {
-      display: none;
-      //@extend .invisible;
-    }
-  } // 完成状态
-  &.progress-status-finish {
-    .progress-status-text {
-      color: $progress-status-finish-color;
-    }
-    .progress-status-icon {
-      &:after {
-        @include iconfont-font("\EE63");
-        font-size: 23px;
+    &.progress-finished,
+    &.progress-error {
+      width: $progress-width;
+      height: $progress-height;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease-out .3s, visibility .3s ease-out.3s;
+      .progress-status-text {
+        display: block;
+        visibility: visible;
+      }
+      .progress-loading-text,
+      .progress-cancel-loading {
+        display: none;
+      }
+    } // 完成状态
+    &.progress-finished {
+      .progress-status-text {
+        color: $progress-finished-color;
+      }
+      .progress-status-icon {
+        &:after {
+          @include iconfont-font("\EE63");
+          font-size: 23px;
+        }
+      }
+    } // 错误状态
+    &.progress-error {
+      .progress-status-text {
+        color: $progress-error-color;
+      }
+      .progress-circle-upper {
+        stroke: $progress-error-color;
+      }
+      .progress-status-icon {
+        &:after {
+          @include iconfont-font("\EE64");
+          font-size: 23px;
+        }
       }
     }
-  } // 错误状态
-  &.progress-status-error {
-    .progress-status-text {
-      color: $progress-status-error-color;
-    }
-    .progress-circle-upper {
-      stroke: $progress-status-error-color;
-    }
-    .progress-status-icon {
-      &:after {
-        @include iconfont-font("\EE64");
-        font-size: 23px;
-      }
-    }
-  }
-}
-.progress-fullscreen{
-    &.progress-status-finish,
-    &.progress-status-error {
-      width: 100%;
-      height: 100%;
-    }
-   .progress-circle-svg {
-     animation: 3s ease-out 3s keyframes-progress-svg-fade-out($progress-fullscreen-circle-width, $progress-fullscreen-circle-height) forwards;
-   }
-}
-@keyframes progress-fade-out {
-  99% {
-    opacity: 0;
-    visibility: hidden;
-    width: $progress-fullscreen-circle-width;
-    height: $progress-fullscreen-circle-height;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    display: none !important;
-    height: 0;
-    width: 0;
   }
 }
 
@@ -190,28 +157,4 @@ $progress-circle-height: 40px;
   left: 0;
   width: 100%;
   height: 100%;
-  .progress {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@mixin keyframes-progress-svg-fade-out($width:40px, $height: 40px){
-  @keyframes progress-svg-fade-out {
-    99% {
-      opacity: 0;
-      visibility: hidden;
-      width: $width;
-      height: $height;
-    }
-    to {
-      opacity: 0;
-      visibility: hidden;
-      display: none !important;
-      height: 0;
-      width: 0;
-    }
-  }
 }
