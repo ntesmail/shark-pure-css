@@ -76,7 +76,7 @@
         </div>
     </section>
     <section class="code-box-demo">
-        <div style="position:relative; width:200px; height:200px; border: 1px solid #ccc; ">
+        <div style="width:200px; height:200px; border: 1px solid #ccc; ">
             <div class="progress-wrap">
                 <div class="progress progress-circle progress-show-cancel ">
                     <svg width="40 " height="40 " view-box="0 0 40 40 ">
@@ -113,7 +113,7 @@
             <h3>容器加载</h3>
         </div>
         <div>
-            1. 在一定范围内的容器显示加载进度。<br/> 2. 使用时需要为容器添加样式.progress-wrap。
+            1. 在一定范围内的容器显示加载进度。<br/> 2. 使用时需要容器需要有值为非static的position定位。
         </div>
     </section>
     <section class="code-box-demo">
@@ -159,7 +159,7 @@
     </section>
     <section class="code-box-demo">
         <p>Normal</p>
-        <div style="position:relative; width:200px; height:200px; border: 1px solid #ccc; ">
+        <div style="width:200px; height:200px; border: 1px solid #ccc; ">
             <div class="progress-wrap">
                 <div class="progress progress-circle ">
                     <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
@@ -174,7 +174,7 @@
         </div>
         <p>Finished</p>
         <div><button (click)="toggle('progressFinished')" class="btn btn-primary margin-b-10">Toggle Finished</button></div>
-        <div style="position:relative; width:200px; height:200px; border: 1px solid #ccc; ">
+        <div style="width:200px; height:200px; border: 1px solid #ccc; ">
             <div class="progress-wrap">
                 <div class="progress progress-circle" [ngClass]="{'progress-finished': progressFinished}">
                     <svg width="40 " height="40 " view-box="0 0 40 40 " class="progress-circle-svg ">
@@ -189,7 +189,7 @@
         </div>
         <p>Error</p>
         <div><button (click)="toggle('progressError')" class="btn btn-primary margin-b-10">Toggle Error</button></div>
-        <div style="position:relative; width:200px; height:200px; border: 1px solid #ccc; ">
+        <div style="width:200px; height:200px; border: 1px solid #ccc; ">
             <div class="progress-wrap">
                 <div class="progress progress-circle" [ngClass]="{'progress-error': progressError}">
                     <svg width="40 " height="40 " view-box="0 0 40 40 ">
