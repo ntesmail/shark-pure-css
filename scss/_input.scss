@@ -59,27 +59,28 @@
       @extend %input-disabled;
     }
   }
+
+  &.input-sm {
+    height: 24px;
+    padding: 1px 10px;
+  }
+
+  &.input-w-lg {
+    width: 240px;
+  }
+
+  &.input-w-md {
+    width: 150px;
+  }
+
+  &.input-w-sm {
+    width: 80px;
+  }
+  
 }
 
 .input {
   @extend %input;
-}
-
-.input.input-sm {
-  height: 24px;
-  padding: 1px 10px;
-}
-
-.input{
-  &.input-w-lg {
-    width: 240px;
-  }
-  &.input-w-md {
-    width: 150px;
-  }
-    &.input-w-sm {
-    width: 80px;
-  }
 }
 
 .input.input-textarea {
