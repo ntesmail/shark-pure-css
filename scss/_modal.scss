@@ -177,10 +177,10 @@
   .modal-body {
     padding: $modal-confirm-body-padding;
   }
-  .modal-confirm-body {
+  .modal-info {
     margin-bottom: $modal-confirm-body-margin-bottom;
   }
-  .modal-confirm-btns {
+  .modal-btns {
     text-align: right;
     > :not(:first-child) {
       margin-left: $modal-footer-btn-margin;
@@ -189,7 +189,7 @@
       margin-right: $modal-footer-btn-margin;
     }
   }
-  .tip-message {
+  .modal-message {
     display: block;
     font-size: $modal-font-size-base;
     font-weight: bold;
@@ -204,7 +204,7 @@
       font-size: $modal-tip-icon-font-size;
     }
   }
-  .tip-desc {
+  .modal-desc {
     display: block;
     font-size: $modal-font-size-sm;
     line-height: $modal-tip-desc-line-height;
@@ -226,13 +226,13 @@
   .modal-footer {
     padding: $modal-detail-footer-padding;
     border-top-width: 0;
-    .secondary {
+    line-height: 30px;
+    .modal-secondary {
       float: left;
     }
-    .secondary-desc {
+     .modal-secondary-desc {
       font-size: $modal-font-size-sm;
       color: $modal-detail-footer-secondary-desc-color;
-      ;
     }
   }
 }

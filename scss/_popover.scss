@@ -18,129 +18,100 @@
     @include box-shadow($popover-box-shadow); // Arrows
     //
     // .arrow is outer, .arrow::after is inner
-    .arrow {
+    .popover-arrow {
       position: absolute;
       display: block;
       width: $popover-arrow-width;
       height: $popover-arrow-height;
     }
-    .arrow::before,
-    .arrow::after {
+    .popover-arrow,
+    .popover-arrow::after {
       position: absolute;
       display: block;
       border-color: transparent;
       border-style: solid;
     }
-    .arrow::before {
+    .popover-arrow {
       content: "";
       border-width: $popover-arrow-outer-width;
     }
-    .arrow::after {
+    .popover-arrow::after {
       content: "";
       border-width: $popover-arrow-outer-width;
     } // Popover directions
-    &.top {
-      margin-bottom: $popover-arrow-width;
-      .arrow {
-        bottom: 0;
-        left: 50%;
-      }
-      .arrow::before,
-      .arrow::after {
+    &.popover-top {
+      margin-top: -$popover-arrow-width;
+      .popover-arrow,
+      .popover-arrow::after {
         margin-left: -$popover-arrow-outer-width;
         border-bottom-width: 0;
       }
-      .arrow::before {
+      .popover-arrow{
+        bottom: 0;
+        left: 50%;
         bottom: -$popover-arrow-outer-width;
         border-top-color: $popover-arrow-outer-color;
       }
-      .arrow::after {
-        bottom: -($popover-arrow-outer-width - 1);
+      .popover-arrow::after {
+        bottom: 1px;
         border-top-color: $popover-arrow-color;
       }
     }
-    &.right {
+    &.popover-right {
       margin-left: $popover-arrow-width;
-      .arrow {
-        top: 50%;
-        left: 0;
-      }
-      .arrow::before,
-      .arrow::after {
+      .popover-arrow,
+      .popover-arrow::after {
         margin-top: -$popover-arrow-outer-width;
         border-left-width: 0;
       }
-      .arrow::before {
+      .popover-arrow {
+        top: 50%;
+        left: 0;
         left: -$popover-arrow-outer-width;
         border-right-color: $popover-arrow-outer-color;
       }
-      .arrow::after {
-        left: -($popover-arrow-outer-width - 1);
+      .popover-arrow::after {
+        left: 1px;
         border-right-color: $popover-arrow-color;
       }
     }
-    &.bottom {
+    &.popover-bottom {
       margin-top: $popover-arrow-width;
-      .arrow {
-        top: 0;
-        left: 50%;
-      }
-      .arrow::before,
-      .arrow::after {
+      .popover-arrow,
+      .popover-arrow::after {
         margin-left: -$popover-arrow-outer-width;
         border-top-width: 0;
       }
-      .arrow::before {
+      .popover-arrow {
+        top: 0;
+        left: 50%;
         top: -$popover-arrow-outer-width;
         border-bottom-color: $popover-arrow-outer-color;
       }
-      .arrow::after {
-        top: -($popover-arrow-outer-width - 1);
+      .popover-arrow::after {
+        top: 1px;
         border-bottom-color: $popover-arrow-color;
-      } // This will remove the popover-header's border just below the arrow
-      .popover-header::before {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        display: block;
-        width: 20px;
-        margin-left: -10px;
-        content: "";
-        border-bottom: 1px solid $popover-header-bg;
-      }
+      } 
     }
-    &.left {
-      margin-right: $popover-arrow-width;
-      .arrow {
-        top: 50%;
-        right: 0;
-      }
-      .arrow::before,
-      .arrow::after {
+    &.popover-left {
+      margin-left: -$popover-arrow-width;
+      .popover-arrow,
+      .popover-arrow::after {
         margin-top: -($popover-arrow-outer-width);
         border-right-width: 0;
       }
-      .arrow::before {
+      .popover-arrow{
+        top: 50%;
+        right: 0;
         right: -$popover-arrow-outer-width;
         border-left-color: $popover-arrow-outer-color;
       }
-      .arrow::after {
-        right: -($popover-arrow-outer-width - 1);
+      .popover-arrow::after {
+        right: 1px;
         border-left-color: $popover-arrow-color;
       }
     }
-  } // Offset the popover to account for the popover arrow
-  .popover-header {
-    padding: $popover-header-padding-y $popover-header-padding-x;
-    margin-bottom: 0; // Reset the default from Reboot
-    font-size: $popover-header-font-size;
-    color: $popover-header-color;
-    background-color: $popover-header-bg;
-    border-bottom: $popover-border-width solid darken($popover-header-bg, 5%);
-    $offset-border-width: calc(#{$popover-border-radius} - #{$popover-border-width});
-    @include border-top-radius($offset-border-width);
-  }
-
+  } 
   .popover-content {
     color: $popover-content-color;
     p {
@@ -152,12 +123,12 @@
     }
   }
 
-  .popover-content-message {
+  .popover-message {
     padding: $popover-content-padding;
     color: $popover-content-color;
   }
 
-  .popover-content-message-icon {
+  .popover-message-withicon {
     padding: 16px 16px 0 36px;
     p {
       margin: 0;
@@ -172,7 +143,7 @@
     }
   }
 
-  .popover-content-btns {
+  .popover-btns {
     padding: 0 16px 16px 36px;
     text-align: right;
     margin-top: $popover-content-btns-margin-top;
@@ -190,23 +161,23 @@
       color: $tooltip-color;
       padding: $tooltip-padding;
     }
-    &.top {
-      .arrow::after {
+    &.popover-top {
+      .popover-arrow::after {
         border-top-color: $tooltip-bg-color;
       }
     }
-    &.bottom {
-      .arrow::after {
+    &.popover-bottom {
+      .popover-arrow::after {
         border-bottom-color: $tooltip-bg-color;
       }
     }
-    &.left {
-      .arrow::after {
+    &.popover-left {
+      .popover-arrow::after {
         border-left-color: $tooltip-bg-color;
       }
     }
-    &.right {
-      .arrow::after {
+    &.popover-right {
+      .popover-arrow::after {
         border-right-color: $tooltip-bg-color;
       }
     }
