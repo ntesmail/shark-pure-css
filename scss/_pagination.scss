@@ -71,7 +71,7 @@
       content: "\2022\2022\2022";
       display: block;
       letter-spacing: 2px;
-      color: $pagination-disabled-color;
+      color: $pagination-item-disabled-color;
       text-align: center;
     }
     &:focus,
@@ -171,17 +171,17 @@
       }
     }
   }
-  .pagination-disabled {
+  .pagination-item-disabled {
     &:hover {
       border-color: $pagination-border-color;
       a {
-        color: $pagination-disabled-color;
+        color: $pagination-item-disabled-color;
         cursor: not-allowed;
       }
     }
     cursor: not-allowed;
     a {
-      color: $pagination-disabled-color;
+      color: $pagination-item-disabled-color;
     }
   }
   .pagination-size-changer,
