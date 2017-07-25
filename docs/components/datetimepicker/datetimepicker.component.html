@@ -29,9 +29,9 @@
         </div>
     </section>
     <section class="code-box-demo">
-        <div class="datetimepicker">
+        <div class="datetimepicker-w-md">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <input type="text" class="input" value="2017-07-10" />
                     <span class="input-suffix input-suffix-focus clear">
                         <i class="icon-closecircle"></i>
@@ -42,9 +42,9 @@
         </div><br/>
         <div class="datetimepicker-range">
             <div class="datetimepicker-start">
-                <div class="datetimepicker">
+                <div class="datetimepicker-w-md">
                     <div class="input-group">
-                        <div class="input-affix-wrapper">
+                        <div class="input-affix">
                             <input type="text" class="input" value="2017-07-10" />
                             <span class="input-suffix input-suffix-focus clear">
                                 <i class="icon-closecircle"></i>
@@ -56,9 +56,9 @@
             </div>
             <span class="datetimepicker-split">至</span>
             <div class="datetimepicker-end">
-                <div class="datetimepicker">
+                <div class="datetimepicker-w-md">
                     <div class="input-group">
-                        <div class="input-affix-wrapper">
+                        <div class="input-affix">
                             <input type="text" class="input" value="2017-08-10" />
                             <span class="input-suffix input-suffix-focus clear">
                                 <i class="icon-closecircle"></i>
@@ -72,9 +72,9 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<div class="datetimepicker">
+<div class="datetimepicker-w-md">
     <div class="input-group">
-        <div class="input-affix-wrapper">
+        <div class="input-affix">
             <input type="text" class="input" value="2017-07-10" />
             <span class="input-suffix input-suffix-focus clear">
                 <i class="icon-closecircle"></i>
@@ -85,9 +85,9 @@
 </div>
 <div class="datetimepicker-range">
     <div class="datetimepicker-start">
-        <div class="datetimepicker">
+        <div class="datetimepicker-w-md">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <input type="text" class="input" value="2017-07-10" />
                     <span class="input-suffix input-suffix-focus clear">
                         <i class="icon-closecircle"></i>
@@ -99,9 +99,9 @@
     </div>
     <span class="datetimepicker-split">至</span>
     <div class="datetimepicker-end">
-        <div class="datetimepicker">
+        <div class="datetimepicker-w-md">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <input type="text" class="input" value="2017-08-10" />
                     <span class="input-suffix input-suffix-focus clear">
                         <i class="icon-closecircle"></i>
@@ -123,28 +123,58 @@
             <h3>两种宽度</h3>
         </div>
         <div>
-            datetimepicker 类对应的lg是 datetimepicker-w-lg <br />
-            此处的宽度不是扩展，所以可以直接替换
+            datetimepicker 默认根据父容器100%撑满 <br />
+            datetimepicker-w-md 类对应的宽为 155px ；datetimepicker-w-lg 类对应的宽为 210px <br />
+            由于这里的类并不是 datetimepicker 的扩展类，所以可以直接替换 <br />
+            时间段包裹在 datetimepicker-range 类里面，我们推荐 datetimepicker 使用一个带宽度的类（datetimepicker-w-md | datetimepicker-w-lg）
         </div>
     </section>
     <section class="code-box-demo">
-        <div class="datetimepicker-w-lg">
-            <div class="input-group">
-                <div class="input-affix-wrapper">
-                    <input type="text" class="input" value="2017-07-10" />
-                    <span class="input-suffix input-suffix-focus clear">
-                        <i class="icon-closecircle"></i>
-                    </span>
+        <div class="wrapper">
+            <div class="datetimepicker">
+                <div class="input-group">
+                    <div class="input-affix">
+                        <input type="text" class="input" value="2017-07-10" />
+                        <span class="input-suffix input-suffix-focus clear">
+                            <i class="icon-closecircle"></i>
+                        </span>
+                    </div>
+                    <span class="input-group-addon"><i class="icon-calendar"></i></span>
                 </div>
-                <span class="input-group-addon"><i class="icon-calendar"></i></span>
             </div>
-        </div><br/>
+        </div>
+        <div class="wrapper">
+            <div class="datetimepicker-w-md">
+                <div class="input-group">
+                    <div class="input-affix">
+                        <input type="text" class="input" value="2017-07-10" />
+                        <span class="input-suffix input-suffix-focus clear">
+                            <i class="icon-closecircle"></i>
+                        </span>
+                    </div>
+                    <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="datetimepicker-w-lg">
+                <div class="input-group">
+                    <div class="input-affix">
+                        <input type="text" class="input" value="2017-07-10 20:06:22" />
+                        <span class="input-suffix input-suffix-focus clear">
+                            <i class="icon-closecircle"></i>
+                        </span>
+                    </div>
+                    <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                </div>
+            </div>
+        </div>
         <div class="datetimepicker-range">
             <div class="datetimepicker-start">
                 <div class="datetimepicker-w-lg">
                     <div class="input-group">
-                        <div class="input-affix-wrapper">
-                            <input type="text" class="input" value="2017-07-10" />
+                        <div class="input-affix">
+                            <input type="text" class="input" value="2017-07-10 20:06:22" />
                             <span class="input-suffix input-suffix-focus clear">
                                 <i class="icon-closecircle"></i>
                             </span>
@@ -157,8 +187,8 @@
             <div class="datetimepicker-end">
                 <div class="datetimepicker-w-lg">
                     <div class="input-group">
-                        <div class="input-affix-wrapper">
-                            <input type="text" class="input" value="2017-08-10" />
+                        <div class="input-affix">
+                            <input type="text" class="input" value="2017-08-10 20:06:22" />
                             <span class="input-suffix input-suffix-focus clear">
                                 <i class="icon-closecircle"></i>
                             </span>
@@ -171,9 +201,31 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
+<div class="datetimepicker">
+    <div class="input-group">
+        <div class="input-affix">
+            <input type="text" class="input" value="2017-07-10" />
+            <span class="input-suffix input-suffix-focus clear">
+                <i class="icon-closecircle"></i>
+            </span>
+        </div>
+        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+    </div>
+</div>
+<div class="datetimepicker-w-md">
+    <div class="input-group">
+        <div class="input-affix">
+            <input type="text" class="input" value="2017-07-10" />
+            <span class="input-suffix input-suffix-focus clear">
+                <i class="icon-closecircle"></i>
+            </span>
+        </div>
+        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+    </div>
+</div>
 <div class="datetimepicker-w-lg">
     <div class="input-group">
-        <div class="input-affix-wrapper">
+        <div class="input-affix">
             <input type="text" class="input" value="2017-07-10 01:00:20" />
             <span class="input-suffix input-suffix-focus clear">
                 <i class="icon-closecircle"></i>
@@ -186,7 +238,7 @@
     <div class="datetimepicker-start">
         <div class="datetimepicker-w-lg">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <input type="text" class="input" value="2017-07-10 01:00:20" />
                     <span class="input-suffix input-suffix-focus clear">
                         <i class="icon-closecircle"></i>
@@ -200,7 +252,7 @@
     <div class="datetimepicker-end">
         <div class="datetimepicker-w-lg">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <input type="text" class="input" value="2017-08-10 01:00:20" />
                     <span class="input-suffix input-suffix-focus clear">
                         <i class="icon-closecircle"></i>
@@ -229,7 +281,7 @@
     <section class="code-box-demo" style="height:600px;">
         <div class="datetimepicker-w-lg">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <input type="text" class="input" value="2017-07-10 01:00:20" />
                     <span class="input-suffix input-suffix-focus clear">
                         <i class="icon-closecircle"></i>
@@ -301,7 +353,7 @@
             <div class="timewrap">
                 <a class="nowtime">当前</a>
                 <div class="input-time-wrap">
-                    <div class="input-time input-affix-wrapper">
+                    <div class="input-time input-affix">
                         <input type="text" class="input " readonly="readonly" value="19:25:23" />
                         <span class="input-suffix">
                             <i class="icon-clockcircleo"></i>
@@ -528,7 +580,7 @@
     <div class="timewrap">
         <a class="nowtime">当前</a>
         <div class="input-time-wrap">
-            <div class="input-time input-affix-wrapper">
+            <div class="input-time input-affix">
                 <input type="text" class="input " readonly="readonly" value="19:25:23" />
                 <span class="input-suffix">
                     <i class="icon-clockcircleo"></i>

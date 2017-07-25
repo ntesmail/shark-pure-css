@@ -12,26 +12,31 @@
   user-select: none;
   cursor: pointer;
   transition: $select-transition;
-  &:hover {
+  @include hover-focus {
     border-color: $select-border-color-hover;
+    outline: none;
   }
-
+  
+  &:active,
   &.active {
     border-color: $select-border-color-hover;
     @include box-shadow($select-box-shadow);
   }
 
   &.disabled {
-    background-color: $select-background-color-disabled;
-    cursor: not-allowed;
+    &,
+    &:focus,
     &:hover {
+      cursor: not-allowed;
+      color: $select-color;
       border-color: $select-border-color;
+      background-color: $select-background-color-disabled;
     }
   }
 
   // 带搜索下拉
   &.select-search {
-    .search-wrap {
+    .select-input-wrap {
       .select-input {
         width: 100%;
         border: none;
@@ -49,13 +54,13 @@
   }
   
   .select-placeholder,
-  .selected {
+  .select-selected {
     display: inline-block;
     max-width: 100%;
     @include text-truncate;
     vertical-align: middle;
   }
-  .selected {
+  .select-selected {
     color: $select-selected-color;
   }
 
@@ -90,12 +95,12 @@
   &:hover,
   &.active {
     &,  
-    .selected {
+    .select-selected {
       color: $select-noborder-selected-color;
     }
   }
   .select-placeholder,
-  .selected {
+  .select-selected {
     max-width: 90%;
     vertical-align: top;
   }
@@ -108,7 +113,7 @@
     right: 10px;
   }
   .select-placeholder,
-  .selected {
+  .select-selected {
     vertical-align: top;
   }
 }
@@ -171,7 +176,7 @@
   }
 }
 
-// 三种大小
+// 三种宽度
 .select-w-sm,
 .select-w-md,
 .select-w-lg {

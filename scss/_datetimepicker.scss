@@ -213,19 +213,23 @@
 	}
 }
 
-.datetimepicker,
-.datetimepicker-w-lg,
-.datetimepicker-range {
-  display: inline-block;
-}
 .datetimepicker {
-  width: $datetimepicker-width;
+	display: block;
+  width: 100%;
+}
+.datetimepicker-w-md,
+.datetimepicker-w-lg {
+	display: inline-block;
+}
+.datetimepicker-w-md {
+  width: $datetimepicker-w-md-width;
 }
 .datetimepicker-w-lg {
   width: $datetimepicker-w-lg-width;
 }
 .datetimepicker-range {
-  font-size: 0;
+	font-size: 0;
+	&,
   .datetimepicker-start,
   .datetimepicker-split,
   .datetimepicker-end {
