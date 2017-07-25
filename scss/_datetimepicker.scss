@@ -1,6 +1,6 @@
 .calendar {
 	background-color: #ffffff;
-	z-index: 999999;
+	z-index: $zindex-datetimepicker + 1;
 	width: ((22)*7+6*2*7) + px;
 	box-sizing: border-box;
 	user-select: none;
@@ -125,7 +125,7 @@
 	position: absolute;
 	display: none;
 	background-color: #ffffff;
-	z-index: 9999999;
+	z-index: $zindex-datetimepicker + 2;
 	width: 157px;
 	box-sizing: border-box;
 	user-select: none;
@@ -182,6 +182,7 @@
 	padding: $pickercontainer-padding;
 	border-radius: $pickercontainer-border-radius;
 	@include box-shadow($pickercontainer-box-shadow);
+	z-index: $zindex-datetimepicker;
 	.timewrap{
 		padding: $calendar-timewrap-padding;
 		.nowtime{

@@ -1,48 +1,49 @@
 //List Groups
-.list-group {
+.list {
   &,
   &.tree{
     position: absolute;
     display: none;
     padding: 0;
-    font-size: $list-group-font-size;
-    color: $list-group-color;
+    font-size: $list-font-size;
+    color: $list-color;
     text-align: left;
     cursor: pointer;
-    background-color: $list-group-background-color;
+    background-color: $list-background-color;
     background-clip: padding-box;
-    border: 1px solid $list-group-border-color;
-    box-shadow: $list-group-box-shadow;
-    border-radius: $list-group-border-radius;
-    max-height: $list-group-item-height * 7;
+    border: 1px solid $list-border-color;
+    box-shadow: $list-box-shadow;
+    border-radius: $list-border-radius;
+    max-height: $list-item-height * 7;
     overflow-y: auto;
     user-select: none;
     @include scrollbar();
+    z-index: $zindex-list;
   }
   
   .check-all-warp,
-  .list-group-item,
+  .list-item,
   &.tree li {
     position: relative;
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0 $list-group-item-padding-x;
-    height: $list-group-item-height;
-    line-height: $list-group-item-height;
+    padding: 0 $list-item-padding-x;
+    height: $list-item-height;
+    line-height: $list-item-height;
     white-space: nowrap;
     transition: all .3s ease-out;
     &:hover {
-      background: $list-group-item-background-color-hover;
+      background: $list-item-background-color-hover;
     }
-    &.list-group-item-selected {
-      color: $list-group-item-color-active;
+    &.list-item-selected {
+      color: $list-item-color-active;
     }
-    &.list-group-item-disabled {
+    &.list-item-disabled {
       &,
       * {
         cursor: not-allowed;
-        color: $list-group-item-color-disabled;
+        color: $list-item-color-disabled;
       }
     }
     span {
@@ -54,20 +55,20 @@
   .check-all-warp,
   &.tree li {
     .tree-icon {
-      line-height: $list-group-item-height;
+      line-height: $list-item-height;
     }
     .tree-node {
       display: block;
-      font-size: $list-group-font-size;
-      height: $list-group-item-height;
-      line-height: $list-group-item-height;
+      font-size: $list-font-size;
+      height: $list-item-height;
+      line-height: $list-item-height;
       padding: 0;
       @include text-truncate;
       &:hover {
         background-color: transparent;
       }
       &.tree-node-selected {
-        color: $list-group-item-color-active;
+        color: $list-item-color-active;
         &,
         &:hover {
           background-color: transparent;

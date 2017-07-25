@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
-import { CssListgroupComponent } from "./listgroup.component";
+import { CssListComponent } from "./list.component";
 import { SharedModule } from "../shared/shared.module";
 
 // 定义常量 路由
 const routes: any = [
     {
-        path: 'csslistgroup',
-        component: CssListgroupComponent
+        path: 'csslist',
+        component: CssListComponent
     }
 ];
 
@@ -16,6 +16,6 @@ const routes: any = [
         RouterModule.forChild(routes),
         SharedModule
     ],
-    declarations: [CssListgroupComponent]
+    declarations: [CssListComponent]
 })
-export class CssListgroupModule { }
+export class CssListModule { }
