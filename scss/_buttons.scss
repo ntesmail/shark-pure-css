@@ -10,7 +10,7 @@
   user-select: none;
   border: 1px solid transparent;
   background-image: none;
-  @include button-size($btn-height, $btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include button-size($btn-min-width, $btn-height, $btn-padding-y, $btn-padding-x, $btn-font-size);
   @include transition($btn-transition);
   box-shadow: none;
 
@@ -24,30 +24,45 @@
   }
   
   @include button-variant-disabled($btn-color-disabled, $btn-border-color-disabled, $btn-background-color-disabled);
-
-  // Small Button
-  &.btn-sm {
-    @include button-size($btn-height-sm, $btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius);
-    // Button with icon
-    i[class*="icon-"] {
-      @include iconfont-size-under-12px(10px);
-      &.btn-icon-left {
-        margin-right: 2px;
-      }
-      &.btn-icon-right {
-        margin-left: 2px;
-      }
-    }
-  }
   
   // Button with icon
   i[class*="icon-"] {
     font-size: 12px;
     &.btn-icon-left {
-      margin-right: 4px;
+      margin-right: 5px;
     }
     &.btn-icon-right {
-      margin-left: 4px;
+      margin-left: 5px;
+    }
+  }
+
+  // Small Button
+  &.btn-sm {
+    @include button-size($btn-min-width-sm, $btn-height-sm, $btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm);
+    // Button with icon
+    i[class*="icon-"] {
+      @include iconfont-size-under-12px(10px);
+      &.btn-icon-left {
+        margin-right: 3px;
+      }
+      &.btn-icon-right {
+        margin-left: 3px;
+      }
+    }
+  }
+  
+  // Large Button
+  &.btn-lg {
+    @include button-size($btn-min-width-lg, $btn-height-lg, $btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg);
+    // Button with icon
+    i[class*="icon-"] {
+      font-size: 14px;
+      &.btn-icon-left {
+        margin-right: 7px;
+      }
+      &.btn-icon-right {
+        margin-left: 7px;
+      }
     }
   }
 
@@ -99,6 +114,7 @@ a.btn {
   color: $link-color;
   border-radius: 0;
   border-color: transparent;
+  min-width: 0;
 
   &,
   &:active,

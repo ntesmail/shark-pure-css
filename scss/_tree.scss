@@ -13,6 +13,7 @@
   li {
     margin: 8px 0;
     outline: 0;
+    line-height: 1.5;
     ul {
       padding-left: $tree-icon-width * 2;
       display: none;
@@ -34,14 +35,14 @@
     font-size: $tree-font-size;
     vertical-align: middle;
     position: relative;
+    line-height: 25px;
   }
 
   .tree-node-name {
-    // display: block;
     color: $tree-color;
     overflow: hidden;
     font-size: $tree-font-size;
-    line-height: 21px;
+    line-height: 25px;
     padding: 0 5px;
     border-radius: 2px;
     transition: all .3s;
