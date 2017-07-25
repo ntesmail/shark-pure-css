@@ -10,6 +10,7 @@
     <ul>
         <li>1. 可与 shark-angularX 组件一起实现树形</li>
         <li>2. 对是否需要使用多选，全选，级联等情况具体看 shark-angularX 配置项</li>
+        <li>3. tree-icon 上的禁用状态用 tree-icon-disabled 类； tree-node 上的选中状态用 tree-node-selected 类，禁用状态用 tree-node-disabled 类</li>
     </ul>
 </div>
 
@@ -32,35 +33,35 @@
         <div class="tree">
             <ul>
                 <li>
-                    <span class="tree-switcher tree-icon tree-icon-down"></span>
-                    <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
-                    <span class="tree-node-name">所有组件</span>
+                    <span class="tree-icon tree-icon-down"></span>
+                    <span class="tree-icon tree-icon-check-minus"></span>
+                    <span class="tree-node">所有组件</span>
                     <ul class="tree-open">
                         <li>
-                            <span class="tree-switcher tree-icon tree-icon-right"></span>
-                            <span class="tree-checkbox tree-icon tree-icon-check"></span>
-                            <span class="tree-node-name">autocomplete组件</span>
+                            <span class="tree-icon tree-icon-right"></span>
+                            <span class="tree-icon tree-icon-check"></span>
+                            <span class="tree-node">autocomplete组件</span>
                             <ul class="tree-open">
-                                <li><span class="tree-checkbox tree-icon tree-icon-check"></span>
-                                    <span class="tree-node-name">autocomplete组件1</span>
+                                <li><span class="tree-icon tree-icon-check"></span>
+                                    <span class="tree-node">autocomplete组件1</span>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <span class="tree-checkbox tree-icon tree-icon-check"></span>
-                            <span class="tree-node-name">dropdown组件</span>
+                            <span class="tree-icon tree-icon-check"></span>
+                            <span class="tree-node">dropdown组件</span>
                         </li>
                         <li>
-                            <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                            <span class="tree-node-name tree-node-selected">fileupload组件</span>
+                            <span class="tree-icon tree-icon-check-empty"></span>
+                            <span class="tree-node tree-node-selected">fileupload组件</span>
                         </li>
                         <li>
-                            <span class="tree-checkbox tree-icon tree-icon-check-empty disabled"></span>
-                            <span class="tree-node-name disabled">tree组件</span>
+                            <span class="tree-icon tree-icon-check-empty tree-icon-disabled"></span>
+                            <span class="tree-node tree-node-disabled">tree组件</span>
                         </li>
                         <li>
-                            <span class="tree-checkbox tree-icon tree-icon-check disabled"></span>
-                            <span class="tree-node-name tree-node-selected disabled">select组件</span>
+                            <span class="tree-icon tree-icon-check tree-icon-disabled"></span>
+                            <span class="tree-node tree-node-selected tree-node-disabled">select组件</span>
                         </li>
                     </ul>
                 </li>
@@ -72,35 +73,35 @@
 <div class="tree">
     <ul>
         <li>
-            <span class="tree-switcher tree-icon tree-icon-down"></span>
-            <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
-            <span class="tree-node-name">所有组件</span>
+            <span class="tree-icon tree-icon-down"></span>
+            <span class="tree-icon tree-icon-check-minus"></span>
+            <span class="tree-node">所有组件</span>
             <ul class="tree-open">
                 <li>
-                    <span class="tree-switcher tree-icon tree-icon-right"></span>
-                    <span class="tree-checkbox tree-icon tree-icon-check"></span>
-                    <span class="tree-node-name">autocomplete组件</span>
+                    <span class="tree-icon tree-icon-right"></span>
+                    <span class="tree-icon tree-icon-check"></span>
+                    <span class="tree-node">autocomplete组件</span>
                     <ul class="tree-open">
-                        <li><span class="tree-checkbox tree-icon tree-icon-check"></span>
-                            <span class="tree-node-name">autocomplete组件1</span>
+                        <li><span class="tree-icon tree-icon-check"></span>
+                            <span class="tree-node">autocomplete组件1</span>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <span class="tree-checkbox tree-icon tree-icon-check"></span>
-                    <span class="tree-node-name">dropdown组件</span>
+                    <span class="tree-icon tree-icon-check"></span>
+                    <span class="tree-node">dropdown组件</span>
                 </li>
                 <li>
-                    <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                    <span class="tree-node-name tree-node-selected">fileupload组件</span>
+                    <span class="tree-icon tree-icon-check-empty"></span>
+                    <span class="tree-node tree-node-selected">fileupload组件</span>
                 </li>
                 <li>
-                    <span class="tree-checkbox tree-icon tree-icon-check-empty disabled"></span>
-                    <span class="tree-node-name disabled">tree组件</span>
+                    <span class="tree-icon tree-icon-check-empty tree-icon-disabled"></span>
+                    <span class="tree-node tree-node-disabled">tree组件</span>
                 </li>
                 <li>
-                    <span class="tree-checkbox tree-icon tree-icon-check disabled"></span>
-                    <span class="tree-node-name tree-node-selected disabled">select组件</span>
+                    <span class="tree-icon tree-icon-check tree-icon-disabled"></span>
+                    <span class="tree-node tree-node-selected tree-node-disabled">select组件</span>
                 </li>
             </ul>
         </li>

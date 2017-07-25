@@ -27,7 +27,8 @@
         <div>
             宽度需与 select 等宽，最多展示七项，超过七项会出现滚动条，left top width 通过js计算，内联添加<br />
             需要添加的类为 group-list 跟 tree 结构结合使用时需要增加一个 tree 类以获得更好的样式<br />
-            被选中的项在 li 上增加 active 类获得选中样式，disabled 状态时在 li 上增加 disabled 类
+            由于list-group 里面和 tree 是一样的结构，所以这里的选中和禁用状态跟 tree 保持一致<br />
+            tree-icon 上的禁用状态用 tree-icon-disabled 类； tree-node 上的选中状态用 tree-node-selected 类，禁用状态用 tree-node-disabled 类
         </div>
     </section>
     <section class="code-box-demo" style="height:410px">
@@ -37,29 +38,29 @@
         <div class="tree list-group show" style="left: 20px; top: 75px; width: 80px;">
             <div class="tree">
                 <ul>
-                    <li class="active">
-                        <span class="tree-node-name">Top1</span>
+                    <li>
+                        <span class="tree-node tree-node-selected">Top1</span>
                     </li>
                     <li>
-                        <span class="tree-node-name">Top2</span>
+                        <span class="tree-node">Top2</span>
                     </li>
                     <li>
-                        <span class="tree-node-name">Top3</span>
+                        <span class="tree-node">Top3</span>
                     </li>
                     <li>
-                        <span class="tree-node-name">Top4</span>
-                    </li>
-                    <li class="disabled">
-                        <span class="tree-node-name">Top5</span>
+                        <span class="tree-node">Top4</span>
                     </li>
                     <li>
-                        <span class="tree-node-name">Top6</span>
+                        <span class="tree-node tree-node-disabled">Top5</span>
                     </li>
                     <li>
-                        <span class="tree-node-name">Top7</span>
+                        <span class="tree-node">Top6</span>
                     </li>
                     <li>
-                        <span class="tree-node-name">Top8</span>
+                        <span class="tree-node">Top7</span>
+                    </li>
+                    <li>
+                        <span class="tree-node">Top8</span>
                     </li>
                 </ul>
             </div>
@@ -70,29 +71,29 @@
 <div class="tree list-group">
     <div class="tree">
         <ul>
-            <li class="active">
-                <span class="tree-node-name">Top1</span>
+            <li>
+                <span class="tree-node tree-node-selected">Top1</span>
             </li>
             <li>
-                <span class="tree-node-name">Top2</span>
+                <span class="tree-node">Top2</span>
             </li>
             <li>
-                <span class="tree-node-name">Top3</span>
+                <span class="tree-node">Top3</span>
             </li>
             <li>
-                <span class="tree-node-name">Top4</span>
-            </li>
-            <li class="disabled">
-                <span class="tree-node-name">Top5</span>
+                <span class="tree-node">Top4</span>
             </li>
             <li>
-                <span class="tree-node-name">Top6</span>
+                <span class="tree-node tree-node-disabled">Top5</span>
             </li>
             <li>
-                <span class="tree-node-name">Top7</span>
+                <span class="tree-node">Top6</span>
             </li>
             <li>
-                <span class="tree-node-name">Top8</span>
+                <span class="tree-node">Top7</span>
+            </li>
+            <li>
+                <span class="tree-node">Top8</span>
             </li>
         </ul>
     </div>
@@ -109,8 +110,9 @@
         </div>
         <div>
             与 tree 结合，可多选，可全选<br /> 
-            active 状态和 disabled 状态跟普通下拉相同的方式<br /> 
-            如果存在全选情况，需要 check-all-warp 包裹，active 和 disabled 也是加在这个dmo上
+            选中和禁用状态跟 tree 保持一致<br /> 
+            如果存在全选情况，需要 check-all-warp 包裹<br />
+            tree-icon 上的禁用状态用 tree-icon-disabled 类； tree-node 上的选中状态用 tree-node-selected 类，禁用状态用 tree-node-disabled 类
         </div>
     </section>
     <section class="code-box-demo" style="height:370px">
@@ -123,30 +125,30 @@
         </div>
         <div class="tree list-group" style="left: 20px; top: 75px; width: 240px; display:block;">
             <div class="check-all-warp">
-                <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
-                <span class="tree-node-name">全选</span>
+                <span class="tree-icon tree-icon-check-minus"></span>
+                <span class="tree-node">全选</span>
             </div>
             <div class="tree">
                 <ul>
                     <li>
-                        <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
-                        <span class="tree-node-name">哈哈1</span>
-                    </li>
-                    <li class="active">
-                        <span class="tree-checkbox tree-icon tree-icon-check"></span>
-                        <span class="tree-node-name">哈哈2</span>
+                        <span class="tree-icon tree-icon-check-minus"></span>
+                        <span class="tree-node">哈哈1</span>
                     </li>
                     <li>
-                        <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                        <span class="tree-node-name">哈哈3</span>
-                    </li>
-                    <li class="disabled">
-                        <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                        <span class="tree-node-name">哈哈4</span>
+                        <span class="tree-icon tree-icon-check"></span>
+                        <span class="tree-node tree-node-selected">哈哈2</span>
                     </li>
                     <li>
-                        <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                        <span class="tree-node-name">哈哈5</span>
+                        <span class="tree-icon tree-icon-check-empty"></span>
+                        <span class="tree-node">哈哈3</span>
+                    </li>
+                    <li>
+                        <span class="tree-icon tree-icon-check-empty tree-icon-disabled"></span>
+                        <span class="tree-node tree-node-disabled">哈哈4</span>
+                    </li>
+                    <li>
+                        <span class="tree-icon tree-icon-check-empty"></span>
+                        <span class="tree-node">哈哈5</span>
                     </li>
                 </ul>
             </div>
@@ -157,30 +159,30 @@
 
 <div class="tree list-group">
     <div class="check-all-warp">
-        <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
-        <span class="tree-node-name">全选</span>
+        <span class="tree-icon tree-icon-check-minus"></span>
+        <span class="tree-node">全选</span>
     </div>
     <div class="tree">
         <ul>
             <li>
-                <span class="tree-checkbox tree-icon tree-icon-check-minus"></span>
-                <span class="tree-node-name">哈哈1</span>
-            </li>
-            <li class="active">
-                <span class="tree-checkbox tree-icon tree-icon-check"></span>
-                <span class="tree-node-name">哈哈2</span>
+                <span class="tree-icon tree-icon-check-minus"></span>
+                <span class="tree-node">哈哈1</span>
             </li>
             <li>
-                <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                <span class="tree-node-name">哈哈3</span>
-            </li>
-            <li class="disabled">
-                <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                <span class="tree-node-name">哈哈4</span>
+                <span class="tree-icon tree-icon-check"></span>
+                <span class="tree-node tree-node-selected">哈哈2</span>
             </li>
             <li>
-                <span class="tree-checkbox tree-icon tree-icon-check-empty"></span>
-                <span class="tree-node-name">哈哈5</span>
+                <span class="tree-icon tree-icon-check-empty"></span>
+                <span class="tree-node">哈哈3</span>
+            </li>
+            <li>
+                <span class="tree-icon tree-icon-check-empty tree-icon-disabled"></span>
+                <span class="tree-node tree-node-disabled">哈哈4</span>
+            </li>
+            <li>
+                <span class="tree-icon tree-icon-check-empty"></span>
+                <span class="tree-node">哈哈5</span>
             </li>
         </ul>
     </div>
@@ -197,7 +199,7 @@
         </div>
         <div>
             下拉可出现多层级情况，每个层级的定位是js做的<br />
-            active 状态和 disable 状态都是加在 li 上
+            被选中的项在 li 上增加 list-group-item-selected 类获得选中样式，禁用状态时在 li 上增加 list-group-item-disabled 类
         </div>
     </section>
     <section class="code-box-demo" style="height:290px">
@@ -209,13 +211,13 @@
                 <li class="list-group-item" value="">
                     <span>请选择</span>
                 </li>
-                <li class="list-group-item active" value="1">
+                <li class="list-group-item list-group-item-selected" value="1">
                     <span>哈哈1</span>
                 </li>
                 <li class="list-group-item" value="2">
                     <span>哈哈2</span>
                 </li>
-                <li class="list-group-item disabled" value="3">
+                <li class="list-group-item list-group-item-disabled" value="3">
                     <span>哈哈3</span>
                 </li>
             </ul>
@@ -225,7 +227,7 @@
                 <li class="list-group-item" value="">
                     <span>请选择</span>
                 </li>
-                <li class="list-group-item active" value="1">
+                <li class="list-group-item list-group-item-selected" value="1">
                     <span>哈哈1-1</span>
                 </li>
             </ul> 
@@ -235,26 +237,26 @@
         <div transfer>
 <div class="list-group">
     <ul>
-        <li class="list-group-item" value="">
+        <li class="list-group-item">
             <span>请选择</span>
         </li>
-        <li class="list-group-item active" value="1">
+        <li class="list-group-item list-group-item-selected">
             <span>哈哈1</span>
         </li>
-        <li class="list-group-item" value="2">
+        <li class="list-group-item">
             <span>哈哈2</span>
         </li>
-        <li class="list-group-item disabled" value="3">
+        <li class="list-group-item list-group-item-disabled">
             <span>哈哈3</span>
         </li>
     </ul>
 </div>
 <div class="list-group">
     <ul>
-        <li class="list-group-item" value="">
+        <li class="list-group-item">
             <span>请选择</span>
         </li>
-        <li class="list-group-item active" value="1">
+        <li class="list-group-item list-group-item-selected">
             <span>哈哈1-1</span>
         </li>
     </ul> 

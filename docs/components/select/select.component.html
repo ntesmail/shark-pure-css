@@ -51,18 +51,18 @@
         </div>
         <div>
             下拉框被点击时增加 active 类，可以增加边框以及阴影样式<br/>
-            被选中的值被 selected 类包裹，会有更好的样式
+            被选中的值被 select-selected 类包裹，会有更好的样式
         </div>
     </section>
     <section class="code-box-demo">
         <div class="select select-single active">
-            <span class="selected">已选中2</span>
+            <span class="select-selected">已选中2</span>
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
 <div class="select select-single active">
-    <span class="selected">已选中2</span>
+    <span class="select-selected">已选中2</span>
 </div>
         </div>
     </section>
@@ -80,13 +80,13 @@
     </section>
     <section class="code-box-demo">
         <div class="select select-noborder active">
-            <span class="selected">已选中2</span>
+            <span class="select-selected">已选中2</span>
         </div>
     </section>
     <section class="highlight-wrapper">
         <div transfer>
 <div class="select select-noborder active">
-    <span class="selected">已选中2</span>
+    <span class="select-selected">已选中2</span>
 </div>
         </div>
     </section>
@@ -104,7 +104,7 @@
     </section>
     <section class="code-box-demo">
         <div class="select select-single select-search">
-            <div class="search-wrap">
+            <div class="select-input-wrap">
                 <input class="select-input" type="text" placeholder="请选择" />
             </div>
         </div>
@@ -112,7 +112,7 @@
     <section class="highlight-wrapper">
         <div transfer>
 <div class="select select-single select-search">
-    <div class="search-wrap">
+    <div class="select-input-wrap">
         <input class="select-input" type="text" placeholder="请选择" />
     </div>
 </div>
@@ -170,7 +170,7 @@
                 <li class="select-item">选项2<i class="icon-close"></i></li>
                 <li class="select-item">选项3<i class="icon-close"></i></li>
                 <li class="select-item-search">
-                    <div class="search-wrap">
+                    <div class="select-input-wrap">
                         <input class="select-input" type="text" placeholder="请选择" />
                     </div>
                 </li>
@@ -185,7 +185,7 @@
         <li class="select-item">选项2<i class="icon-close"></i></li>
         <li class="select-item">选项3<i class="icon-close"></i></li>
         <li class="select-item-search">
-            <div class="search-wrap">
+            <div class="select-input-wrap">
                 <input class="select-input" type="text" placeholder="请选择" />
             </div>
         </li>
@@ -226,7 +226,8 @@
             <h3>三种宽度</h3>
         </div>
         <div>
-            三种宽度：80px / 155px / 240px 对应的类为 select-w-sm / select-w-md / select-w-lg
+            默认宽度是根据父容器100%撑满<br />
+            扩展三种宽度：80px / 155px / 240px 对应的类为 select-w-sm / select-w-md / select-w-lg
         </div>
     </section>
     <section class="code-box-demo">

@@ -4,6 +4,7 @@
   padding: 8px;
   font-size: 0;
   user-select: none;
+  background-color: $tree-background-color;
 
   * {
     padding: 0;
@@ -24,7 +25,7 @@
   }
 
   .tree-icon,
-  .tree-node-name {
+  .tree-node {
     display: inline-block;
     cursor: pointer;
   }
@@ -38,7 +39,7 @@
     line-height: 25px;
   }
 
-  .tree-node-name {
+  .tree-node {
     color: $tree-color;
     overflow: hidden;
     font-size: $tree-font-size;
@@ -51,14 +52,21 @@
     }
   }
 
-  .tree-icon.disabled,
-  .tree-node-name.disabled {
+  .tree-icon.tree-icon-disabled,
+  .tree-node.tree-node-disabled {
     color: $tree-disable-color;
     cursor: not-allowed;
     &:hover {
-      background-color: #fff;
+      background-color: transparent;
     }
     &.tree-node-selected {
+      background-color: $tree-selected-bg;
+    }
+  }
+
+  .tree-node-selected {
+    &,
+    &:hover {
       background-color: $tree-selected-bg;
     }
   }
@@ -91,13 +99,6 @@
   .tree-icon-down {
     &:before {
       @include iconfont-font("\EE4E");
-    }
-  }
-
-  .tree-node-selected {
-    background-color: $tree-selected-bg;
-    &:hover {
-      background-color: $tree-selected-bg;
     }
   }
 }

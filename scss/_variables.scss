@@ -377,6 +377,7 @@ $modal-md: 500px !default;
 $modal-sm: 300px !default;
 $modal-transition: transform .3s ease-out !default;
 // tree
+$tree-background-color: #fff !default;
 $tree-font-size: 14px !default; //字体大小
 $tree-icon-size: 14px !default; //图标宽度
 $tree-icon-width: 18px !default;
@@ -487,7 +488,7 @@ $breadcrumb-link-hover-color:#1B9AFE !default;
 $breadcrumb-tag-last-color:#666 !default;
 $breadcrumb-separator-padding:0 8px !default;
 //datetimepicker
-$datetimepicker-width: 155px !default;
+$datetimepicker-w-md-width: 155px !default;
 $datetimepicker-w-lg-width: 210px !default;
 $pickercontainer-color: $gray-800 !default; // #333
 $pickercontainer-border-color: $gray-300 !default; // #d9d9d9
@@ -575,8 +576,8 @@ $upload-file-btn-border-style: solid !default;
 $upload-img-btn-bg-color: #fafafa !default;
 $upload-img-btn-active-color: #3187F6 !default;
 $upload-img-btn-border-style: dashed !default;
-$upload-file-status-succeed-clor: #1B9AFE !default;
-$upload-file-status-failed-clor: #E6412C !default;
+$upload-file-finished-color: #1B9AFE !default;
+$upload-file-error-color: #E6412C !default;
 $download-link-color: #009BFD !default;
 //tag
 $tag-line-height:18px !default;

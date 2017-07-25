@@ -35,10 +35,10 @@
     &:hover {
       background: $list-group-item-background-color-hover;
     }
-    &.active {
+    &.list-group-item-selected {
       color: $list-group-item-color-active;
     }
-    &.disabled {
+    &.list-group-item-disabled {
       &,
       * {
         cursor: not-allowed;
@@ -53,12 +53,10 @@
   
   .check-all-warp,
   &.tree li {
-    &.active {
-      .tree-node-name {
-        color: $list-group-item-color-active;
-      }
+    .tree-icon {
+      line-height: $list-group-item-height;
     }
-    .tree-node-name {
+    .tree-node {
       display: block;
       font-size: $list-group-font-size;
       height: $list-group-item-height;
@@ -69,7 +67,8 @@
         background-color: transparent;
       }
       &.tree-node-selected {
-        background-color: transparent;
+        color: $list-group-item-color-active;
+        &,
         &:hover {
           background-color: transparent;
         }

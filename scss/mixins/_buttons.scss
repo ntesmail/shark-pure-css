@@ -23,7 +23,8 @@
   &.disabled,
   &:disabled {
     &,
-    &:hover{
+    &:hover,
+    &:focus {
       cursor: not-allowed;
       color: $color;
       border-color: $border-color;

@@ -35,18 +35,23 @@ $upload-img-height: 100px;
       color: $upload-btn-color;
       font-size: $upload-font-size;
       margin-right: 5px;
+      display: none;
     }
   }
-  &.upload-file-status-succeed {
+  &.upload-file-finished {
     .upload-filename {
-      color: $upload-file-status-succeed-clor;
+      color: $upload-file-finished-color;
+      .icon-link{
+        display: inline-block;
+      }
     }
   }
-  &.upload-file-status-failed {
+  &.upload-file-error {
     .upload-filename {
-      color: $upload-file-status-failed-clor;
+      color: $upload-file-error-color;
       .icon-link {
-        color: $upload-file-status-failed-clor;
+        color: $upload-file-error-color;
+        display: inline-block;        
       }
     }
   }
