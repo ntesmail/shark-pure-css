@@ -59,7 +59,7 @@
     @include text-truncate;
     vertical-align: middle;
   }
-  &.select-selected {
+  &.selected {
     .select-name {
       color: $select-selected-color;
     }
