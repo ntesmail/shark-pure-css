@@ -214,17 +214,17 @@
 }
 
 .pagination {
-  &.mini .pagination-item {
+  &.pagination-sm .pagination-item {
     border: 0;
     margin: 0;
     min-width: 20px;
     height: 20px;
     line-height: 20px;
   }
-  &.mini .pagination-first,
-  &.mini .pagination-last,
-  &.mini .pagination-prev,
-  &.mini .pagination-next {
+  &.pagination-sm .pagination-first,
+  &.pagination-sm .pagination-last,
+  &.pagination-sm .pagination-prev,
+  &.pagination-sm .pagination-next {
     margin: 0;
     min-width: 20px;
     height: 20px;
@@ -237,12 +237,12 @@
       }
     }
   }
-  &.mini .pagination-jump-prev,
-  &.mini .pagination-jump-next {
+  &.pagination-sm .pagination-jump-prev,
+  &.pagination-sm .pagination-jump-next {
     height: 20px;
     line-height: 20px;
   }
-  &.mini .pagination-quick-jumper {
+  &.pagination-sm .pagination-quick-jumper {
     height: 20px;
     line-height: 20px;
     input {
@@ -250,7 +250,7 @@
       height:20px;
     }
   }
-  &.mini .pagination-size-changer {
+  &.pagination-sm .pagination-size-changer {
     .select {
       width: 82px;
       height: 20px;
