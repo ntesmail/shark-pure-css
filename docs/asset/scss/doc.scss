@@ -73,3 +73,16 @@ section {
 .icon_lists li:hover {
   background-color: #f4f4f4;
 }
+
+.token.tag {
+  display: inline;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0); 
+  font-size: 12px;
+  margin: 0;
+  cursor: auto;
+  white-space: pre;
+}
