@@ -53,15 +53,16 @@
     }
   }
   
-  .select-placeholder,
-  .select-selected {
+  .select-name {
     display: inline-block;
     max-width: 100%;
     @include text-truncate;
     vertical-align: middle;
   }
-  .select-selected {
-    color: $select-selected-color;
+  &.select-selected {
+    .select-name {
+      color: $select-selected-color;
+    }
   }
 
 }
@@ -94,13 +95,9 @@
   }
   &:hover,
   &.active {
-    &,  
-    .select-selected {
-      color: $select-noborder-selected-color;
-    }
+    color: $select-noborder-selected-color;
   }
-  .select-placeholder,
-  .select-selected {
+  .select-name, {
     max-width: 90%;
     vertical-align: top;
   }
@@ -112,8 +109,7 @@
     @extend %select-caret;
     right: 10px;
   }
-  .select-placeholder,
-  .select-selected {
+  .select-name {
     vertical-align: top;
   }
 }

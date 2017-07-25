@@ -21,7 +21,7 @@
     z-index: $zindex-list;
   }
   
-  .check-all-warp,
+  .check-all,
   .list-item,
   &.tree li {
     position: relative;
@@ -52,7 +52,7 @@
     }
   }
   
-  .check-all-warp,
+  .check-all,
   &.tree li {
     .tree-icon {
       line-height: $list-item-height;
