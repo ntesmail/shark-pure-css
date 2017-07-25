@@ -44,7 +44,7 @@
           color: $steps-done-color;
         }
       }
-      &.steps-status-process {
+      &.steps-processing {
         .steps-head-inner {
           border-color: $steps-primary-color;
           background-color: $steps-primary-color;
@@ -60,7 +60,7 @@
           background-color: #e9e9e9
         }
       }
-      &.steps-status-finish {
+      &.steps-finished {
         .steps-head-inner {
           border-color: $steps-primary-color;
           background-color: #fff;
@@ -81,7 +81,7 @@
           color: rgba(0, 0, 0, .43)
         }
       }
-      &.steps-status-error {
+      &.steps-error {
         .steps-head-inner {
           border-color: #f04134;
           background-color: #fff;
