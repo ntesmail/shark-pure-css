@@ -35,6 +35,21 @@
   &:focus:hover {
     box-shadow: none;
   }
+  &.checked {
+    border-color: $switch-primary-color;
+    background-color: $switch-primary-color;
+    .switch-inner {
+      margin-left: 6px;
+      margin-right: 24px;
+    }
+    &:after {
+      left: 100%;
+      margin-left: -19px;
+    }
+    &:active:after {
+      margin-left: -25px;
+    }
+  }
 }
 
 .switch-inner {
@@ -45,7 +60,7 @@
   display: block;
 }
 
-.switch-small {
+.switch-sm {
   height: 14px;
   min-width: 28px;
   line-height: 12px;
@@ -64,7 +79,7 @@
   }
 }
 
-.switch-small.switch-checked {
+.switch-sm.checked {
   &:after {
     left: 100%;
     margin-left: -12.5px;
@@ -75,25 +90,11 @@
   }
 }
 
-.switch-small:active.switch-checked:after {
+.switch-small:active.checked:after {
   margin-left: -16.5px;
 }
 
-.switch-checked {
-  border-color: $switch-primary-color;
-  background-color: $switch-primary-color;
-  .switch-inner {
-    margin-left: 6px;
-    margin-right: 24px;
-  }
-  &:after {
-    left: 100%;
-    margin-left: -19px;
-  }
-  &:active:after {
-    margin-left: -25px;
-  }
-}
+
 
 .switch-disabled {
   cursor: not-allowed;
