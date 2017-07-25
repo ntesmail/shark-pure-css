@@ -26,7 +26,7 @@ import { CssUploadModule } from './upload/upload.module';
 import { CssIconfontModule } from './iconfont/iconfont.module';
 import { CssFunctionModule } from './function/function.module';
 import { CssTagModule } from './tag/tag.module';
-import { CssListgroupModule } from './listgroup/listgroup.module';
+import { CssListModule } from './list/list.module';
 import { CssGridModule } from './grid/grid.module';
 import { CssDropdownModule } from './dropdown/dropdown.module';
 @NgModule({
@@ -54,7 +54,7 @@ import { CssDropdownModule } from './dropdown/dropdown.module';
                 CssUploadModule,
                 CssIconfontModule,
                 CssTagModule,
-                CssListgroupModule,
+                CssListModule,
                 CssFunctionModule,
                 CssGridModule,
                 CssDropdownModule

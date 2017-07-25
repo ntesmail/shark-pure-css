@@ -1,5 +1,5 @@
 <div class="page-header">
-    <h1>List Group 下拉选项</h1>
+    <h1>List 下拉选项</h1>
 </div>
 
 <!--part1 说明-->
@@ -26,8 +26,8 @@
         </div>
         <div>
             宽度需与 select 等宽，最多展示七项，超过七项会出现滚动条，left top width 通过js计算，内联添加<br />
-            需要添加的类为 group-list 跟 tree 结构结合使用时需要增加一个 tree 类以获得更好的样式<br />
-            由于list-group 里面和 tree 是一样的结构，所以这里的选中和禁用状态跟 tree 保持一致<br />
+            需要添加的类为 list 跟 tree 结构结合使用时需要增加一个 tree 类以获得更好的样式<br />
+            由于list 里面和 tree 是一样的结构，所以这里的选中和禁用状态跟 tree 保持一致<br />
             tree-icon 上的禁用状态用 tree-icon-disabled 类； tree-node 上的选中状态用 tree-node-selected 类，禁用状态用 tree-node-disabled 类
         </div>
     </section>
@@ -35,7 +35,7 @@
         <div class="select select-noborder select-w-sm">
             <span>请选择</span>
         </div>
-        <div class="tree list-group show" style="left: 20px; top: 75px; width: 80px;">
+        <div class="tree list show" style="left: 20px; top: 75px; width: 80px;">
             <div class="tree">
                 <ul>
                     <li>
@@ -68,7 +68,7 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<div class="tree list-group">
+<div class="tree list">
     <div class="tree">
         <ul>
             <li>
@@ -123,7 +123,7 @@
                 <li class="select-item">选项3<i class="icon-close"></i></li>
             </ul>
         </div>
-        <div class="tree list-group" style="left: 20px; top: 75px; width: 240px; display:block;">
+        <div class="tree list" style="left: 20px; top: 75px; width: 240px; display:block;">
             <div class="check-all-warp">
                 <span class="tree-icon tree-icon-check-minus"></span>
                 <span class="tree-node">全选</span>
@@ -157,7 +157,7 @@
     <section class="highlight-wrapper">
         <div transfer>
 
-<div class="tree list-group">
+<div class="tree list">
     <div class="check-all-warp">
         <span class="tree-icon tree-icon-check-minus"></span>
         <span class="tree-node">全选</span>
@@ -199,35 +199,35 @@
         </div>
         <div>
             下拉可出现多层级情况，每个层级的定位是js做的<br />
-            被选中的项在 li 上增加 list-group-item-selected 类获得选中样式，禁用状态时在 li 上增加 list-group-item-disabled 类
+            被选中的项在 li 上增加 list-item-selected 类获得选中样式，禁用状态时在 li 上增加 list-item-disabled 类
         </div>
     </section>
     <section class="code-box-demo" style="height:290px">
         <div class="select select-single select-w-md">
             <span>请选择</span>
         </div>
-        <div class="list-group" style="left: 20px; top: 75px; width: 155px; display:block;">
+        <div class="list" style="left: 20px; top: 75px; width: 155px; display:block;">
             <ul>
-                <li class="list-group-item" value="">
+                <li class="list-item" value="">
                     <span>请选择</span>
                 </li>
-                <li class="list-group-item list-group-item-selected" value="1">
+                <li class="list-item list-item-selected" value="1">
                     <span>哈哈1</span>
                 </li>
-                <li class="list-group-item" value="2">
+                <li class="list-item" value="2">
                     <span>哈哈2</span>
                 </li>
-                <li class="list-group-item list-group-item-disabled" value="3">
+                <li class="list-item list-item-disabled" value="3">
                     <span>哈哈3</span>
                 </li>
             </ul>
         </div>
-        <div class="list-group" style="left: 174px; top: 115px; width: 155px; display:block;">
+        <div class="list" style="left: 174px; top: 115px; width: 155px; display:block;">
             <ul>
-                <li class="list-group-item" value="">
+                <li class="list-item" value="">
                     <span>请选择</span>
                 </li>
-                <li class="list-group-item list-group-item-selected" value="1">
+                <li class="list-item list-item-selected" value="1">
                     <span>哈哈1-1</span>
                 </li>
             </ul> 
@@ -235,28 +235,28 @@
     </section>
     <section class="highlight-wrapper">
         <div transfer>
-<div class="list-group">
+<div class="list">
     <ul>
-        <li class="list-group-item">
+        <li class="list-item">
             <span>请选择</span>
         </li>
-        <li class="list-group-item list-group-item-selected">
+        <li class="list-item list-item-selected">
             <span>哈哈1</span>
         </li>
-        <li class="list-group-item">
+        <li class="list-item">
             <span>哈哈2</span>
         </li>
-        <li class="list-group-item list-group-item-disabled">
+        <li class="list-item list-item-disabled">
             <span>哈哈3</span>
         </li>
     </ul>
 </div>
-<div class="list-group">
+<div class="list">
     <ul>
-        <li class="list-group-item">
+        <li class="list-item">
             <span>请选择</span>
         </li>
-        <li class="list-group-item list-group-item-selected">
+        <li class="list-item list-item-selected">
             <span>哈哈1-1</span>
         </li>
     </ul> 

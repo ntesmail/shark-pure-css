@@ -1,7 +1,7 @@
 .notify-group {
   font-size: 12px;
   position: fixed;
-  z-index: 1010;
+  z-index: $zindex-notify;
   height: 100%;
   top: 0px;
   right: 0;

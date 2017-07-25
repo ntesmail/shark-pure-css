@@ -165,7 +165,7 @@ $btn-secondary-primary-background-color-active: $blue !default;
 $btn-secondary-danger-color: $red !default;
 $btn-secondary-danger-border-color: $red !default;
 $btn-secondary-danger-background-color: $white !default;
-$btn-secondary-danger-background-color-hover: #fbecea  !default;
+$btn-secondary-danger-background-color-hover: #fbecea !default;
 $btn-secondary-danger-background-color-active: $red !default;
 $btn-secondary-color-active: $white !default;
 // Forms
@@ -218,18 +218,18 @@ $state-warning-border-color: darken($state-warning-bg, 5%) !default;
 $state-danger-text: #a94442 !default;
 $state-danger-bg: #f2dede !default;
 $state-danger-border-color: darken($state-danger-bg, 5%) !default;
-//List Groups
-$list-group-font-size: 14px !default;
-$list-group-color: $gray-700 !default;
-$list-group-border-color: $gray-300 !default;
-$list-group-background-color: #fff !default;
-$list-group-border-radius: 2px !default;
-$list-group-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06) !default;
-$list-group-item-padding-x: 9px !default;
-$list-group-item-height: 40px !default;
-$list-group-item-background-color-hover: $gray-200 !default;
-$list-group-item-color-active: $blue !default;
-$list-group-item-color-disabled: $disabled-color !default;
+//List
+$list-font-size: 14px !default;
+$list-color: $gray-700 !default;
+$list-border-color: $gray-300 !default;
+$list-background-color: #fff !default;
+$list-border-radius: 2px !default;
+$list-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06) !default;
+$list-item-padding-x: 9px !default;
+$list-item-height: 40px !default;
+$list-item-background-color-hover: $gray-200 !default;
+$list-item-color-active: $blue !default;
+$list-item-color-disabled: $disabled-color !default;
 //Drop Down
 // Image thumbnails
 $thumbnail-padding: 4px !default;
@@ -290,13 +290,13 @@ $progress-bar-animation-timing: 1s linear infinite !default;
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
-$zindex-dropdown: 1000 !default;
-$zindex-sticky: 1020 !default;
-$zindex-fixed: 1030 !default;
-$zindex-modal-backdrop: 1040 !default;
-$zindex-modal: 1050 !default;
-$zindex-popover: 1060 !default;
-$zindex-tooltip: 1070 !default;
+$zindex-list: 1100 !default;
+$zindex-datetimepicker: 1110 !default;
+$zindex-modal-backdrop: 1000 !default;
+$zindex-modal: 1005 !default;
+$zindex-notify: 1010 !default;
+$zindex-toastr: 1020 !default;
+$zindex-popover: 1030 !default;
 //popover 
 $popover-inner-padding: 1px !default;
 $popover-font-size: 12px !default;
