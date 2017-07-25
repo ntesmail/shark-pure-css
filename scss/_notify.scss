@@ -1,4 +1,4 @@
-.notify-container {
+.notify-group {
   font-size: 12px;
   position: fixed;
   z-index: 1010;
@@ -37,7 +37,7 @@
     top: $notify-close-top;
     right: $notify-close-right;
     &:after {
-       @include iconfont-font("\EE64");
+      @include iconfont-font("\EE64");
       font-size: 8px;
       position: absolute;
       top: -5px;
@@ -71,7 +71,7 @@
   border: 1px solid $notify-success-border-color;
   .notify-message {
     &:before {
-       @include iconfont-font("\EE62");
+      @include iconfont-font("\EE62");
       color: $notify-success-color;
     }
   }
@@ -82,7 +82,7 @@
   border: 1px solid $notify-error-border-color;
   .notify-message {
     &:before {
-       @include iconfont-font("\EE60");
+      @include iconfont-font("\EE60");
       color: $notify-error-color;
     }
   }
@@ -93,7 +93,7 @@
   border: 1px solid $notify-warning-border-color;
   .notify-message {
     &:before {
-       @include iconfont-font("\EE5E");
+      @include iconfont-font("\EE5E");
       color: $notify-warning-color;
     }
   }
@@ -104,7 +104,7 @@
   border: 1px solid $notify-info-border-color;
   .notify-message {
     &:before {
-       @include iconfont-font("\EE5A");
+      @include iconfont-font("\EE5A");
       color: $notify-info-color;
     }
   }

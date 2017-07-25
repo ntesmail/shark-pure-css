@@ -1,4 +1,4 @@
-.toastr-container {
+.toastr-group {
   font-size: 12px;
   position: fixed;
   z-index: 1010;
@@ -55,7 +55,7 @@
   }
 }
 
-.toastr-message-link {
+.toastr-message-withlink {
   text-decoration: underline;
   &:hover {
     text-decoration: underline;
@@ -87,7 +87,7 @@
   border: 1px solid $toastr-success-border-color;
   .toastr-message {
     &:before {
-       @include iconfont-font("\EE61");
+      @include iconfont-font("\EE61");
       color: $toastr-success-color;
     }
   }
@@ -98,7 +98,7 @@
   border: 1px solid $toastr-error-border-color;
   .toastr-message {
     &:before {
-       @include iconfont-font("\EE5F");
+      @include iconfont-font("\EE5F");
       color: $toastr-error-color;
     }
   }
@@ -109,7 +109,7 @@
   border: 1px solid $toastr-warning-border-color;
   .toastr-message {
     &:before {
-       @include iconfont-font("\EE5D");
+      @include iconfont-font("\EE5D");
       color: $toastr-warning-color;
     }
   }
@@ -120,7 +120,7 @@
   border: 1px solid $toastr-info-border-color;
   .toastr-message {
     &:before {
-       @include iconfont-font("\EE59");
+      @include iconfont-font("\EE59");
       color: $toastr-info-color;
     }
   }
