@@ -1,7 +1,7 @@
 .toastr-group {
   font-size: 12px;
   position: fixed;
-  z-index: 1010;
+  z-index: $zindex-toastr;
   width: 100%;
   top: 16px;
   left: 0;

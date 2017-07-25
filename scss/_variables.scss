@@ -165,7 +165,7 @@ $btn-secondary-primary-background-color-active: $blue !default;
 $btn-secondary-danger-color: $red !default;
 $btn-secondary-danger-border-color: $red !default;
 $btn-secondary-danger-background-color: $white !default;
-$btn-secondary-danger-background-color-hover: #fbecea  !default;
+$btn-secondary-danger-background-color-hover: #fbecea !default;
 $btn-secondary-danger-background-color-active: $red !default;
 $btn-secondary-color-active: $white !default;
 // Forms
@@ -292,6 +292,11 @@ $progress-bar-animation-timing: 1s linear infinite !default;
 // of components dependent on the z-axis and are designed to all work together.
 $zindex-list: 1100 !default;
 $zindex-datetimepicker: 1110 !default;
+$zindex-modal-backdrop: 1000 !default;
+$zindex-modal: 1005 !default;
+$zindex-notify: 1010 !default;
+$zindex-toastr: 1020 !default;
+$zindex-popover: 1030 !default;
 //popover 
 $popover-inner-padding: 1px !default;
 $popover-font-size: 12px !default;
