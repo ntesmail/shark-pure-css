@@ -1,6 +1,6 @@
 //radio   label.radio
 /**
- * <label class="radio-wrapper">
+ * <label class="radio-wrap">
  *    <span class="radio">
  *         <input type="radio" class="radio-input"/>
  *         <span class="radio-inner"></span>
@@ -11,7 +11,7 @@
 */
 
 
-.radio-wrapper {
+.radio-wrap {
   @extend %select-wrapper;
 }
 
@@ -37,14 +37,14 @@
   }
 }
 
-.radio-wrapper:hover .radio{
+.radio-wrap:hover .radio{
   .radio-inner{
     border-color: #3187f6;
     background-color: #ebf3ff;
   }
 }
 
-.radio-wrapper.disabled {
+.radio-wrap.disabled {
 
   &,
   & input {
@@ -60,7 +60,7 @@
 
 }
 
-.radio-wrapper.checked {
+.radio-wrap.checked {
   &.disabled {
     .radio {
       .radio-inner {

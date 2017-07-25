@@ -27,7 +27,7 @@
   & {
     @extend %input-disabled;
   }
-  .input-number-handle-wrapper {
+  .input-number-handle-wrap {
     display: none;
   }
 }
@@ -36,7 +36,7 @@
   @extend %input;
   padding: 0;
   &:hover {
-    .input-number-handle-wrapper {
+    .input-number-handle-wrap {
       opacity: 1;
     }
   }
@@ -45,7 +45,7 @@
     border-color: #3187f6;
     outline: 0;
     box-shadow: 0 0 2px 1px rgba(49,135,246,.50);
-    .input-number-handle-wrapper {
+    .input-number-handle-wrap {
       opacity: 1;
     }
   }
@@ -74,7 +74,7 @@
   }
 }
 
-.input-number-handle-wrapper {
+.input-number-handle-wrap {
   position: absolute;
   top: 0;
   right: 0;

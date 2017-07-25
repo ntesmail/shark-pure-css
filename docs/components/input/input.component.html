@@ -94,14 +94,14 @@
                     1.在输入框中添加前缀和后缀。后缀可以增加<strong>input-suffix-focus</strong>扩展类，input只有在hover和focus状态下显示；
                 </li>
                 <li>
-                    2.禁用状态，除了在input中加上disabled属性，还需要在组件最外层input-affix-wrapper上增加<strong>disabled</strong>类。
+                    2.禁用状态，除了在input中加上disabled属性，还需要在组件最外层input-affix上增加<strong>disabled</strong>类。
                 </li>
             </ul>
         </div>
     </section>
     <section class="code-box-demo">
         <div class="wrapper">
-            <div class="input-affix-wrapper">
+            <div class="input-affix">
                 <span class="input-prefix">
                     <i class="icon-user"></i>
                 </span>
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="input-affix-wrapper">
+            <div class="input-affix">
                 <span class="input-prefix">
                     <i class="icon-user"></i>
                 </span>
@@ -123,7 +123,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="input-affix-wrapper disabled">
+            <div class="input-affix disabled">
                 <span class="input-prefix">
                     <i class="icon-user"></i>
                 </span>
@@ -136,7 +136,7 @@
     </section>
     <section class="highlight-wrapper">
        <div transfer>
-<div class="input-affix-wrapper">
+<div class="input-affix">
     <span class="input-prefix">
         <i class="icon-user"></i>
     </span>
@@ -146,7 +146,7 @@
     </span>
 </div>
 
-<div class="input-affix-wrapper">
+<div class="input-affix">
     <span class="input-prefix">
         <i class="icon-user"></i>
     </span>
@@ -156,7 +156,7 @@
     </span>
 </div>
 
-<div class="input-affix-wrapper disabled">
+<div class="input-affix disabled">
     <span class="input-prefix">
         <i class="icon-user"></i>
     </span>
@@ -189,7 +189,7 @@
     <section class="code-box-demo">
         <div class="wrapper">
             <div class="input-number">
-                <div class="input-number-handle-wrapper">
+                <div class="input-number-handle-wrap">
                     <div class="input-number-handle-up">
                         <i class="icon-up"></i>
                     </div>
@@ -202,7 +202,7 @@
         </div>
         <div class="wrapper">
             <div class="input-number disabled">
-                <div class="input-number-handle-wrapper">
+                <div class="input-number-handle-wrap">
                     <div class="input-number-handle-up">
                         <i class="icon-up"></i>
                     </div>
@@ -217,7 +217,7 @@
     <section class="highlight-wrapper">
        <div transfer>
 <div class="input-number">
-    <div class="input-number-handle-wrapper">
+    <div class="input-number-handle-wrap">
         <div class="input-number-handle-up">
             <i class="icon-up"></i>
         </div>
@@ -229,7 +229,7 @@
 </div>
 
 <div class="input-number disabled">
-    <div class="input-number-handle-wrapper">
+    <div class="input-number-handle-wrap">
         <div class="input-number-handle-up">
             <i class="icon-up"></i>
         </div>
@@ -251,7 +251,7 @@
         <div>
             <ul>
                 <li>
-                    1.用于配置一些固定组合。提供input、input-number、input-affix-wrapper(带前缀后缀的输入框)与select、btn、input-group-addon的组合；
+                    1.用于配置一些固定组合。提供input、input-number、input-affix(带前缀后缀的输入框)与select、btn、input-group-addon的组合；
                 </li>
                 <li>
                     2.禁用状态，除了在input中加上disabled属性，还需要在组件最外层input-group上增加<strong>disabled</strong>类。
@@ -273,7 +273,7 @@
             <div class="input-group">
                 <span class="input-group-addon">高考分数：</span>
                 <div class="input-number">
-                    <div class="input-number-handle-wrapper">
+                    <div class="input-number-handle-wrap">
                         <div class="input-number-handle-up">
                             <i class="icon-up"></i>
                         </div>
@@ -287,7 +287,7 @@
         </div>
         <div class="wrapper">
             <div class="input-group">
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <span class="input-prefix">
                         <i class="icon-user"></i>
                     </span>
@@ -303,7 +303,7 @@
                 <span class="input-group-addon">
                     <i class="icon-search"></i>
                 </span>
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <span class="input-prefix">
                         <i class="icon-user"></i>
                     </span>
@@ -319,7 +319,7 @@
                 <span class="input-group-addon">
                     <i class="icon-search"></i>
                 </span>
-                <div class="input-affix-wrapper">
+                <div class="input-affix">
                     <span class="input-prefix">
                         <i class="icon-user"></i>
                     </span>
@@ -345,7 +345,7 @@
 <div class="input-group">
     <span class="input-group-addon">高考分数：</span>
     <div class="input-number">
-        <div class="input-number-handle-wrapper">
+        <div class="input-number-handle-wrap">
             <div class="input-number-handle-up">
                 <i class="icon-up"></i>
             </div>
@@ -358,7 +358,7 @@
 </div>
 
 <div class="input-group">
-    <div class="input-affix-wrapper">
+    <div class="input-affix">
         <span class="input-prefix">
             <i class="icon-user"></i>
         </span>
@@ -373,7 +373,7 @@
     <span class="input-group-addon">
         <i class="icon-search"></i>
     </span>
-    <div class="input-affix-wrapper">
+    <div class="input-affix">
         <span class="input-prefix">
             <i class="icon-user"></i>
         </span>
@@ -388,7 +388,7 @@
     <span class="input-group-addon">
         <i class="icon-search"></i>
     </span>
-    <div class="input-affix-wrapper">
+    <div class="input-affix">
         <span class="input-prefix">
             <i class="icon-user"></i>
         </span>

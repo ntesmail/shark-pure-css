@@ -9,7 +9,7 @@
   .input-group-addon,
   .input,
   .select,
-  .input-affix-wrapper,
+  .input-affix,
   .input-group-btn-wrapper,
   .input-number {
     display: table-cell;
@@ -38,7 +38,7 @@
 
   // group中，带输入框的部分
   .input,
-  .input-affix-wrapper,
+  .input-affix,
   .input-number {
     float: left;
     width: 100%;
@@ -84,7 +84,7 @@
       @extend %disabled;
     }
 
-    .input-affix-wrapper {
+    .input-affix {
       @extend %input-affix-wrapper-disabled;
     }
 

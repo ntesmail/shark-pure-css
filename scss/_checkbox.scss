@@ -1,6 +1,6 @@
 //checkbox
 
-.checkbox-wrapper {
+.checkbox-wrap {
   @extend %select-wrapper;
 }
 
@@ -22,13 +22,13 @@
   }
 }
 
-.checkbox-wrapper:hover .checkbox{
+.checkbox-wrap:hover .checkbox{
   .checkbox-inner{
     border-color: #3187f6;
   }
 }
 
-.checkbox-wrapper.disabled {
+.checkbox-wrap.disabled {
 
   &,
   & input {
@@ -42,7 +42,7 @@
   }
 }
 
-.checkbox-wrapper.checked {
+.checkbox-wrap.checked {
   &.disabled {
     .checkbox {
       .checkbox-inner {
@@ -74,7 +74,7 @@
   }
 }
 
-.checkbox-wrapper.checked-some {
+.checkbox-wrap.checked-some {
   &.disabled {
     border-color: $check-inner-border-color;
     .checkbox {
