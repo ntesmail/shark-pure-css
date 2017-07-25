@@ -35,15 +35,11 @@ $upload-img-height: 100px;
       color: $upload-btn-color;
       font-size: $upload-font-size;
       margin-right: 5px;
-      display: none;
     }
   }
   &.upload-file-finished {
     .upload-filename {
       color: $upload-file-finished-color;
-      .icon-link{
-        display: inline-block;
-      }
     }
   }
   &.upload-file-error {
@@ -51,7 +47,6 @@ $upload-img-height: 100px;
       color: $upload-file-error-color;
       .icon-link {
         color: $upload-file-error-color;
-        display: inline-block;        
       }
     }
   }
